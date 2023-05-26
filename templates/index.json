@@ -220,7 +220,7 @@
         "template--19231783911727__0941e916-cf27-4f21-bad1-1552cb2c7e88-16851031936813bb21-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Shop NOW",
             "button_color": "#661116",
             "button_link": "shopify:\/\/collections\/all"
           }
