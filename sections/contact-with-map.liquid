@@ -1,7 +1,13 @@
 {% schema %}
 {
   "name": "Location Map",
-  "settings": [],
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "Background Image",
+      "id": "background_image"
+    }
+  ],
   "blocks": [
     {
       "type": "location",
@@ -10,22 +16,38 @@
         {
           "type": "text",
           "label": "Location Name",
-          "id": "location_name"
+          "id": "location_name",
+          "default": "My Location"
         },
         {
           "type": "text",
           "label": "Address",
-          "id": "address"
+          "id": "address",
+          "default": "486 Evans Avenue Unit 11"
         },
         {
           "type": "text",
           "label": "City",
-          "id": "city"
+          "id": "city",
+          "default": "Etobicoke"
         },
         {
           "type": "text",
-          "label": "Country",
-          "id": "country"
+          "label": "Province",
+          "id": "province",
+          "default": "ON"
+        },
+        {
+          "type": "text",
+          "label": "Postal Code",
+          "id": "postal_code",
+          "default": "M8W 2T7"
+        },
+        {
+          "type": "text",
+          "label": "Hours of Operation",
+          "id": "hours_of_operation",
+          "default": "MONDAY 10 AM - 8 PM\nTUESDAY 10 AM - 8 PM\nWEDNESDAY 10 AM - 8 PM\nTHURSDAY 10 AM - 8 PM\nFRIDAY 10 AM - 8 PM\nSATURDAY 10 AM - 3 PM\nSUNDAY 10 AM - 2 PM"
         }
       ]
     },
@@ -36,28 +58,29 @@
         {
           "type": "text",
           "label": "Map URL",
-          "id": "map_url"
+          "id": "map_url",
+          "default": "https://maps.google.com/maps?q=Toronto,ON,Canada&output=embed"
         }
       ]
-        
     }
   ],
-  "presets": [
-        {
-          "name" : "Location with Map"
-        }
-      ]
+  "presets" : [
+    {
+      "name" : "Location with map"
+    }
+  ]
 }
 {% endschema %}
 
 {% assign locationInfo = section.blocks | where: 'type', 'location' | first %}
 {% assign googleMap = section.blocks | where: 'type', 'google_map' | first %}
 
-<section class="location-map-section">
+<section class="location-map-section" style="background-image: url('{{ section.settings.background_image | img_url }}');">
   <div class="location-info">
     <h2>{{ locationInfo.settings.location_name }}</h2>
     <p>{{ locationInfo.settings.address }}</p>
-    <p>{{ locationInfo.settings.city }}, {{ locationInfo.settings.country }}</p>
+    <p>{{ locationInfo.settings.city }}, {{ locationInfo.settings.province }} {{ locationInfo.settings.postal_code }}</p>
+    <p>{{ locationInfo.settings.hours_of_operation }}</p>
   </div>
   <div class="google-map">
     <iframe src="{{ googleMap.settings.map_url }}"></iframe>
