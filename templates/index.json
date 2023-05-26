@@ -54,7 +54,7 @@
     "a20d3441-d401-4506-adae-7e2a8ef51a3b": {
       "type": "featured-collection",
       "settings": {
-        "title": "TOP SELLERS",
+        "title": "<strong>TOP<\/strong> SELLERS",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -174,7 +174,7 @@
         "4814751b-3d37-4c7d-8127-478fe2e5182b"
       ],
       "settings": {
-        "title": "Collections",
+        "title": "<strong>SHOP <\/strong>NOW",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
@@ -245,35 +245,6 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "aac8475c-40d6-4af4-abbb-1f46a374a1b8": {
-      "type": "contact-with-map",
-      "blocks": {
-        "def6fd6c-e62d-4552-ae02-90c047ba10ad": {
-          "type": "location",
-          "settings": {
-            "location_name": "My Location",
-            "address": "486 Evans Avenue Unit 11",
-            "city": "Etobicoke",
-            "province": "ON",
-            "postal_code": "M8W 2T7",
-            "hours_of_operation": "MONDAY 10 AM - 8 PM\nTUESDAY 10 AM - 8 PM\nWEDNESDAY 10 AM - 8 PM\nTHURSDAY 10 AM - 8 PM\nFRIDAY 10 AM - 8 PM\nSATURDAY 10 AM - 3 PM\nSUNDAY 10 AM - 2 PM"
-          }
-        },
-        "073b6e3e-2c5b-40b6-a1a8-52358a105896": {
-          "type": "google_map",
-          "settings": {
-            "map_url": "https:\/\/maps.google.com\/maps?q=Toronto,ON,Canada&output=embed"
-          }
-        }
-      },
-      "block_order": [
-        "def6fd6c-e62d-4552-ae02-90c047ba10ad",
-        "073b6e3e-2c5b-40b6-a1a8-52358a105896"
-      ],
-      "settings": {
-        "background_image": "shopify:\/\/shop_images\/image_11.png"
-      }
     }
   },
   "order": [
@@ -283,7 +254,6 @@
     "8d007146-1d08-4398-b4d0-609e7e640ec9",
     "caca1bae-6af5-4e12-ba9b-f6fdcdd3d242",
     "video",
-    "0941e916-cf27-4f21-bad1-1552cb2c7e88",
-    "aac8475c-40d6-4af4-abbb-1f46a374a1b8"
+    "0941e916-cf27-4f21-bad1-1552cb2c7e88"
   ]
 }
