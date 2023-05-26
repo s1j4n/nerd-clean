@@ -8,6 +8,10 @@
   font-weight: bold;
 }
 
+.card-heading .icon-wrap{
+  display: none;
+}
+
 .price--sold-out .price__availability,
 .price__regular {
   font-size: 1.9rem;
