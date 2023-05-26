@@ -96,11 +96,11 @@
   margin: 0;
 }
 
-@media screen and (min-width: 990px) {
+
   .custom-richtext .rich-text__blocks {
     max-width: 100%;
   }
-}
+
 
 /*     -------FEATURED COLLECTION----------
 */
