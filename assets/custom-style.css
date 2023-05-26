@@ -160,18 +160,9 @@
 
 .location-map-section {
   display: flex;
-}
-
-.location-info {
-  width: 30%;
-  background-image: url('path/to/your/image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.google-map {
-  width: 65%;
 }
 
 /* For smaller screens */
