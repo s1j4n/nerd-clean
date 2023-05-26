@@ -35,6 +35,13 @@
  overflow: hidden; 
 }
 
+@media screen and (min-width: 768px){
+  .grid__item.slider__slide{
+    max-width: 50%;
+    width: 50%;
+  }
+}
+
 /* -----------HEADER STARTS----------------- */
 .header.header--middle-left {
   display: grid;
