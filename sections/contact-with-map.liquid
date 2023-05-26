@@ -1,12 +1,65 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Location Map",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "location",
+      "name": "Location Information",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Location Name",
+          "id": "location_name"
+        },
+        {
+          "type": "text",
+          "label": "Address",
+          "id": "address"
+        },
+        {
+          "type": "text",
+          "label": "City",
+          "id": "city"
+        },
+        {
+          "type": "text",
+          "label": "Country",
+          "id": "country"
+        }
+      ]
+    },
+    {
+      "type": "google_map",
+      "name": "Google Map",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Map URL",
+          "id": "map_url"
+        }
+      ]
+        
+    }
+  ],
+  "presets": [
+        {
+          "name" : "Location with Map"
+        }
+      ]
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
+{% assign locationInfo = section.blocks | where: 'type', 'location' | first %}
+{% assign googleMap = section.blocks | where: 'type', 'google_map' | first %}
 
-{% javascript %}
-{% endjavascript %}
+<section class="location-map-section">
+  <div class="location-info">
+    <h2>{{ locationInfo.settings.location_name }}</h2>
+    <p>{{ locationInfo.settings.address }}</p>
+    <p>{{ locationInfo.settings.city }}, {{ locationInfo.settings.country }}</p>
+  </div>
+  <div class="google-map">
+    <iframe src="{{ googleMap.settings.map_url }}"></iframe>
+  </div>
+</section>
