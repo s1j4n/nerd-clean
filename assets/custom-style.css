@@ -50,7 +50,11 @@
         text-decoration: none;
 
     }
+}
 
 
 
+/* ----------CUSTOM INLINE RICHTEXT STARTS--------------- */
+.custom-richtect .rich-text__blocks.center{
+  display: flex
 }
