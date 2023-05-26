@@ -1,14 +1,16 @@
 /* -------GLOBAL-----------
  */
 
- .card__heading.h5{
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: bold;
+.card__heading.h5 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
- }
-
-
+.price--sold-out .price__availability,
+.price__regular {
+  font-size: 1.9rem;
+}
 
 .announcement-bar__message.h5 {
   text-transform: uppercase;
@@ -22,9 +24,6 @@
 
 .header__heading-logo-wrapper {
   width: 75%;
-
-
-
 }
 .header__menu-item span {
   font-size: calc(var(--font-heading-scale) * 1.8rem);
