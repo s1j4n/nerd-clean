@@ -157,20 +157,27 @@
 
 
 /* --------------SECTION WITH MAP--------------- */
-
 .location-map-section {
   display: flex;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  align-items: flex-start;
 }
 
-/* For smaller screens */
+.location-info {
+  width: 30%;
+  padding: 20px;
+}
+
+.google-map {
+  width: 70%;
+}
+
+/* For bigger screens */
 @media screen and (max-width: 990px) {
   .location-map-section {
     flex-direction: column;
+    align-items: center;
   }
-  
+
   .location-info,
   .google-map {
     width: 100%;
