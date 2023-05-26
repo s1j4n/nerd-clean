@@ -77,6 +77,10 @@
   gap: 4rem;
 }
 
+.custom-richtext .rich-text__buttons{
+  max-width: 200px;
+}
+
 .custom-richtext .button.button--primary {
   background-color: #661116;
   font-weight: bold;
