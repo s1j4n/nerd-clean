@@ -55,6 +55,6 @@
 
 
 /* ----------CUSTOM INLINE RICHTEXT STARTS--------------- */
-.custom-richtect .rich-text__blocks.center{
+.custom-richtext .rich-text__blocks.center{
   display: flex
 }
