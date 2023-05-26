@@ -107,6 +107,7 @@
   .custom-richtext .rich-text__blocks.center {
     flex-direction: column;
     padding: 2rem;
+    gap: 2rem;
   }
 
   .custom-richtext .button.button--primary {
