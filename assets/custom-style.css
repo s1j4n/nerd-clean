@@ -1,3 +1,15 @@
+/* -------GLOBAL-----------
+ */
+
+ .card-heading,h5{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+ }
+
+
+
 .announcement-bar__message.h5 {
   text-transform: uppercase;
   font-weight: bold;
@@ -10,6 +22,9 @@
 
 .header__heading-logo-wrapper {
   width: 75%;
+
+
+
 }
 .header__menu-item span {
   font-size: calc(var(--font-heading-scale) * 1.8rem);
