@@ -147,7 +147,7 @@
 */
 
 @media screen and (min-width: 990px) {
-  .featured-collection-custom, .collection-list-custom {
+  .featured-collection-custom, .collection-list-custom, image-with-text-custom {
     padding: 4rem 6rem;
   }
   .featured-collection-custom .collection__title.title-wrapper {
