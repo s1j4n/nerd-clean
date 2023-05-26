@@ -57,7 +57,8 @@
   background-color: #661116;
   font-weight: bold;
   height: 100%;
-  padding: 1rem ;
+  padding: 2rem ;
+  font-size: larger;
 }
 
 .custom-richtext .rich-text__heading{
