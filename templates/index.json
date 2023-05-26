@@ -122,7 +122,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,
-        "padding_bottom": 32
+        "padding_bottom": 0
       }
     },
     "caca1bae-6af5-4e12-ba9b-f6fdcdd3d242": {
@@ -243,7 +243,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     }
   },
