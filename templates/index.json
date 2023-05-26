@@ -47,8 +47,8 @@
         "content_alignment": "center",
         "color_scheme": "scheme-98a05e94-eb81-4d40-9d93-d40c3f8716f2",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "a20d3441-d401-4506-adae-7e2a8ef51a3b": {
