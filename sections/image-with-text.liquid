@@ -77,6 +77,7 @@
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
                 <a
+                style="background-color: {{ block.settings.button_color }}"
                   {% if block.settings.button_link == blank %}
                     role="link" aria-disabled="true"
                   {% else %}
@@ -424,6 +425,11 @@
           "default": "Button label",
           "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
           "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+        },
+         {
+          "type": "color",
+          "id": "button_color",
+          "label": "Button Background Color"
         },
         {
           "type": "url",
