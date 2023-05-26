@@ -94,3 +94,12 @@
     max-width: 100%;
   }
 }
+
+/*     -------FEATURED COLLECTION----------
+*/
+
+@media screen and (min-width: 990px){
+.featured-collection-custom{
+   padding: 4rem 6rem; 
+}
+}
