@@ -116,6 +116,10 @@
   .custom-richtext .button.button--primary {
     padding: 1rem;
   }
+
+  .custom-richtext .rich-text__heading{
+    line-height: 1.3;
+  }
   
 }
 
