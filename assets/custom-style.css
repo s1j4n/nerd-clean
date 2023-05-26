@@ -77,6 +77,8 @@
   gap: 4rem;
 }
 
+
+
 .custom-richtext .rich-text__buttons{
   max-width: 200px;
 }
@@ -100,6 +102,13 @@
   .custom-richtext .rich-text__blocks {
     max-width: 100%;
   }
+
+@media screen and (max-width: 768px){
+  .custom-richtext .rich-text__blocks.center {
+    flex-direction: column;
+  }
+  
+}
 
 
 /*     -------FEATURED COLLECTION----------
