@@ -17,6 +17,11 @@
   font-weight: bold;
 }
 
+.button.button--primary{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 /* -----------HEADER STARTS----------------- */
 .header.header--middle-left {
   display: grid;
