@@ -23,7 +23,7 @@
           "type": "heading",
           "settings": {
             "heading": "Find The <strong>Right Equipment<\/strong> To Suit Your Needs And <strong>Fit Your Budget!<\/strong>",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "template--19231783911727__70ba74e9-4704-4f94-bd3c-a4bffe18dd09-168510537310e31560-1": {
@@ -45,7 +45,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
+        "color_scheme": "scheme-98a05e94-eb81-4d40-9d93-d40c3f8716f2",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
