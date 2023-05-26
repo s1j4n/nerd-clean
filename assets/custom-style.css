@@ -11,7 +11,9 @@
 .header__heading-logo-wrapper {
   width: 75%;
 }
-
+.header__menu-item span {
+  font-size: calc(var(--font-heading-scale) * 1.8rem);
+}
 @media screen and (min-width: 990px) {
   .header.header--middle-left.header--mobile-center {
     display: flex;
@@ -57,14 +59,14 @@
   background-color: #661116;
   font-weight: bold;
   height: 100%;
-  padding: 2rem ;
+  padding: 2rem;
   font-size: larger;
 }
 
-.custom-richtext .rich-text__heading{
+.custom-richtext .rich-text__heading {
   text-transform: uppercase;
 }
-.custom-richtext .rich-text__buttons{
+.custom-richtext .rich-text__buttons {
   margin: 0;
 }
 
