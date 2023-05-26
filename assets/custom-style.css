@@ -57,7 +57,7 @@
 /* ----------CUSTOM INLINE RICHTEXT STARTS--------------- */
 .custom-richtext .rich-text__blocks.center{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
