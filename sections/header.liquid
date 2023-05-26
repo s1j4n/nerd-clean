@@ -244,6 +244,7 @@
         </h1>
       {%- endif -%}
     {%- endif -%}
+    {% if section.settings.show_icons %}
 
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header__localization{% endif %}">
       <div class="desktop-localization-wrapper">
@@ -346,6 +347,8 @@
         {%- endif -%}
       </a>
     </div>
+
+  {% endif %}
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
