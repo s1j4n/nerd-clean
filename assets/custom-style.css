@@ -1,7 +1,7 @@
 /* -------GLOBAL-----------
  */
 
-.card__heading.h5, card__heading {
+.card__heading.h5, .card__heading {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: bold;
