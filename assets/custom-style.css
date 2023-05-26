@@ -1,7 +1,8 @@
 /* -------GLOBAL-----------
  */
 
-.card__heading.h5, .card__heading {
+.card__heading.h5,
+.card__heading {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -17,7 +18,7 @@
   font-weight: bold;
 }
 
-.button.button--primary{
+.button.button--primary {
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -70,8 +71,10 @@
 /* ----------CUSTOM INLINE RICHTEXT STARTS--------------- */
 .custom-richtext .rich-text__blocks.center {
   display: flex;
-  justify-content: space-around;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 4rem;
 }
 
 .custom-richtext .button.button--primary {
@@ -98,11 +101,11 @@
 /*     -------FEATURED COLLECTION----------
 */
 
-@media screen and (min-width: 990px){
-.featured-collection-custom{
-   padding: 4rem 6rem; 
-}
-.featured-collection-custom .collection__title.title-wrapper{
-  padding: 0;
-}
+@media screen and (min-width: 990px) {
+  .featured-collection-custom {
+    padding: 4rem 6rem;
+  }
+  .featured-collection-custom .collection__title.title-wrapper {
+    padding: 0;
+  }
 }
