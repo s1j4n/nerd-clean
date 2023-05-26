@@ -59,8 +59,8 @@
   height: 100%;
 }
 
-.custom-richtext .rich-text content-container{
-  padding: 0;
+.custom-richtext .rich-text__heading{
+  text-transform: uppercase;
 }
 .custom-richtext .rich-text__buttons{
   margin: 0;
