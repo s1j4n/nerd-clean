@@ -102,7 +102,7 @@
 .featured-collection-custom{
    padding: 4rem 6rem; 
 }
-.collection__title.title-wrapper{
+.featured-collection-custom .collection__title.title-wrapper{
   padding: 0;
 }
 }
