@@ -197,5 +197,9 @@
     flex-direction: column;
     gap: 30px
   }
+
+  .location-map-section .location-info{
+    width: 100%;
+  }
   
 }
