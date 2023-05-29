@@ -43,7 +43,7 @@
         "template--19231783911727__70ba74e9-4704-4f94-bd3c-a4bffe18dd09-168510537310e31560-1"
       ],
       "settings": {
-        "desktop_content_position": "center",
+        "desktop_content_position": "right",
         "content_alignment": "center",
         "color_scheme": "scheme-98a05e94-eb81-4d40-9d93-d40c3f8716f2",
         "full_width": true,
@@ -60,7 +60,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "top-sellers",
-        "products_to_show": 3,
+        "products_to_show": 8,
         "columns_desktop": 3,
         "full_width": true,
         "show_view_all": true,
