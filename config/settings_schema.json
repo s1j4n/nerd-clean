@@ -1,11 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Toronto Fight Club",
+    "theme_name": "Nerd",
     "theme_version": "1.0.0",
-    "theme_author": "Toronto Fight Club",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_author": "Nerd Platoon",
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.logo.name",
