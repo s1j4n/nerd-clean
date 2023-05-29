@@ -223,8 +223,6 @@
 .absolute_item{
   position: absolute;
   width: 50%;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .absolute_item .image-with-text__content {
