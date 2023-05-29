@@ -184,6 +184,10 @@
   text-transform: uppercase;
 }
 
+.location-info p{
+  font-size: 2rem
+}
+
 .google-map{
   height: 30rem;
 }
