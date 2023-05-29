@@ -342,6 +342,53 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "e0cf868d-ea40-49a9-b68c-13e800db370b": {
+      "type": "multiple-image-with-text",
+      "blocks": {
+        "template--19231783911727__e0cf868d-ea40-49a9-b68c-13e800db370b-16853802674ced775f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "template--19231783911727__e0cf868d-ea40-49a9-b68c-13e800db370b-16853802674ced775f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--19231783911727__e0cf868d-ea40-49a9-b68c-13e800db370b-16853802674ced775f-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_color": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19231783911727__e0cf868d-ea40-49a9-b68c-13e800db370b-16853802674ced775f-0",
+        "template--19231783911727__e0cf868d-ea40-49a9-b68c-13e800db370b-16853802674ced775f-1",
+        "template--19231783911727__e0cf868d-ea40-49a9-b68c-13e800db370b-16853802674ced775f-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_11.png",
+        "image_2": "shopify:\/\/shop_images\/primo.png",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-98a05e94-eb81-4d40-9d93-d40c3f8716f2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -353,6 +400,7 @@
     "video",
     "0941e916-cf27-4f21-bad1-1552cb2c7e88",
     "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7",
-    "9acd8e6e-82cd-4690-a79d-10ada8cd75cc"
+    "9acd8e6e-82cd-4690-a79d-10ada8cd75cc",
+    "e0cf868d-ea40-49a9-b68c-13e800db370b"
   ]
 }
