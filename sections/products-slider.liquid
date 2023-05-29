@@ -78,7 +78,7 @@
           role="list"
           aria-label="{{ 'general.slider.name' | t }}"
         >
-           {% for block in section.blocks %}
+           {% for block in section.blocks limit: products_to_display %}
           {% assign product = block.settings.product %}
             <li
               id="Slide-{{ section.id }}-{{ forloop.index }}"
