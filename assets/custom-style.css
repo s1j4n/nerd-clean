@@ -189,11 +189,13 @@
 }
 
 .google-map{
-  height: 30rem;
+  height: 45rem;
+  width: 45%;
 }
 
 .google-map iframe{
-  height: 100%
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 990px){
@@ -207,5 +209,9 @@
     width: 100%;
     text-align: center;
   }
-  
+  .google-map{
+  height: 20rem;
+  width: 90%;
+}
+
 }
