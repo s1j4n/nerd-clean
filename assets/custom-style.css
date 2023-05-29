@@ -223,6 +223,8 @@
 .absolute_item{
   position: absolute;
   width: 50%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .absolute_item .image-with-text__content {
@@ -232,6 +234,7 @@
 @media screen and (max-width: 750px){
   .absolute_item{
   width: 100%;
+  top: 0;
     
   
 }
