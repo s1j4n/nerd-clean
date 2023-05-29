@@ -166,7 +166,7 @@
   align-items: center;
   justify-content: space-around;
   color: #fff;
-  padding: 4rem auto;
+  padding: 4rem;
 }
 
 .location-map-section .location-info{
@@ -195,7 +195,8 @@
 @media screen and (max-width: 990px){
   .location-map-section{
     flex-direction: column;
-    gap: 30px
+    gap: 30px;
+    padding: 1rem;
   }
 
   .location-map-section .location-info{
