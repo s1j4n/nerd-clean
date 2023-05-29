@@ -236,7 +236,7 @@
 @media screen and (max-width: 750px) {
   .absolute_item {
     width: 100%;
-
+  left: 0;
   }
   .absolute_item__left {
     top: 25%;
