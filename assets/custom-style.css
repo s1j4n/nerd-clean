@@ -225,3 +225,7 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+.absolute_item .image-with-text__content {
+  background: none;
+}
