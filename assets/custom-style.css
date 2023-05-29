@@ -183,3 +183,11 @@
   color: white;
   text-transform: uppercase;
 }
+
+.google-map{
+  height: 20rem;
+}
+
+.google-map iframe{
+  height: 100%
+}
