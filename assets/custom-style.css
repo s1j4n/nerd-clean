@@ -205,6 +205,7 @@
     flex-direction: column;
     gap: 30px;
     padding: 1rem;
+    width: 100%;
   }
 
   .location-map-section .location-info{
