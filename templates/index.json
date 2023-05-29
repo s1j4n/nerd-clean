@@ -206,7 +206,7 @@
         "template--19231783911727__0941e916-cf27-4f21-bad1-1552cb2c7e88-16851031936813bb21-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Toronto's newest martial arts equipment store.  <\/p>",
+            "text": "<p>TORONTO'S NEWEST MARTIAL ATRS EQUIPMENT STORE.<\/p>",
             "text_style": "body"
           }
         },
@@ -220,7 +220,7 @@
         "template--19231783911727__0941e916-cf27-4f21-bad1-1552cb2c7e88-16851031936813bb21-2": {
           "type": "button",
           "settings": {
-            "button_label": "Shop NOW",
+            "button_label": "Shop now",
             "button_color": "#661116",
             "button_link": "shopify:\/\/collections\/all"
           }
@@ -245,6 +245,35 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7": {
+      "type": "contact-with-map",
+      "blocks": {
+        "ddb0ee35-6d0d-4737-befd-40b3b81d7c9b": {
+          "type": "location",
+          "settings": {
+            "location_name": "My Location",
+            "address": "486 Evans Avenue Unit 11",
+            "city": "Etobicoke",
+            "province": "ON",
+            "postal_code": "M8W 2T7",
+            "hours_of_operation": "MONDAY 10 AM - 8 PM\nTUESDAY 10 AM - 8 PM\nWEDNESDAY 10 AM - 8 PM\nTHURSDAY 10 AM - 8 PM\nFRIDAY 10 AM - 8 PM\nSATURDAY 10 AM - 3 PM\nSUNDAY 10 AM - 2 PM"
+          }
+        },
+        "1a8c4063-e670-4c9f-9105-a8548ad7603c": {
+          "type": "google_map",
+          "settings": {
+            "map_url": "https:\/\/maps.google.com\/maps?q=Toronto,ON,Canada&output=embed"
+          }
+        }
+      },
+      "block_order": [
+        "ddb0ee35-6d0d-4737-befd-40b3b81d7c9b",
+        "1a8c4063-e670-4c9f-9105-a8548ad7603c"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/image_11_65dd325b-1ceb-4da8-8d74-a75cdb4d2823.png"
+      }
     }
   },
   "order": [
@@ -254,6 +283,7 @@
     "8d007146-1d08-4398-b4d0-609e7e640ec9",
     "caca1bae-6af5-4e12-ba9b-f6fdcdd3d242",
     "video",
-    "0941e916-cf27-4f21-bad1-1552cb2c7e88"
+    "0941e916-cf27-4f21-bad1-1552cb2c7e88",
+    "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7"
   ]
 }
