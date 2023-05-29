@@ -29,9 +29,9 @@
 {%- endstyle -%}
 
 {%- liquid
-  assign products_to_display = section.settings.collection.all_products_count
+  assign products_to_display = section.blocks.size
 
-  if section.settings.collection.all_products_count > section.settings.products_to_show
+  if section.blocks.size > section.settings.products_to_show
     assign products_to_display = section.settings.products_to_show
     assign more_in_collection = true
   endif
@@ -78,7 +78,8 @@
           role="list"
           aria-label="{{ 'general.slider.name' | t }}"
         >
-          {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+           {% for block in section.blocks %}
+          {% assign product = block.settings.product %}
             <li
               id="Slide-{{ section.id }}-{{ forloop.index }}"
               class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
