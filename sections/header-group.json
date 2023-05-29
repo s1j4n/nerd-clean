@@ -29,7 +29,7 @@
         "menu": "main-menu",
         "logo_position": "middle-left",
         "menu_type_desktop": "dropdown",
-        "sticky_header_type": "always",
+        "sticky_header_type": "on-scroll-up",
         "show_line_separator": false,
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
         "menu_color_scheme": "",
