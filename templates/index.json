@@ -253,7 +253,7 @@
           "type": "location",
           "settings": {
             "location_name": "Location",
-            "location_info": "<p>abc<br\/>def<\/p>",
+            "location_info": "<p>Test Location<\/p>",
             "hours_title": "Hours",
             "hours_of_operation": "<p>MONDAY 10 AM - 8 PM<br\/>TUESDAY 10 AM - 8 PM<br\/>WEDNESDAY 10 AM - 8 PM<br\/>THURSDAY 10 AM - 8 PM<br\/>FRIDAY 10 AM - 8 PM<br\/>SATURDAY 10 AM - 3 PM<br\/>SUNDAY 10 AM - 2 PM<\/p>"
           }
