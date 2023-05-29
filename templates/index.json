@@ -257,7 +257,7 @@
             "city": "Etobicoke",
             "province": "ON",
             "postal_code": "M8W 2T7",
-            "hours_of_operation": "MONDAY 10 AM - 8 PM\nTUESDAY 10 AM - 8 PM\nWEDNESDAY 10 AM - 8 PM\nTHURSDAY 10 AM - 8 PM\nFRIDAY 10 AM - 8 PM\nSATURDAY 10 AM - 3 PM\nSUNDAY 10 AM - 2 PM"
+            "hours_of_operation": "<p><strong>HOURS<\/strong><\/p><p>MONDAY 10 AM - 8 PM<br\/>TUESDAY 10 AM - 8 PM<br\/>WEDNESDAY 10 AM - 8 PM<br\/>THURSDAY 10 AM - 8 PM<br\/>FRIDAY 10 AM - 8 PM<br\/>SATURDAY 10 AM - 3 PM<br\/>SUNDAY 10 AM - 2 PM<\/p>"
           }
         },
         "1a8c4063-e670-4c9f-9105-a8548ad7603c": {
