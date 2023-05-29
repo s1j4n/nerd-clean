@@ -330,7 +330,7 @@
         "show_description": false,
         "description_style": "body",
         "products_to_show": 8,
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "full_width": false,
         "view_all_style": "solid",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
