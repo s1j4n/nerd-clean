@@ -163,11 +163,25 @@
       "id": "image_2",
       "label": "t:sections.image-with-text.settings.image.label #2"
     },
-    {
-      "type" : "text",
-      "id" : "text_position",
-      "label":"Text Position",
-      "default" : "left"
+      {
+      "type": "select",
+      "id": "text_position",
+      "options": [
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "left",
+          "label": "left"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.image-with-text.settings.height.options__3.label"
+        }
+      ],
+      "default": "right",
+      "label": "Text Position"
     },
     {
       "type": "select",
