@@ -17,31 +17,19 @@
           "type": "text",
           "label": "Location Name",
           "id": "location_name",
-          "default": "My Location"
+          "default": "Location"
         },
-        {
-          "type": "text",
-          "label": "Address",
-          "id": "address",
-          "default": "486 Evans Avenue Unit 11"
+         {
+          "type": "richtext",
+          "label": "Location Info",
+          "id": "location_info",
+          "default": "<p>abc\ndef\n</p>"
         },
-        {
+         {
           "type": "text",
-          "label": "City",
-          "id": "city",
-          "default": "Etobicoke"
-        },
-        {
-          "type": "text",
-          "label": "Province",
-          "id": "province",
-          "default": "ON"
-        },
-        {
-          "type": "text",
-          "label": "Postal Code",
-          "id": "postal_code",
-          "default": "M8W 2T7"
+          "label": "Hours Title",
+          "id": "hours_title",
+          "default": "Hours"
         },
         {
           "type": "richtext",
@@ -78,9 +66,10 @@
 <section class="location-map-section" style="background-image: url('{{ section.settings.background_image | img_url }}');">
   <div class="location-info">
     <h2>{{ locationInfo.settings.location_name }}</h2>
-    <p>{{ locationInfo.settings.address }}</p>
-    <p>{{ locationInfo.settings.city }}, {{ locationInfo.settings.province }} {{ locationInfo.settings.postal_code }}</p>
-    <p>{{ locationInfo.settings.hours_of_operation }}</p>
+    {{ locationInfo.settings.location_info }}
+
+    <h2>{{ locationInfo.settings.hours_title }}</h2>
+    {{ locationInfo.settings.hours_of_operation }}
   </div>
   <div class="google-map">
     <iframe src="{{ googleMap.settings.map_url }}"></iframe>
