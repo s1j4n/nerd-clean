@@ -226,7 +226,7 @@
 
 .absolute_item__right {
   left: 50%;
-  transform: translateX(-50%);
+/*   transform: translateX(-50%); */
 }
 
 .absolute_item .image-with-text__content {
