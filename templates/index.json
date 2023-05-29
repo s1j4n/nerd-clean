@@ -377,6 +377,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/image_11.png",
         "image_2": "shopify:\/\/shop_images\/primo.png",
+        "text_position": "left",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
