@@ -252,8 +252,8 @@
         "ddb0ee35-6d0d-4737-befd-40b3b81d7c9b": {
           "type": "location",
           "settings": {
-            "location_name": "My Location",
-            "location_info": "<p>abc<br\/>def<br\/><\/p>",
+            "location_name": "Location",
+            "location_info": "<p>abc<br\/>def<\/p>",
             "hours_title": "Hours",
             "hours_of_operation": "<p>MONDAY 10 AM - 8 PM<br\/>TUESDAY 10 AM - 8 PM<br\/>WEDNESDAY 10 AM - 8 PM<br\/>THURSDAY 10 AM - 8 PM<br\/>FRIDAY 10 AM - 8 PM<br\/>SATURDAY 10 AM - 3 PM<br\/>SUNDAY 10 AM - 2 PM<\/p>"
           }
