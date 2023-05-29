@@ -161,29 +161,26 @@
 
 
 /* --------------SECTION WITH MAP--------------- */
-.location-map-section {
+.location-map-section{
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  padding: 3rem auto;
 }
 
-.location-info {
+.location-map-section .location-info{
+  color: #fff;
   width: 30%;
-  padding: 20px;
 }
 
-.google-map {
-  width: 70%;
+.location-info{
+  /* font-weight: bold; */
 }
 
-/* For bigger screens */
-@media screen and (max-width: 990px) {
-  .location-map-section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .location-info,
-  .google-map {
-    width: 100%;
-  }
+.location-info h2{
+  font-weight: bolder;
+  padding-bottom: 10px;
+  color: white;
+  text-transform: uppercase;
 }
