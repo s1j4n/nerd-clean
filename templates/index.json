@@ -16,6 +16,41 @@
         "show_text_below": false
       }
     },
+    "8116c8f1-b49d-4070-9e7a-d9903cd21aff": {
+      "type": "text-with-button",
+      "blocks": {
+        "template--19231783911727__8116c8f1-b49d-4070-9e7a-d9903cd21aff-1685374112cfe815de-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Find The Right Equipment To Suit Your Needs And Fit Your Budget!",
+            "heading_size": "h2"
+          }
+        },
+        "template--19231783911727__8116c8f1-b49d-4070-9e7a-d9903cd21aff-1685374112cfe815de-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19231783911727__8116c8f1-b49d-4070-9e7a-d9903cd21aff-1685374112cfe815de-0",
+        "template--19231783911727__8116c8f1-b49d-4070-9e7a-d9903cd21aff-1685374112cfe815de-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-98a05e94-eb81-4d40-9d93-d40c3f8716f2",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "a20d3441-d401-4506-adae-7e2a8ef51a3b": {
       "type": "featured-collection",
       "settings": {
@@ -40,7 +75,7 @@
         "enable_quick_add": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 36,
+        "padding_top": 20,
         "padding_bottom": 36
       }
     },
@@ -307,52 +342,17 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "8116c8f1-b49d-4070-9e7a-d9903cd21aff": {
-      "type": "text-with-button",
-      "blocks": {
-        "template--19231783911727__8116c8f1-b49d-4070-9e7a-d9903cd21aff-1685374112cfe815de-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Find The Right Equipment To Suit Your Needs And Fit Your Budget!",
-            "heading_size": "h2"
-          }
-        },
-        "template--19231783911727__8116c8f1-b49d-4070-9e7a-d9903cd21aff-1685374112cfe815de-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/all",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--19231783911727__8116c8f1-b49d-4070-9e7a-d9903cd21aff-1685374112cfe815de-0",
-        "template--19231783911727__8116c8f1-b49d-4070-9e7a-d9903cd21aff-1685374112cfe815de-1"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-98a05e94-eb81-4d40-9d93-d40c3f8716f2",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
     "image_banner",
+    "8116c8f1-b49d-4070-9e7a-d9903cd21aff",
     "a20d3441-d401-4506-adae-7e2a8ef51a3b",
     "8d007146-1d08-4398-b4d0-609e7e640ec9",
     "caca1bae-6af5-4e12-ba9b-f6fdcdd3d242",
     "video",
     "0941e916-cf27-4f21-bad1-1552cb2c7e88",
     "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7",
-    "9acd8e6e-82cd-4690-a79d-10ada8cd75cc",
-    "8116c8f1-b49d-4070-9e7a-d9903cd21aff"
+    "9acd8e6e-82cd-4690-a79d-10ada8cd75cc"
   ]
 }
