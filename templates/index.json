@@ -348,11 +348,12 @@
             "button_label": "Button label",
             "link": "",
             "button_style_secondary": false,
+            "transparent_background": true,
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "center",
             "image_overlay_opacity": 50,
-            "color_scheme": "",
+            "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
         },
@@ -365,6 +366,7 @@
             "button_label": "Button label",
             "link": "",
             "button_style_secondary": false,
+            "transparent_background": false,
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "center",
@@ -382,6 +384,7 @@
             "button_label": "Button label",
             "link": "",
             "button_style_secondary": false,
+            "transparent_background": false,
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "center",
@@ -397,7 +400,6 @@
         "3a960151-fd04-4b96-aec2-d4eadd669cee"
       ],
       "settings": {
-        "show_slideshow_text": true,
         "layout": "full_bleed",
         "slide_height": "medium",
         "slider_visual": "counter",
