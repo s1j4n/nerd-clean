@@ -2,9 +2,13 @@
  */
 
 .nerd-container{
- 
   padding: 2rem;
 }
+
+.nerd-container li{
+  width: 100%;
+}
+
 .nerd-testimonial{
       display: flex;
     flex-direction: column;
