@@ -186,13 +186,20 @@
       "info": "t:sections.collection-list.settings.image_ratio.info"
     },
     {
-      "type": "range",
+      "type": "radio",
       "id": "columns_desktop",
-      "min": 1,
-      "max": 5,
-      "step": 1,
-      "default": 3,
-      "label": "t:sections.collection-list.settings.columns_desktop.label"
+      "default": "3",
+      "label": "t:sections.collection-list.settings.columns_desktop.label",
+      "options": [
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ]
     },
     {
       "type": "color_scheme",
@@ -200,12 +207,6 @@
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info",
       "default": "background-1"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_view_all",
-      "default": false,
-      "label": "t:sections.collection-list.settings.show_view_all.label"
     },
     {
       "type": "header",
