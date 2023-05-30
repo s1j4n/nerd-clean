@@ -87,7 +87,7 @@
                 style="--animation-order: {{ forloop.index }};"
               {% endif %}
             >
-               <img src={{ image | img_url: width: 1000 }} height="1000" style="height: 100%; width: 100%"  />
+               <img src={{ image | img_url: width: 1000 }} height={{ image.height }} width={{ image.width }}  style="height: 100%; width: 100%"  />
             </li>
           {%- else -%}
             {%- for i in (1..4) -%}
