@@ -336,74 +336,78 @@
         "padding_bottom": 0
       }
     },
-    "e488ed6b-93d4-42fd-9778-c43f800e5e49": {
-      "type": "featured-product",
+    "c55c473c-5066-49fa-a416-219b19a2c310": {
+      "type": "image-slider",
       "blocks": {
-        "template--19231783911727__e488ed6b-93d4-42fd-9778-c43f800e5e49-1685443048519c8887-0": {
-          "type": "text",
+        "template--19231783911727__c55c473c-5066-49fa-a416-219b19a2c310-168544351064cedd7c-0": {
+          "type": "slide",
           "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
+            "image": "shopify:\/\/shop_images\/hand-wraps.png",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
           }
         },
-        "template--19231783911727__e488ed6b-93d4-42fd-9778-c43f800e5e49-1685443048519c8887-1": {
-          "type": "title",
+        "template--19231783911727__c55c473c-5066-49fa-a416-219b19a2c310-168544351064cedd7c-1": {
+          "type": "slide",
           "settings": {
-            "heading_size": "h1"
+            "image": "shopify:\/\/shop_images\/Image2_1.png",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
           }
         },
-        "template--19231783911727__e488ed6b-93d4-42fd-9778-c43f800e5e49-1685443048519c8887-2": {
-          "type": "price",
+        "5fdd62a7-c834-4f54-b48e-31932be4d7fe": {
+          "type": "slide",
           "settings": {
-          }
-        },
-        "template--19231783911727__e488ed6b-93d4-42fd-9778-c43f800e5e49-1685443048519c8887-3": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "template--19231783911727__e488ed6b-93d4-42fd-9778-c43f800e5e49-1685443048519c8887-4": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "template--19231783911727__e488ed6b-93d4-42fd-9778-c43f800e5e49-1685443048519c8887-5": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "template--19231783911727__e488ed6b-93d4-42fd-9778-c43f800e5e49-1685443048519c8887-6": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
+            "image": "shopify:\/\/shop_images\/primo.png",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "template--19231783911727__e488ed6b-93d4-42fd-9778-c43f800e5e49-1685443048519c8887-0",
-        "template--19231783911727__e488ed6b-93d4-42fd-9778-c43f800e5e49-1685443048519c8887-1",
-        "template--19231783911727__e488ed6b-93d4-42fd-9778-c43f800e5e49-1685443048519c8887-2",
-        "template--19231783911727__e488ed6b-93d4-42fd-9778-c43f800e5e49-1685443048519c8887-3",
-        "template--19231783911727__e488ed6b-93d4-42fd-9778-c43f800e5e49-1685443048519c8887-4",
-        "template--19231783911727__e488ed6b-93d4-42fd-9778-c43f800e5e49-1685443048519c8887-5",
-        "template--19231783911727__e488ed6b-93d4-42fd-9778-c43f800e5e49-1685443048519c8887-6"
+        "template--19231783911727__c55c473c-5066-49fa-a416-219b19a2c310-168544351064cedd7c-0",
+        "template--19231783911727__c55c473c-5066-49fa-a416-219b19a2c310-168544351064cedd7c-1",
+        "5fdd62a7-c834-4f54-b48e-31932be4d7fe"
       ],
       "settings": {
-        "product": "champion-boxing-gloves",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     }
   },
@@ -417,6 +421,6 @@
     "9acd8e6e-82cd-4690-a79d-10ada8cd75cc",
     "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7",
     "4b6c20d3-851a-407e-a6dd-12090af60b21",
-    "e488ed6b-93d4-42fd-9778-c43f800e5e49"
+    "c55c473c-5066-49fa-a416-219b19a2c310"
   ]
 }
