@@ -247,33 +247,6 @@
         "padding_bottom": 0
       }
     },
-    "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7": {
-      "type": "contact-with-map",
-      "blocks": {
-        "ddb0ee35-6d0d-4737-befd-40b3b81d7c9b": {
-          "type": "location",
-          "settings": {
-            "location_name": "Location",
-            "location_info": "<p>Test Location<\/p>",
-            "hours_title": "Hours",
-            "hours_of_operation": "<p>MONDAY 10 AM - 8 PM<br\/>TUESDAY 10 AM - 8 PM<br\/>WEDNESDAY 10 AM - 8 PM<br\/>THURSDAY 10 AM - 8 PM<br\/>FRIDAY 10 AM - 8 PM<br\/>SATURDAY 10 AM - 3 PM<br\/>SUNDAY 10 AM - 2 PM<\/p>"
-          }
-        },
-        "1a8c4063-e670-4c9f-9105-a8548ad7603c": {
-          "type": "google_map",
-          "settings": {
-            "map_url": "https:\/\/maps.google.com\/maps?q=Toronto,ON,Canada&output=embed"
-          }
-        }
-      },
-      "block_order": [
-        "ddb0ee35-6d0d-4737-befd-40b3b81d7c9b",
-        "1a8c4063-e670-4c9f-9105-a8548ad7603c"
-      ],
-      "settings": {
-        "background_image": "shopify:\/\/shop_images\/image_11_65dd325b-1ceb-4da8-8d74-a75cdb4d2823.png"
-      }
-    },
     "9acd8e6e-82cd-4690-a79d-10ada8cd75cc": {
       "type": "products-slider",
       "blocks": {
@@ -328,8 +301,8 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "products_to_show": 8,
-        "columns_desktop": 4,
+        "products_to_show": 3,
+        "columns_desktop": 3,
         "full_width": false,
         "view_all_style": "solid",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
@@ -343,6 +316,33 @@
         "padding_top": 36,
         "padding_bottom": 0
       }
+    },
+    "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7": {
+      "type": "contact-with-map",
+      "blocks": {
+        "ddb0ee35-6d0d-4737-befd-40b3b81d7c9b": {
+          "type": "location",
+          "settings": {
+            "location_name": "Location",
+            "location_info": "<p>Test Location<\/p>",
+            "hours_title": "Hours",
+            "hours_of_operation": "<p>MONDAY 10 AM - 8 PM<br\/>TUESDAY 10 AM - 8 PM<br\/>WEDNESDAY 10 AM - 8 PM<br\/>THURSDAY 10 AM - 8 PM<br\/>FRIDAY 10 AM - 8 PM<br\/>SATURDAY 10 AM - 3 PM<br\/>SUNDAY 10 AM - 2 PM<\/p>"
+          }
+        },
+        "1a8c4063-e670-4c9f-9105-a8548ad7603c": {
+          "type": "google_map",
+          "settings": {
+            "map_url": "https:\/\/maps.google.com\/maps?q=Toronto,ON,Canada&output=embed"
+          }
+        }
+      },
+      "block_order": [
+        "ddb0ee35-6d0d-4737-befd-40b3b81d7c9b",
+        "1a8c4063-e670-4c9f-9105-a8548ad7603c"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/image_11_65dd325b-1ceb-4da8-8d74-a75cdb4d2823.png"
+      }
     }
   },
   "order": [
@@ -353,7 +353,7 @@
     "caca1bae-6af5-4e12-ba9b-f6fdcdd3d242",
     "video",
     "0941e916-cf27-4f21-bad1-1552cb2c7e88",
-    "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7",
-    "9acd8e6e-82cd-4690-a79d-10ada8cd75cc"
+    "9acd8e6e-82cd-4690-a79d-10ada8cd75cc",
+    "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7"
   ]
 }
