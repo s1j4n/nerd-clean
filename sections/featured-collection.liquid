@@ -38,27 +38,26 @@
 
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
-  if section.settings.display_style == "slider" and products_to_display > columns_mobile_int
+  if section.settings.display_style == 'slider' and products_to_display > columns_mobile_int
     assign show_mobile_slider = true
   endif
 
   assign show_desktop_slider = false
-  if section.settings.display_style == "slider" and products_to_display > section.settings.columns_desktop
+  if section.settings.display_style == 'slider' and products_to_display > section.settings.columns_desktop
     assign show_desktop_slider = true
   endif
 
-  assign buttons_position = "center"
-  if section.settings.buttons_position == "left"
-    assign buttons_position = "start"
-  elsif section.settings.buttons_position == "right"
-    assign buttons_position = "end"
+  assign buttons_position = 'center'
+  if section.settings.buttons_position == 'left'
+    assign buttons_position = 'start'
+  elsif section.settings.buttons_position == 'right'
+    assign buttons_position = 'end'
   endif
-  
 -%}
 
-  <div class="color-{{ section.settings.color_scheme }} isolate gradient">
-    <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
-      <div class="featured-collection-custom">
+<div class="color-{{ section.settings.color_scheme }} isolate gradient">
+  <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
+    <div class="featured-collection-custom">
       <div class="collection__title title-wrapper title-wrapper--no-top-margin {% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
         {%- if section.settings.title != blank -%}
           <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -129,7 +128,14 @@
               aria-label="{{ 'general.slider.previous_slide' | t }}"
               aria-controls="Slider-{{ section.id }}"
             >
-              {% render 'icon-caret' %}
+              {% if section.settings.buttons_style == 'arrow' %}
+                <div>
+                  {% render 'icon-arrow' %}
+                </div>
+
+              {% else %}
+                {% render 'icon-caret' %}
+              {% endif %}
             </button>
             <div class="slider-counter caption">
               <span class="slider-counter--current">1</span>
@@ -144,7 +150,14 @@
               aria-label="{{ 'general.slider.next_slide' | t }}"
               aria-controls="Slider-{{ section.id }}"
             >
-              {% render 'icon-caret' %}
+              {% if section.settings.buttons_style == 'arrow' %}
+                <div>
+                  {% render 'icon-arrow' %}
+                </div>
+
+              {% else %}
+                {% render 'icon-caret' %}
+              {% endif %}
             </button>
           </div>
         {%- endif -%}
@@ -226,24 +239,20 @@
     },
     {
       "type" : "radio",
-      "id" : "buttons_position",
-      "default" : "center",
-      "label" : "Buttons Position",
+      "id" : "buttons_style",
+      "default" : "arrow",
+      "label" : "Buttons Style",
       "options": [
         {
-          "value": "center",
-          "label": "Center"
+          "value": "catet",
+          "label": "Caret"
         },
         {
-          "value": "right",
-          "label": "Right"
-        },
-         {
-          "value": "left",
-          "label": "Left"
+          "value": "arrow",
+          "label": "Arrow"
         }
       ]
-      
+
     },
     {
       "type": "range",
@@ -393,7 +402,7 @@
         }
       ]
     },
- 
+
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
