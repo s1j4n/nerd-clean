@@ -39,6 +39,18 @@
   overflow: hidden;
 }
 
+.slider-buttons.justify-center{
+  justify-content: center;
+}
+
+.slider-buttons.justify-start{
+  justify-content: flex-start
+}
+
+.slider-buttons.justify-end{
+  justify-content: flex-end;
+}
+
 @media screen and (min-width: 750px) and (max-width: 990px) {
   .grid__item.slider__slide,
   .collection-list__item.grid__item.slider__slide {
@@ -247,3 +259,5 @@
     transform: translateY(-50%);
   }
 }
+
+
