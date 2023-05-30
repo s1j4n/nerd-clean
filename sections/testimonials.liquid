@@ -21,7 +21,7 @@
              <div class="nerd-testimonial">
                {% if block.settings.image %}
                  {% assign image = block.settings.image %}
-                 {{ image | image_url: width: 200 | image_tag: class: 'nerd-testimonial--image', loading: 'lazy' }}
+                 {{ image | image_url: width: 100 | image_tag: class: 'nerd-testimonial--image', loading: 'lazy' }}
                  {% else %}
                  {{ 'product-1' | placeholder_svg_tag: "nerd-testimonial--image" }}
                 {% endif %}
