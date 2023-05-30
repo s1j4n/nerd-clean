@@ -195,25 +195,38 @@
       "label": "t:sections.featured-collection.settings.show_description.label",
       "default": false
     },
-    {
+     {
       "type": "select",
-      "id": "description_style",
-      "label": "t:sections.featured-collection.settings.description_style.label",
+      "id": "display_style",
+      "default": "slider",
+      "label": "Display Style",
       "options": [
         {
-          "value": "body",
-          "label": "t:sections.featured-collection.settings.description_style.options__1.label"
+          "value": "slider",
+          "label": "Slider"
         },
         {
-          "value": "subtitle",
-          "label": "t:sections.featured-collection.settings.description_style.options__2.label"
-        },
-        {
-          "value": "uppercase",
-          "label": "t:sections.featured-collection.settings.description_style.options__3.label"
+          "value": "grid",
+          "label": "Grid"
         }
-      ],
-      "default": "body"
+      ]
+    },
+    {
+      "type" : "radio",
+      "id" : "buttons_style",
+      "default" : "arrow",
+      "label" : "Buttons Style",
+      "options": [
+        {
+          "value": "catet",
+          "label": "Caret"
+        },
+        {
+          "value": "arrow",
+          "label": "Arrow"
+        }
+      ]
+
     },
  
     {
@@ -378,39 +391,7 @@
         }
       ]
     },
-    {
-      "type": "select",
-      "id": "display_style",
-      "default": "slider",
-      "label": "Display Style",
-      "options": [
-        {
-          "value": "slider",
-          "label": "Slider"
-        },
-        {
-          "value": "grid",
-          "label": "Grid"
-        }
-      ]
-    },
-    {
-      "type" : "radio",
-      "id" : "buttons_style",
-      "default" : "arrow",
-      "label" : "Buttons Style",
-      "options": [
-        {
-          "value": "catet",
-          "label": "Caret"
-        },
-        {
-          "value": "arrow",
-          "label": "Arrow"
-        }
-      ]
-
-    },
+   
  
     {
       "type": "header",
