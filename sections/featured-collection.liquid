@@ -46,6 +46,14 @@
   if section.settings.display_style == "slider" and products_to_display > section.settings.columns_desktop
     assign show_desktop_slider = true
   endif
+
+  assign buttons_position = "center"
+  if section.settings.buttons_position == "left"
+    assign buttons_position = "start"
+  elsif section.settings.buttons_position == "right"
+    assign buttons_position = "end"
+  endif
+  
 -%}
 
   <div class="color-{{ section.settings.color_scheme }} isolate gradient">
@@ -113,7 +121,7 @@
           {%- endfor -%}
         </ul>
         {%- if show_mobile_slider or show_desktop_slider -%}
-          <div class="slider-buttons no-js-hidden">
+          <div class="slider-buttons no-js-hidden justify-{{ buttons_position }} ">
             <button
               type="button"
               class="slider-button slider-button--prev"
@@ -220,7 +228,7 @@
       "type" : "radio",
       "id" : "buttons_position",
       "default" : "center",
-      "label" : "Buttons",
+      "label" : "Buttons Position",
       "options": [
         {
           "value": "center",
