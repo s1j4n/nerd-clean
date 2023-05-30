@@ -114,7 +114,7 @@
         "image": "shopify:\/\/shop_images\/BG_2_1.png",
         "image_2": "shopify:\/\/shop_images\/primo.png",
         "text_position": "left",
-        "height": "medium",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
