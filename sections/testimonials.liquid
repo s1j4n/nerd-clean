@@ -9,7 +9,7 @@
           aria-label="{{ 'general.slider.name' | t }}"
         >
            {% for block in section.blocks %}
-          {% assign image = block.settings.image %}
+           <div>Absolutely Incredible</div>
             <li
               id="Slide-{{ section.id }}-{{ forloop.index }}"
               class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -55,8 +55,6 @@
             <div class="slider-counter caption">
               <span class="slider-counter--current">1</span>
               <span aria-hidden="true"> / </span>
-              <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-              <span class="slider-counter--total">{{ products_to_display }}</span>
             </div>
             <button
               type="button"
@@ -84,7 +82,20 @@
 {% schema %}
   {
     "name": "Testimonials",
-    "settings": []
+    "settings": [],
+    "blocks" : [
+       {
+        "type": "image_picker",
+        "name": "image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
