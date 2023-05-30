@@ -418,10 +418,42 @@
             "name": "",
             "comment": ""
           }
+        },
+        "248dea53-89c4-4962-be4d-c20086c368b7": {
+          "type": "testimonial",
+          "settings": {
+            "name": "",
+            "comment": ""
+          }
+        },
+        "4f310e4a-d5b2-45bb-a77a-773958a10af6": {
+          "type": "testimonial",
+          "settings": {
+            "name": "",
+            "comment": ""
+          }
+        },
+        "b2595534-6c54-4c0e-a668-3d589fdce849": {
+          "type": "testimonial",
+          "settings": {
+            "name": "",
+            "comment": ""
+          }
+        },
+        "f68e7516-db46-43c2-a3c3-e963f6c3845b": {
+          "type": "testimonial",
+          "settings": {
+            "name": "",
+            "comment": ""
+          }
         }
       },
       "block_order": [
-        "4a1fa944-c4b1-4dd5-9dfb-d521e9304a59"
+        "4a1fa944-c4b1-4dd5-9dfb-d521e9304a59",
+        "248dea53-89c4-4962-be4d-c20086c368b7",
+        "4f310e4a-d5b2-45bb-a77a-773958a10af6",
+        "b2595534-6c54-4c0e-a668-3d589fdce849",
+        "f68e7516-db46-43c2-a3c3-e963f6c3845b"
       ],
       "settings": {
       }
