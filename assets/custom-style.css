@@ -34,6 +34,9 @@
     font-weight: 600;
     text-transform: uppercase;
 }
+.nerd-text-small{
+  text-align: center;
+}
 
 .image-hw-full{
   width: 100%;
