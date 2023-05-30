@@ -26,10 +26,10 @@
                  {{ 'product-1' | placeholder_svg_tag: "nerd-testimonial--image" }}
                 {% endif %}
                 <div class="nerd-title-small">
-                  John Doe
+                  {{ section.settings.name }}
                 </div>
                <div class="nerd-text-small italic">
-                  "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" 
+                  "{{ section.settings.comment }}" 
                 </div>
               </div>
             </li>
@@ -110,12 +110,14 @@
           {
              "type": "text",
             "id": "name",
-            "label": "name"
+            "label": "name",
+            "default" : "John Doe"
           },
           {
              "type": "richtext",
             "id": "comment",
-            "label": "comment"
+            "label": "comment",
+            "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
           }
         ]
       }
