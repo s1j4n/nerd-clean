@@ -51,6 +51,11 @@
   justify-content: flex-end;
 }
 
+.slider-button--prev .arrow-icon{
+  transform: rotate(90deg)
+}
+
+
 @media screen and (min-width: 750px) and (max-width: 990px) {
   .grid__item.slider__slide,
   .collection-list__item.grid__item.slider__slide {
