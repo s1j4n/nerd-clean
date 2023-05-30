@@ -201,52 +201,6 @@
         "padding_bottom": 0
       }
     },
-    "0941e916-cf27-4f21-bad1-1552cb2c7e88": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--19231783911727__0941e916-cf27-4f21-bad1-1552cb2c7e88-16851031936813bb21-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>TORONTO'S NEWEST MARTIAL ATRS EQUIPMENT STORE.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--19231783911727__0941e916-cf27-4f21-bad1-1552cb2c7e88-16851031936813bb21-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>We are a team of lifelong martial artists who will help you find the right equipment to suit your needs and fit your budget. <\/strong>",
-            "heading_size": "h1"
-          }
-        },
-        "template--19231783911727__0941e916-cf27-4f21-bad1-1552cb2c7e88-16851031936813bb21-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop now",
-            "button_color": "#661116",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        }
-      },
-      "block_order": [
-        "template--19231783911727__0941e916-cf27-4f21-bad1-1552cb2c7e88-16851031936813bb21-1",
-        "template--19231783911727__0941e916-cf27-4f21-bad1-1552cb2c7e88-16851031936813bb21-0",
-        "template--19231783911727__0941e916-cf27-4f21-bad1-1552cb2c7e88-16851031936813bb21-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Image2_1.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "9acd8e6e-82cd-4690-a79d-10ada8cd75cc": {
       "type": "products-slider",
       "blocks": {
@@ -301,7 +255,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "products_to_show": 3,
+        "products_to_show": 10,
         "columns_desktop": 3,
         "full_width": false,
         "view_all_style": "solid",
@@ -343,6 +297,53 @@
       "settings": {
         "background_image": "shopify:\/\/shop_images\/image_11_65dd325b-1ceb-4da8-8d74-a75cdb4d2823.png"
       }
+    },
+    "4b6c20d3-851a-407e-a6dd-12090af60b21": {
+      "type": "images-with-text",
+      "blocks": {
+        "template--19231783911727__4b6c20d3-851a-407e-a6dd-12090af60b21-168541329055a7c83c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>TORONTO'S NEWEST MARTIAL ARTS EQUIPMENT STORE<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--19231783911727__4b6c20d3-851a-407e-a6dd-12090af60b21-168541329055a7c83c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>WE ARE A TEAM OF LIFELONG MARTIAL ARTISTS WHO WILL HELP YOU FIND THE RIGHT EQUIPMENT TO SUIT YOUR NEEDS AND FIT YOUR BUDGET.<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "template--19231783911727__4b6c20d3-851a-407e-a6dd-12090af60b21-168541329055a7c83c-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "shop now",
+            "button_color": "#661116",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "template--19231783911727__4b6c20d3-851a-407e-a6dd-12090af60b21-168541329055a7c83c-1",
+        "template--19231783911727__4b6c20d3-851a-407e-a6dd-12090af60b21-168541329055a7c83c-0",
+        "template--19231783911727__4b6c20d3-851a-407e-a6dd-12090af60b21-168541329055a7c83c-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Image2_1.png",
+        "image_2": "shopify:\/\/shop_images\/BG_2_1.png",
+        "text_position": "right",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -352,8 +353,8 @@
     "24423574-5f40-408d-824b-a82b27f6a523",
     "caca1bae-6af5-4e12-ba9b-f6fdcdd3d242",
     "video",
-    "0941e916-cf27-4f21-bad1-1552cb2c7e88",
     "9acd8e6e-82cd-4690-a79d-10ada8cd75cc",
-    "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7"
+    "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7",
+    "4b6c20d3-851a-407e-a6dd-12090af60b21"
   ]
 }
