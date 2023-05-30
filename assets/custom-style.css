@@ -52,7 +52,10 @@
 }
 
 .slider-button--prev .arrow-icon{
-  transform: rotate(90deg)
+      transform: rotate(90deg);
+    border: 1px solid;
+    padding: 4px;
+    border-radius: 50%;
 }
 
 
