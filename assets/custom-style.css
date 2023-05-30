@@ -6,14 +6,15 @@
   padding: 2rem;
 }
 .nerd-testimonial{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 1rem;
-  border-radius: 10px;
-  background: #aeaeae;
-  gap: 1rem;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #aeaeae;
+    gap: 1rem;
+    margin: 0 auto;
 }
 
 
