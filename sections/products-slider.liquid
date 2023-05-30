@@ -121,7 +121,14 @@
               aria-label="{{ 'general.slider.previous_slide' | t }}"
               aria-controls="Slider-{{ section.id }}"
             >
-              {% render 'icon-caret' %}
+               {% if section.settings.buttons_style == 'arrow' %}
+                <div class="arrow-icon">
+                  {% render 'icon-arrow' %}
+                </div>
+
+              {% else %}
+                {% render 'icon-caret' %}
+              {% endif %}
             </button>
             <div class="slider-counter caption">
               <span class="slider-counter--current">1</span>
@@ -136,7 +143,14 @@
               aria-label="{{ 'general.slider.next_slide' | t }}"
               aria-controls="Slider-{{ section.id }}"
             >
-              {% render 'icon-caret' %}
+                {% if section.settings.buttons_style == 'arrow' %}
+                <div class="arrow-icon">
+                  {% render 'icon-arrow' %}
+                </div>
+
+              {% else %}
+                {% render 'icon-caret' %}
+              {% endif %}
             </button>
           </div>
         {%- endif -%}
