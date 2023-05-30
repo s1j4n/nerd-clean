@@ -51,11 +51,8 @@
   justify-content: flex-end;
 }
 
-.slider-button--prev .arrow-icon{
+.slider-button--prev .arrow-icon,.slider-button--next .arrow-icon{
       transform: rotate(90deg);
-    border: 1px solid;
-    padding: 4px;
-    border-radius: 50%;
 }
 
 
