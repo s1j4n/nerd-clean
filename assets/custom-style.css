@@ -29,6 +29,11 @@
   border-radius: 50%;
 }
 
+.nerd-title-small{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
 .image-hw-full{
   width: 100%;
