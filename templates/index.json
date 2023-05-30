@@ -336,13 +336,29 @@
         "padding_bottom": 0
       }
     },
-    "c55c473c-5066-49fa-a416-219b19a2c310": {
+    "35e1e5d2-8d6c-4708-8206-d418bc3b810a": {
       "type": "image-slider",
       "blocks": {
-        "template--19231783911727__c55c473c-5066-49fa-a416-219b19a2c310-168544351064cedd7c-0": {
+        "template--19231783911727__35e1e5d2-8d6c-4708-8206-d418bc3b810a-1685444098db098f73-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hand-wraps.png",
+            "heading": "Heading",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 50,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--19231783911727__35e1e5d2-8d6c-4708-8206-d418bc3b810a-1685444098db098f73-1": {
+          "type": "slide",
+          "settings": {
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -352,33 +368,14 @@
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "center",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 50,
             "color_scheme": "",
             "text_alignment_mobile": "center"
           }
         },
-        "template--19231783911727__c55c473c-5066-49fa-a416-219b19a2c310-168544351064cedd7c-1": {
+        "3a960151-fd04-4b96-aec2-d4eadd669cee": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Image2_1.png",
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "5fdd62a7-c834-4f54-b48e-31932be4d7fe": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/primo.png",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -395,15 +392,16 @@
         }
       },
       "block_order": [
-        "template--19231783911727__c55c473c-5066-49fa-a416-219b19a2c310-168544351064cedd7c-0",
-        "template--19231783911727__c55c473c-5066-49fa-a416-219b19a2c310-168544351064cedd7c-1",
-        "5fdd62a7-c834-4f54-b48e-31932be4d7fe"
+        "template--19231783911727__35e1e5d2-8d6c-4708-8206-d418bc3b810a-1685444098db098f73-0",
+        "template--19231783911727__35e1e5d2-8d6c-4708-8206-d418bc3b810a-1685444098db098f73-1",
+        "3a960151-fd04-4b96-aec2-d4eadd669cee"
       ],
       "settings": {
+        "show_slideshow_text": true,
         "layout": "full_bleed",
         "slide_height": "medium",
         "slider_visual": "counter",
-        "auto_rotate": true,
+        "auto_rotate": false,
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
@@ -421,6 +419,6 @@
     "9acd8e6e-82cd-4690-a79d-10ada8cd75cc",
     "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7",
     "4b6c20d3-851a-407e-a6dd-12090af60b21",
-    "c55c473c-5066-49fa-a416-219b19a2c310"
+    "35e1e5d2-8d6c-4708-8206-d418bc3b810a"
   ]
 }
