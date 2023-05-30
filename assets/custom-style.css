@@ -1,6 +1,13 @@
 /* -------GLOBAL-----------
  */
 
+.nerd-container{
+  max-width: 96rem;
+  padding: 2rem;
+}
+
+
+
 .image-hw-full{
   width: 100%;
   height: 100%;
