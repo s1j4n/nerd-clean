@@ -63,6 +63,15 @@
   background: transparent;
 }
 
+.slideshow-controls{
+      position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    z-index: 100;
+}
+
 @media screen and (min-width: 750px) and (max-width: 990px) {
   .grid__item.slider__slide,
   .collection-list__item.grid__item.slider__slide {
