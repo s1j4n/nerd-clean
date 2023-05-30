@@ -415,6 +415,7 @@
         "4a1fa944-c4b1-4dd5-9dfb-d521e9304a59": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify:\/\/shop_images\/primo.png",
             "name": "",
             "comment": ""
           }
