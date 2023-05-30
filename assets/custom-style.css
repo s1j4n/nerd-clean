@@ -1,6 +1,10 @@
 /* -------GLOBAL-----------
  */
 
+.image-w-full{
+  width: 100%;
+}
+
 .card__heading.h5,
 .card__heading {
   font-size: 2rem;
