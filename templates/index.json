@@ -380,15 +380,29 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Image2_1.png"
           }
+        },
+        "b2ff1a82-7d07-40d1-bf9c-bae33f8b44e0": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/primo.png"
+          }
+        },
+        "0f3ab35a-d996-46e7-9c3b-8f5f89b2a7ab": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/primo.png"
+          }
         }
       },
       "block_order": [
         "25524444-33dc-4f4e-9c59-1a56ffaf9f51",
         "5dcf801e-ae5d-46c0-b053-8e0904d4e056",
-        "03d8b37b-12e8-4f75-aed5-cea7df947381"
+        "03d8b37b-12e8-4f75-aed5-cea7df947381",
+        "b2ff1a82-7d07-40d1-bf9c-bae33f8b44e0",
+        "0f3ab35a-d996-46e7-9c3b-8f5f89b2a7ab"
       ],
       "settings": {
-        "title": "Featured collection",
+        "title": "Featured Images",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
