@@ -269,13 +269,7 @@
     "groups": ["header", "footer"]
   },
   "settings": [
-    {
-      "type" : "checkbox",
-      "id": "show_slideshow_text",
-      "label" : "Show Slideshow Text",
-      "default" : true
-      
-    },
+    
     {
       "type": "select",
       "id": "layout",
@@ -400,6 +394,7 @@
       "name": "t:sections.slideshow.blocks.slide.name",
       "limit": 5,
       "settings": [
+        
         {
           "type": "image_picker",
           "id": "image",
@@ -454,6 +449,11 @@
           "id": "button_style_secondary",
           "label": "t:sections.slideshow.blocks.slide.settings.secondary_style.label",
           "default": false
+        },{
+          "type" : "checkbox",
+          "id" : "transparent_background",
+          "label" : "Transparent Background",
+          "default" : false
         },
         {
           "type": "select",
