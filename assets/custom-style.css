@@ -63,7 +63,7 @@
   background: transparent;
 }
 
-.slideshow-controls{
+.slideshow__controls.slider-buttons{
       position: absolute;
     width: 100%;
     display: flex;
