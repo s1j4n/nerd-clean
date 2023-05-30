@@ -128,6 +128,13 @@
   border-radius: 5px;
 }
 
+  @media screen and (min-width: 750px) and (max-width: 989px){
+.slider--tablet.grid--peek .grid__item:first-of-type {
+    margin-left: 0;
+;
+}
+  }
+
 @media screen and (min-width: 750px) and (max-width: 990px) {
   .grid__item.slider__slide,
   .collection-list__item.grid__item.slider__slide {
