@@ -5,6 +5,12 @@
   padding: 2rem;
 }
 
+.nerd-title{
+  font-size: 3rem;
+  font-weight: bold;
+  
+}
+
 .nerd-container li{
   width: 100%;
   margin: 0;
