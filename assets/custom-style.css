@@ -1,6 +1,11 @@
 /* -------GLOBAL-----------
  */
 
+.title.inline-richtext.h1{
+  text-align: center;
+}
+
+
 .nerd-container{
   padding: 2rem;
 }
