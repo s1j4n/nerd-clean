@@ -33,17 +33,16 @@
 
   if section.blocks.size > section.settings.products_to_show
     assign products_to_display = section.settings.products_to_show
-    assign more_in_collection = true
   endif
 
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
-  if  products_to_display > columns_mobile_int
+  if  products_to_display > columns_mobile_int and section.settings.display_style == "slider"
     assign show_mobile_slider = true
   endif
 
   assign show_desktop_slider = false
-  if products_to_display > section.settings.columns_desktop
+  if products_to_display > section.settings.columns_desktop and section.settings.display_style == "slider"
     assign show_desktop_slider = true
   endif
 -%}
@@ -378,6 +377,39 @@
           "label": "t:sections.featured-collection.settings.columns_mobile.options__2.label"
         }
       ]
+    },
+    {
+      "type": "select",
+      "id": "display_style",
+      "default": "slider",
+      "label": "Display Style",
+      "options": [
+        {
+          "value": "slider",
+          "label": "Slider"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ]
+    },
+    {
+      "type" : "radio",
+      "id" : "buttons_style",
+      "default" : "arrow",
+      "label" : "Buttons Style",
+      "options": [
+        {
+          "value": "catet",
+          "label": "Caret"
+        },
+        {
+          "value": "arrow",
+          "label": "Arrow"
+        }
+      ]
+
     },
  
     {
