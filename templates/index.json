@@ -409,53 +409,8 @@
         "padding_bottom": 36
       }
     },
-    "cac3aa87-9dd9-4491-9051-6fe7ede60fac": {
+    "0deeccff-e872-43de-b35d-46b627d715b7": {
       "type": "testimonials",
-      "blocks": {
-        "4a1fa944-c4b1-4dd5-9dfb-d521e9304a59": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/primo.png",
-            "name": "",
-            "comment": ""
-          }
-        },
-        "248dea53-89c4-4962-be4d-c20086c368b7": {
-          "type": "testimonial",
-          "settings": {
-            "name": "",
-            "comment": ""
-          }
-        },
-        "4f310e4a-d5b2-45bb-a77a-773958a10af6": {
-          "type": "testimonial",
-          "settings": {
-            "name": "",
-            "comment": ""
-          }
-        },
-        "b2595534-6c54-4c0e-a668-3d589fdce849": {
-          "type": "testimonial",
-          "settings": {
-            "name": "",
-            "comment": ""
-          }
-        },
-        "f68e7516-db46-43c2-a3c3-e963f6c3845b": {
-          "type": "testimonial",
-          "settings": {
-            "name": "",
-            "comment": ""
-          }
-        }
-      },
-      "block_order": [
-        "4a1fa944-c4b1-4dd5-9dfb-d521e9304a59",
-        "248dea53-89c4-4962-be4d-c20086c368b7",
-        "4f310e4a-d5b2-45bb-a77a-773958a10af6",
-        "b2595534-6c54-4c0e-a668-3d589fdce849",
-        "f68e7516-db46-43c2-a3c3-e963f6c3845b"
-      ],
       "settings": {
       }
     }
@@ -472,6 +427,6 @@
     "4b6c20d3-851a-407e-a6dd-12090af60b21",
     "35e1e5d2-8d6c-4708-8206-d418bc3b810a",
     "eb1822e9-c0f0-4a26-a079-cc3ed3a4761c",
-    "cac3aa87-9dd9-4491-9051-6fe7ede60fac"
+    "0deeccff-e872-43de-b35d-46b627d715b7"
   ]
 }
