@@ -126,52 +126,6 @@
         "padding_bottom": 0
       }
     },
-    "8d007146-1d08-4398-b4d0-609e7e640ec9": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--19231783911727__8d007146-1d08-4398-b4d0-609e7e640ec9-168510868929652985-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>OFFICIAL CANADIAN DISTRIBUTOR of<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--19231783911727__8d007146-1d08-4398-b4d0-609e7e640ec9-168510868929652985-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>PRIMO FIGHTWEAR CANADA<\/strong>",
-            "heading_size": "h0"
-          }
-        },
-        "template--19231783911727__8d007146-1d08-4398-b4d0-609e7e640ec9-168510868929652985-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP NOW",
-            "button_color": "#661116",
-            "button_link": "shopify:\/\/collections\/all"
-          }
-        }
-      },
-      "block_order": [
-        "template--19231783911727__8d007146-1d08-4398-b4d0-609e7e640ec9-168510868929652985-1",
-        "template--19231783911727__8d007146-1d08-4398-b4d0-609e7e640ec9-168510868929652985-0",
-        "template--19231783911727__8d007146-1d08-4398-b4d0-609e7e640ec9-168510868929652985-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/primo.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "caca1bae-6af5-4e12-ba9b-f6fdcdd3d242": {
       "type": "collection-list",
       "blocks": {
@@ -396,7 +350,6 @@
     "8116c8f1-b49d-4070-9e7a-d9903cd21aff",
     "a20d3441-d401-4506-adae-7e2a8ef51a3b",
     "24423574-5f40-408d-824b-a82b27f6a523",
-    "8d007146-1d08-4398-b4d0-609e7e640ec9",
     "caca1bae-6af5-4e12-ba9b-f6fdcdd3d242",
     "video",
     "0941e916-cf27-4f21-bad1-1552cb2c7e88",
