@@ -87,7 +87,14 @@
             name="previous"
             aria-label="{{ 'general.slider.previous_slide' | t }}"
           >
-            {% render 'icon-caret' %}
+           {% if section.settings.buttons_style == 'arrow' %}
+                <div class="arrow-icon">
+                  {% render 'icon-arrow' %}
+                </div>
+
+              {% else %}
+                {% render 'icon-caret' %}
+              {% endif %}
           </button>
           <div class="slider-counter caption">
             <span class="slider-counter--current">1</span>
@@ -101,7 +108,14 @@
             name="next"
             aria-label="{{ 'general.slider.next_slide' | t }}"
           >
-            {% render 'icon-caret' %}
+            {% if section.settings.buttons_style == 'arrow' %}
+                <div class="arrow-icon">
+                  {% render 'icon-arrow' %}
+                </div>
+
+              {% else %}
+                {% render 'icon-caret' %}
+              {% endif %}
           </button>
         </div>
       {%- endif -%}
@@ -163,6 +177,39 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+     {
+      "type": "select",
+      "id": "display_style",
+      "default": "slider",
+      "label": "Display Style",
+      "options": [
+        {
+          "value": "slider",
+          "label": "Slider"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ]
+    },
+    {
+      "type" : "radio",
+      "id" : "buttons_style",
+      "default" : "arrow",
+      "label" : "Buttons Style",
+      "options": [
+        {
+          "value": "catet",
+          "label": "Caret"
+        },
+        {
+          "value": "arrow",
+          "label": "Arrow"
+        }
+      ]
+
     },
     {
       "type": "select",
