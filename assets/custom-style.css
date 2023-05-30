@@ -7,6 +7,11 @@
 }
 
 
+.nerd-testimonial--image{
+  height: 100px;
+  border-radius: 50%;
+}
+
 
 .image-hw-full{
   width: 100%;
