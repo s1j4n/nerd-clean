@@ -8,6 +8,9 @@
 
 .nerd-container{
   padding: 2rem;
+}
+
+.nerd-page-width{
   max-width: 100rem;
   margin: 0 auto;
 }
