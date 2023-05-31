@@ -1,12 +1,12 @@
 {% liquid
-  assign mobile_slider = false
+  assign show_mobile_slider = false
   if section.settings.display_style == "slider" and section.blocks.size > section.settings.columns_mobile
-    assign mobile_slider = true
+    assign show_mobile_slider = true
   endif
 
-   assign desktop_slider = false
+   assign show_desktop_slider = false
   if section.settings.display_style == "slider" and section.blocks.size > section.settings.columns_desktop
-    assign mobile_slider = true
+    assign show_desktop_slider = true
   endif
   
 
