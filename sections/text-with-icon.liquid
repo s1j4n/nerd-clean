@@ -58,12 +58,12 @@
                 style="--animation-order: {{ forloop.index }};"
               {% endif %}
             >
-              <div class="nerd-iconwithtext nerd-textwithicon-padding color-{{ section.settings.color_scheme_card }} {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
+              <div class="nerd-iconwithtext nerd-iconwithtext--padding color-{{ section.settings.color_scheme_card }} {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
                 {% if block.settings.icon %}
                     {% render 'icon-accordion', icon: block.settings.icon %}
                 {% endif %}
             
-                <div class="nerd-text-small">{{ block.settings.text }}</div>
+                <div class="nerd-iconwithtext--text">{{ block.settings.text }}</div>
               </div>
             </li>
           {%- else -%}
