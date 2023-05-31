@@ -19,7 +19,12 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
+            {% if image %}
             {{ image | image_url: width: image.width | image_tag: class: 'image-hw-full', loading: 'lazy' }}
+              {% else %}
+              {{ 'product-1' | placeholder_svg_tag: 'image-hw-full' }}
+
+            {% endif %}
           </li>
         {%- else -%}
           {%- for i in (1..4) -%}
