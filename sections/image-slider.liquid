@@ -34,7 +34,9 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            {{ section.blocks.size }}
+            {% if section.blocks.size > 2 %}
+            "test"
+              {% endif %}
             {% if image %}
             {{ image | image_url: width: image.width | image_tag: class: 'image-hw-full nerd-rounded-md', loading: 'lazy' }}
               {% else %}
