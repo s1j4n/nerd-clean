@@ -22,6 +22,7 @@
         "0578f952-67bf-400b-b34d-46cfa5f8c7e8": {
           "type": "text-with-icon",
           "settings": {
+            "title": "Service Title",
             "text": "Free Shipping in order over $200",
             "icon": "price_tag",
             "row_content": "",
@@ -31,8 +32,9 @@
         "9ea0dc3a-1eef-42a5-978a-bdde4b3cf76a": {
           "type": "text-with-icon",
           "settings": {
-            "text": "trusted by more than ----",
-            "icon": "check_mark",
+            "title": "Customer Service",
+            "text": "Tell your customers how they can reach you.",
+            "icon": "chat_bubble",
             "row_content": "",
             "page": ""
           }
