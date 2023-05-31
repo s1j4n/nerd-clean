@@ -75,12 +75,12 @@
       </div>
     </slider-component>
   </div>
-          </div>
+</div>
 </div>
 
 {% schema %}
 {
-  "name": "Testimonials",
+  "name": "Image Slider",
   "settings": [
        {
     "type": "color_scheme",
@@ -92,39 +92,20 @@
   ],
   "blocks" : [
      {
-      "type": "testimonial",
-      "name": "Testimonials",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-           "type": "text",
-          "id": "name",
-          "label": "name",
-          "default" : "John Doe"
-        },
-        {
-           "type": "richtext",
-          "id": "comment",
-          "label": "comment",
-          "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
-        },
-        {
-    "type": "color_scheme",
-    "id": "color_scheme",
-    "label": "t:sections.all.colors.label",
-    "info": "t:sections.image-banner.settings.color_scheme.info",
-    "default": "background-1"
-    }
-      ]
-    }
+        "type": "image_picker",
+        "name": "image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
   ],
   "presets" : [
     {
-      "name" : "Testimonials"
+      "name" : "Image Slider"
     }
   ]
 }
