@@ -1,6 +1,8 @@
 {% liquid
   assign columns_mobile_int = section.settings.columns_mobile | to_i
   assign columns_desktop_int = section.settings.columns_desktop | to_i
+
+
   
   
   assign show_mobile_slider = false
@@ -15,6 +17,11 @@
   
 
 %}
+
+{% if section.blocks.size > columns_mobile_int %}
+  test
+  {% endif %}
+  
 
 
 <div class="nerd-container color-{{ section.settings.color_scheme }}">
