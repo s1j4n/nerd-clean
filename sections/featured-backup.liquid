@@ -38,19 +38,26 @@
 
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
-  if section.settings.swipe_on_mobile and products_to_display > columns_mobile_int
+  if section.settings.display_style == 'slider' and products_to_display > columns_mobile_int
     assign show_mobile_slider = true
   endif
 
   assign show_desktop_slider = false
-  if section.settings.enable_desktop_slider and products_to_display > section.settings.columns_desktop
+  if section.settings.display_style == 'slider' and products_to_display > section.settings.columns_desktop
     assign show_desktop_slider = true
+  endif
+
+  assign buttons_position = 'center'
+  if section.settings.buttons_position == 'left'
+    assign buttons_position = 'start'
+  elsif section.settings.buttons_position == 'right'
+    assign buttons_position = 'end'
   endif
 -%}
 
-  <div class="color-{{ section.settings.color_scheme }} isolate gradient">
-    <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
-      <div class="featured-collection-custom">
+<div class="color-{{ section.settings.color_scheme }} isolate gradient">
+  <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
+    <div class="featured-collection-custom">
       <div class="collection__title title-wrapper title-wrapper--no-top-margin {% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
         {%- if section.settings.title != blank -%}
           <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -113,7 +120,7 @@
           {%- endfor -%}
         </ul>
         {%- if show_mobile_slider or show_desktop_slider -%}
-          <div class="slider-buttons no-js-hidden">
+          <div class="slider-buttons no-js-hidden justify-{{ buttons_position }} ">
             <button
               type="button"
               class="slider-button slider-button--prev"
@@ -121,7 +128,14 @@
               aria-label="{{ 'general.slider.previous_slide' | t }}"
               aria-controls="Slider-{{ section.id }}"
             >
-              {% render 'icon-caret' %}
+              {% if section.settings.buttons_style == 'arrow' %}
+                <div class="arrow-icon">
+                  {% render 'icon-arrow' %}
+                </div>
+
+              {% else %}
+                {% render 'icon-caret' %}
+              {% endif %}
             </button>
             <div class="slider-counter caption">
               <span class="slider-counter--current">1</span>
@@ -136,7 +150,14 @@
               aria-label="{{ 'general.slider.next_slide' | t }}"
               aria-controls="Slider-{{ section.id }}"
             >
-              {% render 'icon-caret' %}
+              {% if section.settings.buttons_style == 'arrow' %}
+                <div class="arrow-icon">
+                  {% render 'icon-arrow' %}
+                </div>
+
+              {% else %}
+                {% render 'icon-caret' %}
+              {% endif %}
             </button>
           </div>
         {%- endif -%}
@@ -196,40 +217,42 @@
       "label": "t:sections.all.heading_size.label"
     },
     {
-      "type": "richtext",
-      "id": "description",
-      "label": "t:sections.featured-collection.settings.description.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_description",
-      "label": "t:sections.featured-collection.settings.show_description.label",
-      "default": false
-    },
-    {
-      "type": "select",
-      "id": "description_style",
-      "label": "t:sections.featured-collection.settings.description_style.label",
-      "options": [
-        {
-          "value": "body",
-          "label": "t:sections.featured-collection.settings.description_style.options__1.label"
-        },
-        {
-          "value": "subtitle",
-          "label": "t:sections.featured-collection.settings.description_style.options__2.label"
-        },
-        {
-          "value": "uppercase",
-          "label": "t:sections.featured-collection.settings.description_style.options__3.label"
-        }
-      ],
-      "default": "body"
-    },
-    {
       "type": "collection",
       "id": "collection",
       "label": "t:sections.featured-collection.settings.collection.label"
+    },
+       {
+      "type": "select",
+      "id": "display_style",
+      "default": "slider",
+      "label": "Display Style",
+      "options": [
+        {
+          "value": "slider",
+          "label": "Slider"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ]
+    },
+    {
+      "type" : "radio",
+      "id" : "buttons_style",
+      "default" : "arrow",
+      "label" : "Buttons Style",
+      "options": [
+        {
+          "value": "catet",
+          "label": "Caret"
+        },
+        {
+          "value": "arrow",
+          "label": "Arrow"
+        }
+      ]
+
     },
     {
       "type": "range",
@@ -240,51 +263,26 @@
       "default": 4,
       "label": "t:sections.featured-collection.settings.products_to_show.label"
     },
-    {
-      "type": "range",
+     {
+      "type": "select",
       "id": "columns_desktop",
-      "min": 1,
-      "max": 5,
-      "step": 1,
-      "default": 4,
-      "label": "t:sections.featured-collection.settings.columns_desktop.label"
+      "default": "3",
+      "label": "t:sections.featured-collection.settings.columns_desktop.label",
+      "options": [
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ]
     },
     {
       "type": "checkbox",
       "id": "full_width",
       "label": "t:sections.featured-collection.settings.full_width.label",
-      "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "show_view_all",
-      "default": true,
-      "label": "t:sections.featured-collection.settings.show_view_all.label"
-    },
-    {
-      "type": "select",
-      "id": "view_all_style",
-      "label": "t:sections.featured-collection.settings.view_all_style.label",
-      "options": [
-        {
-          "value": "link",
-          "label": "t:sections.featured-collection.settings.view_all_style.options__1.label"
-        },
-        {
-          "value": "outline",
-          "label": "t:sections.featured-collection.settings.view_all_style.options__2.label"
-        },
-        {
-          "value": "solid",
-          "label": "t:sections.featured-collection.settings.view_all_style.options__3.label"
-        }
-      ],
-      "default": "solid"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_desktop_slider",
-      "label": "t:sections.featured-collection.settings.enable_desktop_slider.label",
       "default": false
     },
     {
@@ -378,12 +376,7 @@
       "label": "t:sections.featured-collection.settings.show_rating.label",
       "info": "t:sections.featured-collection.settings.show_rating.info"
     },
-    {
-      "type": "checkbox",
-      "id": "enable_quick_add",
-      "default": false,
-      "label": "t:sections.featured-collection.settings.enable_quick_buy.label"
-    },
+    
     {
       "type": "header",
       "content": "t:sections.featured-collection.settings.header_mobile.content"
@@ -404,12 +397,7 @@
         }
       ]
     },
-    {
-      "type": "checkbox",
-      "id": "swipe_on_mobile",
-      "default": false,
-      "label": "t:sections.featured-collection.settings.swipe_on_mobile.label"
-    },
+
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
