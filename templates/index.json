@@ -48,10 +48,10 @@
         "icon_height_desktop": 45,
         "icon_height_mobile": 50,
         "display_style": "slider",
-        "columns_desktop": "2",
+        "columns_desktop": "4",
         "columns_mobile": "1",
         "card_height": "fit_large",
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
+        "color_scheme": "background-2",
         "color_scheme_card": "background-2"
       }
     },
