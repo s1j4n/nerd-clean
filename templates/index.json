@@ -16,52 +16,6 @@
         "show_text_below": false
       }
     },
-    "c9303555-4856-4e74-8973-8e441ebea10c": {
-      "type": "text-with-icon",
-      "blocks": {
-        "0578f952-67bf-400b-b34d-46cfa5f8c7e8": {
-          "type": "text-with-icon",
-          "settings": {
-            "title": "Service Title",
-            "text": "Something about your service..",
-            "icon": "price_tag"
-          }
-        },
-        "9ea0dc3a-1eef-42a5-978a-bdde4b3cf76a": {
-          "type": "text-with-icon",
-          "settings": {
-            "title": "Service title",
-            "text": "Something about your service..",
-            "icon": "chat_bubble"
-          }
-        },
-        "162fd200-47a4-4e78-b2e7-d136f9fab6e2": {
-          "type": "text-with-icon",
-          "settings": {
-            "title": "Service Title",
-            "text": "Something about your service..",
-            "icon": "check_mark"
-          }
-        }
-      },
-      "block_order": [
-        "0578f952-67bf-400b-b34d-46cfa5f8c7e8",
-        "9ea0dc3a-1eef-42a5-978a-bdde4b3cf76a",
-        "162fd200-47a4-4e78-b2e7-d136f9fab6e2"
-      ],
-      "settings": {
-        "title": "",
-        "full_width": false,
-        "icon_height_desktop": 40,
-        "icon_height_mobile": 50,
-        "display_style": "slider",
-        "columns_desktop": "3",
-        "columns_mobile": "1",
-        "card_height": "fit_large",
-        "color_scheme": "background-2",
-        "color_scheme_card": "background-2"
-      }
-    },
     "8116c8f1-b49d-4070-9e7a-d9903cd21aff": {
       "type": "text-with-button",
       "blocks": {
@@ -94,6 +48,76 @@
         "color_scheme": "scheme-98a05e94-eb81-4d40-9d93-d40c3f8716f2",
         "full_width": true,
         "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "9acd8e6e-82cd-4690-a79d-10ada8cd75cc": {
+      "type": "products-slider",
+      "blocks": {
+        "67ef78bb-de95-43b0-88c6-7411ca4c1148": {
+          "type": "product",
+          "settings": {
+            "product": "champion-boxing-gloves"
+          }
+        },
+        "c84d39ae-0a69-4606-85c9-41f374fc7094": {
+          "type": "product",
+          "settings": {
+            "product": "standard-hand-wraps"
+          }
+        },
+        "23d8ac60-7b91-4d6f-a7a9-e0ea98422f9d": {
+          "type": "product",
+          "settings": {
+            "product": "womens-crop-top"
+          }
+        },
+        "39459b92-9928-4e8a-9a95-846b80e6a1fc": {
+          "type": "product",
+          "settings": {
+            "product": "champion-boxing-gloves"
+          }
+        },
+        "33eb43d5-1844-40b9-a03e-400d1cba20f2": {
+          "type": "product",
+          "settings": {
+            "product": "standard-hand-wraps"
+          }
+        },
+        "b875b56c-7a4f-4c46-b925-9c856117c92b": {
+          "type": "product",
+          "settings": {
+            "product": "standard-hand-wraps"
+          }
+        }
+      },
+      "block_order": [
+        "67ef78bb-de95-43b0-88c6-7411ca4c1148",
+        "c84d39ae-0a69-4606-85c9-41f374fc7094",
+        "23d8ac60-7b91-4d6f-a7a9-e0ea98422f9d",
+        "39459b92-9928-4e8a-9a95-846b80e6a1fc",
+        "33eb43d5-1844-40b9-a03e-400d1cba20f2",
+        "b875b56c-7a4f-4c46-b925-9c856117c92b"
+      ],
+      "settings": {
+        "title": "<strong>Featured <\/strong>Products",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "display_style": "slider",
+        "buttons_style": "arrow",
+        "products_to_show": 10,
+        "columns_desktop": 3,
+        "full_width": false,
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "padding_top": 36,
         "padding_bottom": 0
       }
     },
@@ -225,6 +249,52 @@
         "padding_bottom": 36
       }
     },
+    "c9303555-4856-4e74-8973-8e441ebea10c": {
+      "type": "text-with-icon",
+      "blocks": {
+        "0578f952-67bf-400b-b34d-46cfa5f8c7e8": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service..",
+            "icon": "price_tag"
+          }
+        },
+        "9ea0dc3a-1eef-42a5-978a-bdde4b3cf76a": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service title",
+            "text": "Something about your service..",
+            "icon": "chat_bubble"
+          }
+        },
+        "162fd200-47a4-4e78-b2e7-d136f9fab6e2": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service..",
+            "icon": "check_mark"
+          }
+        }
+      },
+      "block_order": [
+        "0578f952-67bf-400b-b34d-46cfa5f8c7e8",
+        "9ea0dc3a-1eef-42a5-978a-bdde4b3cf76a",
+        "162fd200-47a4-4e78-b2e7-d136f9fab6e2"
+      ],
+      "settings": {
+        "title": "",
+        "full_width": false,
+        "icon_height_desktop": 40,
+        "icon_height_mobile": 50,
+        "display_style": "slider",
+        "columns_desktop": "3",
+        "columns_mobile": "1",
+        "card_height": "fit_large",
+        "color_scheme": "background-2",
+        "color_scheme_card": "background-2"
+      }
+    },
     "video": {
       "type": "video",
       "settings": {
@@ -235,76 +305,6 @@
         "description": "",
         "full_width": false,
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
-    "9acd8e6e-82cd-4690-a79d-10ada8cd75cc": {
-      "type": "products-slider",
-      "blocks": {
-        "67ef78bb-de95-43b0-88c6-7411ca4c1148": {
-          "type": "product",
-          "settings": {
-            "product": "champion-boxing-gloves"
-          }
-        },
-        "c84d39ae-0a69-4606-85c9-41f374fc7094": {
-          "type": "product",
-          "settings": {
-            "product": "standard-hand-wraps"
-          }
-        },
-        "23d8ac60-7b91-4d6f-a7a9-e0ea98422f9d": {
-          "type": "product",
-          "settings": {
-            "product": "womens-crop-top"
-          }
-        },
-        "39459b92-9928-4e8a-9a95-846b80e6a1fc": {
-          "type": "product",
-          "settings": {
-            "product": "champion-boxing-gloves"
-          }
-        },
-        "33eb43d5-1844-40b9-a03e-400d1cba20f2": {
-          "type": "product",
-          "settings": {
-            "product": "standard-hand-wraps"
-          }
-        },
-        "b875b56c-7a4f-4c46-b925-9c856117c92b": {
-          "type": "product",
-          "settings": {
-            "product": "standard-hand-wraps"
-          }
-        }
-      },
-      "block_order": [
-        "67ef78bb-de95-43b0-88c6-7411ca4c1148",
-        "c84d39ae-0a69-4606-85c9-41f374fc7094",
-        "23d8ac60-7b91-4d6f-a7a9-e0ea98422f9d",
-        "39459b92-9928-4e8a-9a95-846b80e6a1fc",
-        "33eb43d5-1844-40b9-a03e-400d1cba20f2",
-        "b875b56c-7a4f-4c46-b925-9c856117c92b"
-      ],
-      "settings": {
-        "title": "<strong>Featured <\/strong>Products",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "display_style": "slider",
-        "buttons_style": "arrow",
-        "products_to_show": 10,
-        "columns_desktop": 3,
-        "full_width": false,
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "1",
         "padding_top": 36,
         "padding_bottom": 0
       }
@@ -462,13 +462,13 @@
   },
   "order": [
     "image_banner",
-    "c9303555-4856-4e74-8973-8e441ebea10c",
     "8116c8f1-b49d-4070-9e7a-d9903cd21aff",
+    "9acd8e6e-82cd-4690-a79d-10ada8cd75cc",
     "a20d3441-d401-4506-adae-7e2a8ef51a3b",
     "24423574-5f40-408d-824b-a82b27f6a523",
     "caca1bae-6af5-4e12-ba9b-f6fdcdd3d242",
+    "c9303555-4856-4e74-8973-8e441ebea10c",
     "video",
-    "9acd8e6e-82cd-4690-a79d-10ada8cd75cc",
     "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7",
     "4b6c20d3-851a-407e-a6dd-12090af60b21",
     "0deeccff-e872-43de-b35d-46b627d715b7",
