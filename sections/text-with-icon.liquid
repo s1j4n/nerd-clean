@@ -95,7 +95,7 @@
             aria-label="{{ 'general.slider.previous_slide' | t }}"
             aria-controls="Slider-{{ section.id }}"
           >
-            {% render 'icon-caret' %}
+            {% render 'icon-circle' %}
           </button>
           <div class="slider-counter caption">
             <span class="slider-counter--current">1</span>
@@ -103,7 +103,6 @@
             <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
             <span class="slider-counter--total">{{ products_to_display }}</span>
           </div>
-          {% for i in (1..products_to_display) %}
           <button
             type="button"
             class="slider-button slider-button--next"
@@ -111,9 +110,8 @@
             aria-label="{{ 'general.slider.next_slide' | t }}"
             aria-controls="Slider-{{ section.id }}"
           >
-           ⚪
+           {% render 'icon-circle' %}
           </button>
-            {% endfor %}
         </div>
         {%- endif -%}
       </slider-component>
