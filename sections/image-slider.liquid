@@ -1,15 +1,16 @@
 {% liquid
   assign products_to_display = section.blocks.size
 
-  assign image_class = "image-hw-full nerd-rounded-md color-" | append: section.settings.color_scheme_card
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
   if section.settings.display_style == 'slider' and products_to_display > columns_mobile_int
     assign show_mobile_slider = true
   endif
 
+  assign columns_desktop_int = section.settings.columns_desktop | plus: 0
   assign show_desktop_slider = false
-  if section.settings.display_style == 'slider' and products_to_display > section.settings.columns_desktop
+
+  if section.settings.display_style == 'slider' and products_to_display > columns_desktop_int
     assign show_desktop_slider = true
   endif
 %}
