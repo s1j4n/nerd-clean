@@ -79,7 +79,7 @@
 }
 
 .card .icon-wrap {
-/*   display: none; */
+  display: none;
 }
 
 .price--sold-out .price__availability,
@@ -97,9 +97,9 @@
   font-weight: bold;
 }
 
-/* .slider-counter.caption {
+.slider-counter.caption {
   display: none;
-} */
+}
 
 .slider-button .icon {
   width: 2.6rem;
