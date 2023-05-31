@@ -34,7 +34,7 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            {% if section.blocks.size > 2 %}
+            {% if section.blocks.size > section.settings.columns_mobile %}
             "test"
               {% endif %}
             {% if image %}
