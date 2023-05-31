@@ -117,13 +117,14 @@
 {
   "name": "Image Slider",
   "settings": [
-       {
-    "type": "color_scheme",
-    "id": "color_scheme",
-    "label": "t:sections.all.colors.label",
-    "info": "t:sections.image-banner.settings.color_scheme.info",
-    "default": "background-1"
+    {
+      "type" : "checkbox",
+      "id" : "full_width",
+      "default" : false,
+      "label" : "Full Width"
+      
     },
+      
   {
     "type" : "radio",
     "id" : "display_style",
@@ -174,7 +175,14 @@
       }
       
     ]
-  }
+  },
+     {
+    "type": "color_scheme",
+    "id": "color_scheme",
+    "label": "t:sections.all.colors.label",
+    "info": "t:sections.image-banner.settings.color_scheme.info",
+    "default": "background-1"
+    }
     
   ],
   "blocks" : [
