@@ -4,6 +4,9 @@
 .title.inline-richtext.h1{
   text-align: center;
 }
+.height-full{
+  height: 100%;
+}
 
 
 .nerd-container{
