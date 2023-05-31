@@ -168,7 +168,7 @@
   .grid__item.slider__slide,
   .collection-list__item.grid__item.slider__slide {
     max-width: 50%;
-    width: 50%;
+/*     width: 50%; */
   }
 }
 
