@@ -71,27 +71,34 @@
           {%- endfor -%}
         </ul>
 
-        {%- if show_mobile_slider or show_desktop_slider -%}
-  <div class="slider-buttons no-js-hidden justify-{{ buttons_position }} ">
-    <div class="slider-dots">
-      {%- for slide in (1..products_to_display) -%}
-        <button
-          type="button"
-          class="slider-dot{% if forloop.index == 1 %} active{% endif %}"
-          aria-label="{{ 'general.slider.slide' | t: slide: forloop.index }}"
-          aria-controls="Slider-{{ section.id }}"
-          data-slide="{{ forloop.index }}"
-        ></button>
-      {%- endfor -%}
-    </div>
-    <div class="slider-counter caption">
-      <span class="slider-counter--current">1</span>
-      <span aria-hidden="true"> / </span>
-      <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-      <span class="slider-counter--total">{{ products_to_display }}</span>
-    </div>
-  </div>
-{%- endif -%}
+         {%- if show_mobile_slider or show_desktop_slider -%}
+           <div class="slider-buttons no-js-hidden">
+          <button
+            type="button"
+            class="slider-button slider-button--prev"
+            name="previous"
+            aria-label="{{ 'general.slider.previous_slide' | t }}"
+            aria-controls="Slider-{{ section.id }}"
+          >
+            {% render 'icon-circle' %}
+          </button>
+          <div class="slider-counter caption">
+            <span class="slider-counter--current">1</span>
+            <span aria-hidden="true"> / </span>
+            <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+            <span class="slider-counter--total">{{ products_to_display }}</span>
+          </div>
+          <button
+            type="button"
+            class="slider-button slider-button--next"
+            name="next"
+            aria-label="{{ 'general.slider.next_slide' | t }}"
+            aria-controls="Slider-{{ section.id }}"
+          >
+           {% render 'icon-circle' %}
+          </button>
+        </div>
+        {%- endif -%}
       </slider-component>
     </div>
   </div>
