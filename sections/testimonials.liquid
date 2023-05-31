@@ -90,10 +90,13 @@
               {% endif %}
             </button>
             <div class="slider-counter caption">
-              <span class="slider-counter--current">1</span>
-              <span aria-hidden="true"> / </span>
-              <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-              <span class="slider-counter--total">{{ products_to_display }}</span>
+              <ul class="slider-dots">
+                {% for i in (1..products_to_display) %}
+                  <li class="slider-dot{% if i == current_slide %} active{% endif %}">
+                    <span></span>
+                  </li>
+                {% endfor %}
+              </ul>
             </div>
             <button
               type="button"
