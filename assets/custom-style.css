@@ -53,6 +53,10 @@
   text-align: center;
 }
 
+.nerd-rounded-md{
+  border-radius: 8px;
+  background: white;
+}
 
 .italic{
   font-style: italic;
