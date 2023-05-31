@@ -22,7 +22,7 @@
         "0578f952-67bf-400b-b34d-46cfa5f8c7e8": {
           "type": "text-with-icon",
           "settings": {
-            "text": "Free Shipping in order over $",
+            "text": "Free Shipping in order over $200",
             "icon": "star",
             "row_content": "",
             "page": ""
@@ -38,7 +38,7 @@
         "icon_height_desktop": 40,
         "icon_height_mobile": 35,
         "display_style": "slider",
-        "columns_desktop": "3",
+        "columns_desktop": "2",
         "columns_mobile": "1",
         "card_height": "fit_large",
         "color_scheme": "",
