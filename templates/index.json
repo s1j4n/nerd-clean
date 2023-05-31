@@ -23,7 +23,7 @@
           "type": "text-with-icon",
           "settings": {
             "title": "Service Title",
-            "text": "Free Shipping in order over $200",
+            "text": "Something about your service..",
             "icon": "price_tag",
             "row_content": "",
             "page": ""
@@ -32,8 +32,8 @@
         "9ea0dc3a-1eef-42a5-978a-bdde4b3cf76a": {
           "type": "text-with-icon",
           "settings": {
-            "title": "Customer Service",
-            "text": "Tell your customers how they can reach you.",
+            "title": "Service title",
+            "text": "Something about your service..",
             "icon": "chat_bubble",
             "row_content": "",
             "page": ""
