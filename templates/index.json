@@ -336,54 +336,6 @@
         "padding_bottom": 0
       }
     },
-    "eb1822e9-c0f0-4a26-a079-cc3ed3a4761c": {
-      "type": "image-slider",
-      "blocks": {
-        "25524444-33dc-4f4e-9c59-1a56ffaf9f51": {
-          "type": "image_picker",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/BG_2_1.png"
-          }
-        },
-        "5dcf801e-ae5d-46c0-b053-8e0904d4e056": {
-          "type": "image_picker",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/boxing-gloves.png"
-          }
-        },
-        "03d8b37b-12e8-4f75-aed5-cea7df947381": {
-          "type": "image_picker",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image2_1.png"
-          }
-        },
-        "b2ff1a82-7d07-40d1-bf9c-bae33f8b44e0": {
-          "type": "image_picker",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/primo.png"
-          }
-        },
-        "0f3ab35a-d996-46e7-9c3b-8f5f89b2a7ab": {
-          "type": "image_picker",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/primo.png"
-          }
-        }
-      },
-      "block_order": [
-        "25524444-33dc-4f4e-9c59-1a56ffaf9f51",
-        "5dcf801e-ae5d-46c0-b053-8e0904d4e056",
-        "03d8b37b-12e8-4f75-aed5-cea7df947381",
-        "b2ff1a82-7d07-40d1-bf9c-bae33f8b44e0",
-        "0f3ab35a-d996-46e7-9c3b-8f5f89b2a7ab"
-      ],
-      "settings": {
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
-        "display_style": "grid",
-        "columns_desktop": "3",
-        "columns_mobile": "1"
-      }
-    },
     "0deeccff-e872-43de-b35d-46b627d715b7": {
       "type": "testimonials",
       "blocks": {
@@ -448,9 +400,9 @@
       ],
       "settings": {
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
-        "display_style": "grid",
+        "display_style": "slider",
         "columns_desktop": "3",
-        "columns_mobile": "2"
+        "columns_mobile": "1"
       }
     }
   },
@@ -464,7 +416,6 @@
     "9acd8e6e-82cd-4690-a79d-10ada8cd75cc",
     "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7",
     "4b6c20d3-851a-407e-a6dd-12090af60b21",
-    "eb1822e9-c0f0-4a26-a079-cc3ed3a4761c",
     "0deeccff-e872-43de-b35d-46b627d715b7",
     "4cb0bcfe-421b-49cc-9040-751f133b8159"
   ]
