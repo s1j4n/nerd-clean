@@ -15,6 +15,23 @@
   endif
 %}
 
+{% style %}
+  .nerd-textwithicon svg{
+    height: {{ section.settings.icon_height_desktop }}px;
+    width: {{ section.settings.icon_height_desktop }}px;
+  }
+
+  @media screen and (min-width: 750px){
+  .nerd-textwithicon svg{
+    height: {{ section.settings.icon_height_mobile }}px;
+    width: {{ section.settings.icon_height_mobile }}px;
+  }
+    
+  }
+  
+  
+{% endstyle %}
+
 <div class="nerd-container color-{{ section.settings.color_scheme }}">
   <div class="{% unless section.settings.full_width %}nerd-page-width {% endunless %}">
     <div class="title inline-richtext h1 scroll-trigger animate--slide-in">{{ section.settings.title }}</div>
@@ -35,7 +52,7 @@
                 style="--animation-order: {{ forloop.index }};"
               {% endif %}
             >
-              <div class="nerd-testimonial color-{{ section.settings.color_scheme_card }} {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
+              <div class="nerd-textwithicon color-{{ section.settings.color_scheme_card }} {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
                 {% if block.settings.icon %}
                     {% render 'icon-accordion', icon: block.settings.icon %}
                 {% endif %}
@@ -131,6 +148,24 @@
       "default" : false,
       "label" : "Full Width"
       
+    },
+    {
+      "type": "range",
+      "id": "icon_height_desktop",
+      "min": 30,
+      "max": 150,
+      "step": 5,
+      "default": 50,
+      "label": "Icon Height Desktop"
+    },
+    {
+      "type": "range",
+      "id": "icon_height_mobile",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "default": 20,
+      "label": "Icon Height Mobile"
     },
    
     {
