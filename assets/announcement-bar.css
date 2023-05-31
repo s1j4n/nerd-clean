@@ -9,3 +9,7 @@
   transform: translateY(-50%);
   right: 2%;
 }
+
+.nerd-announcement-close svg{
+  height: 10px;
+}
