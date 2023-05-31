@@ -119,6 +119,35 @@
             </button>
           </div>
         {%- endif -%}
+
+        <script>
+          const sliderDots = document.querySelectorAll(".slider-dots .slider-dot-button");
+          const sliderProducts = document.querySelectorAll(".slider-product");
+
+          sliderDots.forEach((dot) => {
+            dot.addEventListener("click", () => {
+              const slideIndex = dot.dataset.slideIndex;
+
+              // Remove the "is-active" class from the active dot.
+              sliderDots.forEach((otherDot) => {
+                if (otherDot.classList.contains("is-active")) {
+                  otherDot.classList.remove("is-active");
+                }
+              });
+
+              // Add the "is-active" class to the clicked dot.
+              dot.classList.add("is-active");
+
+              // Hide all the slider products.
+              sliderProducts.forEach((product) => {
+                product.style.display = "none";
+              });
+
+              // Show the slider product at the selected index.
+              sliderProducts[slideIndex].style.display = "block";
+            });
+          });
+        </script>
       </slider-component>
     </div>
   </div>
