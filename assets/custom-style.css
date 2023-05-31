@@ -11,7 +11,6 @@
 }
 
 .nerd-page-width{
-  max-width: 105rem;
   margin: 0 auto;
 }
 
@@ -170,6 +169,11 @@
     max-width: 49%;
 /*     width: 50%; */
   }
+}
+
+@media screen and (min-width: 1024px){
+  padding: 0 5%;
+  
 }
 
 /* -----------HEADER STARTS----------------- */
