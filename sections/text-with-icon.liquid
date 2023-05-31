@@ -59,7 +59,7 @@
                 {% endif %}
               >
                 <div class="nerd-testimonial color-{{ section.settings.color_scheme_card }}">
-                  {{ 'image' | placeholder_svg_tag: 'nerd-testimonial--image' }}
+                  {% render 'icon-accordion', icon: block.settings.icon %}
                   <div class="nerd-title-small">John Doe</div>
                   <div class="nerd-text-small italic">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
