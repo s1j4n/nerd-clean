@@ -360,20 +360,12 @@
             "name": "John Doe",
             "comment": "<p>Lorem ipsum dolor sit amet, .<\/p>"
           }
-        },
-        "a4cd4c5c-23e9-4bc1-9d1e-e7c12ac479b4": {
-          "type": "testimonial",
-          "settings": {
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
-          }
         }
       },
       "block_order": [
         "aa288392-b43f-4790-a55a-27f144584628",
         "8585e6bb-eb7d-45aa-b03a-799e0228b876",
-        "b4868a17-899c-4ff1-a064-a2a2a7e04a08",
-        "a4cd4c5c-23e9-4bc1-9d1e-e7c12ac479b4"
+        "b4868a17-899c-4ff1-a064-a2a2a7e04a08"
       ],
       "settings": {
         "title": "What Our Clients Say",
@@ -383,7 +375,7 @@
         "columns_mobile": "1",
         "card_height": "fit_large",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
-        "color_scheme_card": "background-2"
+        "color_scheme_card": ""
       }
     },
     "4cb0bcfe-421b-49cc-9040-751f133b8159": {
