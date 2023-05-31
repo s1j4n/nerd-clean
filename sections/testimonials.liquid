@@ -19,7 +19,7 @@
   <div class="{% unless section.settings.full_width %}nerd-page-width {% endunless %}">
     <div class="title inline-richtext h1 scroll-trigger animate--slide-in">{{ section.settings.title }}</div>
     <div class="nerd-content">
-      <div class="slider-wrapper">
+      <slider-component class="slider-mobile-gutter {% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <ul
           id="Slider-{{ section.id }}"
           class="grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop  grid--{{ section.settings.columns_mobile }}-col-tablet-down {% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}"
@@ -113,7 +113,7 @@
             </button>
           </div>
         {%- endif -%}
-      </div>
+      </slider-component>
     </div>
   </div>
 </div>
@@ -253,157 +253,7 @@
 {% endschema %}
 
 {% stylesheet %}
-.nerd-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-.nerd-page-width {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.title.inline-richtext {
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.slider-component {
-  position: relative;
-}
-
-.slider-component.slider-component-desktop {
-  display: none;
-}
-
-.slider-mobile-gutter .grid__item {
-  margin-right: 20px;
-}
-
-.slider-buttons {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  justify-content: center;
-}
-
-.slider-buttons.justify-left {
-  justify-content: flex-start;
-}
-
-.slider-buttons.justify-right {
-  justify-content: flex-end;
-}
-
-.slider-button {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  padding: 0;
-  cursor: pointer;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slider-button--prev {
-  margin-right: 20px;
-}
-
-.slider-button--next {
-  margin-left: 20px;
-}
-
-.slider-counter {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-}
-
-.slider-counter--current {
-  margin-right: 5px;
-}
-
-.slider-counter--total {
-  margin-left: 5px;
-}
-
-.slider {
-  overflow-x: hidden;
-}
-
-.slider ul {
-  display: flex;
-  flex-wrap: nowrap;
-  transition: transform 0.3s ease;
-}
-
-.slider__slide {
-  flex: 0 0 auto;
-}
-
-.slider__slide.scroll-trigger {
-  opacity: 0;
-}
-
-.slider__slide.scroll-trigger.animate--slide-in {
-  animation-name: slide-in;
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
-}
-
-@keyframes slide-in {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.nerd-testimonial {
-  background-color: #f7f7f7;
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-.nerd-testimonial:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.nerd-testimonial--image {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin: 0 auto 10px;
-  object-fit: cover;
-}
-
-.nerd-title-small {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.nerd-text-small {
-  font-size: 14px;
-  color: #666;
-}
-
-.height-full {
-  height: 100%;
-}
-
 {% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
