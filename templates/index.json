@@ -344,7 +344,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/primo.png",
             "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+            "comment": "<p>Lorem ipsum dolor sit amet, <\/p>"
           }
         },
         "8585e6bb-eb7d-45aa-b03a-799e0228b876": {
@@ -358,7 +358,7 @@
           "type": "testimonial",
           "settings": {
             "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+            "comment": "<p>Lorem ipsum dolor sit amet, .<\/p>"
           }
         }
       },
