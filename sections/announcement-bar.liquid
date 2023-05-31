@@ -92,9 +92,9 @@
       </div>
     </slideshow-component>
   {%- endif -%}
-  <button class="nerd-announcement-close" onclick="hideAnnouncementBar()">
+  <div class="nerd-announcement-close" id="nerd-announcement-bar-close" onclick="hideAnnouncementBar()">
     {% render 'icon-close' %}
-  </button>
+  </div>
   
 </div>
 
@@ -168,8 +168,9 @@
 }
 {% endschema %}
 
-<script>
-  function hideAnnouncementBar(){
-    console.log("ok")
-  }
-  </script>
+{% javascript %}
+    document.getElementById("nerd-announcement-bar-close").addEventListner("click", ()=>{
+    document.getElementById("nerd-announcement-bar").style.display ="none"
+    })
+  
+  {% endjavascript %}
