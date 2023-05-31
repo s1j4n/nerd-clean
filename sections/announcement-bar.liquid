@@ -3,7 +3,7 @@
 {{ 'announcement-bar.css' | asset_url | stylesheet_tag }}
 
 <div
-  class="utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} utility-bar--bottom-border{% endif %}"
+  class="nerd-announcement-bar utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} utility-bar--bottom-border{% endif %}"
   {{ block.shopify_attributes }}
 >
   {%- if section.blocks.size == 1 -%}
