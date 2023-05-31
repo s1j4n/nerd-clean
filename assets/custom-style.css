@@ -79,7 +79,7 @@
 }
 
 .card .icon-wrap {
-  display: none;
+/*   display: none; */
 }
 
 .price--sold-out .price__availability,
