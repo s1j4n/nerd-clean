@@ -20,9 +20,9 @@
             {% endif %}
           >
             {% if image %}
-            {{ image | image_url: width: image.width | image_tag: class: 'image-hw-full', loading: 'lazy' }}
+            {{ image | image_url: width: image.width | image_tag: class: 'image-hw-full nerd-rounded-md', loading: 'lazy' }}
               {% else %}
-              {{ 'lifestyle-1' | placeholder_svg_tag: 'image-hw-full' }}
+              {{ 'lifestyle-1' | placeholder_svg_tag: 'image-hw-full nerd-rounded-md' }}
 
             {% endif %}
           </li>
@@ -35,7 +35,7 @@
                 style="--animation-order: {{ forloop.index }};"
               {% endif %}
             >
-              {{ 'product-1' | placeholder_svg_tag: 'image-hw-full' }}
+              {{ 'lifestyle-1' | placeholder_svg_tag: 'image-hw-full nerd-rounded-md ' }}
             </li>
           {%- endfor -%}
         {%- endfor -%}
