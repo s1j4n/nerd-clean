@@ -1,10 +1,7 @@
 {% liquid
   assign products_to_display = section.blocks.size
 
-  if section.settings.display_style == 'slider'
-    assign slider = true
-  endif
-
+  assign image_class = "image-hw-full nerd-rounded-md color-" | append: section.settings.color_scheme_card
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
   if section.settings.display_style == 'slider' and products_to_display > columns_mobile_int
@@ -42,10 +39,10 @@
                 {{
                   image
                   | image_url: width: image.width
-                  | image_tag: class: 'image-hw-full nerd-rounded-md', loading: 'lazy'
+                  | image_tag: class: image_class, loading: 'lazy'
                 }}
               {% else %}
-                {{ 'image' | placeholder_svg_tag: 'image-hw-full nerd-rounded-md' }}
+                {{ 'image' | placeholder_svg_tag: image_class }}
               {% endif %}
             </li>
           {%- else -%}
@@ -57,7 +54,8 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {{ 'image' | placeholder_svg_tag: 'image-hw-full nerd-rounded-md ' }}
+
+                {{ 'image' | placeholder_svg_tag: image_class }}
               </li>
             {%- endfor -%}
           {%- endfor -%}
