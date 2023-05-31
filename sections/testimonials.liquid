@@ -17,7 +17,7 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            <div class="nerd-testimonial">
+            <div class="nerd-testimonial color-{{ block.settings.color_scheme }}">
               {% if block.settings.image %}
                 {% assign image = block.settings.image %}
                 {{ image | image_url: width: 100 | image_tag: class: 'nerd-testimonial--image', loading: 'lazy' }}
