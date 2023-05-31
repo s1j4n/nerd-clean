@@ -38,7 +38,7 @@
               <div class="nerd-testimonial color-{{ section.settings.color_scheme_card }} {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
                 {% if block.settings.image %}
                   {% assign image = block.settings.image %}
-                  {{ image | image_url: width: 100 | image_tag: class: 'nerd-testimonial--image', loading: 'lazy' }}
+                  {{ image | image_url: width: 100 | image_tag: class: 'nerd-testimonial--icon', loading: 'lazy' }}
                 {% else %}
                   {{ 'image' | placeholder_svg_tag: 'nerd-testimonial--image' }}
                 {% endif %}
