@@ -54,7 +54,7 @@
                 style="--animation-order: {{ forloop.index }};"
               {% endif %}
             >
-              <div class="nerd-textwithicon color-{{ section.settings.color_scheme_card }} {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
+              <div class="nerd-iconwithtext color-{{ section.settings.color_scheme_card }} {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
                 {% if block.settings.icon %}
                     {% render 'icon-accordion', icon: block.settings.icon %}
                 {% endif %}
