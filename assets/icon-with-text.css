@@ -18,3 +18,10 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+
+@media screen and (max-width: 750px){
+  .nerd-iconwithtext {
+    gap: 1rem;
+  }
+}
