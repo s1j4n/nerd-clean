@@ -35,7 +35,7 @@
                 style="--animation-order: {{ forloop.index }};"
               {% endif %}
             >
-              <div class="nerd-testimonial color-{{ section.settings.color_scheme_card }}">
+              <div class="nerd-testimonial color-{{ section.settings.color_scheme_card }} {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
                 {% if block.settings.image %}
                   {% assign image = block.settings.image %}
                   {{ image | image_url: width: 100 | image_tag: class: 'nerd-testimonial--image', loading: 'lazy' }}
@@ -186,6 +186,23 @@
       }
 
     ]
+  },{
+        "type" : "select",
+    "id" : "card_height",
+    "label" : "Card Height",
+    "default" : "fit_large",
+    "options" : [
+      {
+        "value" : "fit_large",
+        "label" :  "Fit Large"
+      },
+      {
+        "value" : "fit_content",
+        "label" : "Fit Content"
+      }
+
+    ]
+        
   },
     {
     "type": "color_scheme",
