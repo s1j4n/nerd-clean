@@ -344,24 +344,21 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/primo.png",
             "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>",
-            "color_scheme": "background-2"
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         },
         "8585e6bb-eb7d-45aa-b03a-799e0228b876": {
           "type": "testimonial",
           "settings": {
             "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>",
-            "color_scheme": "background-1"
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         },
         "b4868a17-899c-4ff1-a064-a2a2a7e04a08": {
           "type": "testimonial",
           "settings": {
             "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>",
-            "color_scheme": "background-1"
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         }
       },
@@ -371,10 +368,13 @@
         "b4868a17-899c-4ff1-a064-a2a2a7e04a08"
       ],
       "settings": {
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
+        "title": "What Our Clients Say",
+        "full_width": false,
         "display_style": "slider",
         "columns_desktop": "3",
-        "columns_mobile": "1"
+        "columns_mobile": "1",
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
+        "color_scheme_card": ""
       }
     },
     "4cb0bcfe-421b-49cc-9040-751f133b8159": {
@@ -402,10 +402,12 @@
         "029d446d-8395-449f-b343-69848370073e"
       ],
       "settings": {
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
+        "full_width": false,
         "display_style": "grid",
         "columns_desktop": "3",
-        "columns_mobile": "1"
+        "columns_mobile": "1",
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
+        "color_scheme_card": "background-2"
       }
     }
   },
