@@ -50,24 +50,23 @@
             </li>
           {%- else -%}
             {%- for i in (1..4) -%}
-               <li
-              id="Slide-{{ section.id }}-{{ forloop.index }}"
-              class="grid__item slider__slide scroll-trigger animate--slide-in"
-              {% if settings.animations_reveal_on_scroll %}
-                data-cascade
-                style="--animation-order: {{ forloop.index }};"
-              {% endif %}
-            >
-              <div class="nerd-testimonial color-{{ section.settings.color_scheme_card }}">
+              <li
+                id="Slide-{{ section.id }}-{{ forloop.index }}"
+                class="grid__item slider__slide scroll-trigger animate--slide-in"
+                {% if settings.animations_reveal_on_scroll %}
+                  data-cascade
+                  style="--animation-order: {{ forloop.index }};"
+                {% endif %}
+              >
+                <div class="nerd-testimonial color-{{ section.settings.color_scheme_card }}">
                   {{ 'image' | placeholder_svg_tag: 'nerd-testimonial--image' }}
-                <div class="nerd-title-small">
-                 John Doe
+                  <div class="nerd-title-small">John Doe</div>
+                  <div class="nerd-text-small italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </div>
                 </div>
-                <div class="nerd-text-small italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </div>
-            </li>
+              </li>
             {%- endfor -%}
           {%- endfor -%}
         </ul>
@@ -123,7 +122,7 @@
 {
   "name": "Testimonials",
   "settings": [
-  
+   
     {
     "type" : "radio",
     "id" : "display_style",
