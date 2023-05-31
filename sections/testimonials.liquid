@@ -309,6 +309,25 @@
 {% endschema %}
 
 {% stylesheet %}
+  .slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-dot.active {
+  background-color: #333;
+}
 {% endstylesheet %}
 
 {% javascript %}
