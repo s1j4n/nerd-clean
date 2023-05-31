@@ -23,26 +23,36 @@
           "type": "text-with-icon",
           "settings": {
             "text": "Free Shipping in order over $200",
-            "icon": "star",
+            "icon": "price_tag",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "9ea0dc3a-1eef-42a5-978a-bdde4b3cf76a": {
+          "type": "text-with-icon",
+          "settings": {
+            "text": "trusted by more than ----",
+            "icon": "check_mark",
             "row_content": "",
             "page": ""
           }
         }
       },
       "block_order": [
-        "0578f952-67bf-400b-b34d-46cfa5f8c7e8"
+        "0578f952-67bf-400b-b34d-46cfa5f8c7e8",
+        "9ea0dc3a-1eef-42a5-978a-bdde4b3cf76a"
       ],
       "settings": {
-        "title": "Title",
+        "title": "",
         "full_width": false,
-        "icon_height_desktop": 40,
-        "icon_height_mobile": 35,
+        "icon_height_desktop": 45,
+        "icon_height_mobile": 50,
         "display_style": "slider",
         "columns_desktop": "2",
         "columns_mobile": "1",
         "card_height": "fit_large",
-        "color_scheme": "",
-        "color_scheme_card": ""
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
+        "color_scheme_card": "background-2"
       }
     },
     "8116c8f1-b49d-4070-9e7a-d9903cd21aff": {
