@@ -378,7 +378,10 @@
         "0f3ab35a-d996-46e7-9c3b-8f5f89b2a7ab"
       ],
       "settings": {
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
+        "display_style": "grid",
+        "columns_desktop": "3",
+        "columns_mobile": "1"
       }
     },
     "0deeccff-e872-43de-b35d-46b627d715b7": {
@@ -444,7 +447,10 @@
         "029d446d-8395-449f-b343-69848370073e"
       ],
       "settings": {
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
+        "display_style": "grid",
+        "columns_desktop": "3",
+        "columns_mobile": "2"
       }
     }
   },
