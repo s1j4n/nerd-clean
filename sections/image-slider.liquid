@@ -1,11 +1,11 @@
 {% liquid
   assign show_mobile_slider = false
-  if section.settings.display_style == "slider" 
+  if section.settings.display_style == "slider" and section.blocks.size > section.settings.columns_mobile
     assign show_mobile_slider = true
   endif
 
    assign show_desktop_slider = false
-  if section.settings.display_style == "slider" 
+  if section.settings.display_style == "slider" and section.blocks.size > section.settings.columns_desktop
     assign show_desktop_slider = true
   endif
   
@@ -34,7 +34,7 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            {{ show_mobile_slider }}
+            {{ section.settings.columns_mobile }}
             {% if image %}
             {{ image | image_url: width: image.width | image_tag: class: 'image-hw-full nerd-rounded-md', loading: 'lazy' }}
               {% else %}
