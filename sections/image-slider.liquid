@@ -25,7 +25,7 @@
 <div class="nerd-page-width" >
   <div class="title inline-richtext h1 scroll-trigger animate--slide-in">Image Slider</div>
   <div class="nerd-content">
-    <slider-component class="custom_slider_item slider-mobile-gutter slider-component-full-width scroll-trigger animate--slide-in {% if show_desktop_slider %} slider-component-desktop{% endif %}">
+    <slider-component class="custom_slider_item  {% if slider %} slider-mobile-gutter slider-component-full-width {% endif %} scroll-trigger animate--slide-in {% if show_desktop_slider %} slider-component-desktop{% endif %}">
       <ul
         id="Slider-{{ section.id }}"
         class="grid product-grid contains-card contains-card--product contains-card--standard grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down {% if slider %}slider slider--desktop slider--tablet {% endif %} grid--peek"
