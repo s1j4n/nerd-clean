@@ -16,6 +16,43 @@
         "show_text_below": false
       }
     },
+    "c9303555-4856-4e74-8973-8e441ebea10c": {
+      "type": "text-with-icon",
+      "blocks": {
+        "0578f952-67bf-400b-b34d-46cfa5f8c7e8": {
+          "type": "text-with-icon",
+          "settings": {
+            "text": "Text",
+            "icon": "star",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "e0e79e98-ed7e-4a78-8386-79bd2508ad80": {
+          "type": "text-with-icon",
+          "settings": {
+            "text": "Text",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "0578f952-67bf-400b-b34d-46cfa5f8c7e8",
+        "e0e79e98-ed7e-4a78-8386-79bd2508ad80"
+      ],
+      "settings": {
+        "title": "What Our Clients Say",
+        "full_width": false,
+        "display_style": "slider",
+        "columns_desktop": "3",
+        "columns_mobile": "1",
+        "card_height": "fit_large",
+        "color_scheme": "",
+        "color_scheme_card": ""
+      }
+    },
     "8116c8f1-b49d-4070-9e7a-d9903cd21aff": {
       "type": "text-with-button",
       "blocks": {
@@ -414,6 +451,7 @@
   },
   "order": [
     "image_banner",
+    "c9303555-4856-4e74-8973-8e441ebea10c",
     "8116c8f1-b49d-4070-9e7a-d9903cd21aff",
     "a20d3441-d401-4506-adae-7e2a8ef51a3b",
     "24423574-5f40-408d-824b-a82b27f6a523",
