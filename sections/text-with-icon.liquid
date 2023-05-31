@@ -36,11 +36,8 @@
               {% endif %}
             >
               <div class="nerd-testimonial color-{{ section.settings.color_scheme_card }} {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
-                {% if block.settings.image %}
-                  {% assign image = block.settings.image %}
-                  {{ image | image_url: width: 100 | image_tag: class: 'nerd-testimonial--icon', loading: 'lazy' }}
-                {% else %}
-                  {{ 'image' | placeholder_svg_tag: 'nerd-testimonial--image' }}
+                {% if block.settings.icon %}
+                    {% render 'icon-accordion', icon: block.settings.icon %}
                 {% endif %}
                 <div class="nerd-title-small">
                   {{ block.settings.name }}
@@ -59,7 +56,7 @@
                 {% endif %}
               >
                 <div class="nerd-testimonial color-{{ section.settings.color_scheme_card }}">
-                  {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% render 'icon-accordion', icon: "checkbox" %}
                   <div class="nerd-title-small">John Doe</div>
                   <div class="nerd-text-small italic">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
