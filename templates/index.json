@@ -461,7 +461,7 @@
       ],
       "settings": {
         "full_width": false,
-        "display_style": "grid",
+        "display_style": "slider",
         "columns_desktop": "3",
         "columns_mobile": "1",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
