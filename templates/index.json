@@ -38,11 +38,33 @@
             "row_content": "",
             "page": ""
           }
+        },
+        "162fd200-47a4-4e78-b2e7-d136f9fab6e2": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service here.",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "59bd294e-3f8c-4e47-ae26-8024614d1aa6": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service here.",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "0578f952-67bf-400b-b34d-46cfa5f8c7e8",
-        "9ea0dc3a-1eef-42a5-978a-bdde4b3cf76a"
+        "9ea0dc3a-1eef-42a5-978a-bdde4b3cf76a",
+        "162fd200-47a4-4e78-b2e7-d136f9fab6e2",
+        "59bd294e-3f8c-4e47-ae26-8024614d1aa6"
       ],
       "settings": {
         "title": "",
