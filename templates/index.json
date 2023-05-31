@@ -22,7 +22,7 @@
         "0578f952-67bf-400b-b34d-46cfa5f8c7e8": {
           "type": "text-with-icon",
           "settings": {
-            "text": "Free Shipping in order over @",
+            "text": "Free Shipping in order over $",
             "icon": "star",
             "row_content": "",
             "page": ""
@@ -35,7 +35,7 @@
       "settings": {
         "title": "Title",
         "full_width": false,
-        "icon_height_desktop": 60,
+        "icon_height_desktop": 40,
         "icon_height_mobile": 35,
         "display_style": "slider",
         "columns_desktop": "3",
