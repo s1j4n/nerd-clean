@@ -9,7 +9,8 @@
         role="list"
         aria-label="{{ 'general.slider.name' | t }}"
       >
-        {% for block in section.blocks %}
+          {% for block in section.blocks %}
+          {% assign image = block.settings.image %}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
             class="grid__item slider__slide scroll-trigger animate--slide-in"
