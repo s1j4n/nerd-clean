@@ -3,6 +3,7 @@
 {{ 'announcement-bar.css' | asset_url | stylesheet_tag }}
 
 <div
+  id="nerd-announcement-bar"
   class="nerd-announcement-bar utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} utility-bar--bottom-border{% endif %}"
   {{ block.shopify_attributes }}
 >
@@ -91,7 +92,7 @@
       </div>
     </slideshow-component>
   {%- endif -%}
-  <div class="nerd-announcement-close">
+  <div class="nerd-announcement-close" onclick="hideAnnouncementBar()">
     {% render 'icon-close' %}
   </div>
   
@@ -166,3 +167,9 @@
   ]
 }
 {% endschema %}
+
+{% javascript %}
+  function hideAnnouncementBar(){
+    document.getElementById("nerd-announcement-bar").style.display ="none"
+  }
+  {% endjavascript %}
