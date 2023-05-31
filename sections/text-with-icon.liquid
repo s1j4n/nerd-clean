@@ -103,6 +103,7 @@
             <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
             <span class="slider-counter--total">{{ products_to_display }}</span>
           </div>
+          {% for i in (1..products_to_display) %}
           <button
             type="button"
             class="slider-button slider-button--next"
@@ -112,6 +113,7 @@
           >
             {% render 'icon-caret' %}
           </button>
+            {% endfor %}
         </div>
         {%- endif -%}
       </slider-component>
