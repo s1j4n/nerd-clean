@@ -45,9 +45,11 @@
       "settings": {
         "title": "What Our Clients Say",
         "full_width": false,
+        "icon_height_desktop": 60,
+        "icon_height_mobile": 35,
         "display_style": "slider",
         "columns_desktop": "3",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "card_height": "fit_large",
         "color_scheme": "",
         "color_scheme_card": ""
