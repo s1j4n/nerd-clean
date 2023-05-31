@@ -34,6 +34,7 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
+            {{ show_mobile_slider }}
             {% if image %}
             {{ image | image_url: width: image.width | image_tag: class: 'image-hw-full nerd-rounded-md', loading: 'lazy' }}
               {% else %}
