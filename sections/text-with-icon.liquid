@@ -63,7 +63,7 @@
                   {% render 'icon-accordion', icon: block.settings.icon %}
                 {% endif %}
                 <div class="nerd-iconwithtext--content">
-                  <div class="nerd-iconwithtext--title">Free Shipping</div>
+                  <div class="nerd-iconwithtext--title">{{ block.settings.title }}</div>
                   <div class="nerd-iconwithtext--text">{{ block.settings.text }}</div>
                 </div>
               </div>
@@ -80,8 +80,7 @@
                 <div class="nerd-testimonial color-{{ section.settings.color_scheme_card }}">
                   {% render 'icon-accordion', icon: "checkbox" %}
                   <div class="nerd-text-small italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
+                    Something about your service.
                   </div>
                 </div>
               </li>
