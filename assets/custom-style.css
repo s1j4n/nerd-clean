@@ -147,6 +147,10 @@
   .nerd-container{
     padding: 1rem;
   }
+  .grid__item.slider__slide.scroll-trigger{
+    margin: 0;
+    width: 100%;
+  }
 }
 
   @media screen and (min-width: 750px) and (max-width: 989px){
