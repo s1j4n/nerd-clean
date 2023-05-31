@@ -8,6 +8,8 @@
 
 .nerd-container{
   padding: 2rem;
+  max-width: 100rem;
+  margin: 0 auto;
 }
 
 .nerd-title{
