@@ -94,7 +94,24 @@
     "label": "t:sections.all.colors.label",
     "info": "t:sections.image-banner.settings.color_scheme.info",
     "default": "background-1"
-    }
+    },
+  {
+    "type" : "radio",
+    "id" : "display_style",
+    "label" : "Display Style",
+    "default" : "slider",
+    "options" : [
+      {
+        "value" : "slider",
+        "label" :  "Slider"
+      },
+      {
+        "value" : "grid",
+        "label" : "grid"
+      }
+      
+    ]
+  }
   ],
   "blocks" : [
      {
@@ -108,6 +125,7 @@
           }
         ]
       }
+    
   ],
   "presets" : [
     {
