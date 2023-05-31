@@ -371,7 +371,10 @@
         "b4868a17-899c-4ff1-a064-a2a2a7e04a08"
       ],
       "settings": {
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
+        "display_style": "slider",
+        "columns_desktop": "3",
+        "columns_mobile": "1"
       }
     },
     "4cb0bcfe-421b-49cc-9040-751f133b8159": {
@@ -400,7 +403,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
-        "display_style": "slider",
+        "display_style": "grid",
         "columns_desktop": "3",
         "columns_mobile": "1"
       }
