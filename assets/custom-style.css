@@ -8,10 +8,12 @@
 
 .nerd-container{
   padding: 2rem;
+  
 }
 
 .nerd-page-width{
   margin: 0 auto;
+  max-width: 105rem;
 }
 
 .nerd-title{
@@ -171,10 +173,6 @@
   }
 }
 
-@media screen and (min-width: 1024px){
-  padding: 0 5%;
-  
-}
 
 /* -----------HEADER STARTS----------------- */
 .header.header--middle-left {
