@@ -143,6 +143,12 @@
   border-radius: 5px;
 }
 
+@media screen and (max-width: 425px){
+  .nerd-container{
+    padding: 1rem;
+  }
+}
+
   @media screen and (min-width: 750px) and (max-width: 989px){
 .slider--tablet.grid--peek .grid__item:first-of-type {
     margin-left: 0;
