@@ -8,6 +8,13 @@
     gap: 1rem;
     margin: 0 auto;
 }
-.nerd-textwithicon-padding{
+.nerd-iconwithtext--padding{
   padding: 3rem;
 }
+
+.nerd-iconwithtext--title{
+      font-weight: 600;
+    font-size: 2rem;
+}
+}
+
