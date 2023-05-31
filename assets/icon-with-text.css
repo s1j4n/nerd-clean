@@ -15,8 +15,10 @@
 }
 
 .nerd-iconwithtext--title{
+  font-size: calc(var(--font-heading-scale) * 2rem);
   text-transform: uppercase;
   font-weight: 600;
+  
 }
 
 .nerd-iconwithtext--text {
