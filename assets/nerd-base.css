@@ -39,6 +39,7 @@
 }
 
 
+
 .nerd-testimonial--image{
   height: 100px;
   width: 100px;
@@ -170,4 +171,11 @@
     max-width: 49%;
 /*     width: 50%; */
   }
+}
+
+@media screen and (max-width: 749px){
+.nerd-testimonial .grid__item.slider__slide.scroll-trigger{
+ width: 100%;
+  margin: 0;
+}
 }
