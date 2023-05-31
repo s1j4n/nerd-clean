@@ -43,7 +43,7 @@
           "type": "text-with-icon",
           "settings": {
             "title": "Service Title",
-            "text": "Something about your service here.",
+            "text": "Something about your service..",
             "icon": "check_mark",
             "row_content": "",
             "page": ""
@@ -53,8 +53,8 @@
           "type": "text-with-icon",
           "settings": {
             "title": "Service Title",
-            "text": "Something about your service here.",
-            "icon": "check_mark",
+            "text": "Something about your service..",
+            "icon": "star",
             "row_content": "",
             "page": ""
           }
@@ -69,7 +69,7 @@
       "settings": {
         "title": "",
         "full_width": false,
-        "icon_height_desktop": 45,
+        "icon_height_desktop": 55,
         "icon_height_mobile": 50,
         "display_style": "slider",
         "columns_desktop": "4",
