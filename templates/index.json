@@ -27,20 +27,10 @@
             "row_content": "",
             "page": ""
           }
-        },
-        "e0e79e98-ed7e-4a78-8386-79bd2508ad80": {
-          "type": "text-with-icon",
-          "settings": {
-            "text": "Text",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
         }
       },
       "block_order": [
-        "0578f952-67bf-400b-b34d-46cfa5f8c7e8",
-        "e0e79e98-ed7e-4a78-8386-79bd2508ad80"
+        "0578f952-67bf-400b-b34d-46cfa5f8c7e8"
       ],
       "settings": {
         "title": "Title",
@@ -49,7 +39,7 @@
         "icon_height_mobile": 35,
         "display_style": "slider",
         "columns_desktop": "3",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "card_height": "fit_large",
         "color_scheme": "",
         "color_scheme_card": ""
