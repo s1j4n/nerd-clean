@@ -24,9 +24,7 @@
           "settings": {
             "title": "Service Title",
             "text": "Something about your service..",
-            "icon": "price_tag",
-            "row_content": "",
-            "page": ""
+            "icon": "price_tag"
           }
         },
         "9ea0dc3a-1eef-42a5-978a-bdde4b3cf76a": {
@@ -34,9 +32,7 @@
           "settings": {
             "title": "Service title",
             "text": "Something about your service..",
-            "icon": "chat_bubble",
-            "row_content": "",
-            "page": ""
+            "icon": "chat_bubble"
           }
         },
         "162fd200-47a4-4e78-b2e7-d136f9fab6e2": {
@@ -44,9 +40,7 @@
           "settings": {
             "title": "Service Title",
             "text": "Something about your service..",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
+            "icon": "check_mark"
           }
         },
         "59bd294e-3f8c-4e47-ae26-8024614d1aa6": {
@@ -54,9 +48,7 @@
           "settings": {
             "title": "Service Title",
             "text": "Something about your service..",
-            "icon": "star",
-            "row_content": "",
-            "page": ""
+            "icon": "star"
           }
         }
       },
@@ -69,7 +61,7 @@
       "settings": {
         "title": "",
         "full_width": false,
-        "icon_height_desktop": 55,
+        "icon_height_desktop": 40,
         "icon_height_mobile": 50,
         "display_style": "slider",
         "columns_desktop": "4",
