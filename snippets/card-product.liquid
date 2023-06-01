@@ -389,10 +389,10 @@ $(document).ready(function() {
   $(this).find('[id^="quick-add"]').hide();
   $('[id^="card-wrapper"]').hover(
     function() {
-      $(this).find('[id^="quick-add"]').show("slow");
+      $(this).find('[id^="quick-add"]').fadeIn();
     },
     function() {
-      $(this).find('[id^="quick-add"]').hide("slow");
+      $(this).find('[id^="quick-add"]').fadeOut();
     }
   );
 });
