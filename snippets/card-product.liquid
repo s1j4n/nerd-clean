@@ -33,7 +33,7 @@
       assign ratio = 1
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper underline-links-hover">
+  <div id="card-wrapper" class="card-wrapper product-card-wrapper underline-links-hover">
     <div
       class="
         card
@@ -202,7 +202,7 @@
           </div>
         </div>
         {%- if show_quick_add -%}
-          <div class="quick-add no-js-hidden">
+          <div id="quick-add" class="quick-add no-js-hidden">
             {%- liquid
               assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id
               assign qty_rules = false
@@ -382,3 +382,14 @@
     </div>
   </div>
 {%- endif -%}
+
+
+<script>
+  $("document").ready(function(){
+    $("#quick-add").hide();
+  })
+  
+  $("#card-wrapper").mouseover(function(){
+  $("#quick-add").show();
+});
+</script>
