@@ -463,6 +463,11 @@
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
         "color_scheme_card": "background-2"
       }
+    },
+    "6be12e65-0508-490a-983b-2f9bf17b1876": {
+      "type": "slick-slides",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -477,6 +482,7 @@
     "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7",
     "4b6c20d3-851a-407e-a6dd-12090af60b21",
     "0deeccff-e872-43de-b35d-46b627d715b7",
-    "4cb0bcfe-421b-49cc-9040-751f133b8159"
+    "4cb0bcfe-421b-49cc-9040-751f133b8159",
+    "6be12e65-0508-490a-983b-2f9bf17b1876"
   ]
 }
