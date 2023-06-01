@@ -3315,6 +3315,17 @@
       "presets": {
         "name": "Collapsible content"
       }
+    },
+    "image_slider": {
+      "name": "Image Slider",
+      "settings": {
+        "title": {
+          "label": "Title"
+        },
+        "full_width": {
+          "label": "Full Width"
+        }
+      }
     }
   }
 }
