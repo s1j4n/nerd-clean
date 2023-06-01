@@ -41,26 +41,26 @@
 
 /* Contact Page New Start */
 
-.custom-contact-page {
+.nerd-contact-page {
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 0 8rem;
 }
 
-.custom-contact-info {
+.nerd-contact-info {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.custom-contact-title {
+.nerd-contact-title {
   font-size: calc(var(--font-body-scale) * 2rem);
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-.custom-contact-body {
+.nerd-contact-body {
   font-size: calc(var(--font-body-scale) * 1.8rem);
   font-weight: 500;
   margin-top: 0;
@@ -68,32 +68,32 @@
   line-height: 1.8;
 }
 
-.custom-contact-form {
+.nerd-contact-form {
   padding-left: 5rem;
 }
 
-.custom-contact-form label,
+.nerd-contact-form label,
 button {
   font-weight: 500;
 }
 
-.custom-contact-form textarea {
+.nerd-contact-form textarea {
   min-height: 15rem;
 }
 
 @media screen and (max-width: 750px) {
-  .custom-contact-page {
+  .nerd-contact-page {
     display: block;
     padding: 0 1rem;
   }
-  .custom-contact-info {
+  .nerd-contact-info {
     text-align: center;
   }
-  .custom-contact-form {
+  .nerd-contact-form {
     padding-left: 0;
     padding: 5rem 0;
   }
-  .custom-contact-form button {
+  .nerd-contact-form button {
     max-width: 100%;
     width: 100%;
   }
@@ -102,14 +102,14 @@ button {
 
 @media screen and (min-width: 990px) {
 
-   .custom-contact-form textarea {
+   .nerd-contact-form textarea {
   min-height: 20rem;
 }
 }
 
 
 @media screen and (min-width: 1400px) {
-  .custom-contact-page{
+  .nerd-contact-page{
     padding: 0 15%;
   }
    
