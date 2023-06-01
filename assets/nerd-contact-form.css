@@ -50,7 +50,7 @@
 .nerd-contact-info {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .nerd-text a{
