@@ -4,7 +4,7 @@
       "type": "main-cart-items",
       "settings": {
         "padding_top": 0,
-        "padding_bottom": 36,
+        "padding_bottom": 0,
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
       }
     },
