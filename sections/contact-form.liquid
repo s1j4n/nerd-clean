@@ -101,8 +101,8 @@
               id="ContactForm-name"
               name="contact[{{ 'templates.contact.form.name' | t }}]"
               value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-              placeholder="{{ 'templates.contact.form.name' | t  }}">
-            <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t | upcase }}</label>
+              placeholder="{{ 'templates.contact.form.name' | t }}">
+            <label class="field__label uppercase" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
           </div>
           <div class="contact__fields">
             <div class="field field--with-error">
@@ -121,8 +121,8 @@
                 aria-describedby="ContactForm-email-error"
                 {% endif %}
                 placeholder="{{ 'templates.contact.form.email' | t }}">
-              <label class="field__label" for="ContactForm-email">
-                {{- 'templates.contact.form.email' | t | upcase }}
+              <label class="field__label uppercase" for="ContactForm-email">
+                {{- 'templates.contact.form.email' | t }}
                 <span aria-hidden="true">*</span>
               </label>
               {%- if form.errors contains 'email' -%}
@@ -147,7 +147,7 @@
                 pattern="[0-9\-]*"
                 value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
                 placeholder="{{ 'templates.contact.form.phone' | t }}">
-              <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t | upcase }}</label>
+              <label class="field__label uppercase" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
             </div>
           </div>
           <div class="field">
@@ -159,13 +159,13 @@
               placeholder="{{ 'templates.contact.form.comment' | t }}">
               {{- form.body -}}
             </textarea>
-            <label class="form__label field__label" for="ContactForm-body">
-              {{- 'templates.contact.form.comment' | t | upcase -}}
+            <label class="form__label uppercase field__label" for="ContactForm-body">
+              {{- 'templates.contact.form.comment' | t -}}
             </label>
           </div>
           <div class="contact__button">
-            <button type="submit" class="">
-              {{ 'templates.contact.form.send' | t | upcase }}
+            <button type="submit" class="button">
+              {{ 'templates.contact.form.send' | t }}
             </button>
           </div>
         {%- endform -%}
