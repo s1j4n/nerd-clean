@@ -14,7 +14,14 @@
   
   {% endunless %}
 
+  {%  unless section.settings.slider_type == "dots" %} 
   
+.slick-prev, .slick-next {
+  display: none !important;
+}
+  
+  {% endunless %}
+
 
 
   @media screen and (max-width: 750px) {
@@ -71,7 +78,9 @@
 <script type="text/javascript">
     $(document).ready(function(){
       $('.your-class').slick({
+{%  unless section.settings.slider_type == "dots" %}
   dots: true,
+{% endunless %}
   infinite: false,
   speed: 300,
   slidesToShow: 3,
