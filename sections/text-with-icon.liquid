@@ -42,13 +42,7 @@
   <div class="{% unless section.settings.full_width %}nerd-page-width {% endunless %}">
     <div class="nerd-title animate--slide-in">{{ section.settings.title }}</div>
     <div class="nerd-content">
-      <slider-component class="slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
-      <ul
-        id="Slider-{{ section.id }}"
-        class="grid product-grid contains-card contains-card--product contains-card--standard grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down slider slider--desktop slider--tablet grid--peek"
-        role="list"
-        aria-label="{{ 'general.slider.name' | t }}"
-        data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'
+      <ul class="your-class"
       >
           {% for block in section.blocks %}
             <li
@@ -118,10 +112,16 @@
           </button>
         </div>
         {%- endif -%}
-      </slider-component>
     </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function(){
+  $('.your-class').slick();
+});
+  
+</script>
 
 {% schema %}
   {
