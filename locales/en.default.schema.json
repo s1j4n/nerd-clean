@@ -1742,7 +1742,7 @@
           "label": "Number of columns on desktop"
         },
         "show_count": {
-          "label": "Show Count"
+          "label": "Show Product Count"
         },
         "enable_filtering": {
           "label": "Enable filtering",
