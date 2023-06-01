@@ -21,7 +21,8 @@
 
 <div class="nerd-container color-{{ section.settings.color_scheme }}">
   <div class="{% unless section.settings.full_width %}nerd-page-width {% endunless %}">
-    <div class="nerd-title animate--slide-in">{{ section.settings.title }}</div>
+        <div class="nerd-title scroll-trigger animate--slide-in {% if section.settings.heading_center %} text-center {% endif %} ">{{ section.settings.title }}</div>
+
     <div class="nerd-content">
       <div class="your-class">
           {% for block in section.blocks %}
