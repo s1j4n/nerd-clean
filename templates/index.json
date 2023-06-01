@@ -179,7 +179,7 @@
         "image_2": "shopify:\/\/shop_images\/primo.png",
         "text_position": "left",
         "height": "adapt",
-        "desktop_image_width": "small",
+        "desktop_image_width": "medium",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
