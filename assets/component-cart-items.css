@@ -13,7 +13,6 @@
 
 .cart-item__quantity-wrapper {
   display: flex;
-  flex-direction: column;
 }
 
 .cart-item__totals {
