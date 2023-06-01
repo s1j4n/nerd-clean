@@ -464,13 +464,44 @@
     },
     "26fa271b-eb50-48ef-a3c6-f103d1510ffa": {
       "type": "testimonials-slick",
+      "blocks": {
+        "6670cae9-d53b-4ce0-aa77-f205e2ca36fd": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service...",
+            "icon": "check_mark"
+          }
+        },
+        "e8f9d886-2e97-469d-bef5-a98286d34e22": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service...",
+            "icon": "check_mark"
+          }
+        },
+        "d19e3ce2-0f04-4092-a01c-985d5224c895": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service...",
+            "icon": "check_mark"
+          }
+        }
+      },
+      "block_order": [
+        "6670cae9-d53b-4ce0-aa77-f205e2ca36fd",
+        "e8f9d886-2e97-469d-bef5-a98286d34e22",
+        "d19e3ce2-0f04-4092-a01c-985d5224c895"
+      ],
       "settings": {
         "title": "Title",
         "full_width": false,
         "icon_height_desktop": 50,
         "icon_height_mobile": 14,
         "card_height": "fit_large",
-        "color_scheme": ""
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
       }
     }
   },
