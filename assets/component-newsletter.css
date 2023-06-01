@@ -49,6 +49,8 @@
   top: 0;
   height: 100%;
   z-index: 2;
+  border-left: 1px solid;
+  
 }
 
 .newsletter-form__button:focus-visible {
