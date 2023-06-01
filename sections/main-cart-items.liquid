@@ -25,7 +25,7 @@
 
 <cart-items class="nerd-container {% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %} color-{{ section.settings.color_scheme }}">
   <div class="title-wrapper-with-link">
-    <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
+    <h1 class="title title--primary uppercase text-center">{{ 'sections.cart.title' | t }}</h1>
     <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
   </div>
 
@@ -48,7 +48,7 @@
       <div class="js-contents">
         {%- if cart != empty -%}
           <table class="cart-items">
-            <caption class="visually-hidden uppercase text-center">
+            <caption class="visually-hidden">
               {{ 'sections.cart.title' | t }}
             </caption>
             <thead>
