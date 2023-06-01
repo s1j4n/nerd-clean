@@ -39,11 +39,11 @@
 {% endstyle %}
 
 
-      <ul
+      <div
         class="your-class"
       >
           {% for block in section.blocks %}
-            <li>
+            <div>
               <div class="nerd-iconwithtext{% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
                 {% if block.settings.icon %}
                   <div class="nerd-iconwithtext--icon-wrapper">
@@ -55,11 +55,11 @@
                   <div class="nerd-iconwithtext--text">{{ block.settings.text }}</div>
                 </div>
               </div>
-            </li>
+            </div>
           {%- else -%}
            
           {%- endfor -%}
-        </ul>
+        </div>
 
 {% comment %}         {%- if show_mobile_slider or show_desktop_slider -%}
            <div class="slider-buttons no-js-hidden">
