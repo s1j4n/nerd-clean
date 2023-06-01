@@ -1,4 +1,4 @@
-.banner {
+.nerd-banner {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -64,7 +64,7 @@
 }
 
 @media screen and (min-width: 750px) {
-  .banner {
+  .nerd-banner {
     flex-direction: row;
   }
 
@@ -127,7 +127,7 @@
 }
 
 @media screen and (max-width: 749px) {
-  .banner:not(.banner--stacked) {
+  .nerd-banner:not(.banner--stacked) {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -207,20 +207,20 @@
     height: auto;
   }
 
-  .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box {
+  .nerd-banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box {
     background: transparent;
     --color-foreground: 255, 255, 255;
     --color-button: 255, 255, 255;
     --color-button-text: 0, 0, 0;
   }
 
-  .banner:not(.banner--mobile-bottom) .banner__box {
+  .nerd-banner:not(.banner--mobile-bottom) .banner__box {
     border: none;
     border-radius: 0;
     box-shadow: none;
   }
 
-  .banner:not(.banner--mobile-bottom) .button--secondary {
+  .nerd-banner:not(.banner--mobile-bottom) .button--secondary {
     --color-button: 255, 255, 255;
     --color-button-text: 255, 255, 255;
     --alpha-button-background: 0;
@@ -316,7 +316,7 @@
     order: 2;
   }
 
-  .banner:not(.banner--mobile-bottom) .field__input {
+  .nerd-banner:not(.banner--mobile-bottom) .field__input {
     background-color: transparent;
   }
 }
@@ -362,7 +362,7 @@
   }
 }
 
-.banner::after,
+.nerd-banner::after,
 .banner__media::after {
   content: '';
   position: absolute;
