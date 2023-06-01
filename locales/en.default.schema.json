@@ -638,12 +638,10 @@
           "name": "Contact info",
           "settings": {
             "title": {
-              "label": "Title",
-              "default": "Title"
+              "label": "Title"
             },
             "text": {
-              "label": "Text",
-              "default": "<p>Add your store details or store hours.<\/p>"
+              "label": "Text"
             }
           }
         }
