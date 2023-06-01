@@ -15,6 +15,11 @@
   padding: 3rem;
 }
 
+.nerd-iconwithtext--icon-wrapper{
+  padding: 2rem;
+  
+}
+
 .nerd-iconwithtext--title{
   font-size: calc(var(--font-heading-scale) * 2rem);
   text-transform: uppercase;
