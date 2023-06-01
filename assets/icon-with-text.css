@@ -49,7 +49,7 @@
   opacity: .75;
 }
 
-.slick-prev.slick-arrow, .slick-next.slick-arrow{
+.slick-prev, .slick-next {
   display: none;
 }
 
