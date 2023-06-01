@@ -1,7 +1,7 @@
 .quick-add {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   border-radius: 50%;
   overflow: hidden;
   grid-row-start: 4;
