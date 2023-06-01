@@ -633,6 +633,21 @@
     },
     "contact-form": {
       "name": "Contact Form",
+      "blocks": {
+        "contact_info": {
+          "name": "Contact info",
+          "settings": {
+            "title": {
+              "label": "Title",
+              "default": "Title"
+            },
+            "text": {
+              "label": "Text",
+              "default": "<p>Add your store details or store hours.<\/p>"
+            }
+          }
+        }
+      },
       "presets": {
         "name": "Contact form"
       }
