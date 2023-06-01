@@ -42,7 +42,7 @@
   <div class="{% unless section.settings.full_width %}nerd-page-width {% endunless %}">
     <div class="nerd-title animate--slide-in">{{ section.settings.title }}</div>
     <div class="nerd-content">
-      <div class="responsive">
+      <div class="your-class">
           {% for block in section.blocks %}
               <div class="nerd-iconwithtext nerd-iconwithtext--padding">
                 {% if block.settings.icon %}
@@ -72,11 +72,10 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
 
-$(document).ready(function(){
-  
-$('.responsive').slick({
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
   dots: true,
   infinite: false,
   speed: 300,
@@ -106,12 +105,9 @@ $('.responsive').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
-});
-}
+      });
+    });
 </script>
 
 
