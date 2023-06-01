@@ -43,7 +43,7 @@
   color: white;
   opacity: .5;
 }
-.slick-dots li button:before {
+.slick-dots li.slick-active button:before { {
   color: white;
   font-size: 1rem;
   opacity: .75;
