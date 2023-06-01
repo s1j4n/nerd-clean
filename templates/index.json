@@ -336,6 +336,51 @@
         "padding_bottom": 0
       }
     },
+    "26fa271b-eb50-48ef-a3c6-f103d1510ffa": {
+      "type": "testimonials-slick",
+      "blocks": {
+        "e6d96cc9-6568-4473-adae-cb95acb2bf62": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/primo.png",
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        },
+        "4ceea60a-60c6-45c2-8fb2-1edcd2565a68": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/primo.png",
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        },
+        "89367554-5d73-4e76-a741-291cc4d42ab7": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/primo.png",
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e6d96cc9-6568-4473-adae-cb95acb2bf62",
+        "4ceea60a-60c6-45c2-8fb2-1edcd2565a68",
+        "89367554-5d73-4e76-a741-291cc4d42ab7"
+      ],
+      "settings": {
+        "title": "What Our Clients Say",
+        "full_width": false,
+        "heading_center": true,
+        "display_style": "slider",
+        "columns_desktop": "3",
+        "columns_mobile": "1",
+        "card_height": "fit_large",
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
+        "color_scheme_card": ""
+      }
+    },
     "4cb0bcfe-421b-49cc-9040-751f133b8159": {
       "type": "image-slider",
       "blocks": {
@@ -416,51 +461,6 @@
         "card_height": "fit_large",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
       }
-    },
-    "26fa271b-eb50-48ef-a3c6-f103d1510ffa": {
-      "type": "testimonials-slick",
-      "blocks": {
-        "e6d96cc9-6568-4473-adae-cb95acb2bf62": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/primo.png",
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
-          }
-        },
-        "4ceea60a-60c6-45c2-8fb2-1edcd2565a68": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/primo.png",
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
-          }
-        },
-        "89367554-5d73-4e76-a741-291cc4d42ab7": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/primo.png",
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "e6d96cc9-6568-4473-adae-cb95acb2bf62",
-        "4ceea60a-60c6-45c2-8fb2-1edcd2565a68",
-        "89367554-5d73-4e76-a741-291cc4d42ab7"
-      ],
-      "settings": {
-        "title": "Title",
-        "full_width": false,
-        "heading_center": true,
-        "display_style": "slider",
-        "columns_desktop": "3",
-        "columns_mobile": "1",
-        "card_height": "fit_large",
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
-        "color_scheme_card": ""
-      }
     }
   },
   "order": [
@@ -473,8 +473,8 @@
     "video",
     "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7",
     "4b6c20d3-851a-407e-a6dd-12090af60b21",
+    "26fa271b-eb50-48ef-a3c6-f103d1510ffa",
     "4cb0bcfe-421b-49cc-9040-751f133b8159",
-    "53fa0eb7-324c-4259-b945-e3beba8a1207",
-    "26fa271b-eb50-48ef-a3c6-f103d1510ffa"
+    "53fa0eb7-324c-4259-b945-e3beba8a1207"
   ]
 }
