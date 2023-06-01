@@ -464,9 +464,50 @@
         "color_scheme_card": "background-2"
       }
     },
-    "6be12e65-0508-490a-983b-2f9bf17b1876": {
-      "type": "slick-slides",
+    "53fa0eb7-324c-4259-b945-e3beba8a1207": {
+      "type": "text-with-icon-slick",
+      "blocks": {
+        "e26ae1ba-cb28-49c8-a17f-9e5076722aad": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service...",
+            "icon": "check_mark"
+          }
+        },
+        "02ed4e00-db3c-4c06-979f-557d1c969a98": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service...",
+            "icon": "check_mark"
+          }
+        },
+        "221a0662-4127-4b47-8a55-2921973e1c45": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service...",
+            "icon": "check_mark"
+          }
+        }
+      },
+      "block_order": [
+        "e26ae1ba-cb28-49c8-a17f-9e5076722aad",
+        "02ed4e00-db3c-4c06-979f-557d1c969a98",
+        "221a0662-4127-4b47-8a55-2921973e1c45"
+      ],
       "settings": {
+        "title": "Title",
+        "full_width": false,
+        "icon_height_desktop": 50,
+        "icon_height_mobile": 20,
+        "display_style": "slider",
+        "columns_desktop": "4",
+        "columns_mobile": "1",
+        "card_height": "fit_large",
+        "color_scheme": "",
+        "color_scheme_card": ""
       }
     }
   },
@@ -483,6 +524,6 @@
     "4b6c20d3-851a-407e-a6dd-12090af60b21",
     "0deeccff-e872-43de-b35d-46b627d715b7",
     "4cb0bcfe-421b-49cc-9040-751f133b8159",
-    "6be12e65-0508-490a-983b-2f9bf17b1876"
+    "53fa0eb7-324c-4259-b945-e3beba8a1207"
   ]
 }
