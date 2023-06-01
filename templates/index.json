@@ -458,12 +458,19 @@
         "full_width": false,
         "icon_height_desktop": 40,
         "icon_height_mobile": 24,
-        "display_style": "slider",
-        "columns_desktop": "4",
-        "columns_mobile": "1",
         "card_height": "fit_large",
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
-        "color_scheme_card": ""
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
+      }
+    },
+    "26fa271b-eb50-48ef-a3c6-f103d1510ffa": {
+      "type": "testimonials-slick",
+      "settings": {
+        "title": "Title",
+        "full_width": false,
+        "icon_height_desktop": 50,
+        "icon_height_mobile": 14,
+        "card_height": "fit_large",
+        "color_scheme": ""
       }
     }
   },
@@ -479,6 +486,7 @@
     "4b6c20d3-851a-407e-a6dd-12090af60b21",
     "0deeccff-e872-43de-b35d-46b627d715b7",
     "4cb0bcfe-421b-49cc-9040-751f133b8159",
-    "53fa0eb7-324c-4259-b945-e3beba8a1207"
+    "53fa0eb7-324c-4259-b945-e3beba8a1207",
+    "26fa271b-eb50-48ef-a3c6-f103d1510ffa"
   ]
 }
