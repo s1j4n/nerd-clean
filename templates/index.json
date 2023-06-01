@@ -371,7 +371,7 @@
       ],
       "settings": {
         "title": "What Our Clients Say",
-        "full_width": false,
+        "full_width": true,
         "heading_center": true,
         "display_style": "slider",
         "columns_desktop": "3",
