@@ -59,7 +59,9 @@
               {% endif %}>
               <div class="nerd-iconwithtext nerd-iconwithtext--padding {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
                 {% if block.settings.icon %}
+                  <div class="nerd-iconwithtext--icon-wrapper">
                   {% render 'icon-accordion', icon: block.settings.icon %}
+                  </div>
                 {% endif %}
                 <div class="nerd-iconwithtext--content">
                   <div class="nerd-iconwithtext--title">{{ block.settings.title }}</div>
