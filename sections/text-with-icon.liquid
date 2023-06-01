@@ -44,7 +44,7 @@
       >
           {% for block in section.blocks %}
             <li>
-              <div class="nerd-iconwithtext nerd-iconwithtext--padding {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
+              <div class="nerd-iconwithtext{% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
                 {% if block.settings.icon %}
                   <div class="nerd-iconwithtext--icon-wrapper">
                   {% render 'icon-accordion', icon: block.settings.icon %}
