@@ -5,6 +5,9 @@
   height: 100%;
 }
 
+.text-center{
+  text-align: center;
+}
 
 .nerd-container{
   padding: 2rem;
