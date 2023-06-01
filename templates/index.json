@@ -373,9 +373,7 @@
         "title": "What Our Clients Say",
         "full_width": true,
         "heading_center": true,
-        "display_style": "slider",
-        "columns_desktop": "3",
-        "columns_mobile": "1",
+        "total_to_show": 2,
         "card_height": "fit_large",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
         "color_scheme_card": ""
@@ -412,7 +410,9 @@
         "2bd68c58-aeb7-4334-893a-41a726948775"
       ],
       "settings": {
+        "title": "Image Gallery",
         "full_width": false,
+        "heading_center": false,
         "display_style": "slider",
         "columns_desktop": "3",
         "columns_mobile": "1",
