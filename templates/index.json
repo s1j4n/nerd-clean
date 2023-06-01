@@ -455,7 +455,7 @@
       ],
       "settings": {
         "title": "",
-        "full_width": false,
+        "full_width": true,
         "icon_height_desktop": 40,
         "icon_height_mobile": 24,
         "display_style": "slider",
