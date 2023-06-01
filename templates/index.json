@@ -372,6 +372,7 @@
       "settings": {
         "title": "What Our Clients Say",
         "full_width": false,
+        "heading_center": true,
         "display_style": "slider",
         "columns_desktop": "3",
         "columns_mobile": "1",
@@ -455,8 +456,8 @@
       "settings": {
         "title": "",
         "full_width": false,
-        "icon_height_desktop": 50,
-        "icon_height_mobile": 20,
+        "icon_height_desktop": 40,
+        "icon_height_mobile": 24,
         "display_style": "slider",
         "columns_desktop": "4",
         "columns_mobile": "1",
