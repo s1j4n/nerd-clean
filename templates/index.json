@@ -373,7 +373,7 @@
         "title": "What Our Clients Say",
         "full_width": true,
         "heading_center": true,
-        "total_to_show": 4,
+        "total_to_show": 3,
         "card_height": "fit_large",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
         "color_scheme_card": ""
