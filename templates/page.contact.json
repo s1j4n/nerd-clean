@@ -10,6 +10,18 @@
     },
     "form": {
       "type": "contact-form",
+      "blocks": {
+        "163ae2ed-79ba-43ea-8a73-e22a16534a6f": {
+          "type": "contact",
+          "settings": {
+            "Heading": "Heading",
+            "detail": "<p>Add your store details or store hours.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163ae2ed-79ba-43ea-8a73-e22a16534a6f"
+      ],
       "settings": {
         "heading": "",
         "heading_size": "h1",
