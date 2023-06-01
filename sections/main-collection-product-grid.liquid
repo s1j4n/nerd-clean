@@ -106,7 +106,13 @@
     <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical nerd-container{% endif %}">
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
-      {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
+      {% liquid 
+      assign enable_filtering = false
+      if collection.products.size > 0 and section.settings.enable_filtering
+       assign enable_filtering = true 
+      endif
+       %}
+      {%- if enable_filtering or section.settings.enable_sorting -%}
         <aside
           aria-labelledby="verticalTitle"
           class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
@@ -115,7 +121,7 @@
         >
           {% render 'facets',
             results: collection,
-            enable_filtering: section.settings.enable_filtering,
+            enable_filtering: enable_filtering,
             enable_sorting: section.settings.enable_sorting,
             filter_type: section.settings.filter_type,
             paginate: paginate,
