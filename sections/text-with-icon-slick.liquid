@@ -44,6 +44,7 @@
     <div class="nerd-content">
       <div class="your-class">
           {% for block in section.blocks %}
+            <div>
               <div class="nerd-iconwithtext nerd-iconwithtext--padding">
                 {% if block.settings.icon %}
                   <div class="nerd-iconwithtext--icon-wrapper">
@@ -55,6 +56,7 @@
                   <div class="nerd-iconwithtext--text">{{ block.settings.text }}</div>
                 </div>
               </div>
+            </div>
           {%- else -%}
             {%- for i in (1..3) -%}
               <div
