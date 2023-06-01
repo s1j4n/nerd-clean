@@ -33,18 +33,18 @@
         assign contact_form_class = 'isolate scroll-trigger animate--slide-in'
       endif
     -%}
-    <div class="nerd-contact-page">
-      <div class="nerd-contact-info">
+    <div class="custom-contact-page">
+      <div class="custom-contact-info">
         <div class="location">
           <div
-            class="nerd-contact-title">Location</div>
-          <div class="nerd-contact-body">
+            class="custom-contact-title">Location</div>
+          <div class="custom-contact-body">
             {{ section.settings.location }}
           </div>
         </div>
         <div class="contact-details">
-          <div class="nerd-contact-title">Contact Details</div>
-          <div class="nerd-contact-body">
+          <div class="custom-contact-title">Contact Details</div>
+          <div class="custom-contact-body">
             <a href="tel:{{ section.settings.phone }}">
               {{ section.settings.phone }}
             </a>
@@ -55,14 +55,14 @@
           </div>
         </div>
         <div class="hours">
-          <div class="nerd-contact-title">Hours</div>
-          <div class="nerd-contact-body">
+          <div class="custom-contact-title">Hours</div>
+          <div class="custom-contact-body">
             {{ section.settings.hours }}
           </div>
         </div>
       </div>
 
-      <div class="nerd-contact-form">
+      <div class="custom-contact-form">
         {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
           {%- if form.posted_successfully? -%}
             <h2
