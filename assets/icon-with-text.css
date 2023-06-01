@@ -41,7 +41,14 @@
 
 .slick-dots li button:before {
   color: white;
+  opacity: .5;
 }
+.slick-dots li button:before {
+  color: white;
+  font-size: 1rem;
+  opacity: .75;
+}
+
 
 @media screen and (max-width: 750px){
   .nerd-iconwithtext {
