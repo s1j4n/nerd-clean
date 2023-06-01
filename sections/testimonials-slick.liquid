@@ -66,8 +66,8 @@
   dots: true,
   infinite: false,
   speed: 300,
-  slidesToShow: {{ section.blocks.size | plus: 0 }},
-  slidesToScroll: {{ section.blocks.size | minus: 1 }},
+  slidesToShow: {{ section.settings.total_to_show | plus: 0 }},
+  slidesToScroll: {{ section.settings.total_to_show | minus: 1 }},
   responsive: [
     {
       breakpoint: 1024,
