@@ -186,6 +186,7 @@
   color: rgba(var(--color-foreground), 0.85);
   font-size: 1.4rem;
   margin: -1.5rem 2rem 0 0;
+  text-transform: uppercase;
 }
 
 .facets__reset {
