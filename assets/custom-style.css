@@ -70,13 +70,13 @@
   height: 100%;
 }
 
-
+/* 
 .card__heading.h5,
 .card__heading {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: bold;
-}
+} */
 
 .card .icon-wrap {
   display: none;
@@ -302,9 +302,6 @@
   width: 30%;
 }
 
-.location-info {
-  /* font-weight: bold; */
-}
 
 .location-info h2 {
   font-weight: bolder;
