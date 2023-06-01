@@ -170,6 +170,21 @@
   border-radius: 5px;
 }
 
+
+/* ------------CART--------------
+
+*/
+
+
+.quantity__button--minus{
+  border-right: 1px solid;
+}
+
+.quantity__button--plus{
+  border-left: 1px solid;
+}
+
+
 @media screen and (max-width: 425px){
   .nerd-container{
     padding: 1rem;
