@@ -88,7 +88,7 @@
           {%- endfor -%}
         </ul>
 
-        {%- if show_mobile_slider or show_desktop_slider -%}
+{% comment %}         {%- if show_mobile_slider or show_desktop_slider -%}
            <div class="slider-buttons no-js-hidden">
           <button
             type="button"
@@ -115,7 +115,7 @@
            {% render 'icon-circle' %}
           </button>
         </div>
-        {%- endif -%}
+        {%- endif -%} {% endcomment %}
     </div>
   </div>
 </div>
