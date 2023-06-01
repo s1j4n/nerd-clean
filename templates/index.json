@@ -134,8 +134,8 @@
         "full_width": true,
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
         "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
+        "image_shape": "arch",
+        "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "1",
@@ -238,13 +238,12 @@
         "4814751b-3d37-4c7d-8127-478fe2e5182b"
       ],
       "settings": {
+        "full_width": false,
         "title": "<strong>SHOP <\/strong>NOW",
-        "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": "3",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
         "columns_mobile": "1",
-        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -443,12 +442,18 @@
           "type": "image_picker",
           "settings": {
           }
+        },
+        "2bd68c58-aeb7-4334-893a-41a726948775": {
+          "type": "image_picker",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "b2657ccd-251c-49ce-8d1e-ddef41efac2e",
         "c7ed3455-4dba-4f8d-9f14-89266d801b36",
-        "029d446d-8395-449f-b343-69848370073e"
+        "029d446d-8395-449f-b343-69848370073e",
+        "2bd68c58-aeb7-4334-893a-41a726948775"
       ],
       "settings": {
         "full_width": false,
