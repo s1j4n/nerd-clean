@@ -78,9 +78,9 @@
 <script type="text/javascript">
     $(document).ready(function(){
       $('.your-class').slick({
-{%  unless section.settings.slider_type == "dots" %}
+{%  if section.settings.slider_type == "dots" %}
   dots: true,
-{% endunless %}
+        {% endif %}
   infinite: false,
   speed: 300,
   slidesToShow: 3,
