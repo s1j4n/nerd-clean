@@ -187,6 +187,8 @@
   font-size: 1.4rem;
   margin: -1.5rem 2rem 0 0;
   text-transform: uppercase;
+  text-align: center;
+
 }
 
 .facets__reset {
