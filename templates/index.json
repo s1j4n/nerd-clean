@@ -372,7 +372,7 @@
       "settings": {
         "title": "What Our Clients Say",
         "full_width": true,
-        "slider_type": "carets",
+        "slider_type": "dots",
         "heading_center": true,
         "total_to_show": 4,
         "card_height": "fit_large",
