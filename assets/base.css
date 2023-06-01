@@ -2593,6 +2593,10 @@ details[open] .modal-overlay::after {
     font-size: calc(var(--font-heading-scale) * 3rem);
 }
 
+.image-with-text__text.rte.body{
+  font-size: 1.2rem;
+}
+
 }
 
 
