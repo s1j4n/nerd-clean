@@ -49,6 +49,10 @@
   opacity: .75;
 }
 
+.slick-prev.slick-arrow .slick-next.slick-arrow{
+  display: none;
+}
+
 
 @media screen and (max-width: 750px){
   .nerd-iconwithtext {
