@@ -44,7 +44,6 @@
 .custom-contact-page {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  font-family: "Poppins";
   padding: 0 8rem;
 }
 
@@ -62,7 +61,6 @@
 }
 
 .custom-contact-body {
-  color: var(--tuna);
   font-size: calc(var(--font-body-scale) * 1.8rem);
   font-weight: 500;
   margin-top: 0;
@@ -75,7 +73,6 @@
 }
 
 .custom-contact-form button {
-  background-color: #eccac2;
   border: none;
   outline: none;
   box-shadow: none;
