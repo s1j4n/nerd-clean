@@ -117,7 +117,7 @@
             pattern="[0-9\-]*"
             value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
             placeholder="{{ 'templates.contact.form.phone' | t }}">
-          <label class="field__label " for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
+          <label class="field__label uppercase" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
         </div>
       </div>
       <div class="field">
@@ -129,7 +129,7 @@
           placeholder="{{ 'templates.contact.form.comment' | t }}">
           {{- form.body -}}
         </textarea>
-        <label class="form__label field__label" for="ContactForm-body">
+        <label class="form__label uppercase field__label" for="ContactForm-body">
           {{- 'templates.contact.form.comment' | t -}}
         </label>
       </div>
