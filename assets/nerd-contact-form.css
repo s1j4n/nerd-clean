@@ -72,18 +72,6 @@
   padding-left: 5rem;
 }
 
-.custom-contact-form button {
-  border: none;
-  outline: none;
-  box-shadow: none;
-  border-radius: 7px;
-  max-width: 150px;
-  width: 100%;
-  text-align: center;
-  padding: 1rem 0;
-  float: right;
-}
-
 .custom-contact-form label,
 button {
   font-weight: 500;
