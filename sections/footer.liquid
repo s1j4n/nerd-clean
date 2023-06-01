@@ -36,7 +36,7 @@
   }
 {%- endstyle -%}
 
-<footer class="footer nerd-container color-{{ section.settings.color_scheme }}  gradient section-{{ section.id }}-padding">
+<footer class="footer  color-{{ section.settings.color_scheme }}  gradient section-{{ section.id }}-padding">
   <div class="">
     {%- liquid
     assign has_social_icons = true
@@ -58,7 +58,7 @@
  or section.settings.enable_follow_on_shop
  -%}
       {%- unless only_empty_brand -%}
-        <div class="footer__content-top page-width">
+        <div class="footer__content-top nerd-container">
           {%- if section.blocks.size > 0 -%}
             {%- liquid
             if section.blocks.size == 9
