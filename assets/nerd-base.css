@@ -93,19 +93,19 @@
 
 .card__heading.h5,
 .card__heading {
-  font-size: 2rem;
+/*   font-size: 2rem; */
   text-transform: uppercase;
-  font-weight: bold;
+/*   font-weight: bold; */
 }
 
 .card .icon-wrap {
   display: none;
 }
 
-.price--sold-out .price__availability,
+/* .price--sold-out .price__availability,
 .price__regular {
   font-size: 1.9rem;
-}
+} */
 
 .announcement-bar__message.h5 {
   text-transform: uppercase;
