@@ -2588,6 +2588,14 @@ details[open] .modal-overlay::after {
     padding: 0 6rem;
   }
 }
+@media screen and (min-width: 475px) {
+.h0 {
+    font-size: calc(var(--font-heading-scale) * 3rem);
+}
+
+}
+
+
 
 @media screen and (min-width: 990px) {
   .search-modal__form {
