@@ -25,7 +25,7 @@
 
     <div class="nerd-content">
       <div class="your-class">
-          {% for block in section.blocks %}
+          {% for block in section.blocks limit: section.settings.total_to_show %}
             <div>
              <div class="nerd-testimonial {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
                 {% if block.settings.image %}
