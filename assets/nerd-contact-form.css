@@ -53,6 +53,10 @@
   gap: 2rem;
 }
 
+.nerd-contact-form a{
+  text-decoration: none;
+  color: inherit;
+}
 
 .nerd-contact-form {
   padding-left: 5rem;
