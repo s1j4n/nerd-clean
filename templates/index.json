@@ -472,7 +472,7 @@
           "settings": {
             "title": "Service Title",
             "text": "Something about your service...",
-            "icon": "check_mark"
+            "icon": "chat_bubble"
           }
         },
         "02ed4e00-db3c-4c06-979f-557d1c969a98": {
@@ -480,7 +480,7 @@
           "settings": {
             "title": "Service Title",
             "text": "Something about your service...",
-            "icon": "check_mark"
+            "icon": "star"
           }
         },
         "221a0662-4127-4b47-8a55-2921973e1c45": {
@@ -488,7 +488,7 @@
           "settings": {
             "title": "Service Title",
             "text": "Something about your service...",
-            "icon": "check_mark"
+            "icon": "stopwatch"
           }
         }
       },
