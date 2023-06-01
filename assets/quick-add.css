@@ -1,5 +1,9 @@
 .quick-add {
   position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  overflow: hidden;
   grid-row-start: 4;
   margin: 0 0 1rem;
   z-index: 1;
