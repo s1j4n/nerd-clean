@@ -336,51 +336,6 @@
         "padding_bottom": 0
       }
     },
-    "0deeccff-e872-43de-b35d-46b627d715b7": {
-      "type": "testimonials",
-      "blocks": {
-        "aa288392-b43f-4790-a55a-27f144584628": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/primo.png",
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
-          }
-        },
-        "8585e6bb-eb7d-45aa-b03a-799e0228b876": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/primo.png",
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
-          }
-        },
-        "b4868a17-899c-4ff1-a064-a2a2a7e04a08": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/primo.png",
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "aa288392-b43f-4790-a55a-27f144584628",
-        "8585e6bb-eb7d-45aa-b03a-799e0228b876",
-        "b4868a17-899c-4ff1-a064-a2a2a7e04a08"
-      ],
-      "settings": {
-        "title": "What Our Clients Say",
-        "full_width": false,
-        "heading_center": true,
-        "display_style": "slider",
-        "columns_desktop": "3",
-        "columns_mobile": "1",
-        "card_height": "fit_large",
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
-        "color_scheme_card": ""
-      }
-    },
     "4cb0bcfe-421b-49cc-9040-751f133b8159": {
       "type": "image-slider",
       "blocks": {
@@ -465,43 +420,46 @@
     "26fa271b-eb50-48ef-a3c6-f103d1510ffa": {
       "type": "testimonials-slick",
       "blocks": {
-        "6670cae9-d53b-4ce0-aa77-f205e2ca36fd": {
-          "type": "text-with-icon",
+        "e6d96cc9-6568-4473-adae-cb95acb2bf62": {
+          "type": "testimonial",
           "settings": {
-            "title": "Service Title",
-            "text": "Something about your service...",
-            "icon": "check_mark"
+            "image": "shopify:\/\/shop_images\/primo.png",
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         },
-        "e8f9d886-2e97-469d-bef5-a98286d34e22": {
-          "type": "text-with-icon",
+        "4ceea60a-60c6-45c2-8fb2-1edcd2565a68": {
+          "type": "testimonial",
           "settings": {
-            "title": "Service Title",
-            "text": "Something about your service...",
-            "icon": "check_mark"
+            "image": "shopify:\/\/shop_images\/primo.png",
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         },
-        "d19e3ce2-0f04-4092-a01c-985d5224c895": {
-          "type": "text-with-icon",
+        "89367554-5d73-4e76-a741-291cc4d42ab7": {
+          "type": "testimonial",
           "settings": {
-            "title": "Service Title",
-            "text": "Something about your service...",
-            "icon": "check_mark"
+            "image": "shopify:\/\/shop_images\/primo.png",
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         }
       },
       "block_order": [
-        "6670cae9-d53b-4ce0-aa77-f205e2ca36fd",
-        "e8f9d886-2e97-469d-bef5-a98286d34e22",
-        "d19e3ce2-0f04-4092-a01c-985d5224c895"
+        "e6d96cc9-6568-4473-adae-cb95acb2bf62",
+        "4ceea60a-60c6-45c2-8fb2-1edcd2565a68",
+        "89367554-5d73-4e76-a741-291cc4d42ab7"
       ],
       "settings": {
         "title": "Title",
         "full_width": false,
-        "icon_height_desktop": 50,
-        "icon_height_mobile": 14,
+        "heading_center": true,
+        "display_style": "slider",
+        "columns_desktop": "3",
+        "columns_mobile": "1",
         "card_height": "fit_large",
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
+        "color_scheme_card": ""
       }
     }
   },
@@ -515,7 +473,6 @@
     "video",
     "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7",
     "4b6c20d3-851a-407e-a6dd-12090af60b21",
-    "0deeccff-e872-43de-b35d-46b627d715b7",
     "4cb0bcfe-421b-49cc-9040-751f133b8159",
     "53fa0eb7-324c-4259-b945-e3beba8a1207",
     "26fa271b-eb50-48ef-a3c6-f103d1510ffa"
