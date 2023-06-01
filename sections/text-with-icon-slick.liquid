@@ -1,21 +1,5 @@
 {{ 'icon-with-text.css' | asset_url | stylesheet_tag }}
 
-{% liquid
-  assign products_to_display = section.blocks.size
-
-  assign columns_mobile_int = section.settings.columns_mobile | plus: 0
-  assign show_mobile_slider = false
-  if section.settings.display_style == 'slider' and products_to_display > columns_mobile_int
-    assign show_mobile_slider = true
-  endif
-
-  assign columns_desktop_int = section.settings.columns_desktop | plus: 0
-  assign show_desktop_slider = false
-
-  if section.settings.display_style == 'slider' and products_to_display > columns_desktop_int
-    assign show_desktop_slider = true
-  endif
-%}
 
 {% style %}
   .nerd-iconwithtext svg {
@@ -27,11 +11,8 @@
 
   @media screen and (max-width: 750px) {
     .nerd-iconwithtext svg {
-      color: red;
-      height: {{ section.settings.icon_height_mobile }}
-      px;
-      width: {{ section.settings.icon_height_mobile }}
-      px;
+      height: {{ section.settings.icon_height_mobile }}px;
+      width: {{ section.settings.icon_height_mobile }}px;
     }
 
 
