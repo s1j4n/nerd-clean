@@ -6,6 +6,13 @@
     height: {{ section.settings.icon_height_desktop }}px;
     width: {{ section.settings.icon_height_desktop }}px;
   }
+  {%  unless section.settings.slider_type == "carets" %} 
+  
+.slick-prev, .slick-next {
+  display: none !important;
+}
+  
+  {% endunless %} %}
 
 
 
