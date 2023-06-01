@@ -248,52 +248,6 @@
         "padding_bottom": 36
       }
     },
-    "c9303555-4856-4e74-8973-8e441ebea10c": {
-      "type": "text-with-icon",
-      "blocks": {
-        "0578f952-67bf-400b-b34d-46cfa5f8c7e8": {
-          "type": "text-with-icon",
-          "settings": {
-            "title": "Service Title",
-            "text": "Something about your service..",
-            "icon": "price_tag"
-          }
-        },
-        "9ea0dc3a-1eef-42a5-978a-bdde4b3cf76a": {
-          "type": "text-with-icon",
-          "settings": {
-            "title": "Service title",
-            "text": "Something about your service..",
-            "icon": "chat_bubble"
-          }
-        },
-        "162fd200-47a4-4e78-b2e7-d136f9fab6e2": {
-          "type": "text-with-icon",
-          "settings": {
-            "title": "Service Title",
-            "text": "Something about your service..",
-            "icon": "check_mark"
-          }
-        }
-      },
-      "block_order": [
-        "0578f952-67bf-400b-b34d-46cfa5f8c7e8",
-        "9ea0dc3a-1eef-42a5-978a-bdde4b3cf76a",
-        "162fd200-47a4-4e78-b2e7-d136f9fab6e2"
-      ],
-      "settings": {
-        "title": "",
-        "full_width": false,
-        "icon_height_desktop": 40,
-        "icon_height_mobile": 50,
-        "display_style": "slider",
-        "columns_desktop": "3",
-        "columns_mobile": "1",
-        "card_height": "fit_large",
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
-        "color_scheme_card": "background-2"
-      }
-    },
     "video": {
       "type": "video",
       "settings": {
@@ -310,6 +264,7 @@
     },
     "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7": {
       "type": "contact-with-map",
+      "disabled": true,
       "blocks": {
         "ddb0ee35-6d0d-4737-befd-40b3b81d7c9b": {
           "type": "location",
@@ -518,7 +473,6 @@
     "a20d3441-d401-4506-adae-7e2a8ef51a3b",
     "24423574-5f40-408d-824b-a82b27f6a523",
     "caca1bae-6af5-4e12-ba9b-f6fdcdd3d242",
-    "c9303555-4856-4e74-8973-8e441ebea10c",
     "video",
     "e8ff6ae9-dd6f-400e-b33b-c5dbd04fcdc7",
     "4b6c20d3-851a-407e-a6dd-12090af60b21",
