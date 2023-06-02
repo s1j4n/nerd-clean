@@ -2,10 +2,7 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'announcement-bar.css' | asset_url | stylesheet_tag }}
 
-<div
-  id="nerd-announcement-bar"
-  class="nerd-announcement-bar utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} utility-bar--bottom-border{% endif %}"
-  {{ block.shopify_attributes }}>
+<div class="nerd-announcement-bar utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} utility-bar--bottom-border{% endif %}" {{ block.shopify_attributes }}>
   {%- if section.blocks.size == 1 -%}
     <div
       class="announcement-bar"
