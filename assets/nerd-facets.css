@@ -1,0 +1,5 @@
+.nerd-facets--vertical{
+    display: flex;
+    flex-direction: column;
+    
+}
