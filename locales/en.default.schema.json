@@ -2040,14 +2040,13 @@
           "name": "Addditional Box",
           "settings": {
             "heading": {
-              "info": "Title",
-              "label": "Heading"
+              "label": "Title"
             },
             "content": {
-              "label": "Row content"
+              "label": "Content"
             },
             "page": {
-              "label": "Row content from page"
+              "label": "Content from page"
             },
             "icon": {
               "label": "Icon",
