@@ -1,3 +1,10 @@
+.quick-add {
+  top: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 0 1rem;
+  z-index: 1;
+}
 
 .card--card .quick-add {
   margin: 0 1.3rem 1rem;
