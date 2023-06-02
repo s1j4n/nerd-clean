@@ -50,21 +50,12 @@
           "settings": {
           }
         },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
         "42e128dd-ff93-44df-991c-69b39ef18728": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Special information about the product",
             "icon": "none",
-            "content": "",
+            "content": "<p>Some information<\/p>",
             "page": ""
           }
         }
@@ -78,7 +69,6 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "collapsible-row-3",
         "42e128dd-ff93-44df-991c-69b39ef18728"
       ],
       "settings": {
