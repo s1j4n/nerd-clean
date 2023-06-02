@@ -176,7 +176,7 @@ Usage:
           (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width | minus: 100 | times: media_width | round }} - 4rem) / 4),
           (min-width: 990px) calc(({{ media_width | times: 100 }}vw - 4rem) / 4),
           (min-width: 750px) calc((100vw - 15rem) / 8),
-                                                  calc((100vw - 8rem) / 3)
+                    calc((100vw - 8rem) / 3)
         {%- endcapture -%}
 
         {%- if featured_media != null -%}
@@ -208,14 +208,14 @@ Usage:
               aria-describedby="{{ thumbnail_id }}">
               {{
                  featured_media.preview_image
-               | image_url: width: 416
-               | image_tag:
-               loading: 'lazy',
-               sizes: sizes,
-               widths: '54, 74, 104, 162, 208, 324, 416',
-               id: thumbnail_id,
-               alt: featured_media.alt
-               | escape }}
+                 | image_url: width: 416
+                 | image_tag:
+                 loading: 'lazy',
+                 sizes: sizes,
+                 widths: '54, 74, 104, 162, 208, 324, 416',
+                 id: thumbnail_id,
+                 alt: featured_media.alt
+                 | escape }}
             </button>
           </li>
         {%- endif -%}
@@ -260,14 +260,14 @@ Usage:
                 aria-describedby="{{ thumbnail_id }}">
                 {{
                    media.preview_image
-                 | image_url: width: 416
-                 | image_tag:
-                 loading: 'lazy',
-                 sizes: sizes,
-                 widths: '54, 74, 104, 162, 208, 324, 416',
-                 id: thumbnail_id,
-                 alt: media.alt
-                 | escape }}
+                   | image_url: width: 416
+                   | image_tag:
+                   loading: 'lazy',
+                   sizes: sizes,
+                   widths: '54, 74, 104, 162, 208, 324, 416',
+                   id: thumbnail_id,
+                   alt: media.alt
+                   | escape }}
               </button>
             </li>
           {%- endunless -%}
@@ -285,41 +285,3 @@ Usage:
     </slider-component>
   {%- endif -%}
 </media-gallery>
-
-<script type="text/javascript">
-  $(document).ready(function(){
-  $('#Slider-Gallery-{{ section.id }}{{ id_append }}').slick({
-  {% if section.settings.slider_type == "dots" %}
-    dots: true,
-  {% endif %}
-  infinite: false,
-  speed: 300,
-                          slidesToShow: 3,
-                          slidesToScroll: 1,
-                          responsive: [
-                            {
-                              breakpoint: 1024,
-                              settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 3,
-                                infinite: true,
-                                dots: true
-                              }
-                            },
-                            {
-                              breakpoint: 970,
-                              settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 2
-                              }
-                            },
-                            {
-                              breakpoint: 750,
-                              settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1
-                              }
-                            }
-                          ]
-                              });
-                            });</script>
