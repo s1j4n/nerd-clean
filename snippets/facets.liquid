@@ -352,9 +352,9 @@
                             {%- else -%}
                               max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                             {% endif %}
-                          >
+                          >$
                           <span class="nerd--price-output-group" ><output id="num" class="" for="Filter-{{ filter.label | escape }}-GTE">
-                            0
+                            0 
                           </output> - {{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}
                           </span>
                         </div>
