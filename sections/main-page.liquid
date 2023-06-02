@@ -29,7 +29,11 @@
       class="nerd-main-page-image">
   {% endif %}
   <h1 class="main-page-title page-title h0">
+    {% if section.settings.alternative_title %}
+      {{ section.settings.alternative_title }}
+    {% else %}
     {{ page.title | escape }}
+      {% endif %}
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
@@ -71,6 +75,11 @@
         "id": "background_image",
         "label": "Background Image"
 
+      },
+      {
+        "type" : "text",
+        "id" :  "alternative_title",
+        "label" : "Alternative Title"
       },
       {
         "type": "range",
