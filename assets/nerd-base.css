@@ -268,7 +268,7 @@
 
   .header__active-menu-item,
   .header__menu-item span:hover {
-    background-color: #661116;
+    background-color: rgba(var(--color-button),var(--alpha-button-background));
     text-decoration: none;
   }
 }
