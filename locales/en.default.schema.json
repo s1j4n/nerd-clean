@@ -1885,7 +1885,12 @@
       }
     },
     "main-login": {
-      "name": "Login"
+      "name": "Login",
+      "settings": {
+        "color_scheme": {
+          "name": "Color Scheme"
+        }
+      }
     },
     "main-order": {
       "name": "Order"
