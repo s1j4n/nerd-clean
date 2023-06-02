@@ -2037,10 +2037,10 @@
           }
         },
         "collapsible_tab": {
-          "name": "Collapsible row",
+          "name": "Addditional Box",
           "settings": {
             "heading": {
-              "info": "Include a heading that explains the content.",
+              "info": "Title",
               "label": "Heading"
             },
             "content": {
