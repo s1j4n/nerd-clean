@@ -13,6 +13,7 @@
 {% endcomment %}
 
 {{ 'component-show-more.css' | asset_url | stylesheet_tag }}
+{{ 'nerd-facets.css' | asset_url | stylesheet_tag  }}
 
 {%- liquid
   assign sort_by = results.sort_by | default: results.default_sort_by
