@@ -1885,12 +1885,7 @@
       }
     },
     "main-login": {
-      "name": "Login",
-      "settings": {
-        "color_scheme": {
-          "name": "Color Scheme"
-        }
-      }
+      "name": "Login"
     },
     "main-order": {
       "name": "Order"
