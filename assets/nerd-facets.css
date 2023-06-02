@@ -17,3 +17,8 @@
 .nerd--currency-to{
     display: none;
 }
+
+.nerd--price-output-group{
+    display: flex;
+    
+}
