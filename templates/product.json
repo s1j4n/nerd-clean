@@ -82,12 +82,12 @@
         "42e128dd-ff93-44df-991c-69b39ef18728"
       ],
       "settings": {
-        "enable_sticky_info": true,
-        "media_size": "large",
+        "enable_sticky_info": false,
+        "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
-        "media_position": "left",
+        "media_position": "right",
         "image_zoom": "none",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
