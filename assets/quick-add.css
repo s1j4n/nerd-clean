@@ -1,3 +1,9 @@
+.quick-add {
+  position: relative;
+  grid-row-start: 4;
+  margin: 0 0 1rem;
+  z-index: 1;
+}
 
 .card--card .quick-add {
   margin: 0 1.3rem 1rem;
@@ -199,7 +205,7 @@ quick-add-modal .product-form__buttons {
 }
 
 .quick-add__submit {
-  padding: 0.1rem;
+  padding: 0.8rem;
   min-width: 100%;
   box-sizing: border-box;
 }
