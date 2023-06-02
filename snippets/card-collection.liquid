@@ -89,7 +89,9 @@
             >
               {%- if card_collection.title != blank -%}
                 {{- card_collection.title | escape -}}
+              {%  if show_products_count %}
                ({{ card_collection.all_products_count }})
+              {% endif %}
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
@@ -121,7 +123,7 @@
             >
               {%- if card_collection.title != blank -%}
                 {{- card_collection.title | escape -}}
-                {%  if products_count %}
+                {%  if show_products_count %}
                ({{ card_collection.all_products_count }})
               {% endif %}
               {%- else -%}
