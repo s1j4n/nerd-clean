@@ -88,8 +88,10 @@
               class="full-unstyled-link"
             >
               {%- if card_collection.title != blank -%}
-                {{- card_collection.title | escape -}} ()
-               {{ card_collection.all_products_count }}
+                {{- card_collection.title | escape -}}
+              {%  if products_count %}
+               ({{ card_collection.all_products_count }})
+              {% endif %}
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
@@ -121,6 +123,9 @@
             >
               {%- if card_collection.title != blank -%}
                 {{- card_collection.title | escape -}}
+                {%  if products_count %}
+               ({{ card_collection.all_products_count }})
+              {% endif %}
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
