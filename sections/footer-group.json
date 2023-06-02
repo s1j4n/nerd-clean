@@ -5,10 +5,10 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-2": {
+        "1e4e99e5-725e-469f-92eb-eba55fa3c334": {
           "type": "text",
           "settings": {
-            "heading": "Talk about your store",
+            "heading": "Heading",
             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
           }
         },
@@ -18,19 +18,11 @@
             "heading": "Quick links",
             "menu": "footer"
           }
-        },
-        "footer-1": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Info",
-            "menu": "footer"
-          }
         }
       },
       "block_order": [
-        "footer-2",
-        "footer-0",
-        "footer-1"
+        "1e4e99e5-725e-469f-92eb-eba55fa3c334",
+        "footer-0"
       ],
       "settings": {
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
@@ -39,7 +31,7 @@
         "enable_follow_on_shop": true,
         "show_social": false,
         "enable_country_selector": true,
-        "enable_language_selector": false,
+        "enable_language_selector": true,
         "payment_enable": true,
         "show_policy": false,
         "margin_top": 0,
