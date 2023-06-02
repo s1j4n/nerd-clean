@@ -19,7 +19,12 @@
 {%- endstyle -%}
 
 <div class="nerd-container nerd-main-page text-center uppercase page-width--narrow section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
-  {{ 'lifestyle-2' | placeholder_svg_tag: 'nerd-main-page-image' }}
+  {% if section.settings.background_image %}
+    <img
+      src={{ section.settings.background_image | img_url: 'large' }}
+      alt=""
+      class="nerd-main-page-image">
+  {% endif %}
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ page.title | escape }}
   </h1>
