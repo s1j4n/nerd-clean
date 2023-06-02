@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    gap: 2px;
+
 }
 .nerd--currency-group input{
     width: 100%;
@@ -26,5 +26,6 @@
 
 .nerd--price-output-group{
     display: flex;
+    gap: 2px;
 
 }
