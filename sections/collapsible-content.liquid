@@ -11,10 +11,10 @@
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}
-      px;
-      padding-bottom: {{ section.settings.padding_bottom }}
-      px;
+      padding-top: {{ section.settings.padding_top | append: 'px'  }}
+
+      padding-bottom: {{ section.settings.padding_bottom | append: 'px'  }}
+      ;
     }
   }
 {%- endstyle -%}
@@ -60,11 +60,11 @@
                 {%- endcapture -%}
                 {{
                    section.settings.image
-                   | image_url: width: 3200
-                   | image_tag:
-                   loading: 'lazy',
-                   sizes: sizes,
-                   widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200' }}
+                 | image_url: width: 3200
+                 | image_tag:
+                 loading: 'lazy',
+                 sizes: sizes,
+                 widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200' }}
               </div>
             </div>
           {% endif %}
