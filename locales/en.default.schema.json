@@ -1833,6 +1833,9 @@
         "title": {
           "label": "Heading"
         },
+        "show_count": {
+          "label": "Show Products Count"
+        },
         "sort": {
           "label": "Sort collections by:",
           "options__1": {
