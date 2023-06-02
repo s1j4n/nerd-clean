@@ -21,7 +21,7 @@
   }
 {%- endstyle -%}
 
-<div class="nerd-main-page--head">
+<div class="nerd-container text-center uppercase page-width--narrow section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
   {% if section.settings.background_image %}
     <img
       src={{ section.settings.background_image | img_url: 'large' }}
@@ -38,7 +38,7 @@
 </div>
     
 
-<div class="nerd-container  text-center uppercase page-width--narrow section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+<div class="nerd-container text-center uppercase page-width--narrow section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
   
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
