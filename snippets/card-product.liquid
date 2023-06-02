@@ -383,17 +383,3 @@
   </div>
 {%- endif -%}
 
-
-<script>
-$(document).ready(function() {
-  $(this).find('[id^="quick-add"]').hide();
-  $('[id^="card-wrapper"]').hover(
-    function() {
-      $(this).find('[id^="quick-add"]').fadeIn();
-    },
-    function() {
-      $(this).find('[id^="quick-add"]').fadeOut();
-    }
-  );
-});
-</script>
