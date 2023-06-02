@@ -333,7 +333,7 @@
                         <span class="field-currency">{{ cart.currency.symbol }}</span>
                         <div class="">
                           <input
-                            class="field__input"
+                            class="field__input nerd--min-price"
                             name="{{ filter.min_value.param_name }}"
                             id="Filter-{{ filter.label | escape }}-GTE"
                             {%- if filter.min_value.value -%}
@@ -344,7 +344,7 @@
                               {%- endif %}
                             {%- endif -%}
                             type="range"
-                            oninput="this.nextElementSibling.value = this.value"
+                            oninput="num.value = this.value"
                             placeholder="0"
                             min="0"
                             {%- if uses_comma_decimals -%}
@@ -353,7 +353,8 @@
                               max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                             {% endif %}
                           >
-                          <label class="field__label" for="Filter-{{ filter.label | escape }}-GTE">
+                          <output id="num">0</output>
+                          <label id="nerd--price-label" class="field__label" for="Filter-{{ filter.label | escape }}-GTE">
                             {{- 'products.facets.from' | t -}}
                           </label>
                         </div>
