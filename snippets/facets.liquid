@@ -106,6 +106,9 @@
                     id="Details-{{ forloop.index }}-{{ section.id }}"
                     class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
                     data-index="{{ forloop.index }}"
+                    {% if filter_type == 'vertical' and forloop.index == 2 %}
+                      open
+                    {% endif %}
                   >
                     <summary
                       class="facets__summary caption-large focus-offset"
@@ -299,7 +302,9 @@
                     id="Details-{{ forloop.index }}-{{ section.id }}"
                     class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
                     data-index="{{ forloop.index }}"
-                   
+                    {% if filter_type == 'vertical' and forloop.index == 2 %}
+                      open
+                    {% endif %}
                   >
                     <summary class="facets__summary caption-large focus-offset">
                       <div>
@@ -336,7 +341,7 @@
                                 value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
                               {%- endif %}
                             {%- endif -%}
-                            type="range"
+                            type="number"
                             placeholder="0"
                             min="0"
                             {%- if uses_comma_decimals -%}
