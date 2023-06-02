@@ -1833,7 +1833,7 @@
         "title": {
           "label": "Heading"
         },
-        "show_count": {
+        "products_count": {
           "label": "Show Products Count"
         },
         "sort": {
