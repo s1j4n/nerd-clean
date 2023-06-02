@@ -141,7 +141,8 @@
     </button>
   {%- endform -%}
 </div>
-          </div>
+</div>
+            
             
 
 {% schema %}
@@ -171,7 +172,14 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    }
+    },
+     {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "info": "t:sections.image-banner.settings.color_scheme.info",
+        "default": "background-1"
+      }
   ]
 }
 {% endschema %}
