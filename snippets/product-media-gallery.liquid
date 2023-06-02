@@ -61,7 +61,7 @@ Usage:
     </a>
   {%- endunless -%}
   <ul
-    id="Slider-Gallery-{{ section.id }}{{ id_append }}"
+    id="slick-images"
     class="product__media-list contains-media grid grid--peek list-unstyled slider slider--mobile"
     role="list">
     {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -174,7 +174,7 @@ Usage:
           (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width | minus: 100 | times: media_width | round }} - 4rem) / 4),
           (min-width: 990px) calc(({{ media_width | times: 100 }}vw - 4rem) / 4),
           (min-width: 750px) calc((100vw - 15rem) / 8),
-                                                                                calc((100vw - 8rem) / 3)
+                                                                                          calc((100vw - 8rem) / 3)
         {%- endcapture -%}
 
         {%- if featured_media != null -%}
@@ -283,3 +283,8 @@ Usage:
     </slider-component>
   {%- endif -%}
 </media-gallery>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+  $('#slick-images').slick();
+    }</script>
