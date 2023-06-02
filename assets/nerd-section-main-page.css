@@ -1,5 +1,6 @@
 .nerd-main-page{
   position: relative;
+  min-height: 20rem;
 }
 
 .nerd-main-page-image{
