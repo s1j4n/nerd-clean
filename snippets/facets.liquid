@@ -353,9 +353,10 @@
                               max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                             {% endif %}
                           >
-                          <output id="num" class="" for="Filter-{{ filter.label | escape }}-GTE">
+                          <span><output id="num" class="" for="Filter-{{ filter.label | escape }}-GTE">
                             {{- 'products.facets.from' | t -}}
-                          </output>
+                          </output> - {{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}
+                          </span>
                         </div>
                         {%- if filter_type != 'vertical' -%}
                           <span class="field-currency">{{ cart.currency.symbol }}</span>
