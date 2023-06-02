@@ -14,7 +14,8 @@
   }
 {%- endstyle -%}
 
-<div class="customer register section-{{ section.id }}-padding">
+<div class="color-{{ section.settings.color_scheme }} nerd-container">
+  <div class="customer register section-{{ section.id }}-padding nerd-page-width">
   <svg style="display: none">
     <symbol id="icon-error" viewBox="0 0 13 13">
       <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
@@ -140,6 +141,8 @@
     </button>
   {%- endform -%}
 </div>
+          </div>
+            
 
 {% schema %}
 {
