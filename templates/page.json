@@ -5,6 +5,8 @@
       "settings": {
         "padding_top": 24,
         "padding_bottom": 24,
+        "alternative_title": "About Us",
+        "image_opacity": 0.6,
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
       }
     }
