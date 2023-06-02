@@ -357,7 +357,7 @@
                             $
                             <output id="num" class="" for="Filter-{{ filter.label | escape }}-GTE">
                             0 
-                          </output> - {{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}
+                          </output> - {{ filter.range_max | money_without_currency | replace: ',', '' }}
                           </span>
                         </div>
                         {%- if filter_type != 'vertical' -%}
