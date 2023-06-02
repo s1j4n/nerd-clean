@@ -89,9 +89,7 @@
             >
               {%- if card_collection.title != blank -%}
                 {{- card_collection.title | escape -}} ()
-              {%  if products_count %}
-               ({{ card_collection.all_products_count }})
-              {% endif %}
+               {{ card_collection.all_products_count }}
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
