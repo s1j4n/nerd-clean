@@ -333,7 +333,7 @@
                         <span class="field-currency">{{ cart.currency.symbol }}</span>
                         <div class="nerd--currency-group">
                           <input
-                            class="nerd--min-price"
+                            class="nerd--currency-from"
                             name="{{ filter.min_value.param_name }}"
                             id="Filter-{{ filter.label | escape }}-GTE"
                             {%- if filter.min_value.value -%}
@@ -360,7 +360,7 @@
                         {%- if filter_type != 'vertical' -%}
                           <span class="field-currency">{{ cart.currency.symbol }}</span>
                         {%- endif -%}
-                        <div class="field">
+                        <div class="field nerd--currency-to">
                           <input
                             class="field__input"
                             name="{{ filter.max_value.param_name }}"
