@@ -1,6 +1,7 @@
 .nerd-main-page--head{
   position: relative;
   min-height: 20rem;
+  width: 100vw;
 }
 
 .nerd-main-page-image{
