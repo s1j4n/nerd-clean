@@ -1,5 +1,9 @@
 .nerd-facets--vertical{
     display: flex;
     flex-direction: column;
-    
+
+}
+
+.nerd-facets--vertical .field-currency{
+    display: none;
 }
