@@ -325,7 +325,6 @@
                       <price-range class="facets__price">
                         <span class="field-currency">{{ cart.currency.symbol }}</span>
                         <div class="field">
-                          <input type="range" name="" id="">
                           <input
                             class="field__input"
                             name="{{ filter.min_value.param_name }}"
@@ -337,7 +336,7 @@
                                 value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
                               {%- endif %}
                             {%- endif -%}
-                            type="number"
+                            type="range"
                             placeholder="0"
                             min="0"
                             {%- if uses_comma_decimals -%}
