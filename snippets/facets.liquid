@@ -327,7 +327,7 @@
                           </facet-remove>
                         {%- endif -%}
                       </div>
-                      Test
+                      
                       <price-range class="facets__price">
                         <span class="field-currency">{{ cart.currency.symbol }}</span>
                         <div class="field">
@@ -342,7 +342,7 @@
                                 value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
                               {%- endif %}
                             {%- endif -%}
-                            type="number"
+                            type="range"
                             placeholder="0"
                             min="0"
                             {%- if uses_comma_decimals -%}
