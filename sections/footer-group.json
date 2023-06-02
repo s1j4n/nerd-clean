@@ -21,16 +21,25 @@
         },
         "78fa2509-eb3a-4ed3-9dca-cd155ec640c5": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_width": 100,
             "alignment": "center"
+          }
+        },
+        "8426547d-9901-4ba5-a2f4-c5c529a5bf61": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
           }
         }
       },
       "block_order": [
         "1e4e99e5-725e-469f-92eb-eba55fa3c334",
         "footer-0",
-        "78fa2509-eb3a-4ed3-9dca-cd155ec640c5"
+        "78fa2509-eb3a-4ed3-9dca-cd155ec640c5",
+        "8426547d-9901-4ba5-a2f4-c5c529a5bf61"
       ],
       "settings": {
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
