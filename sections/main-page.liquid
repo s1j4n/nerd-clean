@@ -29,7 +29,7 @@
       class="nerd-main-page-image">
   {% endif %}
   <h1 class="main-page-title page-title h0">
-    {% if section.settings.alternative_title %}
+    {% if section.settings.alternative_title != blank %}
       {{ section.settings.alternative_title }}
     {% else %}
     {{ page.title | escape }}
