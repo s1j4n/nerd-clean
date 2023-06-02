@@ -343,6 +343,7 @@
                               {%- endif %}
                             {%- endif -%}
                             type="range"
+                            oninput="this.nextElementSibling.value = this.value"
                             placeholder="0"
                             min="0"
                             {%- if uses_comma_decimals -%}
