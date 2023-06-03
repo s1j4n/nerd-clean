@@ -414,9 +414,9 @@
         "title": "Image Gallery",
         "full_width": false,
         "heading_center": false,
-        "display_style": "slider",
+        "display_style": "grid",
         "columns_desktop": "3",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
         "color_scheme_card": "background-2"
       }
