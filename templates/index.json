@@ -414,9 +414,9 @@
         "title": "Image Gallery",
         "full_width": false,
         "heading_center": false,
-        "display_style": "grid",
+        "display_style": "slider",
         "columns_desktop": "3",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
         "color_scheme_card": "background-2"
       }
@@ -510,7 +510,7 @@
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
-        "slider_visual": "dots",
+        "slider_visual": "numbers",
         "auto_rotate": false,
         "change_slides_speed": 5,
         "image_behavior": "none",
