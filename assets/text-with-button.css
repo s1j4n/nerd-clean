@@ -11,7 +11,7 @@
 }
 
 .custom-richtext .button.button--primary {
-  background-color: #661116;
+  background-color: rgb(var(--color-button));
   font-weight: bold;
   height: 100%;
   padding: 2rem;
