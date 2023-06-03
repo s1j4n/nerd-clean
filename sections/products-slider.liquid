@@ -15,6 +15,12 @@
 {%- endif -%}
 
 {%- style -%}
+
+  .slick-slider .slick-slide {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+  
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -61,7 +67,6 @@
           class="nerd-slider-container"
           role="list"
           aria-label="{{ 'general.slider.name' | t }}"
-          style="display:flex; gap: 2rem;"
         >
            {% for block in section.blocks limit: products_to_display %}
           {% assign product = block.settings.product %}
@@ -151,7 +156,6 @@
     dots: true,
   infinite: false,
   speed: 300,
-     slidesGap: 10,
                   slidesToShow: 3,
                   slidesToScroll: 1,
                   responsive: [
