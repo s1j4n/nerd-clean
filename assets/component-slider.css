@@ -168,17 +168,17 @@ slider-component.slider-component-full-width {
     padding-bottom: max(var(--focus-outline-padding), var(--shadow-padding-bottom));
   }
 
-  .slider--desktop .slider__slide:first-child {
+/*   .slider--desktop .slider__slide:first-child {
     margin-left: var(--desktop-margin-left-first-item);
     scroll-margin-left: var(--desktop-margin-left-first-item);
-  }
+  } */
 
   .slider-component-full-width .slider--desktop {
     scroll-padding-left: 1.5rem;
   }
 
   .slider-component-full-width .slider--desktop .slider__slide:first-child {
-    margin-left: 1.5rem;
+/*     margin-left: 1.5rem; */
     scroll-margin-left: 1.5rem;
   }
 
@@ -192,7 +192,7 @@ slider-component.slider-component-full-width {
   }
 
   .slider--desktop.grid--4-col-desktop .grid__item {
-    width: calc((100% - var(--desktop-margin-left-first-item)) / 4 - var(--grid-desktop-horizontal-spacing) * 3);
+/*     width: calc((100% - var(--desktop-margin-left-first-item)) / 4 - var(--grid-desktop-horizontal-spacing) * 3); */
   }
 
   .slider--desktop.grid--3-col-desktop .grid__item {
@@ -367,7 +367,7 @@ slider-component.slider-component-full-width {
 }
 
 .slider-button .icon {
-  height: 0.6rem;
+  height: 2.6rem;
 }
 
 .slider-button[disabled] .icon {
