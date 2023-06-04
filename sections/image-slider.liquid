@@ -21,9 +21,7 @@
      <div class="nerd-slider-container" >
           {% for block in section.blocks %}
             {% assign image = block.settings.image %}
-            <div
-             
-            >
+           
               {% if image %}
                 {{
                   image
@@ -33,15 +31,13 @@
               {% else %}
                 {{ 'image' | placeholder_svg_tag: image_class }}
               {% endif %}
-            </div
+            
           {%- else -%}
             {%- for i in (1..4) -%}
-              <div
-               
-              >
+              
 
                 {{ 'image' | placeholder_svg_tag: image_class }}
-              </div>
+            
             {%- endfor -%}
           {%- endfor -%}
         </div>
@@ -88,7 +84,6 @@
             </button>
           </div>
         {%- endif -%}
-      </slider-component>
     </div>
   </div>
 </div>
