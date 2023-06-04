@@ -410,7 +410,7 @@
         "title": "Image Gallery",
         "full_width": false,
         "heading_center": true,
-        "display_style": "grid",
+        "display_style": "slider",
         "desktop_swipe": true,
         "columns_desktop": "3",
         "columns_mobile": "2",
