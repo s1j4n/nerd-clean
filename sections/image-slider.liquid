@@ -74,7 +74,8 @@
             {%- endfor -%}
           {%- endfor -%}
         </ul>
-
+        
+        {% unless section.settings.desktop_slider %}
         {%- if show_mobile_slider or show_desktop_slider -%}
           <div class="slider-buttons no-js-hidden justify-{{ buttons_position }} ">
             <button
@@ -117,6 +118,7 @@
             </button>
           </div>
         {%- endif -%}
+          {% endunless %}
         {% unless section.settings.desktop_swipe %}
       </slider-component>
         {% endunless %}
@@ -131,6 +133,7 @@
   $('.nerd-slider-container').slick({
   infinite: false,
   speed: 300,
+  dots: true,
                   slidesToShow: 3,
                   slidesToScroll: 1,
                   responsive: [
