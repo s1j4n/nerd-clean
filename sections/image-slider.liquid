@@ -52,7 +52,7 @@
                 {{
                   image
                   | image_url: width: image.width
-                  | image_tag: class: image_class, loading: 'lazy'
+                  | image_tag: loading: 'lazy'
                 }}
               {% else %}
                 {{ 'image' | placeholder_svg_tag: image_class }}
