@@ -1,0 +1,52 @@
+.location-map-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  padding: 4rem 5%;
+  margin: 0 auto;
+}
+
+.location-map-section .location-info {
+  color: #fff;
+  width: 30%;
+}
+
+
+.location-info h2 {
+  font-weight: bolder;
+  color: white;
+  text-transform: uppercase;
+}
+
+.location-info p {
+  font-size: 2rem;
+}
+
+.google-map {
+  height: 45rem;
+  width: 45%;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+  .location-map-section {
+    flex-direction: column;
+    gap: 30px;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .location-map-section .location-info {
+    width: 100%;
+    text-align: center;
+  }
+  .google-map {
+    height: 20rem;
+    width: 90%;
+  }
+}
