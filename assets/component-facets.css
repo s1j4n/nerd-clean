@@ -144,7 +144,7 @@
 .facet-filters__sort:focus-visible, .facet-filters__sort {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 1rem;
-  box-shadow: 3px;
+  border-radius: 3px;
 /*   box-shadow: 0 0 0 1rem rgb(var(--color-background)), 0 0 0.2rem 1.2rem rgba(var(--color-foreground), 0.3); */
 }
 
