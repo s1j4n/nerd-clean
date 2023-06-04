@@ -71,7 +71,9 @@
         {%- if section.settings.image_2 != blank -%}
           {%- if section.settings.image_behavior == 'ambient' -%}
             {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
-            {%- assign opacity_2 = section.settings.image_2_opacity | prepend: "opacity-" -%}
+            {% capture styles %}
+            (opacity : {{ section.settings.image_1_opacity }})
+            {% endcapture %}
             {%- capture sizes -%}
               (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
               (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
