@@ -4,7 +4,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/cover-image.png",
-        "image_overlay_opacity": 20,
+        "image_overlay_opacity": 30,
         "image_height": "small",
         "desktop_content_position": "middle-right",
         "show_text_box": false,
@@ -101,14 +101,12 @@
       ],
       "settings": {
         "title": "<strong>Featured <\/strong>Products",
-        "heading_size": "h1",
         "description": "",
-        "show_description": false,
         "display_style": "slider",
-        "buttons_style": "arrow",
+        "buttons_style": "catet",
         "products_to_show": 10,
         "columns_desktop": 3,
-        "full_width": false,
+        "full_width": true,
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -183,10 +181,8 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
+        "image_behavior": "ambient",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -332,10 +328,8 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
         "image_behavior": "none",
-        "mobile_content_alignment": "left",
         "padding_top": 0,
         "padding_bottom": 0
       }
