@@ -2,14 +2,14 @@
 {{ 'images-with-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .nerd--imageswithtext-image1{
+/*   .nerd--imageswithtext-image1{
     opacity: {{ section.settings.image_1_opacity }};
   }
 
   .nerd--imageswithtext-image2{
     opacity: {{ section.settings.image_2_opacity }};
   }
-  
+   */
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
