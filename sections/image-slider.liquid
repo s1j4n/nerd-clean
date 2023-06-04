@@ -26,7 +26,6 @@
   <div class="nerd-page-width">
     <div class="nerd-title scroll-trigger animate--slide-in {% if section.settings.heading_center %} text-center {% endif %} ">{{ section.settings.title }}</div>
     <div class="nerd-content">
-      <slider-component class="slider-mobile-gutter slider-component-full-width slider-component-desktop scroll-trigger animate--slide-in">
       <ul
         id="Slider-{{ section.id }}"
         class="nerd-slider-container grid product-grid contains-card contains-card--product contains-card--standard grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down slider slider--desktop slider--tablet grid--peek"
@@ -111,7 +110,6 @@
             </button>
           </div>
         {%- endif -%}
-      </slider-component>
     </div>
   </div>
 </div>
