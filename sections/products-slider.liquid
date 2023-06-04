@@ -105,7 +105,7 @@
           <div class="slider-buttons no-js-hidden">
             <button
               type="button"
-              class="slider-button slider-button--prev"
+              class="slider-button {% unless section.settings.hide_button_bg %} slider-button--has-bg {% endunless %} slider-button--prev"
               name="previous"
               aria-label="{{ 'general.slider.previous_slide' | t }}"
               aria-controls="Slider-{{ section.id }}"
