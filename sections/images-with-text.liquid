@@ -71,8 +71,8 @@
         {%- if section.settings.image_2 != blank -%}
           {%- if section.settings.image_behavior == 'ambient' -%}
             {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
-            {% capture styles %}
-            (opacity : {{ section.settings.image_1_opacity }})
+            {% capture image_1_opacity %}
+            opacity-{{ section.settings.image_1_opacity }}
             {% endcapture %}
             {%- capture sizes -%}
               (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
@@ -88,7 +88,7 @@
           {{
             section.settings.image_2
             | image_url: width: 1500
-            | image_tag: loading: 'lazy', sizes: sizes, widths: widths, style: styles
+            | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: image_1_opacity
           }}
         {%- else -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
