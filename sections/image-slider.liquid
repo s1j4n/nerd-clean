@@ -14,6 +14,14 @@
   endif
 %}
 
+
+{% stylesheet %}
+.slick-slide{
+  margin-right: 10px;
+}
+  
+  {% endstylesheet %}
+
 <div class="nerd-container color-{{ section.settings.color_scheme }}">
   <div class="nerd-page-width">
     <div class="nerd-title scroll-trigger animate--slide-in {% if section.settings.heading_center %} text-center {% endif %} ">{{ section.settings.title }}</div>
