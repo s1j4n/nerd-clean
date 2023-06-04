@@ -360,6 +360,12 @@ slider-component.slider-component-full-width {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+}
+
+
+.slider-button--has-bg{
+  background: rgb(var(--color-button));
 }
 
 .slider-button:not([disabled]):hover {
