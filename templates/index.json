@@ -176,9 +176,9 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/BG_2_1.png",
-        "image_1_opacity": 1,
+        "image_1_opacity": 0.6,
         "image_2": "shopify:\/\/shop_images\/primo.png",
-        "image_2_opacity": 0.6,
+        "image_2_opacity": 1,
         "text_position": "left",
         "height": "adapt",
         "desktop_image_width": "medium",
