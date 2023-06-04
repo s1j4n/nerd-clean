@@ -52,7 +52,7 @@
                 {{
                   image
                   | image_url: width: image.width
-                  | image_tag: loading: 'lazy'
+                  | image_tag: class: image_class, loading: 'lazy'
                 }}
               {% else %}
                 {{ 'image' | placeholder_svg_tag: image_class }}
@@ -142,6 +142,7 @@
                       settings: {
                         slidesToShow: {{ section.settings.columns_desktop }},
                         slidesToScroll: {{ section.settings.columns_desktop | minus: 1 }}
+                       
                       }
                     },
                     {
@@ -154,8 +155,7 @@
                     {
                       breakpoint: 750,
                       settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToShow: 1
                       }
                     }
                   ]
