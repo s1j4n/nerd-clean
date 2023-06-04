@@ -2,6 +2,14 @@
 {{ 'images-with-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  .nerd--imageswithtext-image1{
+    opacity: {{ section.settings.image_1_opacity }};
+  }
+
+  .nerd--imageswithtext-image2{
+    opacity: {{ section.settings.image_2_opacity }};
+  }
+  
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -22,7 +30,7 @@
   <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
     <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
       <div
-        class="image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}"
+        class="nerd--imageswithtext-image1 image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}"
         {% if section.settings.height == 'adapt' and section.settings.image != blank %}
           style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"
         {% endif %}
@@ -54,7 +62,7 @@
 
       <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
       <div
-        class="image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings {% if section.settings.image_2 != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}"
+        class="nerd--imageswithtext-image2 image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings {% if section.settings.image_2 != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}"
         {% if section.settings.height == 'adapt' and section.settings.image_2 != blank %}
           style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"
         {% endif %}
@@ -144,10 +152,28 @@
       "id": "image",
       "label": "Image #1"
     },
+     {
+      "type": "range",
+       "min" : 0.1,
+       "max"  :  1,
+       "default" : 0.2,
+       "step" : 0.1,
+      "id": "image_1_opacity",
+      "label": "Image #1 Opacity"
+    },
     {
       "type": "image_picker",
       "id": "image_2",
       "label": "Image #2"
+    },
+    {
+      "type": "range",
+      "min" : 0.1,
+      "max"  :  1,
+      "default" : 0.8,
+      "step" : 0.1,
+      "id": "image_2_opacity",
+      "label": "Image #2 Opacity"
     },
       {
       "type": "select",
