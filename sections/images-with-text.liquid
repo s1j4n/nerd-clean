@@ -88,7 +88,7 @@
           {{
             section.settings.image_2
             | image_url: width: 1500
-            | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: opacity_2
+            | image_tag: loading: 'lazy', sizes: sizes, widths: widths, style: styles
           }}
         {%- else -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
