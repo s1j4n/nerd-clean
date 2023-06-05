@@ -4,7 +4,7 @@
 
   }
 
-  .nerd--grid-item {
+  .nerd--relative {
     position: relative;
   }
 
@@ -75,7 +75,7 @@
 <div class="color-{{ section.settings.color_scheme }}">
   <div class="nerd--grid nerd--grid-2-desktop nerd--grid-1-tablet">
 
-    <div class="nerd--grid-item image-wrapper first">
+    <div class="nerd--relative image-wrapper first">
       {% if section.settings.image_big %}
         {% assign image = section.settings.image_big %}
         {% capture styles %}
@@ -98,7 +98,7 @@
         {% capture styles %}
           opacity : {{ block.settings.image_opacity }}
         {% endcapture %}
-        <div class="nerd--grid-image-wrapper nerd--image-small">
+        <div class="nerd--grid-image-wrapper nerd--relative">
         {% if image %}
           {{
              image
