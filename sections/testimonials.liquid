@@ -34,10 +34,8 @@
 
   @media screen and (max-width: 750px) {
     .nerd-iconwithtext svg {
-      height: {{ section.settings.icon_height_mobile }}
-      px;
-      width: {{ section.settings.icon_height_mobile }}
-      px;
+      height: {{ section.settings.icon_height_mobile | append: ' px' }};
+      width: {{ section.settings.icon_height_mobile | append: ' px' }};
     }
 
 
