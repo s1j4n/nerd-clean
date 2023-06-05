@@ -1,4 +1,9 @@
 <style>
+
+  .image-grid{
+    max-height: 600px;
+  }
+  
   .nerd--grid {
     display: grid;
 
@@ -100,7 +105,7 @@
 %}
 
 <div class="color-{{ section.settings.color_scheme }}">
-  <div class="nerd--grid {{ grid_1_class }}">
+  <div class="nerd--grid image-grid {{ grid_1_class }}">
 
     <div class="nerd--relative image-wrapper first">
       {% if count > 0 %}
