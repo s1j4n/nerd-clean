@@ -23,7 +23,9 @@
           }
         },
         "content": {
-          "type": "content"
+          "type": "content",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -31,7 +33,10 @@
         "title",
         "share",
         "content"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
+      }
     }
   },
   "order": [
