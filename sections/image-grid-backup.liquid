@@ -115,7 +115,6 @@
         {{ 'lifestyle-1' | placeholder_svg_tag: "hw-full bg-cover" }}
       {% endif %}
       <div class="nerd--absolute-item-center nerd--flex-col nerd-text nerd--image-grid-absolute nerd-title">
-        Hello
       </div>
     </div>
     <div class="nerd--grid nerd--grid-item {{ grid_2_class }} ">
@@ -133,8 +132,6 @@
         {% endcapture %}
         <div class="nerd--grid-image-wrapper nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %}">
         {% if image %}
-        
-          
           {{
              image
            | image_url: width: image.width
