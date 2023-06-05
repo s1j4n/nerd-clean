@@ -495,11 +495,11 @@ div[slider] > input[type=range]::-ms-tooltip {
   type="range" 
   name="{{ filter.min_value.param_name }}"
   id="Filter-{{ filter.label | escape }}-GTE"
-  {%- if filter.min_value.value -%}
-    {%- if uses_comma_decimals -%}
-    value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
-    {%- else -%}
-    value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
+                            {%- if filter.min_value.value -%}
+                              {%- if uses_comma_decimals -%}
+                                value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                              {%- else -%}
+                                value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
     {%- endif %}
   {%- endif -%}
   type="range"
