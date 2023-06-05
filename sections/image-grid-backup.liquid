@@ -99,8 +99,8 @@
   <div class="nerd--grid {{ grid_1_class }}">
 
     <div class="nerd--relative image-wrapper first">
-      {% if section.settings.image_big %}
-        {% assign image = section.settings.image_big %}
+      {% if count > 0 %}
+        {% assign image = section.blocks.first.settings.image %}
         {% capture styles %}
           opacity: {{ section.settings.big_image_opacity }}%;
           {% endcapture %}
@@ -117,6 +117,7 @@
     </div>
     <div class="nerd--grid nerd--grid-item {{ grid_2_class }} ">
       {% for block in section.blocks %}
+        {% if forloop.index > 0 %}
         {% assign image = block.settings.image %}
         {% capture styles %}
           opacity : {{ block.settings.image_opacity }}%;
@@ -144,7 +145,7 @@
             {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover" }}
           </div>
         {% endfor %}
-
+  {% endif %}
       {% endfor %}
     </div>
 
