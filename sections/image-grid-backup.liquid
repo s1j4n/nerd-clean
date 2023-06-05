@@ -1,0 +1,158 @@
+<style>
+  .nerd--grid {
+    display: grid;
+  }
+
+  .nerd--grid-item {
+    border: 1px solid black;
+    position: relative;
+  }
+
+  .nerd--absolute-item-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nerd--flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nerd--image-grid-absolute {
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .nerd--grid-1-mobile {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+  }
+
+
+  @media screen and (max-width: 990px) {
+    .nerd--grid-1-tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .nerd--grid-2-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .nerd--grid-2-desktop {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+
+<div class="nerd-container color-{{ section.settings.color_scheme }}">
+  <div class="nerd--grid nerd--grid-2-desktop nerd--grid-1-tablet">
+
+    <div class="nerd--grid-item image-wrapper first">
+      {% if section.settings.image_big %}
+        {% assign image = section.settings.image_big %}
+        {{
+           block.settings.image
+         | image_url: width: image.width
+         | image_tag: loading: 'lazy' }}
+      {% else %}
+        {{ 'lifestyle-1' | placeholder_svg_tag: "hw-full bg-cover" }}
+      {% endif %}
+      <div class="nerd--absolute-item-center nerd--flex-col nerd-text nerd--image-grid-absolute">
+        Hello
+      </div>
+    </div>
+    <div class="nerd--grid nerd--grid-item nerd--grid-2-desktop nerd--grid-2-tablet nerd--grid-1-mobile ">
+      {% for block in section.blocks %}
+        {% assign image = section.blocks.image %}
+        {% capture styles %}
+          opacity : {{ block.image_opacity }}
+        {% endcapture %}
+        <div class="nerd--grid-item image-wrapper nerd--image-small">
+          {% if image %}
+            {{
+               block.settings.image
+             | image_url: width: image.width
+             | image_tag: loading: 'lazy', style: styles }}
+
+          {% else %}
+            {{ 'lifestyle-1' | placeholder_svg_tag: "hw-full bg-cover" }}
+          {% endif %}
+        </div>
+      {% else %}
+        {% for i in (1..4) %}
+
+          <div class="nerd--grid-item image-wrapper nerd--image-small">
+            {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover" }}
+          </div>
+        {% endfor %}
+
+      {% endfor %}
+    </div>
+
+  </div>
+
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Image grid backup",
+    "blocks": [
+      {
+        "name": "image",
+        "type": "image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "range",
+            "id": "image_opacity",
+            "min": 10,
+            "max": 100,
+            "step": 10,
+            "unit": "%",
+            "default": 90,
+            "label": "Image Opacity"
+          }, {
+            "type": "richtext",
+            "id": "text",
+            "default": "<p>Some Text</p>",
+            "label": "Something about this image.."
+          }, {
+            "type": "text",
+            "id": "button_label",
+            "default": "Shop now",
+            "label": "Button Text"
+          }
+        ]
+      }
+    ],
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image_big",
+        "label": "Image"
+      }, {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "default": "background-7",
+        "label": "Color Scheme"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image Grid backup"
+      }
+    ]
+  }
+{% endschema %}

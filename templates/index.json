@@ -1,5 +1,9 @@
 {
   "sections": {
+    "image_grid" : {
+      "type": "image-grid-backup"
+
+    },
     "image_banner": {
       "type": "image-banner",
       "settings": {
@@ -599,6 +603,7 @@
     }
   },
   "order": [
+    "image_grid",
     "image_banner",
     "8116c8f1-b49d-4070-9e7a-d9903cd21aff",
     "9acd8e6e-82cd-4690-a79d-10ada8cd75cc",
