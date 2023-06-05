@@ -104,10 +104,15 @@
              image
            | image_url: width: image.width
            | image_tag: loading: 'lazy', style: styles }}
-
+        
         {% else %}
           {{ 'lifestyle-1' | placeholder_svg_tag: "hw-full bg-cover" }}
         {% endif %}
+
+          <div class="nerd--absolute-item-center nerd--flex-col nerd-text nerd--image-grid-absolute nerd-title">
+        <div class="nerd-title"> {{ block.settings.title }} </div>
+        <div class="nerd-text"> {{ block.settings.text }} </div>
+      </div>
         </div>
       {% else %}
         {% for i in (1..4) %}
@@ -147,7 +152,14 @@
             "unit": "%",
             "default": 90,
             "label": "Image Opacity"
-          }, {
+          },
+          {
+            "type": "inline_richtext",
+            "id": "title",
+            "default": "Title",
+            "label": "Title"
+          },
+          {
             "type": "richtext",
             "id": "text",
             "default": "<p>Some Text</p>",
