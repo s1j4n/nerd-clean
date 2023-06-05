@@ -334,13 +334,42 @@
     },
     "d200ced6-834e-4ad6-8998-7296a096232d": {
       "type": "testimonials",
+      "blocks": {
+        "c1ca8602-569d-46f2-acae-bb6873757b38": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/primo.png",
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        },
+        "12c5b115-f1c4-442e-b324-7338a03c85e8": {
+          "type": "testimonial",
+          "settings": {
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        },
+        "41354e91-50ca-4c94-b757-06958ded1f7a": {
+          "type": "testimonial",
+          "settings": {
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c1ca8602-569d-46f2-acae-bb6873757b38",
+        "12c5b115-f1c4-442e-b324-7338a03c85e8",
+        "41354e91-50ca-4c94-b757-06958ded1f7a"
+      ],
       "settings": {
         "title": "What Our Clients Say",
         "full_width": false,
         "heading_center": true,
         "total_to_show": 4,
         "card_height": "fit_content",
-        "color_scheme": "",
+        "color_scheme": "background-2",
         "color_scheme_card": ""
       }
     },
