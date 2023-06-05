@@ -1,6 +1,7 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
-<article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="nerd-page-width">
+<article class="nerd-container color-{{ section.settings.color_scheme }} article-template" itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
@@ -276,6 +277,7 @@
     </div>
   {%- endif -%}
 </article>
+</div>
 
 <script type="application/ld+json">
   {
