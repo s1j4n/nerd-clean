@@ -66,11 +66,34 @@
   }
 
   @media screen and (min-width: 990px) {
+    .nerd--grid-1-desktop{
+      grid-template-columns: repeat(1, 1fr);
+    }
     .nerd--grid-2-desktop {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 </style>
+
+{% liquid
+
+  assign count = section.blocks.count
+  if count == 1
+    assign grid_1_class = "nerd--grid-1-desktop nerd--grid-1-tablet nerd--grid-1-mobile"
+  elsif count == 2
+    assign grid_1_class = "nerd-grid-2-desktop nerd--grid-1-tablet"
+    assign grid_2_class = "nerd--grid-1-desktop nerd--grid-1-tablet nerd--grid-1-mobile"
+  elsif count == 3
+    assign grid_1_class = "nerd-grid-2-desktop nerd--grid-1-tablet"
+    assign grid_2_class = "nerd--grid-2-desktop nerd--grid-2-tablet nerd--grid-1-mobile"
+  else
+    assign grid_1_class = "nerd-grid-2-desktop nerd--grid-1-tablet"
+    assign grid_2_class = "nerd--grid-2-desktop nerd--grid-2-tablet nerd--grid-1-mobile"
+ 
+    
+  endif
+
+%}
 
 <div class="color-{{ section.settings.color_scheme }}">
   <div class="nerd--grid nerd--grid-2-desktop nerd--grid-1-tablet">
