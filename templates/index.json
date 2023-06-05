@@ -101,11 +101,11 @@
       "settings": {
         "title": "<strong>Featured <\/strong>Products",
         "description": "",
-        "display_style": "slider",
+        "display_style": "grid",
         "buttons_style": "catet",
         "hide_button_bg": false,
         "products_to_show": 10,
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "full_width": true,
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8",
         "image_ratio": "adapt",
