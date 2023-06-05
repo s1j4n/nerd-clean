@@ -129,17 +129,17 @@
           {% else %}
             {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
           {% endif %}
-          <div class="alternate--title">{{ collection.title }}</div>
+          <div class="alternate--title nerd--text-md">{{ collection.title }}</div>
         {% else %}
           {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
-          <div class="alternate--title">Title</div>
+          <div class="alternate--title nerd--text-md">Title</div>
         {% endif %}
       </li>
 
     {% else %}
       {% for i in (1..4) %}
       {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
-      <div class="alternate--title">Title</div>
+      <div class="alternate--title nerd--text-md">Title</div>
         {% endfor %}
     {% endfor %}
 
