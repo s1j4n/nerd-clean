@@ -652,9 +652,13 @@
         "big_image_opacity": 100,
         "color_scheme": "background-2"
       }
+    },
+    "alternate_items" : {
+      "type": "alternate-items"
     }
   },
   "order": [
+    "alternate_items",
     "image_banner",
     "8116c8f1-b49d-4070-9e7a-d9903cd21aff",
     "9acd8e6e-82cd-4690-a79d-10ada8cd75cc",
