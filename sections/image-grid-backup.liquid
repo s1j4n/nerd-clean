@@ -117,13 +117,19 @@
     </div>
     <div class="nerd--grid nerd--grid-item {{ grid_2_class }} ">
       {% for block in section.blocks %}
+
         {% if forloop.index > 1 %}
         {% assign image = block.settings.image %}
         {% capture styles %}
+          {% if count==4 and forloop.index==4 %}}
+          grid-column: span 2;
+            {% endif %}
           opacity : {{ block.settings.image_opacity }}%;
         {% endcapture %}
         <div class="nerd--grid-image-wrapper nerd--relative">
         {% if image %}
+        
+          
           {{
              image
            | image_url: width: image.width
@@ -132,7 +138,6 @@
         {% else %}
           {{ 'lifestyle-1' | placeholder_svg_tag: "hw-full bg-cover" }}
         {% endif %}
-
           <div class="nerd--absolute-item-center nerd--flex-col nerd-text nerd--image-grid-absolute nerd-title">
         <div class=""> {{ block.settings.title }} {{ forloop.index }} </div>
         <div class=""> {{ block.settings.text }} </div>
