@@ -103,7 +103,7 @@
         "title": "<strong>Featured <\/strong>Products",
         "description": "",
         "display_style": "slider",
-        "buttons_style": "arrow",
+        "buttons_style": "catet",
         "hide_button_bg": false,
         "products_to_show": 10,
         "columns_desktop": 3,
@@ -337,7 +337,6 @@
       "settings": {
         "title": "What Our Clients Say",
         "full_width": false,
-        "slider_type": "dots",
         "heading_center": true,
         "total_to_show": 4,
         "card_height": "fit_large",
