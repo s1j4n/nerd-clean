@@ -584,6 +584,57 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "3fdc3b7a-a707-4710-b32c-4b30cf3a1465": {
+      "type": "slick-car",
+      "blocks": {
+        "0a8b2892-e12d-4cba-8e9f-5d8fca965c16": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/cover.jpg",
+            "text_position": "align-center-middle",
+            "heading_text": "Test",
+            "page_text": "Test",
+            "button_cta": "",
+            "button_link": ""
+          }
+        },
+        "c942cb05-c94c-4f8f-a740-1444c5a2c81e": {
+          "type": "slide",
+          "settings": {
+            "text_position": "align-center-middle",
+            "heading_text": "",
+            "page_text": "",
+            "button_cta": "",
+            "button_link": ""
+          }
+        },
+        "3802478e-04f7-4b45-9e5d-eeae366067ca": {
+          "type": "slide",
+          "settings": {
+            "text_position": "align-center-middle",
+            "heading_text": "",
+            "page_text": "",
+            "button_cta": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "0a8b2892-e12d-4cba-8e9f-5d8fca965c16",
+        "c942cb05-c94c-4f8f-a740-1444c5a2c81e",
+        "3802478e-04f7-4b45-9e5d-eeae366067ca"
+      ],
+      "settings": {
+        "enable_ken_burns": false,
+        "enable_progress_bar": true,
+        "enable_dropshadow": true,
+        "slide_height": "40vw",
+        "color_overlay_opacity": "0.8",
+        "color_overlay_color": "#031207",
+        "progress_bar_color": "#FFFFFF",
+        "controls_color": "#FFFFFF"
+      }
     }
   },
   "order": [
@@ -600,6 +651,7 @@
     "4cb0bcfe-421b-49cc-9040-751f133b8159",
     "53fa0eb7-324c-4259-b945-e3beba8a1207",
     "bfd1bca5-1df9-48e8-815d-b8c7a70e5efe",
-    "ce2a487b-4e3e-416f-af6a-8ed45b7a0429"
+    "ce2a487b-4e3e-416f-af6a-8ed45b7a0429",
+    "3fdc3b7a-a707-4710-b32c-4b30cf3a1465"
   ]
 }
