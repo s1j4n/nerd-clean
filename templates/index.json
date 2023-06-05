@@ -665,25 +665,25 @@
         "685299a5-27b9-4a46-b59e-abbacba97127": {
           "type": "item",
           "settings": {
-            "product": "amazing-aluminum-bag-collection1"
+            "collection": "boxing-gloves"
           }
         },
         "39918299-8a20-4aca-bb90-d8f7a49786ab": {
           "type": "item",
           "settings": {
-            "product": "amazing-aluminum-bag-collection1"
+            "collection": "clothing"
           }
         },
         "9b362feb-7f54-4bcd-b4f6-9cac4ee13e5a": {
           "type": "item",
           "settings": {
-            "product": "amazing-aluminum-bag-collection1"
+            "collection": "for-men"
           }
         },
         "be70c55c-276e-4bc8-ac5d-0b6c8efb541f": {
           "type": "item",
           "settings": {
-            "product": "amazing-aluminum-bag-collection1"
+            "collection": "protective-gear"
           }
         }
       },
@@ -694,7 +694,7 @@
         "be70c55c-276e-4bc8-ac5d-0b6c8efb541f"
       ],
       "settings": {
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
+        "color_scheme": "background-2"
       }
     }
   },
