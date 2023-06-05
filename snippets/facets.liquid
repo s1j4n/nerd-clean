@@ -520,7 +520,7 @@ div[slider] > input[type=range]::-ms-tooltip {
   children[7].style.left=value+'%';children[11].style.left=value+'%';
   children[11].childNodes[1].innerHTML=this.value;" />
 
-  <input type="range" class="field__input"
+  <input type="range" step="1" class="field__input"
                                 name="{{ filter.max_value.param_name }}"
                                 id="Mobile-Filter-{{ filter.label | escape }}-LTE"
                                 {%- if filter.max_value.value -%}
