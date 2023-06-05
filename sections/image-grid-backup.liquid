@@ -77,7 +77,7 @@
 
 {% liquid
 
-  assign count = section.blocks.count
+  assign count = section.blocks.size
   if count == 1
     assign grid_1_class = "nerd--grid-1-desktop nerd--grid-1-tablet nerd--grid-1-mobile"
   elsif count == 2
@@ -100,7 +100,7 @@
 
     <div class="nerd--relative image-wrapper first">
       {% if count > 0 %}
-        {% assign image = section.blocks.first.settings.image %}
+        {% assign image = section.blocks.first.sizeimage %}
         {% capture styles %}
           opacity: {{ section.settings.big_image_opacity }}%;
           {% endcapture %}
