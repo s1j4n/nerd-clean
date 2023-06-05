@@ -100,7 +100,7 @@
 
     <div class="nerd--relative image-wrapper first">
       {% if count > 0 %}
-        {% assign image = section.blocks.first.sizeimage %}
+        {% assign image = section.blocks.first.settings.image %}
         {% capture styles %}
           opacity: {{ section.settings.big_image_opacity }}%;
           {% endcapture %}
