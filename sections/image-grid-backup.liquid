@@ -70,7 +70,7 @@
     <div class="nerd--grid-item image-wrapper first">
       {% if section.settings.image_big %}
         {% assign image = section.settings.image_big %}
-        {% capture style %}
+        {% capture styles %}
           opacity: {{ section.settings.big_image_opacity }}
           {% endcapture %}
         {{
