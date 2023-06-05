@@ -127,9 +127,9 @@
         </media-gallery>
       </div>
      {% endcomment %}
-  <div class="grid__item">
-      {% include 'nerd-featured-thumbnails' %}
-  </div>
+ <section class="primary-images">
+    {% include 'product-image-slider' %}
+</section>
       <div class="product__info-wrapper grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <product-info
           id="ProductInfo-{{ section.id }}"
