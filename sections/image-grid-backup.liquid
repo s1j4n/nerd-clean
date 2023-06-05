@@ -131,9 +131,9 @@
         {% capture styles %}
           opacity : {{ block.settings.image_opacity }}%;
           {% if count ==2 %}
-            max-height: 500px;
+            max-height: 800px;
             {% else %}
-            max-height: 250px;
+            max-height: 400px;
           {% endif %}
         {% endcapture %}
         <div class="nerd--grid-image-wrapper nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %}">
