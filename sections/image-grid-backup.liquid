@@ -117,7 +117,7 @@
     </div>
     <div class="nerd--grid nerd--grid-item {{ grid_2_class }} ">
       {% for block in section.blocks %}
-        {% if forloop.index > 0 %}
+        {% if forloop.index > 1 %}
         {% assign image = block.settings.image %}
         {% capture styles %}
           opacity : {{ block.settings.image_opacity }}%;
