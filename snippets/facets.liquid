@@ -13,7 +13,6 @@
 {% endcomment %}
 
 {{ 'component-show-more.css' | asset_url | stylesheet_tag }}
-{{ 'nerd-facets.css' | asset_url | stylesheet_tag  }}
 
 {%- liquid
   assign sort_by = results.sort_by | default: results.default_sort_by
@@ -26,7 +25,7 @@
   endif
 -%}
 
-<div class="color-{{ color }} facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+<div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets small-hide">
       <form
@@ -46,12 +45,24 @@
               class="facets__wrapper"
             {% endif %}
           >
-            
+            {%- if filter_type == 'horizontal' and results.filters != empty -%}
+              <h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
+                {{ 'products.facets.filter_by_label' | t }}
+              </h2>
+            {%- endif -%}
             {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
             {%- if filter_type == 'vertical' -%}
               <div class="active-facets active-facets-desktop">
                 <div class="active-facets-vertical-filter">
-
+                  {%- unless results.filters == empty -%}
+                    <h2
+                      class="facets__heading facets__heading--vertical caption-large text-body"
+                      id="verticalTitle"
+                      tabindex="-1"
+                    >
+                      {{ 'products.facets.filter_by_label' | t }}
+                    </h2>
+                  {%- endunless -%}
                   <facet-remove class="active-facets__button-wrapper">
                     <a href="{{ results_url }}" class="active-facets__button-remove underlined-link">
                       <span>{{ 'products.facets.clear_all' | t }}</span>
@@ -107,7 +118,7 @@
                     id="Details-{{ forloop.index }}-{{ section.id }}"
                     class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
                     data-index="{{ forloop.index }}"
-                    {% if filter_type == 'vertical' and forloop.index == 2 %}
+                    {% if filter_type == 'vertical' and forloop.index == 1 %}
                       open
                     {% endif %}
                   >
@@ -303,13 +314,13 @@
                     id="Details-{{ forloop.index }}-{{ section.id }}"
                     class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
                     data-index="{{ forloop.index }}"
-                    {% if filter_type == 'vertical' and forloop.index == 2 %}
+                    {% if filter_type == 'vertical' and forloop.index == 1 %}
                       open
                     {% endif %}
                   >
                     <summary class="facets__summary caption-large focus-offset">
                       <div>
-                        <span>{{ filter.label | escape }} </span>
+                        <span>{{ filter.label | escape }}</span>
                         {% render 'icon-caret' %}
                       </div>
                     </summary>
@@ -319,7 +330,9 @@
                     >
                       <div class="{% if filter_type == 'horizontal' %}facets__header{% else %}facets__header-vertical{% endif %}">
                         {%- assign max_price_amount = filter.range_max | money | strip_html | escape -%}
-                        
+                        <span class="facets__selected">
+                          {{- 'products.facets.max_price' | t: price: max_price_amount -}}
+                        </span>
                         {%- if filter_type != 'vertical' -%}
                           <facet-remove>
                             <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link">
@@ -328,12 +341,11 @@
                           </facet-remove>
                         {%- endif -%}
                       </div>
-                      
-                      <price-range class="nerd-facets--vertical facets__price ">
+                      <price-range class="facets__price">
                         <span class="field-currency">{{ cart.currency.symbol }}</span>
-                        <div class="nerd--currency-group">
+                        <div class="field">
                           <input
-                            class="nerd--currency-from"
+                            class="field__input"
                             name="{{ filter.min_value.param_name }}"
                             id="Filter-{{ filter.label | escape }}-GTE"
                             {%- if filter.min_value.value -%}
@@ -343,8 +355,7 @@
                                 value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
                               {%- endif %}
                             {%- endif -%}
-                            type="range"
-                            oninput="num.value = this.value"
+                            type="number"
                             placeholder="0"
                             min="0"
                             {%- if uses_comma_decimals -%}
@@ -352,19 +363,15 @@
                             {%- else -%}
                               max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                             {% endif %}
-                            value="0"
                           >
-                          <span class="nerd--price-output-group" >
-                            $
-                            <output id="num" class="" for="Filter-{{ filter.label | escape }}-GTE">
-                            0 
-                          </output> - {{ filter.range_max | money_without_currency | replace: ',', '' }}
-                          </span>
+                          <label class="field__label" for="Filter-{{ filter.label | escape }}-GTE">
+                            {{- 'products.facets.from' | t -}}
+                          </label>
                         </div>
                         {%- if filter_type != 'vertical' -%}
                           <span class="field-currency">{{ cart.currency.symbol }}</span>
                         {%- endif -%}
-                        <div class="field nerd--currency-to">
+                        <div class="field">
                           <input
                             class="field__input"
                             name="{{ filter.max_value.param_name }}"
@@ -579,7 +586,7 @@
   >
     <details class="mobile-facets__disclosure disclosure-has-popup">
       <summary class="mobile-facets__open-wrapper focus-offset">
-        <span class="color-{{ color }} mobile-facets__open{% if filter_type == 'drawer' and enable_filtering == false %} medium-hide large-up-hide{% endif %}">
+        <span class="mobile-facets__open{% if filter_type == 'drawer' and enable_filtering == false %} medium-hide large-up-hide{% endif %}">
           {% render 'icon-filter' %}
           <span class="mobile-facets__open-label button-label medium-hide large-up-hide">
             {%- if enable_filtering and enable_sorting -%}
