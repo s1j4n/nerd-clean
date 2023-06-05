@@ -604,9 +604,9 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/AAUvwnj0ICORVuxs41ODOvnhvedArLiSV20df7r8XBjEUQ_s900-c-k-c0x00ffffff-no-rj_55b575b4-e130-450d-919b-fd2b4bdc73ba.jpg",
-            "image_opacity": 90,
-            "text": "<p>Some Text<\/p>",
-            "button_label": "Shop now"
+            "image_opacity": 60,
+            "text": "<p>Test<\/p>",
+            "button_label": "Test"
           }
         },
         "0953863e-0892-4ad4-a13a-2bba01363b1c": {
@@ -644,7 +644,7 @@
         "c887502d-71e1-4145-845b-fc7a2904aa16"
       ],
       "settings": {
-        "image_big": "shopify:\/\/shop_images\/crop-top.png",
+        "image_big": "shopify:\/\/shop_images\/Image2_1.png",
         "color_scheme": ""
       }
     }
