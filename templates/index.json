@@ -367,8 +367,8 @@
         "title": "What Our Clients Say",
         "full_width": false,
         "heading_center": true,
-        "total_to_show": 4,
-        "card_height": "fit_content",
+        "total_to_show": 3,
+        "card_height": "fit_large",
         "color_scheme": "background-2",
         "color_scheme_card": ""
       }
