@@ -81,13 +81,13 @@
   if count == 1
     assign grid_1_class = "nerd--grid-1-desktop nerd--grid-1-tablet nerd--grid-1-mobile"
   elsif count == 2
-    assign grid_1_class = "nerd-grid-2-desktop nerd--grid-1-tablet"
+    assign grid_1_class = "nerd--grid-2-desktop nerd--grid-1-tablet"
     assign grid_2_class = "nerd--grid-1-desktop nerd--grid-1-tablet nerd--grid-1-mobile"
   elsif count == 3
-    assign grid_1_class = "nerd-grid-2-desktop nerd--grid-1-tablet"
+    assign grid_1_class = "nerd--grid-2-desktop nerd--grid-1-tablet"
     assign grid_2_class = "nerd--grid-2-desktop nerd--grid-2-tablet nerd--grid-1-mobile"
   else
-    assign grid_1_class = "nerd-grid-2-desktop nerd--grid-1-tablet"
+    assign grid_1_class = "nerd--grid-2-desktop nerd--grid-1-tablet"
     assign grid_2_class = "nerd--grid-2-desktop nerd--grid-2-tablet nerd--grid-1-mobile"
  
     
@@ -96,7 +96,7 @@
 %}
 
 <div class="color-{{ section.settings.color_scheme }}">
-  <div class="nerd--grid nerd--grid-2-desktop nerd--grid-1-tablet">
+  <div class="nerd--grid {{ grid_1_class }}">
 
     <div class="nerd--relative image-wrapper first">
       {% if section.settings.image_big %}
@@ -115,7 +115,7 @@
         Hello
       </div>
     </div>
-    <div class="nerd--grid nerd--grid-item nerd--grid-2-desktop nerd--grid-2-tablet nerd--grid-1-mobile ">
+    <div class="nerd--grid nerd--grid-item {{ grid_2_class }} ">
       {% for block in section.blocks %}
         {% assign image = block.settings.image %}
         {% capture styles %}
