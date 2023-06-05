@@ -109,19 +109,19 @@
 <div class="nerd-container color-{{ section.settings.color_scheme }}">
   <ul class="nerd-page-width nerd--list-alternate">
     {% for block in section.blocks %}
-      {% assign product = block.settings.product %}
+      {% assign collection = block.settings.collection %}
 
       <li class="nerd--alternate-item">
-        {% if product %}
-          {% if product.featured_image %}
+        {% if collection %}
+          {% if collection.featured_image %}
             {{
-               product.featured_image
-             | image_url: width: product.featured_image.width
+               collection.featured_image
+             | image_url: width:collection.featured_image.width
              | image_tag: loading: 'lazy', class: 'nerd--alternate-image', style: styles }}
           {% else %}
             {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
           {% endif %}
-          <div class="alternate--title">{{ product.title }}</div>
+          <div class="alternate--title">{{ collection.title }}</div>
         {% else %}
           {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
           <div class="alternate--title">Title</div>
@@ -146,9 +146,9 @@
         "type": "item",
         "settings": [
           {
-            "type": "product",
-            "id": "product",
-            "label": "Product"
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
           }
         ]
       }
