@@ -47,6 +47,10 @@
 
   }
 
+  .nerd--grid-colspan-2{
+    grid-column: span 2;
+  }
+
 
   @media screen and (max-width: 480px) {
     .nerd--grid-1-mobile {
@@ -121,12 +125,9 @@
         {% if forloop.index > 1 %}
         {% assign image = block.settings.image %}
         {% capture styles %}
-          {% if count==4 and forloop.index==4 %}
-          grid-column: span 2;
-            {% endif %}
           opacity : {{ block.settings.image_opacity }}%;
         {% endcapture %}
-        <div class="nerd--grid-image-wrapper nerd--relative">
+        <div class="nerd--grid-image-wrapper nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %}">
         {% if image %}
         
           
