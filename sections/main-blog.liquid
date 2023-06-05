@@ -19,7 +19,7 @@
 {%- paginate blog.articles by 6 -%}
   <div class="nerd-page-width">
   <div class="nerd-container main-blog section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
-    <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+    <h1 class="nerd-title title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {{ blog.title | escape }}
     </h1>
 
