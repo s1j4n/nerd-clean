@@ -438,10 +438,9 @@
         "info": "Standard-styled cards have no borders when an image shape is active."
       }
     },
-     "text-with-button": {
+    "text-with-button": {
       "name": "Text with button"
-     }
-     },
+    },
     "announcement-bar": {
       "name": "Announcement bar",
       "settings": {
@@ -1140,7 +1139,7 @@
       }
     },
     "image-banner": {
-      "name": "Image with text overlay",
+      "name": "Image banner",
       "settings": {
         "image": {
           "label": "First image"
