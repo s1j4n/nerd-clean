@@ -378,12 +378,12 @@
         "4867de1d-6e44-4ff9-8c26-826a03d596a6"
       ],
       "settings": {
-        "title": "Title",
+        "title": "",
         "full_width": false,
         "icon_height_desktop": 50,
         "icon_height_mobile": 14,
         "card_height": "fit_large",
-        "color_scheme": ""
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
       }
     },
     "4cb0bcfe-421b-49cc-9040-751f133b8159": {
