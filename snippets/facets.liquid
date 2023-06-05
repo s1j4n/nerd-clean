@@ -502,11 +502,9 @@ div[slider] > input[type=range]::-ms-tooltip {
   {%- endif %}
   {%- endif -%}
   min="0"
-  {%- if uses_comma_decimals -%}
-  max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
-  {%- else -%}
+  
   max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-  {% endif %}
+
   type="range" 
   value="0" 
   step="1"
