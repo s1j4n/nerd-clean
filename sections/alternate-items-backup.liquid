@@ -129,9 +129,10 @@
       </li>
 
     {% else %}
-      {% for i in (1..4) %}{% endfor %}
+      {% for i in (1..4) %}
       {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
       <div class="alternate--title">Title</div>
+        {% endfor %}
     {% endfor %}
 
   </ul>
