@@ -614,7 +614,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/AAUvwnj0ICORVuxs41ODOvnhvedArLiSV20df7r8XBjEUQ_s900-c-k-c0x00ffffff-no-rj.jpg",
             "image_opacity": 90,
-            "text": "<p>Some Text<\/p>",
+            "text": "<p>test<\/p>",
             "button_label": "Shop now"
           }
         },
@@ -645,7 +645,8 @@
       ],
       "settings": {
         "image_big": "shopify:\/\/shop_images\/Image2_1.png",
-        "color_scheme": ""
+        "big_image_opacity": 80,
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
       }
     }
   },
