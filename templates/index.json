@@ -339,7 +339,7 @@
         "full_width": false,
         "heading_center": true,
         "total_to_show": 4,
-        "card_height": "fit_large",
+        "card_height": "fit_content",
         "color_scheme": "",
         "color_scheme_card": ""
       }
