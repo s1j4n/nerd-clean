@@ -514,6 +514,76 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
+    },
+    "ce2a487b-4e3e-416f-af6a-8ed45b7a0429": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19231783911727__ce2a487b-4e3e-416f-af6a-8ed45b7a0429-1685934123312894c8-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--19231783911727__ce2a487b-4e3e-416f-af6a-8ed45b7a0429-1685934123312894c8-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--19231783911727__ce2a487b-4e3e-416f-af6a-8ed45b7a0429-1685934123312894c8-2": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--19231783911727__ce2a487b-4e3e-416f-af6a-8ed45b7a0429-1685934123312894c8-3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--19231783911727__ce2a487b-4e3e-416f-af6a-8ed45b7a0429-1685934123312894c8-4": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--19231783911727__ce2a487b-4e3e-416f-af6a-8ed45b7a0429-1685934123312894c8-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "template--19231783911727__ce2a487b-4e3e-416f-af6a-8ed45b7a0429-1685934123312894c8-6": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--19231783911727__ce2a487b-4e3e-416f-af6a-8ed45b7a0429-1685934123312894c8-0",
+        "template--19231783911727__ce2a487b-4e3e-416f-af6a-8ed45b7a0429-1685934123312894c8-1",
+        "template--19231783911727__ce2a487b-4e3e-416f-af6a-8ed45b7a0429-1685934123312894c8-2",
+        "template--19231783911727__ce2a487b-4e3e-416f-af6a-8ed45b7a0429-1685934123312894c8-3",
+        "template--19231783911727__ce2a487b-4e3e-416f-af6a-8ed45b7a0429-1685934123312894c8-4",
+        "template--19231783911727__ce2a487b-4e3e-416f-af6a-8ed45b7a0429-1685934123312894c8-5",
+        "template--19231783911727__ce2a487b-4e3e-416f-af6a-8ed45b7a0429-1685934123312894c8-6"
+      ],
+      "settings": {
+        "product": "champion-boxing-gloves",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -529,6 +599,7 @@
     "26fa271b-eb50-48ef-a3c6-f103d1510ffa",
     "4cb0bcfe-421b-49cc-9040-751f133b8159",
     "53fa0eb7-324c-4259-b945-e3beba8a1207",
-    "bfd1bca5-1df9-48e8-815d-b8c7a70e5efe"
+    "bfd1bca5-1df9-48e8-815d-b8c7a70e5efe",
+    "ce2a487b-4e3e-416f-af6a-8ed45b7a0429"
   ]
 }
