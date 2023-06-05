@@ -347,6 +347,37 @@
     },
     "a61a6fb5-b89f-44ab-b59b-f9289f0dfe7e": {
       "type": "text-with-icon",
+      "blocks": {
+        "397df0be-e385-45ba-b765-b3215beeb90e": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service...",
+            "icon": "check_mark"
+          }
+        },
+        "c28c33d4-8d98-48cd-a23a-36ffa265cb86": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service...",
+            "icon": "check_mark"
+          }
+        },
+        "4867de1d-6e44-4ff9-8c26-826a03d596a6": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service...",
+            "icon": "check_mark"
+          }
+        }
+      },
+      "block_order": [
+        "397df0be-e385-45ba-b765-b3215beeb90e",
+        "c28c33d4-8d98-48cd-a23a-36ffa265cb86",
+        "4867de1d-6e44-4ff9-8c26-826a03d596a6"
+      ],
       "settings": {
         "title": "Title",
         "full_width": false,
