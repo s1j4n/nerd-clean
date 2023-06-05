@@ -43,7 +43,6 @@
         "template--19231783911727__8116c8f1-b49d-4070-9e7a-d9903cd21aff-1685374112cfe815de-1"
       ],
       "settings": {
-        "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-98a05e94-eb81-4d40-9d93-d40c3f8716f2",
         "full_width": true,
@@ -365,12 +364,11 @@
       ],
       "settings": {
         "title": "What Our Clients Say",
-        "full_width": false,
+        "full_width": true,
         "heading_center": true,
         "total_to_show": 3,
         "card_height": "fit_large",
-        "color_scheme": "background-2",
-        "color_scheme_card": ""
+        "color_scheme": "background-2"
       }
     },
     "a61a6fb5-b89f-44ab-b59b-f9289f0dfe7e": {
