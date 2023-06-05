@@ -810,24 +810,6 @@
         "description": {
           "label": "Description"
         },
-        "show_description": {
-          "label": "Show collection description from the admin"
-        },
-        "description_style": {
-          "label": "Description style",
-          "options__1": {
-            "label": "Body"
-          },
-          "options__2": {
-            "label": "Subtitle"
-          },
-          "options__3": {
-            "label": "Uppercase"
-          }
-        },
-        "collection": {
-          "label": "Collection"
-        },
         "products_to_show": {
           "label": "Maximum products to show"
         },
