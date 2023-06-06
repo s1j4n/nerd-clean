@@ -130,9 +130,9 @@
         {% capture styles %}
           opacity : {{ block.settings.image_opacity }}%;
           {% if count ==2 %}
-            max-height: 800px;
+            max-height: {{ section.blocks.first.settings.image }}px;
             {% else %}
-            max-height: 400px;
+            max-height: {{ section.blocks.first.settings.image | divided_by: 2  }}px;
           {% endif %}
         {% endcapture %}
         <div class="nerd--grid-image-wrapper nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %}">
