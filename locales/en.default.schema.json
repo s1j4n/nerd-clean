@@ -3441,6 +3441,9 @@
             "label": "Button Link"
           }
         }
+      },
+      "presets": {
+        "name": "Image Grid"
       }
     }
   }
