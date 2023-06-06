@@ -493,43 +493,30 @@
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
       }
     },
-    "1f60efe6-9459-4ca3-9061-2de54853801d": {
+    "49464abb-e837-4992-bacc-33f9fe9336e8": {
       "type": "image-grid-backup",
       "blocks": {
-        "a7cd54fe-1b53-454e-a7d6-916779929038": {
+        "320152d9-40e5-4d6a-b254-3a525dec2229": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/AAUvwnj0ICORVuxs41ODOvnhvedArLiSV20df7r8XBjEUQ_s900-c-k-c0x00ffffff-no-rj.jpg",
             "image_opacity": 90,
-            "title": "Title",
-            "text": "<p>Some Text<\/p>",
-            "button_label": "Shop now"
+            "title": "",
+            "text": "",
+            "button_label": ""
           }
         },
-        "3733b99d-087f-4c6d-ad4a-749fb918b455": {
+        "f8bdc01b-c434-4337-99a7-a45ec3d86ea0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/AAUvwnj0ICORVuxs41ODOvnhvedArLiSV20df7r8XBjEUQ_s900-c-k-c0x00ffffff-no-rj.jpg",
             "image_opacity": 90,
-            "title": "Title",
-            "text": "<p>Some Text<\/p>",
-            "button_label": "Shop now"
+            "title": "",
+            "text": "",
+            "button_label": ""
           }
         },
-        "d0bc6cbd-1fc0-4f9f-ba74-edeca819a486": {
+        "bd3c11db-7f3f-424e-b5fd-ecea179c61e2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/AAUvwnj0ICORVuxs41ODOvnhvedArLiSV20df7r8XBjEUQ_s900-c-k-c0x00ffffff-no-rj.jpg",
-            "image_opacity": 90,
-            "title": "Title",
-            "text": "<p>Some Text<\/p>",
-            "button_label": "Shop now"
-          }
-        },
-        "1cf91262-5239-4eea-a350-defcf061e3ef": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AAUvwnj0ICORVuxs41ODOvnhvedArLiSV20df7r8XBjEUQ_s900-c-k-c0x00ffffff-no-rj.jpg",
             "image_opacity": 90,
             "title": "",
             "text": "",
@@ -538,13 +525,12 @@
         }
       },
       "block_order": [
-        "a7cd54fe-1b53-454e-a7d6-916779929038",
-        "3733b99d-087f-4c6d-ad4a-749fb918b455",
-        "d0bc6cbd-1fc0-4f9f-ba74-edeca819a486",
-        "1cf91262-5239-4eea-a350-defcf061e3ef"
+        "320152d9-40e5-4d6a-b254-3a525dec2229",
+        "f8bdc01b-c434-4337-99a7-a45ec3d86ea0",
+        "bd3c11db-7f3f-424e-b5fd-ecea179c61e2"
       ],
       "settings": {
-        "color_scheme": "background-2"
+        "color_scheme": ""
       }
     }
   },
@@ -562,6 +548,6 @@
     "a61a6fb5-b89f-44ab-b59b-f9289f0dfe7e",
     "4cb0bcfe-421b-49cc-9040-751f133b8159",
     "618c4904-3241-4e94-9c8c-b22bb32e7f5e",
-    "1f60efe6-9459-4ca3-9061-2de54853801d"
+    "49464abb-e837-4992-bacc-33f9fe9336e8"
   ]
 }
