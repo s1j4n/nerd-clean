@@ -3460,6 +3460,45 @@
         "name": "Image Grid"
       }
     },
+    "products_grid": {
+      "name": "Products Grid",
+      "settings": {
+        "show_title": {
+          "label": "Show Title"
+        },
+        "quick_add": {
+          "label": "Enable quick add"
+        }
+      },
+      "blocks": {
+        "name": "Product",
+        "settings": {
+          "image": {
+            "label": "Product"
+          },
+          "opacity": {
+            "label": "Image Opacity"
+          },
+          "content": {
+            "label": "Content Position",
+            "options": {
+              "top": {
+                "label": "Top"
+              },
+              "center": {
+                "label": "Center"
+              },
+              "bottom": {
+                "label": "Bottom"
+              }
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Image Grid"
+      }
+    },
     "alternate_items": {
       "name": "Collection List (Alternate)",
       "blocks": {
