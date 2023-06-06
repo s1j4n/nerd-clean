@@ -449,6 +449,7 @@ input[type="range"]:active::-webkit-slider-thumb{
         <div class="container">
             <div class="slider-track"></div>
             <input type="range" 
+              name="{{ filter.min_value.param_name }}"
               min="0"
               {%- if uses_comma_decimals -%}
               max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
@@ -461,6 +462,7 @@ input[type="range"]:active::-webkit-slider-thumb{
               name="{{ filter.min_value.param_name }}
               ">
             <input type="range"
+              name="{{ filter.max_value.param_name }}"
               min="0"
               {%- if uses_comma_decimals -%}
               max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
