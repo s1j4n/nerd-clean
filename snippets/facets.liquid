@@ -455,7 +455,7 @@ input[type="range"]:active::-webkit-slider-thumb{
               {%- else -%}
               max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
               {% endif %}
-              value="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+              value="0"
               id="slider-1" 
               oninput="slideOne()" 
               name="{{ filter.min_value.param_name }}
@@ -467,7 +467,7 @@ input[type="range"]:active::-webkit-slider-thumb{
               {%- else -%}
               max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
               {% endif %}
-              value="0"
+              value="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
               id="slider-2" oninput="slideTwo()" name="{{ filter.max_value.param_name }}">
         </div>
     </div>
