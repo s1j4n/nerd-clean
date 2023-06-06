@@ -50,6 +50,36 @@
         "padding_bottom": 0
       }
     },
+    "5abd33d6-181a-43ff-8e1f-a39a0039f8dc": {
+      "type": "products-grid",
+      "blocks": {
+        "a7f87cba-aa68-4880-9a02-a042f2f54987": {
+          "type": "product",
+          "settings": {
+            "product": "champion-boxing-gloves",
+            "image_opacity": 90,
+            "content_position": "center"
+          }
+        },
+        "998f0a82-44fc-4d84-b90a-e73a99656241": {
+          "type": "product",
+          "settings": {
+            "product": "amazing-aluminum-bag-collection1",
+            "image_opacity": 90,
+            "content_position": "center"
+          }
+        }
+      },
+      "block_order": [
+        "a7f87cba-aa68-4880-9a02-a042f2f54987",
+        "998f0a82-44fc-4d84-b90a-e73a99656241"
+      ],
+      "settings": {
+        "show_title": false,
+        "enable_quick_add": true,
+        "color_scheme": ""
+      }
+    },
     "9acd8e6e-82cd-4690-a79d-10ada8cd75cc": {
       "type": "products-slider",
       "blocks": {
@@ -579,6 +609,7 @@
   "order": [
     "image_banner",
     "8116c8f1-b49d-4070-9e7a-d9903cd21aff",
+    "5abd33d6-181a-43ff-8e1f-a39a0039f8dc",
     "9acd8e6e-82cd-4690-a79d-10ada8cd75cc",
     "a20d3441-d401-4506-adae-7e2a8ef51a3b",
     "24423574-5f40-408d-824b-a82b27f6a523",
