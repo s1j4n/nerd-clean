@@ -52,6 +52,9 @@
               <div class="nerd-text">
                 {{ first.settings.text }}
               </div>
+        {% if first.settings.button_label %}
+        <a class="button button--primary"> {{ first.settings.button_label }} </a>
+          {% endif %}
             </div>
     </div>
     <div class="nerd--grid nerd--grid-item {{ grid_2_class }} ">
