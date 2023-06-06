@@ -28,7 +28,7 @@
         {% assign first = section.blocks.first %}
       {% assign content_position = first.settings.content_position | prepend: "nerd--absolute-item-" %}
         {% assign product = first.settings.product %}
-      {% assign image = product.image %}
+      {% assign image = product.featured_image %}
 
         {% capture styles %}
           opacity: {{ first.settings.image_opacity }}%;
