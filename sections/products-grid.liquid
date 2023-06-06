@@ -136,9 +136,6 @@
               <div class="card__heading h4 font-600">
                 {{ product.title }}
               </div>
-              {% if section.settings.enable_quick_add and product != blank %}
-                {% render 'quick-add', card_product: product, section_id: section_id %}
-              {% endif %}
             </div>
              <div class="nerd--absolute-item-center nerd--showme">
         {% render 'quick-add', card_product: product, section_id: section_id %}
