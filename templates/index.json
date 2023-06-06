@@ -76,8 +76,9 @@
       ],
       "settings": {
         "show_title": true,
-        "enable_quick_add": false,
-        "color_scheme": ""      }
+        "enable_quick_add": true,
+        "color_scheme": ""
+      }
     },
     "9acd8e6e-82cd-4690-a79d-10ada8cd75cc": {
       "type": "products-slider",
