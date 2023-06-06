@@ -1,6 +1,10 @@
 {{ 'nerd-alternate-items.css' | asset_url | stylesheet_tag }}
 
 <style>
+  .alternate--wrapper{
+    cursor: pointer;
+  }
+  
   .showme {
   opacity: 0;
 }
@@ -9,13 +13,14 @@
     transition: all 1s;
   }
 
-.showhim:hover .showme {
+.alternate--wrapper:hover .showme {
   opacity: 1;
 }
 
-  .showhim:hover .nerd--alternate-image{
+  .alternate--wrapper:hover .nerd--alternate-image{
     opacity: 0.4;
   }
+  
 
   
 </style>
@@ -27,7 +32,7 @@
 
       <li class="nerd--alternate-item ">
          {% if collection %}
-        <div class="nerd--image-wrapper nerd--relative showhim">
+        <div class="alternate--wrapper nerd--image-wrapper nerd--relative alternate--wrapper">
         <div class="nerd--absolute-item-center nerd-title showme">Test</div>
           {% if collection.featured_image %}
             {{
