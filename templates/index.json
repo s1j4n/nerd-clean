@@ -495,6 +495,60 @@
     },
     "e909a60b-2811-4996-b218-71750dabf044": {
       "type": "image-grid",
+      "blocks": {
+        "b217ec5d-3ff2-43bc-8fc0-caa9d4fc2851": {
+          "type": "image",
+          "settings": {
+            "image_opacity": 90,
+            "title": "",
+            "text": "",
+            "button_label": ""
+          }
+        },
+        "73f31833-ac6c-4a47-aadd-859102582e47": {
+          "type": "image",
+          "settings": {
+            "image_opacity": 90,
+            "title": "",
+            "text": "",
+            "button_label": ""
+          }
+        },
+        "51f4ca6c-fd00-4052-9610-dbe3699416e0": {
+          "type": "image",
+          "settings": {
+            "image_opacity": 90,
+            "title": "",
+            "text": "",
+            "button_label": ""
+          }
+        },
+        "b20ee685-a71c-4a45-802a-9b9a866c7f0b": {
+          "type": "image",
+          "settings": {
+            "image_opacity": 90,
+            "title": "",
+            "text": "",
+            "button_label": ""
+          }
+        },
+        "697a0858-9d9a-4b14-800e-6dcf4c2de6db": {
+          "type": "image",
+          "settings": {
+            "image_opacity": 90,
+            "title": "",
+            "text": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "b217ec5d-3ff2-43bc-8fc0-caa9d4fc2851",
+        "73f31833-ac6c-4a47-aadd-859102582e47",
+        "51f4ca6c-fd00-4052-9610-dbe3699416e0",
+        "b20ee685-a71c-4a45-802a-9b9a866c7f0b",
+        "697a0858-9d9a-4b14-800e-6dcf4c2de6db"
+      ],
       "settings": {
         "color_scheme": ""
       }
