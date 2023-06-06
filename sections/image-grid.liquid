@@ -21,62 +21,67 @@
 
 %}
 
+<style></style>
+
 <div class="color-{{ section.settings.color_scheme }}">
   <div class="nerd--grid image-grid {{ grid_1_class }}">
 
-    <div class="nerd--relative image-wrapper first">
+    <div class="nerd--relative image-wrapper first nerd--image-grid-height-full">
       {% if count > 0 %}
         {% assign image = section.blocks.first.settings.image %}
-        
+
         {% capture styles %}
           opacity: {{ section.blocks.first.settings.opacity }}%;
           max-height: {{ image.height }}px;
-          {% endcapture %}
+        {% endcapture %}
         {% if image %}
-        {{
-           image
-         | image_url: width: image.width
-         | image_tag: loading: 'lazy', class: 'nerd--image-grid-bigimage', style: styles }}
-         {% else %}
-        {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover nerd--image-grid-bigimage" }}
-          {% endif %}
+          {{
+             image
+           | image_url: width: image.width
+           | image_tag: loading: 'lazy', class: 'nerd--image-grid-bigimage', style: styles }}
+        {% else %}
+          {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover nerd--image-grid-bigimage" }}
+        {% endif %}
       {% else %}
         {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover nerd--image-grid-bigimage" }}
       {% endif %}
-      <div class="nerd--absolute-item-center nerd--flex-col nerd-text nerd--image-grid-absolute nerd-title">
-      </div>
+      <div class="nerd--absolute-item-center nerd--flex-col nerd-text nerd--image-grid-absolute nerd-title"></div>
     </div>
     <div class="nerd--grid nerd--grid-item {{ grid_2_class }} ">
       {% for block in section.blocks %}
 
         {% if forloop.index > 1 %}
-        {% assign image = block.settings.image %}
-        {% capture styles %}
-          opacity : {{ block.settings.image_opacity }}%;
-        {% endcapture %}
-        {% capture classes %}
-          {% if count ==2 %}
-            nerd--image-grid-height-full
+          {% assign image = block.settings.image %}
+          {% capture styles %}
+            opacity : {{ block.settings.image_opacity }}%;
+          {% endcapture %}
+          {% capture classes %}
+            {% if count == 2 %}
+              nerd--image-grid-height-full
             {% else %}
-           nerd--image-grid-height-half
-          {% endif %}
-        {% endcapture %}
-        <div class="nerd--grid-image-wrapper {{ classes }} nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %}">
-        {% if image %}
-          {{
-             image
-           | image_url: width: image.width
-           | image_tag: loading: 'lazy', style: styles, class: classes }}
-        
-        {% else %}
-          {{ 'product-1' | placeholder_svg_tag: classes }}
+              nerd--image-grid-height-half
+            {% endif %}
+          {% endcapture %}
+          <div class="nerd--grid-image-wrapper {{ classes }} nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %}">
+            {% if image %}
+              {{
+                 image
+               | image_url: width: image.width
+               | image_tag: loading: 'lazy', style: styles, class: classes }}
+
+            {% else %}
+              {{ 'product-1' | placeholder_svg_tag: classes }}
+            {% endif %}
+            <div class="nerd--absolute-item-center nerd--flex-col nerd-text nerd--image-grid-absolute nerd-title">
+              <div class="">
+                {{ block.settings.title }} {{ forloop.index }}
+              </div>
+              <div class="">
+                {{ block.settings.text }}
+              </div>
+            </div>
+          </div>
         {% endif %}
-          <div class="nerd--absolute-item-center nerd--flex-col nerd-text nerd--image-grid-absolute nerd-title">
-        <div class=""> {{ block.settings.title }} {{ forloop.index }} </div>
-        <div class=""> {{ block.settings.text }} </div>
-      </div>
-        </div>
-          {% endif %}
       {% else %}
         {% for i in (1..4) %}
 
@@ -84,7 +89,7 @@
             {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover" }}
           </div>
         {% endfor %}
-  
+
       {% endfor %}
     </div>
 
@@ -101,13 +106,14 @@
       {
         "name": "t:sections.image_grid.blocks.name",
         "type": "image",
-        "limit" : 5,
+        "limit": 5,
         "settings": [
           {
             "type": "image_picker",
             "id": "image",
             "label": "t:sections.image_grid.blocks.settings.image.label"
-          }, {
+          },
+          {
             "type": "range",
             "id": "image_opacity",
             "min": 10,
@@ -135,7 +141,7 @@
       }
     ],
     "settings": [
-      
+
       {
         "type": "color_scheme",
         "id": "color_scheme",
