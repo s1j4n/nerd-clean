@@ -435,62 +435,82 @@ input[type="range"]:active::-webkit-slider-thumb{
                       </div>
 
 
-
- <div class="wrapper">
-        
-        <div class="container color-{{ color }}">
-            <input type="range" 
-              name="{{ filter.min_value.param_name }}"
-              min="0"
-              {%- if uses_comma_decimals -%}
-              max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
-              {%- else -%}
-              max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-              {% endif %}
-              value="0"
-              id="slider-1" 
-              oninput="slideOne()" 
-              name="{{ filter.min_value.param_name }}
-              ">
-            <input type="range"
-              name="{{ filter.max_value.param_name }}"
-              min="0"
-              {%- if uses_comma_decimals -%}
-              max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
-              {%- else -%}
-              max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-              {% endif %}
-              value="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-              id="slider-2" oninput="slideTwo()" name="{{ filter.max_value.param_name }}">
-        </div>
-    </div>
     
+
+
+
+
     
                       <price-range class="nerd-facets--vertical facets__price ">
                         <span class="field-currency">{{ cart.currency.symbol }}</span>
+
+                        <div class="nerd--currency-input-group">
+                          <input type="number" id="range1" name="{{ filter.min_value.param_name }}"
+                          oninput="changeSlide1()"
+                          placeholder="0"
+                          min="0"
+                          {%- if uses_comma_decimals -%}
+                            max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                          {%- else -%}
+                            max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                          {% endif %}
+                          >
+                          <span>-</span>
+                          <input type="number" id="range2" name="{{ filter.max_value.param_name }}" oninput="changeSlide2()"
+                            min="0"
+                            {%- if uses_comma_decimals -%}
+                              placeholder="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                              value="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                              max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                            {%- else -%}
+                              placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                              value="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                              max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                            {% endif %}
+                          >
+                        </div>
+
+
+                        <div class="wrapper">
+                        <div class="container color-{{ color }}">
+                            <input type="range" 
+                              name="{{ filter.min_value.param_name }}"
+                              min="0"
+                              {%- if uses_comma_decimals -%}
+                              max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                              {%- else -%}
+                              max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                              {% endif %}
+                              value="0"
+                              id="slider-1" 
+                              oninput="slideOne()" 
+                              name="{{ filter.min_value.param_name }}
+                              ">
+                            <input type="range"
+                              name="{{ filter.max_value.param_name }}"
+                              min="0"
+                              {%- if uses_comma_decimals -%}
+                              max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                              {%- else -%}
+                              max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                              {% endif %}
+                              value="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                              id="slider-2" oninput="slideTwo()" name="{{ filter.max_value.param_name }}">
+                        </div>
+                    </div>
                         <div class="nerd--currency-group">
-
-
-
-
-
-                          
-
-                
-                
-                        
+                          <span>$0</span>
                           <span class="nerd--price-output-group" >
-                            $
-                            <span id="range1">
-                0
-            </span> - $<span id="range2">
-                 {%- if uses_comma_decimals -%}
-              {{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}
-              {%- else -%}
-              {{ filter.range_max | money_without_currency | replace: ',', '' }}
-              {% endif %}
-            </span>
+                            
+                            </span>
+                          <span>$
+                            {%- if uses_comma_decimals -%}
+                            {{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}
+                              {%- else -%}
+                            {{ filter.range_max | money_without_currency | replace: ',', '' }}
+                            {% endif %}
                           </span>
+                          
                         </div>
                         {%- if filter_type != 'vertical' -%}
                           <span class="field-currency">{{ cart.currency.symbol }}</span>
@@ -522,6 +542,13 @@ input[type="range"]:active::-webkit-slider-thumb{
                           </label>
                         </div>
                       </price-range>
+
+                        
+                      
+
+
+
+
                     </div>
                   </details>
               {% endcase %}
@@ -1247,16 +1274,26 @@ function slideOne(){
     if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
         sliderOne.value = parseInt(sliderTwo.value) - minGap;
     }
-    displayValOne.textContent = sliderOne.value;
+    displayValOne.value = sliderOne.value;
     fillColor();
 }
 function slideTwo(){
     if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
         sliderTwo.value = parseInt(sliderOne.value) + minGap;
     }
-    displayValTwo.textContent = sliderTwo.value;
+    displayValTwo.value = sliderTwo.value;
     fillColor();
 }
+
+function changeSlide1(){
+  document.getElementById("slider-1").value = displayValOne.value;
+}
+
+
+function changeSlide2(){
+  document.getElementById("slider-2").value = displayValTwo.value;
+}
+
 function fillColor(){
     percent1 = (sliderOne.value / sliderMaxValue) * 100;
     percent2 = (sliderTwo.value / sliderMaxValue) * 100;
