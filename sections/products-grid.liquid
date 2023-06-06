@@ -32,6 +32,10 @@
     padding: 10px;
   }
 
+  .nerd--product-grid-collection{
+    margin: 10px
+  }
+
   .nerd--products-grid--content-lg,
   .nerd--products-grid--content-md{
     top: 0;
@@ -134,10 +138,13 @@
       {% else %}
         {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover nerd--image-grid-bigimage" }}
       {% endif %}
-      <div class="nerd--products-grid--content-lg {{ content_position }} nerd--bg-transparent nerd--flex-col nerd--image-grid-absolute nerd--text-center nerd--product-grid-title">
-        <div class="nerd-text uppercase">
+
+      <div class="nerd--absolute-top-left nerd--product-grid-collection uppercase">
           {{ product.collections.first.title }}
         </div>
+    
+      <div class="nerd--products-grid--content-lg {{ content_position }} nerd--bg-transparent nerd--flex-col nerd--image-grid-absolute nerd--text-center nerd--product-grid-title">
+        
         {% if section.settings.show_title %}
           <div class="nerd--products-grid-title-lg ">
             {{ product.title }}
