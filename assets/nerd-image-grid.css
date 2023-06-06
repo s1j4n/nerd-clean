@@ -29,3 +29,6 @@
   max-height: 800px;
   width: auto;
 }
+.nerd--grid-row-2{
+  grid-template-rows: repeat(2, 1fr);
+}
