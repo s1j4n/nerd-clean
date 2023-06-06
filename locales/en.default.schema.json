@@ -3416,6 +3416,32 @@
           "label": "Full Width"
         }
       }
+    },
+    "image_grid": {
+      "name": "Image Grid",
+      "blocks": {
+        "name": "Image",
+        "settings": {
+          "image": {
+            "label": "Image"
+          },
+          "opacity": {
+            "label": "Image Opacity"
+          },
+          "title": {
+            "label": "Title"
+          },
+          "text": {
+            "label": "Text"
+          },
+          "button": {
+            "label": "Button Label"
+          },
+          "link": {
+            "label": "Button Link"
+          }
+        }
+      }
     }
   }
 }
