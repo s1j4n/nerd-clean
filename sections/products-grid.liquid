@@ -28,7 +28,6 @@
 
 <style>
   .nerd--product-grid-title {
-    backdrop-filter: blur(10px) saturate(70%);
     text-transform: uppercase;
     padding: 10px;
   }
@@ -83,9 +82,9 @@
       {% else %}
         {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover nerd--image-grid-bigimage" }}
       {% endif %}
-      <div class="{{ content_position }} nerd--flex-col nerd--image-grid-absolute nerd--text-center nerd--product-grid-title">
+      <div class="{{ content_position }} nerd--bg-transparent nerd--flex-col nerd--image-grid-absolute nerd--text-center nerd--product-grid-title">
         {% if section.settings.show_title %}
-          <div class="nerd-title font-600 nerd--bg-transparent">
+          <div class="nerd-title font-600 ">
             {{ product.title }}
           </div>
         {% endif %}
@@ -132,7 +131,7 @@
             {% else %}
               {{ 'product-1' | placeholder_svg_tag: classes }}
             {% endif %}
-            <div class="{{ content_position }} nerd--flex-col nerd--image-grid-absolute nerd--text-center">
+            <div class="{{ content_position }} nerd--flex-col nerd--bg-transparent nerd--image-grid-absolute nerd--text-center">
               {% if section.settings.show_title %}
               <div class="card__heading h4 font-600">
                 {{ product.title }}
