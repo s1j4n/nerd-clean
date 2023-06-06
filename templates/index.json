@@ -512,7 +512,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/a-french-bulldog-in-a-hoodie-with-boxing-gloves.jpg",
-            "image_opacity": 100,
+            "image_opacity": 60,
             "title": "",
             "text": "",
             "button_label": "",
