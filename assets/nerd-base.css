@@ -3,6 +3,8 @@
   color: rgba(var(--color-foreground));
 }
 
+
+
 .nerd--text-md{
   font-size: 1.9rem;
 }
@@ -17,6 +19,12 @@
 
   .nerd--relative {
     position: relative;
+  }
+
+  .nerd--absolute-top-left{
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .nerd--absolute-item-center {
