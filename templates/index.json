@@ -68,15 +68,42 @@
             "image_opacity": 90,
             "content_position": "bottom"
           }
+        },
+        "7559c504-935b-4dc8-ba38-356078c220df": {
+          "type": "product",
+          "settings": {
+            "product": "amazing-aluminum-bag-collection13",
+            "image_opacity": 90,
+            "content_position": "bottom"
+          }
+        },
+        "271b1cbe-d673-470e-ad45-c3f0f4f2f307": {
+          "type": "product",
+          "settings": {
+            "product": "amazing-aluminum-bag-collection15",
+            "image_opacity": 90,
+            "content_position": "bottom"
+          }
+        },
+        "61aa5c4c-26f4-4834-b546-eba2af5918d4": {
+          "type": "product",
+          "settings": {
+            "product": "amazing-aluminum-bag-collection2",
+            "image_opacity": 90,
+            "content_position": "bottom"
+          }
         }
       },
       "block_order": [
         "a7f87cba-aa68-4880-9a02-a042f2f54987",
-        "998f0a82-44fc-4d84-b90a-e73a99656241"
+        "998f0a82-44fc-4d84-b90a-e73a99656241",
+        "7559c504-935b-4dc8-ba38-356078c220df",
+        "271b1cbe-d673-470e-ad45-c3f0f4f2f307",
+        "61aa5c4c-26f4-4834-b546-eba2af5918d4"
       ],
       "settings": {
         "show_title": true,
-        "enable_quick_add": true,
+        "enable_quick_add": false,
         "color_scheme": ""
       }
     },
