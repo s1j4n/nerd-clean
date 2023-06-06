@@ -5,9 +5,10 @@
     {% for block in section.blocks %}
       {% assign collection = block.settings.collection %}
 
-      <li class="nerd--alternate-item nerd--relative">
-      <div class="nerd--absolute-item-center">Test</div>
-        {% if collection %}
+      <li class="nerd--alternate-item ">
+         {% if collection %}
+        <div class="nerd--image-wrapper nerd--relative">
+        <div class="nerd--absolute-item-center">Test</div>
           {% if collection.featured_image %}
             {{
                collection.featured_image
@@ -16,6 +17,10 @@
           {% else %}
             {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
           {% endif %}
+        </div>
+
+       
+          
           <div class="alternate--title nerd--text-md">{{ collection.title }}</div>
         {% else %}
           {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
