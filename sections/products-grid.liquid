@@ -38,6 +38,13 @@
     background-color: rgba(var(--color-button),var(--alpha-button-background));
   }
 
+  .nerd--product-grid-collection-sm{
+    margin: 5px;
+    padding: 2.5px 5px;
+    background-color: rgba(var(--color-button),var(--alpha-button-background));
+    font-size: small;
+  }
+
   .nerd--products-grid-title-lg{
     text-transform: uppercase;
     font-size: 3rem;
@@ -190,7 +197,7 @@
             {% else %}
               {{ 'product-1' | placeholder_svg_tag: classes }}
             {% endif %}
-            <div class="nerd--absolute-top-left nerd--product-grid-collection uppercase">
+            <div class="nerd--absolute-top-left nerd--product-grid-collection-sm uppercase">
           {{ product.collections.first.title }}
         </div>
             
