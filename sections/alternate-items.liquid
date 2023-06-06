@@ -1,5 +1,17 @@
 {{ 'nerd-alternate-items.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .showme {
+  opacity: 0;
+}
+
+.showhim:hover .showme {
+  opacity: 1;
+}
+
+  
+</style>
+
 <div class="nerd-container color-{{ section.settings.color_scheme }}">
   <ul class="nerd-page-width nerd--list-alternate">
     {% for block in section.blocks %}
@@ -7,8 +19,8 @@
 
       <li class="nerd--alternate-item ">
          {% if collection %}
-        <div class="nerd--image-wrapper nerd--relative">
-        <div class="nerd--absolute-item-center nerd-title">Test</div>
+        <div class="nerd--image-wrapper nerd--relative showhim">
+        <div class="nerd--absolute-item-center nerd-title showme">Test</div>
           {% if collection.featured_image %}
             {{
                collection.featured_image
