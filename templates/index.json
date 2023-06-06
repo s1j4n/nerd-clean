@@ -381,7 +381,7 @@
           "settings": {
             "title": "Service Title",
             "text": "Something about your service...",
-            "icon": "check_mark"
+            "icon": "box"
           }
         },
         "c28c33d4-8d98-48cd-a23a-36ffa265cb86": {
@@ -389,7 +389,7 @@
           "settings": {
             "title": "Service Title",
             "text": "Something about your service...",
-            "icon": "check_mark"
+            "icon": "heart"
           }
         },
         "4867de1d-6e44-4ff9-8c26-826a03d596a6": {
@@ -397,7 +397,7 @@
           "settings": {
             "title": "Service Title",
             "text": "Something about your service...",
-            "icon": "check_mark"
+            "icon": "return"
           }
         }
       },
@@ -410,7 +410,7 @@
         "title": "",
         "full_width": false,
         "icon_height_desktop": 50,
-        "icon_height_mobile": 14,
+        "icon_height_mobile": 26,
         "card_height": "fit_large",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
       }
