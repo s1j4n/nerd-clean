@@ -5,7 +5,8 @@
     {% for block in section.blocks %}
       {% assign collection = block.settings.collection %}
 
-      <li class="nerd--alternate-item">
+      <li class="nerd--alternate-item nerd--relative">
+      <div class="nerd--absolute-item-center">Test</div>
         {% if collection %}
           {% if collection.featured_image %}
             {{
