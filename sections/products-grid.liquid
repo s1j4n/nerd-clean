@@ -38,6 +38,13 @@
     font-weight: 600;
   }
 
+   .nerd--products-grid-title-md{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    
+  }
+
   .image-wrapper, .nerd--grid-image-wrapper{
     
      overflow: hidden; 
@@ -143,7 +150,7 @@
             {% endif %}
             <div class="{{ content_position }} nerd--flex-col nerd--bg-transparent nerd--image-grid-absolute nerd--text-center">
               {% if section.settings.show_title %}
-              <div class="card__heading h4 font-600">
+              <div class="nerd--products-grid-title-md">
                 {{ product.title }}
               </div>
                 {% endif %}
