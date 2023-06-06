@@ -43,6 +43,7 @@
     border-bottom: 2px solid;
     margin-bottom: 35px;
     text-transform: uppercase;
+    z-index: 1;
 
   }
 
