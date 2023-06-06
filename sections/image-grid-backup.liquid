@@ -105,8 +105,8 @@
         {% assign image = section.blocks.first.settings.image %}
         
         {% capture styles %}
-          opacity: {{ section.settings.big_image_opacity }}%;
-          max-height: 800px;
+          opacity: {{ section.blocks.first.settings.opacity }}%;
+          max-height: {{ image.height }}px;
           {% endcapture %}
         {% if image %}
         {{
