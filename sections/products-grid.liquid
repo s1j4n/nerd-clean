@@ -190,6 +190,10 @@
             {% else %}
               {{ 'product-1' | placeholder_svg_tag: classes }}
             {% endif %}
+            <div class="nerd--absolute-top-left nerd--product-grid-collection uppercase">
+          {{ product.collections.first.title }}
+        </div>
+            
             <div class="nerd--products-grid--content-md {{ content_position }} nerd--flex-col nerd--bg-transparent nerd--image-grid-absolute nerd--text-center">
               {% if section.settings.show_title %}
               <div class="nerd--products-grid-title-md">
