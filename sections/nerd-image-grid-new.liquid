@@ -37,3 +37,86 @@
     {% endif %}
   {% endfor %}
 </div>
+
+{% schema %}
+  {
+    "name": "t:sections.image_grid.name",
+    "blocks": [
+      {
+        "name": "t:sections.image_grid.blocks.name",
+        "type": "image",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.image_grid.blocks.settings.image.label"
+          },
+          {
+            "type": "range",
+            "id": "image_opacity",
+            "min": 10,
+            "max": 100,
+            "step": 10,
+            "unit": "%",
+            "default": 90,
+            "label": "t:sections.image_grid.blocks.settings.opacity.label"
+          },
+          {
+            "type" : "select",
+            "id" : "content_position",
+            "default" : "center",
+            "label" : "t:sections.image_grid.blocks.settings.content.label",
+            "options" : [
+              {
+                "value" : "top",
+                "label" : "t:sections.image_grid.blocks.settings.content.options.top.label"
+              },
+              {
+                "value" : "center",
+                "label" : "t:sections.image_grid.blocks.settings.content.options.center.label"
+              },
+              {
+                "value" : "bottom",
+                "label" : "t:sections.image_grid.blocks.settings.content.options.bottom.label"
+              }
+            ]
+          },
+          {
+            "type": "inline_richtext",
+            "id": "title",
+            "label": "t:sections.image_grid.blocks.settings.title.label"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:sections.image_grid.blocks.settings.text.label"
+          }, {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:sections.image_grid.blocks.settings.button.label"
+          },
+          {
+            "type": "text",
+            "id": "button_link",
+            "label": "t:sections.image_grid.blocks.settings.link.label"
+          }
+        ]
+      }
+    ],
+    "settings": [
+
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "default": "background-2",
+        "label": "t:sections.all.colors.label"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image grid new"
+      }
+    ]
+  }
+{% endschema %}
