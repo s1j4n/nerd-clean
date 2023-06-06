@@ -130,6 +130,9 @@
         {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover nerd--image-grid-bigimage" }}
       {% endif %}
       <div class="nerd--products-grid--content-lg {{ content_position }} nerd--bg-transparent nerd--flex-col nerd--image-grid-absolute nerd--text-center nerd--product-grid-title">
+        <div class="nerd-text uppercase">
+          {{ product.collections.first }}
+        </div>
         {% if section.settings.show_title %}
           <div class="nerd--products-grid-title-lg ">
             {{ product.title }}
