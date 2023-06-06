@@ -42,7 +42,7 @@
   .alternate--title {
     align-self: flex-end;
     border-bottom: 2px solid;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     text-transform: uppercase;
 
   }
@@ -149,16 +149,16 @@
 
 {% schema %}
   {
-    "name": "Alternate Items Backup",
+    "name": "t:sections.alternate_items.name",
     "blocks": [
       {
-        "name": "Alternate Items",
+        "name": "t:sections.alternate_items.blocks.name",
         "type": "item",
         "settings": [
           {
             "type": "collection",
             "id": "collection",
-            "label": "Collection"
+            "label": "t:sections.alternate_items.blocks.settings.collection.name"
           }
         ]
       }
@@ -168,12 +168,12 @@
         "type": "color_scheme",
         "id": "color_scheme",
         "default": "background-1",
-        "label": "Color Scheme"
+        "label": "t:sections.all.colors.label"
       }
     ],
     "presets": [
       {
-        "name": "Alternate Items Backup"
+        "name": "t:sections.alternate_items.presets.name"
       }
     ]
   }
