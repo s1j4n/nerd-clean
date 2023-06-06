@@ -1,4 +1,4 @@
-{{ 'nerd-image-grid.css' | asset_url | stylesheet_tag }}
+{{ 'nerd-product-grid.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.enable_quick_add -%}
   {{ 'quick-add.css' | asset_url | stylesheet_tag }}
@@ -62,9 +62,7 @@
 
 <div class="color-{{ section.settings.color_scheme }}">
   <div class="nerd--grid image-grid {{ grid_1_class }}">
-    <div class="nerd--relative image-wrapper first nerd--image-grid-height-full nerd--showhim">
-      {% if count > 0 %}
-        {% assign first = section.blocks.first %}
+     {% assign first = section.blocks.first %}
         {% assign content_position = first.settings.content_position | prepend: "nerd--absolute-item-" %}
         {% assign product = first.settings.product %}
         {% assign image = product.featured_image %}
@@ -72,28 +70,12 @@
         {% capture styles %}
           opacity: {{ first.settings.image_opacity }}%;
         {% endcapture %}
-        {% if image %}
-          {{
-             image
-           | image_url: width: image.width
-           | image_tag: loading: 'lazy', class: 'nerd--image-grid-bigimage', style: styles }}
-        {% else %}
-          {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover nerd--image-grid-bigimage" }}
-        {% endif %}
-      {% else %}
-        {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover nerd--image-grid-bigimage" }}
-      {% endif %}
-      <div class="{{ content_position }} nerd--flex-col nerd--image-grid-absolute nerd--text-center nerd--product-grid-title">
-        {% if section.settings.show_title %}
-          <div class="nerd-title font-600">
-            {{ product.title }}
-          </div>
-        {% endif %}
-      </div>
-      <div class="nerd--absolute-item-center nerd--showme">
-        {% render 'quick-add', card_product: product, section_id: section_id %}
-      </div>
+    <a href={{ product.url }} >
+    <div class="nerd--relative image-wrapper first nerd--image-grid-height-full nerd--showhim">
+      {% render 'card-product',
+                    card_product: product %}
     </div>
+    </a>
     <div class="nerd--grid nerd--grid-item {{ grid_2_class }} ">
       {% for block in section.blocks %}
 
@@ -122,6 +104,7 @@
           
           
           %}
+          <a href={{ product.url }} >
           <div class="nerd--grid-image-wrapper {{ classes }} nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %} nerd--showhim">
             {% if image %}
               {{
@@ -139,10 +122,13 @@
               </div>
                 {% endif %}
             </div>
+            {%  if section.settings.enable_quick_add %}
              <div class="nerd--absolute-item-center nerd--showme">
         {% render 'quick-add', card_product: product, section_id: section_id %}
       </div>
+              {% endif %}
           </div>
+          </a>
         {% endif %}
       {% else %}
         {% for i in (1..4) %}
