@@ -501,9 +501,9 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/AAUvwnj0ICORVuxs41ODOvnhvedArLiSV20df7r8XBjEUQ_s900-c-k-c0x00ffffff-no-rj.jpg",
-            "image_opacity": 100,
-            "title": "",
-            "text": "",
+            "image_opacity": 50,
+            "title": "My Image",
+            "text": "<p>Something about this image...<\/p>",
             "button_label": "",
             "button_link": ""
           }
