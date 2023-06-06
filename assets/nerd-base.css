@@ -1,3 +1,7 @@
+.nerd--bg-transparent{
+  background: rgba(var(--color-background), 0.5)
+}
+
 .nerd--text-md{
   font-size: 1.9rem;
 }
