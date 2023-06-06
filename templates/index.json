@@ -492,6 +492,12 @@
       "settings": {
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
       }
+    },
+    "e909a60b-2811-4996-b218-71750dabf044": {
+      "type": "image-grid",
+      "settings": {
+        "color_scheme": ""
+      }
     }
   },
   "order": [
@@ -507,6 +513,7 @@
     "d200ced6-834e-4ad6-8998-7296a096232d",
     "a61a6fb5-b89f-44ab-b59b-f9289f0dfe7e",
     "4cb0bcfe-421b-49cc-9040-751f133b8159",
-    "5b04af58-fceb-4e6c-8fe2-d559fb6e9f13"
+    "5b04af58-fceb-4e6c-8fe2-d559fb6e9f13",
+    "e909a60b-2811-4996-b218-71750dabf044"
   ]
 }
