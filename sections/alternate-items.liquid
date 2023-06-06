@@ -37,7 +37,7 @@
          {% if collection %}
         <div class="alternate--wrapper nerd--image-wrapper nerd--relative alternate--wrapper">
           <a href={{ collection.url }}>
-        <div class="nerd--absolute-item-center showme button button--primary">Shop Now</div>
+        <div class="nerd--absolute-item-center showme button button--primary">{{ section.settings.button_label }}</div>
           </a>
           {% if collection.featured_image %}
             {{
@@ -85,6 +85,13 @@
       }
     ],
     "settings": [
+      {
+        "type" : "text",
+        "id" : "button_label",
+        "default" : "Shop Now",
+        "label" : "t:sections.alternate_items.settings.button.label"
+        
+      },
       {
         "type": "color_scheme",
         "id": "color_scheme",
