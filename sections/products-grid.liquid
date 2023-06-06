@@ -27,14 +27,15 @@
       {% if count > 0 %}
         {% assign first = section.blocks.first %}
       {% assign content_position = first.settings.content_position | prepend: "nerd--absolute-item-" %}
-        {% assign product = section.blocks.first.settings.product %}
+        {% assign product = section.blocks.first.settings.product %}\
+      {% assign image = product.image %}
 
         {% capture styles %}
           opacity: {{ first.settings.image_opacity }}%;
         {% endcapture %}
         {% if image %}
           {{
-             product.featured_image
+             image
            | image_url: width: image.width
            | image_tag: loading: 'lazy', class: 'nerd--image-grid-bigimage', style: styles }}
         {% else %}
