@@ -41,8 +41,15 @@
    .nerd--products-grid-title-md{
     text-transform: uppercase;
     font-size: 2rem;
-    font-weight: 600;
-    
+    font-weight: 600; 
+  }
+
+  .nerd--products-grid--content-md{
+    padding: 2rem 0;
+  }
+
+  .nerd--products-grid--content-lg{
+    padding: 4rem 0; 
   }
 
   .image-wrapper, .nerd--grid-image-wrapper{
@@ -99,7 +106,7 @@
       {% else %}
         {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover nerd--image-grid-bigimage" }}
       {% endif %}
-      <div class="{{ content_position }} nerd--bg-transparent nerd--flex-col nerd--image-grid-absolute nerd--text-center nerd--product-grid-title">
+      <div class="nerd--products-grid--content-lg {{ content_position }} nerd--bg-transparent nerd--flex-col nerd--image-grid-absolute nerd--text-center nerd--product-grid-title">
         {% if section.settings.show_title %}
           <div class="nerd--products-grid-title-lg ">
             {{ product.title }}
@@ -148,7 +155,7 @@
             {% else %}
               {{ 'product-1' | placeholder_svg_tag: classes }}
             {% endif %}
-            <div class="{{ content_position }} nerd--flex-col nerd--bg-transparent nerd--image-grid-absolute nerd--text-center">
+            <div class="nerd--products-grid--content-md {{ content_position }} nerd--flex-col nerd--bg-transparent nerd--image-grid-absolute nerd--text-center">
               {% if section.settings.show_title %}
               <div class="nerd--products-grid-title-md">
                 {{ product.title }}
