@@ -455,104 +455,42 @@
         "color_scheme_card": "background-2"
       }
     },
-    "618c4904-3241-4e94-9c8c-b22bb32e7f5e": {
-      "type": "alternate-items-backup",
+    "5b04af58-fceb-4e6c-8fe2-d559fb6e9f13": {
+      "type": "alternate-items",
       "blocks": {
-        "685299a5-27b9-4a46-b59e-abbacba97127": {
+        "c1c3afb3-8118-4155-b485-129ef4e530ee": {
           "type": "item",
           "settings": {
             "collection": "boxing-gloves"
           }
         },
-        "39918299-8a20-4aca-bb90-d8f7a49786ab": {
+        "0e2f3de1-9f7e-47aa-adee-bc20890db67e": {
           "type": "item",
           "settings": {
             "collection": "clothing"
           }
         },
-        "9b362feb-7f54-4bcd-b4f6-9cac4ee13e5a": {
+        "3e8e7923-352d-4bab-9090-3ac2bd49a5d3": {
           "type": "item",
           "settings": {
             "collection": "for-men"
           }
         },
-        "be70c55c-276e-4bc8-ac5d-0b6c8efb541f": {
+        "c9cc598a-a285-45b6-b40d-4c627cb47a5d": {
           "type": "item",
           "settings": {
-            "collection": "protective-gear"
+            "collection": "for-women"
           }
         }
       },
       "block_order": [
-        "685299a5-27b9-4a46-b59e-abbacba97127",
-        "39918299-8a20-4aca-bb90-d8f7a49786ab",
-        "9b362feb-7f54-4bcd-b4f6-9cac4ee13e5a",
-        "be70c55c-276e-4bc8-ac5d-0b6c8efb541f"
+        "c1c3afb3-8118-4155-b485-129ef4e530ee",
+        "0e2f3de1-9f7e-47aa-adee-bc20890db67e",
+        "3e8e7923-352d-4bab-9090-3ac2bd49a5d3",
+        "c9cc598a-a285-45b6-b40d-4c627cb47a5d"
       ],
       "settings": {
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
-      }
-    },
-    "49464abb-e837-4992-bacc-33f9fe9336e8": {
-      "type": "image-grid-backup",
-      "blocks": {
-        "e32f8ddb-0a64-4875-af7f-d322ccf781c8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AAUvwnj0ICORVuxs41ODOvnhvedArLiSV20df7r8XBjEUQ_s900-c-k-c0x00ffffff-no-rj.jpg",
-            "image_opacity": 90,
-            "title": "",
-            "text": "",
-            "button_label": ""
-          }
-        },
-        "1718a765-388c-4ee2-ac2a-0843daccdeb6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AAUvwnj0ICORVuxs41ODOvnhvedArLiSV20df7r8XBjEUQ_s900-c-k-c0x00ffffff-no-rj.jpg",
-            "image_opacity": 90,
-            "title": "",
-            "text": "",
-            "button_label": ""
-          }
-        },
-        "5717afca-6562-4cd1-8b48-735543be7618": {
-          "type": "image",
-          "settings": {
-            "image_opacity": 90,
-            "title": "",
-            "text": "",
-            "button_label": ""
-          }
-        },
-        "f1446eed-38ad-44d6-9aab-ee122d99eb57": {
-          "type": "image",
-          "settings": {
-            "image_opacity": 90,
-            "title": "",
-            "text": "",
-            "button_label": ""
-          }
-        },
-        "917270a0-0083-42cb-a68c-2853e199bd7c": {
-          "type": "image",
-          "settings": {
-            "image_opacity": 90,
-            "title": "",
-            "text": "",
-            "button_label": ""
-          }
-        }
-      },
-      "block_order": [
-        "e32f8ddb-0a64-4875-af7f-d322ccf781c8",
-        "1718a765-388c-4ee2-ac2a-0843daccdeb6",
-        "5717afca-6562-4cd1-8b48-735543be7618",
-        "f1446eed-38ad-44d6-9aab-ee122d99eb57",
-        "917270a0-0083-42cb-a68c-2853e199bd7c"
-      ],
-      "settings": {
-        "color_scheme": ""
       }
     }
   },
@@ -569,7 +507,6 @@
     "d200ced6-834e-4ad6-8998-7296a096232d",
     "a61a6fb5-b89f-44ab-b59b-f9289f0dfe7e",
     "4cb0bcfe-421b-49cc-9040-751f133b8159",
-    "618c4904-3241-4e94-9c8c-b22bb32e7f5e",
-    "49464abb-e837-4992-bacc-33f9fe9336e8"
+    "5b04af58-fceb-4e6c-8fe2-d559fb6e9f13"
   ]
 }
