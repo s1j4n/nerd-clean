@@ -498,8 +498,12 @@ input[type="range"]:active::-webkit-slider-thumb{
                             $
                             <span id="range1">
                 0
-            </span> - <span id="range2">
-                100
+            </span> - $<span id="range2">
+                 {%- if uses_comma_decimals -%}
+              {{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}
+              {%- else -%}
+              {{ filter.range_max | money_without_currency | replace: ',', '' }}
+              {% endif %}
             </span>
                           </span>
                         </div>
