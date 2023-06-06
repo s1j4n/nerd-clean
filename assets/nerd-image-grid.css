@@ -1,6 +1,7 @@
 .nerd--image-grid-absolute {
     align-items: center;
     justify-content: center;
+  width: 100%;
   }
   .nerd--image-grid-bigimage {
     object-fit: cover;
