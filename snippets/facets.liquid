@@ -437,15 +437,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 
  <div class="wrapper">
-        <div class="values">
-            <span id="range1">
-                0
-            </span>
-            <span> &dash; </span>
-            <span id="range2">
-                100
-            </span>
-        </div>
+        
         <div class="container">
             <div class="slider-track"></div>
             <input type="range" 
@@ -504,9 +496,11 @@ input[type="range"]:active::-webkit-slider-thumb{
                         
                           <span class="nerd--price-output-group" >
                             $
-                            <output id="num" class="" for="Filter-{{ filter.label | escape }}-GTE">
-                            0 
-                          </output> - {{ filter.range_max | money_without_currency | replace: ',', '' }}
+                            <span id="range1">
+                0
+            </span> - <span id="range2">
+                100
+            </span>
                           </span>
                         </div>
                         {%- if filter_type != 'vertical' -%}
