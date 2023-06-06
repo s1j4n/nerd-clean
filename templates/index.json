@@ -337,7 +337,7 @@
         "c1ca8602-569d-46f2-acae-bb6873757b38": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/primo.png",
+            "image": "shopify:\/\/shop_images\/tattood-man-looking-sad.jpg",
             "name": "John Doe",
             "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
@@ -345,6 +345,7 @@
         "12c5b115-f1c4-442e-b324-7338a03c85e8": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify:\/\/shop_images\/angry-woman-eyes.jpg",
             "name": "John Doe",
             "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
@@ -352,6 +353,7 @@
         "41354e91-50ca-4c94-b757-06958ded1f7a": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify:\/\/shop_images\/young-men-s-urban-fashion.jpg",
             "name": "John Doe",
             "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
@@ -368,7 +370,7 @@
         "heading_center": true,
         "total_to_show": 3,
         "card_height": "fit_large",
-        "color_scheme": "background-2"
+        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
       }
     },
     "a61a6fb5-b89f-44ab-b59b-f9289f0dfe7e": {
@@ -379,7 +381,7 @@
           "settings": {
             "title": "Service Title",
             "text": "Something about your service...",
-            "icon": "check_mark"
+            "icon": "box"
           }
         },
         "c28c33d4-8d98-48cd-a23a-36ffa265cb86": {
@@ -387,7 +389,7 @@
           "settings": {
             "title": "Service Title",
             "text": "Something about your service...",
-            "icon": "check_mark"
+            "icon": "heart"
           }
         },
         "4867de1d-6e44-4ff9-8c26-826a03d596a6": {
@@ -395,7 +397,7 @@
           "settings": {
             "title": "Service Title",
             "text": "Something about your service...",
-            "icon": "check_mark"
+            "icon": "return"
           }
         }
       },
@@ -408,7 +410,7 @@
         "title": "",
         "full_width": false,
         "icon_height_desktop": 50,
-        "icon_height_mobile": 14,
+        "icon_height_mobile": 26,
         "card_height": "fit_large",
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
       }
@@ -419,21 +421,25 @@
         "b2657ccd-251c-49ce-8d1e-ddef41efac2e": {
           "type": "image_picker",
           "settings": {
+            "image": "shopify:\/\/shop_images\/a-french-bulldog-stands-guard-by-boxing-gloves.jpg"
           }
         },
         "c7ed3455-4dba-4f8d-9f14-89266d801b36": {
           "type": "image_picker",
           "settings": {
+            "image": "shopify:\/\/shop_images\/antique-boxing-gloves-in-hand.jpg"
           }
         },
         "029d446d-8395-449f-b343-69848370073e": {
           "type": "image_picker",
           "settings": {
+            "image": "shopify:\/\/shop_images\/antique-boxing-gloves-in-hand.jpg"
           }
         },
         "2bd68c58-aeb7-4334-893a-41a726948775": {
           "type": "image_picker",
           "settings": {
+            "image": "shopify:\/\/shop_images\/a-french-bulldog-in-a-hoodie-with-boxing-gloves.jpg"
           }
         }
       },
@@ -502,9 +508,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/antique-boxing-gloves-in-hand.jpg",
             "image_opacity": 100,
+            "content_position": "center",
             "title": "My Image",
             "text": "<p>Something about this image...<\/p>",
-            "button_label": "",
+            "button_label": "shop now",
             "button_link": ""
           }
         },
@@ -513,17 +520,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/a-french-bulldog-in-a-hoodie-with-boxing-gloves.jpg",
             "image_opacity": 60,
-            "title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "51f4ca6c-fd00-4052-9610-dbe3699416e0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/female-hockey-players-fight-for-the-puck.jpg",
-            "image_opacity": 100,
+            "content_position": "center",
             "title": "",
             "text": "",
             "button_label": "",
@@ -535,6 +532,19 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/primo.png",
             "image_opacity": 100,
+            "content_position": "center",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "51f4ca6c-fd00-4052-9610-dbe3699416e0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/female-hockey-players-fight-for-the-puck.jpg",
+            "image_opacity": 100,
+            "content_position": "center",
             "title": "",
             "text": "",
             "button_label": "",
@@ -546,6 +556,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/a-french-bulldog-stands-guard-by-boxing-gloves.jpg",
             "image_opacity": 100,
+            "content_position": "center",
             "title": "",
             "text": "",
             "button_label": "",
@@ -556,8 +567,8 @@
       "block_order": [
         "b217ec5d-3ff2-43bc-8fc0-caa9d4fc2851",
         "73f31833-ac6c-4a47-aadd-859102582e47",
-        "51f4ca6c-fd00-4052-9610-dbe3699416e0",
         "b20ee685-a71c-4a45-802a-9b9a866c7f0b",
+        "51f4ca6c-fd00-4052-9610-dbe3699416e0",
         "697a0858-9d9a-4b14-800e-6dcf4c2de6db"
       ],
       "settings": {

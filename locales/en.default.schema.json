@@ -3428,6 +3428,20 @@
           "opacity": {
             "label": "Image Opacity"
           },
+          "content": {
+            "label": "Content Position",
+            "options": {
+              "top": {
+                "label": "Top"
+              },
+              "center": {
+                "label": "Center"
+              },
+              "bottom": {
+                "label": "Bottom"
+              }
+            }
+          },
           "title": {
             "label": "Title"
           },

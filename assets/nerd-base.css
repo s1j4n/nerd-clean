@@ -2,6 +2,10 @@
   font-size: 1.9rem;
 }
 
+.nerd--text-center{
+  text-align: center;
+}
+
 .nerd--grid {
     display: grid;
   }
@@ -16,7 +20,18 @@
     top: 50%;
     transform: translate(-50%, -50%);
   }
-
+ .nerd--absolute-item-top {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+ }
+ .nerd--absolute-item-bottom {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+ }
   .nerd--flex-col {
     display: flex;
     flex-direction: column;
@@ -30,8 +45,8 @@
   @media screen and (max-width: 480px) {
     .nerd--grid-1-mobile {
       grid-template-columns: repeat(1, 1fr) !important;
-
     }
+
   }
 
 
@@ -100,7 +115,6 @@
   font-family: var(--font-heading-family);
     font-style: var(--font-heading-style);
     font-weight: var(--font-heading-weight);
-  margin-bottom: 10px;
   
 }
 
@@ -126,6 +140,7 @@
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .nerd-title-small{
