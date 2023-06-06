@@ -90,9 +90,11 @@
           </div>
         {% endif %}
       </div>
+      {%  if section.settings.enable_quick_add %}
       <div class="nerd--absolute-item-center nerd--showme">
         {% render 'quick-add', card_product: product, section_id: section_id %}
       </div>
+        {% endif %}
     </div>
     <div class="nerd--grid nerd--grid-item {{ grid_2_class }} ">
       {% for block in section.blocks %}
@@ -139,9 +141,11 @@
               </div>
                 {% endif %}
             </div>
+            {%  if section.settings.enable_quick_add %}
              <div class="nerd--absolute-item-center nerd--showme">
         {% render 'quick-add', card_product: product, section_id: section_id %}
       </div>
+              {% endif %}
           </div>
         {% endif %}
       {% else %}
