@@ -21,22 +21,20 @@
 
 %}
 
-<style></style>
-
 <div class="color-{{ section.settings.color_scheme }}">
   <div class="nerd--grid image-grid {{ grid_1_class }}">
     <div class="nerd--relative image-wrapper first nerd--image-grid-height-full">
       {% if count > 0 %}
         {% assign first = section.blocks.first %}
       {% assign content_position = first.settings.content_position | prepend: "nerd--absolute-item-" %}
-        {% assign image = section.blocks.first.settings.image %}
+        {% assign product = section.blocks.first.settings.product %}
 
         {% capture styles %}
           opacity: {{ first.settings.image_opacity }}%;
         {% endcapture %}
         {% if image %}
           {{
-             image
+             product.featured_image
            | image_url: width: image.width
            | image_tag: loading: 'lazy', class: 'nerd--image-grid-bigimage', style: styles }}
         {% else %}
@@ -47,10 +45,7 @@
       {% endif %}
       <div class="{{ content_position }} nerd--flex-col nerd--image-grid-absolute nerd--text-center">
               <div class="nerd-title">
-                {{ first.settings.title }}
-              </div>
-              <div class="nerd-text">
-                {{ first.settings.text }}
+                {{ product.title }}
               </div>
         {% if first.settings.button_label %}
         <a href="{{ first.settings.button_link }}"  class="button button--primary"> {{ first.settings.button_label }} </a>
@@ -61,7 +56,8 @@
       {% for block in section.blocks %}
 
         {% if forloop.index > 1 %}
-          {% assign image = block.settings.image %}
+          {%  assign product = block.settings.product %}
+          {% assign image = product.featured_image %}
           {% capture styles %}
             opacity : {{ block.settings.image_opacity }}%;
           {% endcapture %}
@@ -95,10 +91,7 @@
             {% endif %}
             <div class="{{ content_position }} nerd--flex-col nerd--image-grid-absolute nerd--text-center">
               <div class="nerd-title">
-                {{ block.settings.title }}
-              </div>
-              <div class="nerd-text ">
-                {{ block.settings.text }}
+                {{ product.title }}
               </div>
             </div>
           </div>
@@ -125,14 +118,14 @@
     "name": "Proucts Grid",
     "blocks": [
       {
-        "name": "t:sections.image_grid.blocks.name",
-        "type": "image",
+        "name": "t:sections.products_grid.blocks.name",
+        "type": "product",
         "limit": 5,
         "settings": [
           {
-            "type": "image_picker",
-            "id": "image",
-            "label": "t:sections.image_grid.blocks.settings.image.label"
+            "type": "product",
+            "id": "product",
+            "label": "t:sections.product_grid.blocks.settings.product.label"
           },
           {
             "type": "range",
@@ -142,51 +135,43 @@
             "step": 10,
             "unit": "%",
             "default": 90,
-            "label": "t:sections.image_grid.blocks.settings.opacity.label"
+            "label": "t:sections.products_grid.blocks.settings.opacity.label"
           },
           {
             "type" : "select",
             "id" : "content_position",
             "default" : "center",
-            "label" : "t:sections.image_grid.blocks.settings.content.label",
+            "label" : "t:sections.products_grid.blocks.settings.content.label",
             "options" : [
               {
                 "value" : "top",
-                "label" : "t:sections.image_grid.blocks.settings.content.options.top.label"
+                "label" : "t:sections.products_grid.blocks.settings.content.options.top.label"
               },
               {
                 "value" : "center",
-                "label" : "t:sections.image_grid.blocks.settings.content.options.center.label"
+                "label" : "t:sections.products_grid.blocks.settings.content.options.center.label"
               },
               {
                 "value" : "bottom",
-                "label" : "t:sections.image_grid.blocks.settings.content.options.bottom.label"
+                "label" : "t:sections.products_grid.blocks.settings.content.options.bottom.label"
               }
             ]
-          },
-          {
-            "type": "inline_richtext",
-            "id": "title",
-            "label": "t:sections.image_grid.blocks.settings.title.label"
-          },
-          {
-            "type": "richtext",
-            "id": "text",
-            "label": "t:sections.image_grid.blocks.settings.text.label"
-          }, {
-            "type": "text",
-            "id": "button_label",
-            "label": "t:sections.image_grid.blocks.settings.button.label"
-          },
-          {
-            "type": "text",
-            "id": "button_link",
-            "label": "t:sections.image_grid.blocks.settings.link.label"
           }
+          
         ]
       }
     ],
     "settings": [
+      {
+            "type": "checkbox",
+            "id": "show_title",
+            "label": "t:sections.products_grid.settings.show_title.label"
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_quick_add",
+            "label": "t:sections.products_grid.settings.quick_add.label"
+          },
 
       {
         "type": "color_scheme",
