@@ -24,3 +24,8 @@
   max-height: 400px;
   width: auto;
 }
+
+.nerd--image-grid-height-full{
+  max-height: 800px;
+  width: auto;
+}
