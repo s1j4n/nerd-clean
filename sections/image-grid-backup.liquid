@@ -103,14 +103,19 @@
     <div class="nerd--relative image-wrapper first">
       {% if count > 0 %}
         {% assign image = section.blocks.first.settings.image %}
+        
         {% capture styles %}
           opacity: {{ section.settings.big_image_opacity }}%;
           max-height: 800px;
           {% endcapture %}
+        {% if image %}
         {{
            image
          | image_url: width: image.width
          | image_tag: loading: 'lazy', class: 'nerd--image-grid-bigimage', style: styles }}
+         {% else %}
+        {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover" }}
+          {% endif %}
       {% else %}
         {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover" }}
       {% endif %}
