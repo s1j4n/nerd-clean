@@ -30,8 +30,8 @@
   @media screen and (max-width: 480px) {
     .nerd--grid-1-mobile {
       grid-template-columns: repeat(1, 1fr) !important;
-
     }
+
   }
 
 
