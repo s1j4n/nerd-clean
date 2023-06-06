@@ -124,6 +124,7 @@
           
           
           %}
+          <a href={{ product.url }} >
           <div class="nerd--grid-image-wrapper {{ classes }} nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %} nerd--showhim">
             {% if image %}
               {{
@@ -147,6 +148,7 @@
       </div>
               {% endif %}
           </div>
+          </a>
         {% endif %}
       {% else %}
         {% for i in (1..4) %}
