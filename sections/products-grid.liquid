@@ -1,4 +1,4 @@
-{{ 'nerd-image-grid.css' | asset_url | stylesheet_tag }}
+{{ 'nerd-product-grid.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.enable_quick_add -%}
   {{ 'quick-add.css' | asset_url | stylesheet_tag }}
@@ -26,14 +26,43 @@
 
 %}
 
+<style>
+  .nerd--product-grid-title {
+    backdrop-filter: blur(10px) saturate(70%);
+    text-transform: uppercase;
+    padding: 10px;
+  }
+
+  .nerd--showme {
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .nerd--showhim {
+    cursor: pointer;
+  }
+
+  .nerd--showhim:hover .nerd--showme {
+    opacity: 1;
+  }
+
+  .nerd--image-grid-bigimage {
+    transition: all 0.3s;
+  }
+
+  .nerd--showhim:hover .nerd--image-grid-bigimage {
+    transform: scale(0.95);
+    opacity: 0.6 !important;
+  }
+</style>
+
 <div class="color-{{ section.settings.color_scheme }}">
   <div class="nerd--grid image-grid {{ grid_1_class }}">
-    <div class="nerd--relative image-wrapper first nerd--image-grid-height-full">
+    <div class="nerd--relative image-wrapper first nerd--image-grid-height-full nerd--showhim">
       {% if count > 0 %}
         {% assign first = section.blocks.first %}
-      {% assign content_position = first.settings.content_position | prepend: "nerd--absolute-item-" %}
+        {% assign content_position = first.settings.content_position | prepend: "nerd--absolute-item-" %}
         {% assign product = first.settings.product %}
-      {% assign image = product.featured_image %}
+        {% assign image = product.featured_image %}
 
         {% capture styles %}
           opacity: {{ first.settings.image_opacity }}%;
@@ -49,24 +78,22 @@
       {% else %}
         {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover nerd--image-grid-bigimage" }}
       {% endif %}
-      <div class="{{ content_position }} nerd--flex-col nerd--image-grid-absolute nerd--text-center">
+      <div class="{{ content_position }} nerd--flex-col nerd--image-grid-absolute nerd--text-center nerd--product-grid-title">
         {% if section.settings.show_title %}
-              <div class="nerd-title">
-                {{ product.title }}
-              </div>
+          <div class="nerd-title font-600">
+            {{ product.title }}
+          </div>
         {% endif %}
-        {% if section.settings.enable_quick_add %}
-        
-{% render 'quick-add', card_product: product, section_id: section_id %}
- 
-          {% endif %}
-            </div>
+      </div>
+      <div class="nerd--absolute-item-center nerd--showme">
+        {% render 'quick-add', card_product: product, section_id: section_id %}
+      </div>
     </div>
     <div class="nerd--grid nerd--grid-item {{ grid_2_class }} ">
       {% for block in section.blocks %}
 
         {% if forloop.index > 1 %}
-          {%  assign product = block.settings.product %}
+          {% assign product = block.settings.product %}
           {% assign image = product.featured_image %}
           {% capture styles %}
             opacity : {{ block.settings.image_opacity }}%;
@@ -103,9 +130,9 @@
               <div class="card__heading h4 font-600">
                 {{ product.title }}
               </div>
-                {% if section.settings.enable_quick_add and product != blank %}
+              {% if section.settings.enable_quick_add and product != blank %}
                 {% render 'quick-add', card_product: product, section_id: section_id %}
-          {% endif %}            
+              {% endif %}
             </div>
           </div>
         {% endif %}
@@ -139,8 +166,7 @@
             "type": "product",
             "id": "product",
             "label": "t:sections.product_grid.blocks.settings.product.label"
-          },
-          {
+          }, {
             "type": "range",
             "id": "image_opacity",
             "min": 10,
@@ -149,44 +175,38 @@
             "unit": "%",
             "default": 90,
             "label": "t:sections.products_grid.blocks.settings.opacity.label"
-          },
-          {
-            "type" : "select",
-            "id" : "content_position",
-            "default" : "bottom",
-            "label" : "t:sections.products_grid.blocks.settings.content.label",
-            "options" : [
+          }, {
+            "type": "select",
+            "id": "content_position",
+            "default": "bottom",
+            "label": "t:sections.products_grid.blocks.settings.content.label",
+            "options": [
               {
-                "value" : "top",
-                "label" : "t:sections.products_grid.blocks.settings.content.options.top.label"
-              },
-              {
-                "value" : "center",
-                "label" : "t:sections.products_grid.blocks.settings.content.options.center.label"
-              },
-              {
-                "value" : "bottom",
-                "label" : "t:sections.products_grid.blocks.settings.content.options.bottom.label"
+                "value": "top",
+                "label": "t:sections.products_grid.blocks.settings.content.options.top.label"
+              }, {
+                "value": "center",
+                "label": "t:sections.products_grid.blocks.settings.content.options.center.label"
+              }, {
+                "value": "bottom",
+                "label": "t:sections.products_grid.blocks.settings.content.options.bottom.label"
               }
             ]
           }
-          
+
         ]
       }
     ],
     "settings": [
       {
-            "type": "checkbox",
-            "id": "show_title",
-            "label": "t:sections.products_grid.settings.show_title.label"
-          },
-          {
-            "type": "checkbox",
-            "id": "enable_quick_add",
-            "label": "t:sections.products_grid.settings.quick_add.label"
-          },
-
-      {
+        "type": "checkbox",
+        "id": "show_title",
+        "label": "t:sections.products_grid.settings.show_title.label"
+      }, {
+        "type": "checkbox",
+        "id": "enable_quick_add",
+        "label": "t:sections.products_grid.settings.quick_add.label"
+      }, {
         "type": "color_scheme",
         "id": "color_scheme",
         "default": "background-2",
