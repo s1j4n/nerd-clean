@@ -31,8 +31,7 @@
         {% assign image = section.blocks.first.settings.image %}
 
         {% capture styles %}
-          opacity: {{ section.blocks.first.settings.opacity }}%;
-          max-height: {{ image.height }}px;
+          opacity: {{ first.settings.opacity }}%;
         {% endcapture %}
         {% if image %}
           {{
