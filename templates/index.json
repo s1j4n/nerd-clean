@@ -102,9 +102,9 @@
         "61aa5c4c-26f4-4834-b546-eba2af5918d4"
       ],
       "settings": {
-        "show_title": true,
+        "show_title": false,
         "enable_quick_add": true,
-        "color_scheme": ""
+        "color_scheme": "background-1"
       }
     },
     "9acd8e6e-82cd-4690-a79d-10ada8cd75cc": {
