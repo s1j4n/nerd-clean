@@ -174,17 +174,17 @@
 
 {% schema %}
   {
-    "name": "Image grid backup",
+    "name": "t:sections.image_grid.name",
     "blocks": [
       {
-        "name": "Image",
+        "name": "t:sections.image_grid.blocks.name",
         "type": "image",
         "limit" : 5,
         "settings": [
           {
             "type": "image_picker",
             "id": "image",
-            "label": "Image"
+            "label": "t:sections.image_grid.blocks.settings.image.label"
           }, {
             "type": "range",
             "id": "image_opacity",
@@ -193,21 +193,21 @@
             "step": 10,
             "unit": "%",
             "default": 90,
-            "label": "Image Opacity"
+            "label": "t:sections.image_grid.blocks.settings.opacity.label"
           },
           {
             "type": "inline_richtext",
             "id": "title",
-            "label": "Title"
+            "label": "t:sections.image_grid.blocks.settings.title.label"
           },
           {
             "type": "richtext",
             "id": "text",
-            "label": "Description"
+            "label": "t:sections.image_grid.blocks.settings.text.label"
           }, {
             "type": "text",
             "id": "button_label",
-            "label": "Button Text"
+            "label": "t:sections.image_grid.blocks.settings.button.label"
           }
         ]
       }
@@ -223,7 +223,7 @@
     ],
     "presets": [
       {
-        "name": "Image Grid backup"
+        "name": "t:sections.image_grid.name.image_grid.presets.name"
       }
     ]
   }
