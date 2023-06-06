@@ -34,7 +34,7 @@
     height: 100%;
   }
 
-  .nerd--grid-image-wrapper > img {
+  .nerd--grid-image-wrapper > img,  .nerd--grid-image-wrapper > svg {
     object-fit: cover;
     width: 100%;
     max-height: 100%;
@@ -116,10 +116,10 @@
          | image_url: width: image.width
          | image_tag: loading: 'lazy', class: 'nerd--image-grid-bigimage', style: styles }}
          {% else %}
-        {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover" }}
+        {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover nerd--image-grid-bigimage" }}
           {% endif %}
       {% else %}
-        {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover" }}
+        {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover nerd--image-grid-bigimage" }}
       {% endif %}
       <div class="nerd--absolute-item-center nerd--flex-col nerd-text nerd--image-grid-absolute nerd-title">
       </div>
