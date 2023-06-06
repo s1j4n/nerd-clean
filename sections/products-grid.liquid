@@ -116,7 +116,7 @@
           
           
           %}
-          <div class="nerd--grid-image-wrapper {{ classes }} nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %}">
+          <div class="nerd--grid-image-wrapper {{ classes }} nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %} nerd--showhim">
             {% if image %}
               {{
                  image
@@ -134,6 +134,9 @@
                 {% render 'quick-add', card_product: product, section_id: section_id %}
               {% endif %}
             </div>
+             <div class="nerd--absolute-item-center nerd--showme">
+        {% render 'quick-add', card_product: product, section_id: section_id %}
+      </div>
           </div>
         {% endif %}
       {% else %}
