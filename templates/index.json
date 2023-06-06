@@ -56,7 +56,7 @@
         "a7f87cba-aa68-4880-9a02-a042f2f54987": {
           "type": "product",
           "settings": {
-            "product": "amazing-aluminum-bag-collection1",
+            "product": "champion-boxing-gloves",
             "image_opacity": 90,
             "content_position": "bottom"
           }
@@ -102,7 +102,7 @@
         "b9e2fa18-969f-4dc3-9c1b-808e18f39c1b"
       ],
       "settings": {
-        "show_title": false,
+        "show_title": true,
         "enable_quick_add": true,
         "color_scheme": ""
       }
