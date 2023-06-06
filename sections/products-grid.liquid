@@ -121,12 +121,13 @@
 
 <div class="color-{{ section.settings.color_scheme }}">
   <div class="nerd--grid nerd--grid-gap-sm image-grid {{ grid_1_class }}">
-    <div class="nerd--relative image-wrapper first nerd--image-grid-height-full nerd--showhim">
-      {% if count > 0 %}
-        {% assign first = section.blocks.first %}
+  {% assign first = section.blocks.first %}
         {% assign content_position = first.settings.content_position | prepend: "nerd--absolute-item-" %}
         {% assign product = first.settings.product %}
         {% assign image = product.featured_image %}
+        <a href="{{ product.url }}">
+    <div class="nerd--relative image-wrapper first nerd--image-grid-height-full nerd--showhim">
+      {% if count > 0 %}
 
         {% capture styles %}
           opacity: {{ first.settings.image_opacity }}%;
@@ -159,6 +160,7 @@
         {% render 'quick-add', card_product: product, section_id: section_id %}
       </div>
     </div>
+      </a>
     <div class="nerd--grid nerd--grid-gap-sm nerd--grid-item {{ grid_2_class }} ">
       {% for block in section.blocks %}
 
@@ -187,6 +189,7 @@
           
           
           %}
+          <a href="{{ product.url }}">
           <div class="nerd--grid-image-wrapper {{ classes }} nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %} nerd--showhim">
             {% if image %}
               {{
@@ -212,6 +215,7 @@
         {% render 'quick-add', card_product: product, section_id: section_id %}
       </div>
           </div>
+    </a>
         {% endif %}
       {% else %}
         {% for i in (1..4) %}
