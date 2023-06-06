@@ -103,7 +103,7 @@
       ],
       "settings": {
         "show_title": true,
-        "enable_quick_add": false,
+        "enable_quick_add": true,
         "color_scheme": ""
       }
     },
