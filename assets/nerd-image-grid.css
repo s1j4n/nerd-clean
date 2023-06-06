@@ -32,3 +32,7 @@
 .nerd--grid-row-2{
   grid-template-rows: repeat(2, 1fr);
 }
+
+.nerd--relative-image-wrapper:hover .nerd--grid-image-wrapper > img{
+  opacity: 0.7;
+} 
