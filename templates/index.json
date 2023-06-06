@@ -543,7 +543,6 @@
         },
         "697a0858-9d9a-4b14-800e-6dcf4c2de6db": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/a-french-bulldog-stands-guard-by-boxing-gloves.jpg",
             "image_opacity": 100,
