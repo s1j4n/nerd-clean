@@ -36,7 +36,9 @@
       <li class="nerd--alternate-item ">
          {% if collection %}
         <div class="alternate--wrapper nerd--image-wrapper nerd--relative alternate--wrapper">
+          <a href={{ collection.url }}>
         <div class="nerd--absolute-item-center showme button button--primary">Shop Now</div>
+          </a>
           {% if collection.featured_image %}
             {{
                collection.featured_image
