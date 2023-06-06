@@ -3445,6 +3445,20 @@
       "presets": {
         "name": "Image Grid"
       }
+    },
+    "alternate_items": {
+      "name": "Collection List (Alternate)",
+      "blocks": {
+        "name": "Collection",
+        "settings": {
+          "collection": {
+            "label": "Collection"
+          }
+        }
+      },
+      "presets": {
+        "name": "Collection List (Alternate)"
+      }
     }
   }
 }
