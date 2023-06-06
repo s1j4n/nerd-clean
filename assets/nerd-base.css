@@ -1,5 +1,5 @@
 .nerd--bg-transparent{
-  background: rgba(var(--color-background), 0.7);
+  background: rgba(var(--color-background), 0.4);
   color: rgba(var(--color-foreground));
 }
 
