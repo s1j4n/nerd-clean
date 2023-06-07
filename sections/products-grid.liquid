@@ -121,7 +121,11 @@
               {{ 'product-1' | placeholder_svg_tag: classes }}
             {% endif %}
         <div class="nerd--absolute-top-left uppercase {% if count==2 and forloop.index==2 -%} nerd--product-grid-collection {%- else -%} nerd--product-grid-collection-sm {%- endif -%}">
+           {%- if product -%}  
           {{ product.collections.first.title }}
+          {% else %}
+          Collection
+          {% endif %}
         </div>
             
             <div class="nerd--products-grid--content-md {{ content_position }} nerd--flex-col nerd--bg-transparent nerd--image-grid-absolute nerd--text-center">
