@@ -10,13 +10,6 @@
   max-width: 200px;
 }
 
-.custom-richtext .button.button--primary {
-/*   background-color: rgba(var(--color-button),var(--alpha-button-background)); */
-  font-weight: bold;
-  height: 100%;
-  padding: 2rem;
-  font-size: larger;
-}
 
 .custom-richtext .rich-text__heading {
   text-transform: uppercase;
