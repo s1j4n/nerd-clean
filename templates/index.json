@@ -64,7 +64,7 @@
         "2743a9b3-1624-44c8-9072-406d40158ffb": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "amazing-aluminum-bag-collection10",
             "image_opacity": 90,
             "content_position": "bottom"
           }
@@ -75,7 +75,7 @@
         "2743a9b3-1624-44c8-9072-406d40158ffb"
       ],
       "settings": {
-        "show_title": true,
+        "show_title": false,
         "show_collection": true,
         "enable_quick_add": false,
         "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
