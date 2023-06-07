@@ -3,16 +3,21 @@
 
 {% style %}
   .nerd-iconwithtext svg {
-    height: {{ section.settings.icon_height_desktop }}px;
-    width: {{ section.settings.icon_height_desktop }}px;
+    height: {{ section.settings.icon_height_desktop | append: 'px'  }}
+    ;
+
+    width: {{ section.settings.icon_height_desktop | append: 'px'  }}
+    ;
   }
 
 
 
   @media screen and (max-width: 750px) {
     .nerd-iconwithtext svg {
-      height: {{ section.settings.icon_height_mobile }}px;
-      width: {{ section.settings.icon_height_mobile }}px;
+      height: {{ section.settings.icon_height_mobile | append: 'px'  }}
+      ;
+      width: {{ section.settings.icon_height_mobile | append: 'px'  }}
+      ;
     }
 
 
@@ -21,80 +26,77 @@
 
 <div class="nerd-container color-{{ section.settings.color_scheme }}">
   <div class="{% unless section.settings.full_width %}nerd-page-width {% endunless %}">
-    <div class="nerd-title animate--slide-in">{{ section.settings.title }}</div>
+    <div class="nerd--title-main animate--slide-in">{{ section.settings.title }}</div>
     <div class="nerd-content">
       <div class="your-class">
-          {% for block in section.blocks %}
-            <div>
-              <div class="nerd-iconwithtext nerd-iconwithtext--padding">
-                {% if block.settings.icon %}
-                  <div class="nerd-iconwithtext--icon-wrapper">
+        {% for block in section.blocks %}
+          <div>
+            <div class="nerd-iconwithtext">
+              {% if block.settings.icon %}
+                <div class="nerd-iconwithtext--icon-wrapper">
                   {% render 'icon-accordion', icon: block.settings.icon %}
-                  </div>
-                {% endif %}
-                <div class="nerd-iconwithtext--content">
-                  <div class="nerd-title-small">{{ block.settings.title }}</div>
-                  <div class="nerd-text-small">{{ block.settings.text }}</div>
                 </div>
+              {% endif %}
+              <div class="nerd-iconwithtext--content">
+                <div class="nerd-title-small">{{ block.settings.title }}</div>
+                <div class="nerd-text-small">{{ block.settings.text }}</div>
               </div>
             </div>
-          {%- else -%}
-            {%- for i in (1..3) -%}
-              <div
-                >
-                <div class="nerd-iconwithtext nerd-iconwithtext--padding">
-                 <div class="nerd-iconwithtext--icon-wrapper">
-                  {% render 'icon-accordion', icon: block.settings.icon %}
-                  </div>
+          </div>
+        {%- else -%}
+          {%- for i in (1..3) -%}
+            <div>
+              <div class="nerd-iconwithtext">
+                {% render 'icon-accordion', icon: 'check_mark' %}
                 <div class="nerd-iconwithtext--content">
                   <div class="nerd-title-small">Service title</div>
                   <div class="nerd-text-small">Something about your service...</div>
                 </div>
-                </div>
               </div>
-            {%- endfor -%}
+            </div>
           {%- endfor -%}
-        </div>
+        {%- endfor -%}
+      </div>
     </div>
   </div>
 </div>
 
 <script type="text/javascript">
-    $(document).ready(function(){
-      $('.your-class').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 970,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 750,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+
+  $(document).ready(function(){
+  $('.your-class').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 970,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 750,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+          }
+        ]
       });
-    });
-</script>
+    });</script>
 
 
 {% schema %}
@@ -104,7 +106,7 @@
       {
         "type": "inline_richtext",
         "id": "title",
-        "default": "Title",
+        "default": "Our Services",
         "label": "Title"
       },
 
@@ -130,9 +132,9 @@
         "min": 10,
         "max": 30,
         "step": 2,
-        "default": 14,
+        "default": 30,
         "label": "Icon Size Mobile"
-      
+
       }, {
         "type": "select",
         "id": "card_height",
@@ -168,8 +170,7 @@
             "id": "title",
             "default": "Service Title",
             "label": "Title"
-          },
-          {
+          }, {
             "type": "text",
             "id": "text",
             "default": "Something about your service...",

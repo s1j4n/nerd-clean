@@ -1,56 +1,55 @@
 {{ 'nerd-alternate-items.css' | asset_url | stylesheet_tag }}
 
 <style>
-  .alternate--wrapper{
+  .alternate--wrapper {
     cursor: pointer;
-    
+
   }
-  
+
   .showme {
     opacity: 0;
     z-index: 100;
     padding: 0 !important;
-}
+  }
 
-  .showme , .nerd--alternate-image{
+  .showme,
+  .nerd--alternate-image {
     transition: all 300ms;
   }
 
-.alternate--wrapper:hover .showme {
-  opacity: 1;
-}
+  .alternate--wrapper:hover .showme {
+    opacity: 1;
+  }
 
-  .alternate--wrapper:hover .nerd--alternate-image{
+  .alternate--wrapper:hover .nerd--alternate-image {
     opacity: 0.4;
   }
-  
-
-  
 </style>
 
 <div class="nerd-container color-{{ section.settings.color_scheme }}">
+  <div class="nerd--title-main">Collections</div>
   <ul class="nerd-page-width nerd--list-alternate">
     {% for block in section.blocks %}
       {% assign collection = block.settings.collection %}
 
       <li class="nerd--alternate-item ">
-         {% if collection %}
-        <div class="alternate--wrapper nerd--image-wrapper nerd--relative alternate--wrapper">
-          <a href={{ collection.url }}>
-        <div class="nerd--absolute-item-center showme button button--primary">{{ section.settings.button_label }}</div>
-          </a>
-          {% if collection.featured_image %}
-            {{
-               collection.featured_image
-             | image_url: width:collection.featured_image.width
-             | image_tag: loading: 'lazy', class: 'nerd--alternate-image', style: styles }}
-          {% else %}
-            {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
-          {% endif %}
-        </div>
+        {% if collection %}
+          <div class="alternate--wrapper nerd--image-wrapper nerd--relative alternate--wrapper">
+            <a href={{ collection.url }}>
+              <div class="nerd--absolute-item-center showme button button--primary">{{ section.settings.button_label }}</div>
+            </a>
+            {% if collection.featured_image %}
+              {{
+                 collection.featured_image
+               | image_url: width: collection.featured_image.width
+               | image_tag: loading: 'lazy', class: 'nerd--alternate-image', style: styles }}
+            {% else %}
+              {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
+            {% endif %}
+          </div>
 
-       
-          
+
+
           <div class="alternate--title nerd--text-md">{{ collection.title }}</div>
         {% else %}
           {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
@@ -60,9 +59,11 @@
 
     {% else %}
       {% for i in (1..4) %}
-      {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
-      <div class="alternate--title nerd--text-md ">Title</div>
-        {% endfor %}
+        <li class="nerd--alternate-item ">
+          {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
+          <div class="alternate--title nerd--text-md ">Title</div>
+        </li>
+      {% endfor %}
     {% endfor %}
 
   </ul>
@@ -86,13 +87,12 @@
     ],
     "settings": [
       {
-        "type" : "text",
-        "id" : "button_label",
-        "default" : "Shop Now",
-        "label" : "t:sections.alternate_items.settings.button.label"
-        
-      },
-      {
+        "type": "text",
+        "id": "button_label",
+        "default": "Shop Now",
+        "label": "t:sections.alternate_items.settings.button.label"
+
+      }, {
         "type": "color_scheme",
         "id": "color_scheme",
         "default": "background-1",
