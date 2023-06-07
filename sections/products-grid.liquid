@@ -117,15 +117,15 @@
             {% else %}
               {{ 'product-1' | placeholder_svg_tag: classes }}
             {% endif %}
-          {% if section.settings.show_title %}
-        <div class="nerd--absolute-top-left uppercase {% if count==2 and forloop.index==2 -%} nerd--product-grid-collection {%- else -%} nerd--product-grid-collection-sm {%- endif -%}">
-           {%- if product != blank -%}  
-          {{ product.collections.first.title }}
-          {% else %}
-          Collection
-          {% endif %}
-        </div> 
+        {% if section.settings.show_title %}
+         <div class="nerd--absolute-top-left uppercase {% if count==2 and forloop.index==2 -%} nerd--product-grid-collection {%- else -%} nerd--product-grid-collection-sm {%- endif -%}">
+           {%- if product != blank -%}  Test
+            {{ product.collections.first.title }}
+            {% else %}
+            Collection
             {% endif %}
+          </div> 
+        {% endif %}
 
           
             {% if section.settings.enable_quick_add and product %}
