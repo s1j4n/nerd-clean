@@ -3,6 +3,10 @@
   color: rgba(var(--color-foreground));
 }
 
+svg{
+  fill:  rgba(var(--color-foreground));
+}
+
 .nerd--grid-gap-sm{
   gap: 10px;
 }
