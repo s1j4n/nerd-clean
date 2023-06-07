@@ -110,7 +110,7 @@
           
           %}
           
-          <a  href="{%- if product -%}{{ product.url }} {%- else -%} # {%- endif -%}" class="nerd--grid-image-wrapper {{ classes }} nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %} nerd--showhim">
+          <a  href="{%- if product != blank -%}{{ product.url }} {%- else -%} # {%- endif -%}" class="nerd--grid-image-wrapper {{ classes }} nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %} nerd--showhim">
             {% if image %}
               {{
                  image
