@@ -105,9 +105,6 @@
             elsif block.settings.content_position == "bottom"
               assign content_position = "nerd--absolute-item-bottom"
             endif
-          
-          
-          
           %}
           
           <a  href="{%- if product != blank -%}{{ product.url }} {%- else -%} # {%- endif -%}" class="nerd--grid-image-wrapper {{ classes }} nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %} nerd--showhim">
@@ -127,14 +124,15 @@
           Collection
           {% endif %}
         </div>
-            
+            {% if section.settings.show_title %}
             <div class="nerd--products-grid--content-md {{ content_position }} nerd--flex-col nerd--bg-transparent nerd--image-grid-absolute nerd--text-center">
-              {% if section.settings.show_title %}
+              
               <div class="{%- if count==2 and forloop.index==2 -%} nerd--products-grid-title-lg {%- else -%}nerd--products-grid-title-md{%- endif -%}">
                 {{ product.title }}
               </div>
-                {% endif %}
+                
             </div>
+              {% endif %}
             {% if section.settings.enable_quick_add and product %}
              <div class="nerd--absolute-item-center nerd--showme">
             {% render 'quick-add', card_product: product, section_id: section_id %}
@@ -150,13 +148,14 @@
              <div class="nerd--absolute-top-left uppercase {% if count==2 and forloop.index==2 -%} nerd--product-grid-collection {%- else -%} nerd--product-grid-collection-sm {%- endif -%}">
                 Collection
               </div>
+            {% if section.settings.show_title %}
               <div class="nerd--products-grid--content-md nerd--absolute-item-{{ content_position }} nerd--flex-col nerd--bg-transparent nerd--image-grid-absolute nerd--text-center">
-              {% if section.settings.show_title %}
+              
               <div class="{%- if count==2 and forloop.index==2 -%} nerd--products-grid-title-lg {%- else -%}nerd--products-grid-title-md{%- endif -%}">
                 Product Name
               </div>
-                {% endif %}
             </div>
+                {% endif %}
           </div>
         {% endfor %}
 
