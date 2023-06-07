@@ -414,12 +414,20 @@
             "name": "John Doe",
             "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
+        },
+        "c450d3a7-15b0-48e6-a20e-cc638af0dc24": {
+          "type": "testimonial",
+          "settings": {
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
         }
       },
       "block_order": [
         "c1ca8602-569d-46f2-acae-bb6873757b38",
         "12c5b115-f1c4-442e-b324-7338a03c85e8",
-        "41354e91-50ca-4c94-b757-06958ded1f7a"
+        "41354e91-50ca-4c94-b757-06958ded1f7a",
+        "c450d3a7-15b0-48e6-a20e-cc638af0dc24"
       ],
       "settings": {
         "title": "What Our Clients Say",
