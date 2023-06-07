@@ -220,7 +220,7 @@
               </div>
                 {% endif %}
             </div>
-            {% if section.settings.enable_quick_add %}
+            {% if section.settings.enable_quick_add and product %}
              <div class="nerd--absolute-item-center nerd--showme">
             {% render 'quick-add', card_product: product, section_id: section_id %}
               </div>
@@ -231,12 +231,12 @@
       {% else %}
         {% for i in (1..4) %}
 
-          <div class="nerd--grid-item image-wrapper nerd--image-small">
+          <div class="nerd--grid-item image-wrapper nerd--image-small nerd--relative">
             {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover" }}
 
              <div class="nerd--absolute-top-left uppercase {% if count==2 and forloop.index==2 -%} nerd--product-grid-collection {%- else -%} nerd--product-grid-collection-sm {%- endif -%}">
-          Collection
-        </div>
+                Collection
+              </div>
 
               <div class="nerd--products-grid--content-md nerd--absolute-item-{{ content_position }} nerd--flex-col nerd--bg-transparent nerd--image-grid-absolute nerd--text-center">
               {% if section.settings.show_title %}
