@@ -3509,6 +3509,11 @@
           }
         }
       },
+      "settings": {
+        "button": {
+          "label": "Button Label"
+        }
+      },
       "presets": {
         "name": "Collection List (Alternate)"
       }
