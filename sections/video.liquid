@@ -17,6 +17,10 @@
       px;
     }
   }
+
+  .video--box-shadow {
+    box-shadow: 4px 5px 2px 1px !important;
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -65,12 +69,12 @@
             {%- if poster != null -%}
               {{
                  poster
-                 | image_url: width: 3840
-                 | image_tag:
-                 loading: 'lazy',
-                 sizes: sizes,
-                 widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-                 alt: alt }}
+               | image_url: width: 3840
+               | image_tag:
+               loading: 'lazy',
+               sizes: sizes,
+               widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+               alt: alt }}
             {%- else -%}
               {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
             {%- endif -%}
@@ -78,12 +82,12 @@
         {%- else -%}
           {{
              section.settings.video
-             | video_tag: image_size: '1100x', loop: section.settings.enable_video_looping, controls: true, muted: false }}
+           | video_tag: image_size: '1100x', loop: section.settings.enable_video_looping, controls: true, muted: false }}
         {%- endif -%}
       </div>
     </noscript>
     <deferred-media
-      class="video-section__media deferred-media no-js-hidden gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      class="video--box-shadow video-section__media deferred-media no-js-hidden gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       data-media-id="{{ video_id }}"
       {% if poster != null %}
       style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
@@ -96,10 +100,10 @@
         {%- if poster != null -%}
           {{
              poster
-             | image_url: width: 3840
-             | image_tag: loading: 'lazy', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt }}
+           | image_url: width: 3840
+           | image_tag: loading: 'lazy', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt }}
         {%- else -%}
-          {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+          {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder video-placeholder' }}
         {%- endif -%}
         <span class="deferred-media__poster-button motion-reduce">
           {%- render 'icon-play' -%}
@@ -131,12 +135,12 @@
         {%- else -%}
           {{
              section.settings.video
-             | video_tag:
-             image_size: '1100x',
-             autoplay: true,
-             loop: section.settings.enable_video_looping,
-             controls: true,
-             muted: false }}
+           | video_tag:
+           image_size: '1100x',
+           autoplay: true,
+           loop: section.settings.enable_video_looping,
+           controls: true,
+           muted: false }}
         {%- endif -%}
       </template>
     </deferred-media>
