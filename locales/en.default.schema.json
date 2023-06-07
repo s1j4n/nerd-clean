@@ -3468,6 +3468,9 @@
         },
         "quick_add": {
           "label": "Enable quick add"
+        },
+        "show_collection": {
+          "label": "Show Collection"
         }
       },
       "blocks": {
