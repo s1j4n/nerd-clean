@@ -1,19 +1,34 @@
-{{ 'nerd-testimonoials.css' | asset_url | stylesheet_tag }}
-
+{{ 'nerd-testimonials.css' | asset_url | stylesheet_tag }}
 
 {% style %}
+
+  .carousel-cell {
+    width: 100%;
+  }
+
+  @media(min-width: 768px) {
+    .carousel-cell {
+      width: 50%;
+    }
+  }
+
+  @media(min-width: 992px) {
+    .carousel-cell {
+      width: 33.33%;
+    }
+  }
+
   .nerd-iconwithtext svg {
     height: {{ section.settings.icon_height_desktop | append: 'px' }}
     ;
-    width: {{ section.settings.icon_height_desktop | append: 'px'  }}
+    width: {{ section.settings.icon_height_desktop | append: 'px' }}
     ;
   }
-
 
   .slick-dots li button:before {
     color: rgba(var(--color-foreground), 0.75);
     opacity: .5;
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .slick-dots li.slick-active button:before {
     color: rgba(var(--color-foreground), 0.75);
@@ -60,16 +75,18 @@
     <div class="nerd--title-main scroll-trigger animate--slide-in {% if section.settings.heading_center %} text-center {% endif %} ">{{ section.settings.title }}</div>
 
     <div class="nerd-content nerd-page-width">
-      <div class="nerd-slider-container">
+      <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons" : false, "pageDots": true, "groupCells" : true  }'>
         {% for block in section.blocks limit: section.settings.total_to_show %}
-          <div>
+          <div class="carousel-cell">
             <div class="nerd-testimonial {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
-              {% if block.settings.image %}
-                {% assign image = block.settings.image %}
-                {{ image | image_url: width: 100 | image_tag: class: 'nerd-testimonial--image', loading: 'lazy' }}
-              {% else %}
-                {{ 'image' | placeholder_svg_tag: 'nerd-testimonial--image' }}
-              {% endif %}
+              <div class="nerd-testimonial--image-wrapper">
+                {% if block.settings.image %}
+                  {% assign image = block.settings.image %}
+                  {{ image | image_url: width: image.width | image_tag: class: 'nerd-testimonial--image', loading: 'lazy' }}
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'nerd-testimonial--image' }}
+                {% endif %}
+              </div>
               <div class="nerd-title-small">
                 {{ block.settings.name }}
               </div>
@@ -78,9 +95,11 @@
           </div>
         {%- else -%}
           {%- for i in (1..3) -%}
-            <div>
+            <div class="carousel-cell">
               <div class="nerd-testimonial ">
-                {{ 'image' | placeholder_svg_tag: 'nerd-testimonial--image' }}
+                <div class="nerd-testimonial--image-wrapper">
+                  {{ 'image' | placeholder_svg_tag: 'nerd-testimonial--image' }}
+                </div>
                 <div class="nerd-title-small">John Doe</div>
                 <div class="nerd-text-small italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -95,41 +114,6 @@
   </div>
 </div>
 
-<script type="text/javascript">
-  $(document).ready(function(){
-  $('.nerd-slider-container').slick({
-        dots: true,
-      infinite: false,
-      speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 970,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 750,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-            });
-          });</script>
 {% schema %}
   {
     "name": "Testimonials",

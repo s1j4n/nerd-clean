@@ -3,20 +3,37 @@
 
 {% style %}
   .nerd-iconwithtext svg {
-    height: {{ section.settings.icon_height_desktop | append: 'px'  }}
+    height: {{ section.settings.icon_height_desktop | append: 'px' }}
     ;
 
-    width: {{ section.settings.icon_height_desktop | append: 'px'  }}
+    width: {{ section.settings.icon_height_desktop | append: 'px' }}
     ;
   }
 
+  .flickity-prev-next-button:disabled { display: none; }
+
+  .carousel-cell {
+    width: 100%;
+  }
+
+  @media(min-width: 768px) {
+    .carousel-cell {
+      width: 50%;
+    }
+  }
+
+  @media(min-width: 992px) {
+    .carousel-cell {
+      width: 33.33%;
+    }
+  }
 
 
   @media screen and (max-width: 750px) {
     .nerd-iconwithtext svg {
-      height: {{ section.settings.icon_height_mobile | append: 'px'  }}
+      height: {{ section.settings.icon_height_mobile | append: 'px' }}
       ;
-      width: {{ section.settings.icon_height_mobile | append: 'px'  }}
+      width: {{ section.settings.icon_height_mobile | append: 'px' }}
       ;
     }
 
@@ -28,7 +45,7 @@
   <div class="{% unless section.settings.full_width %}nerd-page-width {% endunless %}">
     <div class="nerd--title-main animate--slide-in">{{ section.settings.title }}</div>
     <div class="nerd-content">
-      <div class="your-class">
+      <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons" : false, "pageDots": true, "groupCells" : true  }'>
         {% for block in section.blocks %}
           <div>
             <div class="nerd-iconwithtext">
@@ -45,7 +62,7 @@
           </div>
         {%- else -%}
           {%- for i in (1..3) -%}
-            <div>
+            <div class="carousel-cell">
               <div class="nerd-iconwithtext">
                 {% render 'icon-accordion', icon: 'check_mark' %}
                 <div class="nerd-iconwithtext--content">
@@ -61,42 +78,6 @@
   </div>
 </div>
 
-<script type="text/javascript">
-
-  $(document).ready(function(){
-  $('.your-class').slick({
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 970,
-            settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 750,
-            settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-            }
-          }
-        ]
-      });
-    });</script>
 
 
 {% schema %}

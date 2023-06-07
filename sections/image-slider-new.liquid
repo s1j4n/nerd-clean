@@ -1,0 +1,97 @@
+<style>
+      .image-slider-new {
+        display: block;
+        height: 200px;
+      }
+      
+    .image-slider-new svg, .image-slider-new img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+      @media screen and ( min-width: 768px ) {
+        .image-slider-new {
+          height: 400px;
+        }
+      }
+
+</style>
+
+<div class="nerd-container color-{{ section.settings.color_scheme }}">
+    <div class="{% unless section.settings.full_width %}nerd-page-width {% endunless %}">
+      <div class="nerd--title-main scroll-trigger animate--slide-in {% if section.settings.heading_center %} text-center {% endif %} ">{{ section.settings.title }}</div>
+  
+      <div class="nerd-content nerd-page-width">
+<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons" : true, "pageDots": true, "groupCells" : true, "freeScroll": true  }'>
+{% for block in section.settings.block %}
+    <div class="image-slider-new">
+        {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy' }}
+    </div>
+{% else %}
+{% for i in (1..6) %}
+    <div class="image-slider-new">
+    {{ 'product-1' | placeholder_svg_tag }}
+    </div>
+{% endfor %}
+{% endfor %}
+</div>
+</div>
+
+
+</div>
+
+{% schema %}
+  {
+    "name": "Image Gallery",
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "default": "Image Gallery",
+        "label": "Title"
+      },
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "default": false,
+        "label": "Full Width"
+
+      },
+      {
+        "type": "range",
+        "id": "total_to_show",
+        "min": 1,
+        "max": 15,
+        "default": 5,
+        "step": 1,
+        "label": "Total Items to show"
+      }, {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "info": "t:sections.image-banner.settings.color_scheme.info",
+        "default": "background-1"
+      }
+
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image Gallery"
+      }
+    ]
+  }
+{% endschema %}
