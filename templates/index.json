@@ -52,6 +52,28 @@
     },
     "6df56fd5-ed6d-4a74-96fa-164c6f37bff8": {
       "type": "products-grid",
+      "blocks": {
+        "2dec508b-e92e-430e-a161-f91c276fa4e5": {
+          "type": "product",
+          "settings": {
+            "product": "amazing-aluminum-bag-collection1",
+            "image_opacity": 90,
+            "content_position": "bottom"
+          }
+        },
+        "2743a9b3-1624-44c8-9072-406d40158ffb": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image_opacity": 90,
+            "content_position": "bottom"
+          }
+        }
+      },
+      "block_order": [
+        "2dec508b-e92e-430e-a161-f91c276fa4e5",
+        "2743a9b3-1624-44c8-9072-406d40158ffb"
+      ],
       "settings": {
         "show_title": true,
         "show_collection": true,
