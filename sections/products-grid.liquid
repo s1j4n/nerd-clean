@@ -110,7 +110,7 @@
           
           %}
           
-          <a href={{ product.url }} class="nerd--grid-image-wrapper {{ classes }} nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %} nerd--showhim">
+          <a  href="{%- if product -%}{{ product.url }} {%- else -%} # {%- endif -%}" class="nerd--grid-image-wrapper {{ classes }} nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %} nerd--showhim">
             {% if image %}
               {{
                  image
@@ -141,14 +141,11 @@
         {% endif %}
       {% else %}
         {% for i in (1..4) %}
-
           <div class="nerd--grid-item image-wrapper nerd--image-small nerd--relative">
             {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover" }}
-
              <div class="nerd--absolute-top-left uppercase {% if count==2 and forloop.index==2 -%} nerd--product-grid-collection {%- else -%} nerd--product-grid-collection-sm {%- endif -%}">
                 Collection
               </div>
-
               <div class="nerd--products-grid--content-md nerd--absolute-item-{{ content_position }} nerd--flex-col nerd--bg-transparent nerd--image-grid-absolute nerd--text-center">
               {% if section.settings.show_title %}
               <div class="{%- if count==2 and forloop.index==2 -%} nerd--products-grid-title-lg {%- else -%}nerd--products-grid-title-md{%- endif -%}">
