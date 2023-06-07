@@ -127,8 +127,8 @@
         {% assign product = first.settings.product %}
         {% assign image = product.featured_image %}
     
-    <div class="nerd--relative image-wrapper first nerd--image-grid-height-full nerd--showhim">
-      <a href="{{ product.url }}">
+    <a class="nerd--relative image-wrapper first nerd--image-grid-height-full nerd--showhim">
+     
       {% if count > 0 %}
 
         {% capture styles %}
@@ -161,8 +161,7 @@
       <div class="nerd--absolute-item-center nerd--showme">
         {% render 'quick-add', card_product: product, section_id: section_id %}
       </div>
-        </a>
-    </div>
+    </a>
       
     <div class="nerd--grid nerd--grid-gap-sm nerd--grid-item {{ grid_2_class }} ">
       {% for block in section.blocks %}
