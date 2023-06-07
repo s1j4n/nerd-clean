@@ -127,7 +127,7 @@
         {% assign product = first.settings.product %}
         {% assign image = product.featured_image %}
     
-    <a  href={% if product %}{{ product.url }} {% endif %} class="nerd--relative image-wrapper first nerd--image-grid-height-full nerd--showhim">
+    <a  href="{% if product %}{{ product.url }} {% else %} # {% endif %}" class="nerd--relative image-wrapper first nerd--image-grid-height-full nerd--showhim">
      
       {% if count > 0 %}
 
