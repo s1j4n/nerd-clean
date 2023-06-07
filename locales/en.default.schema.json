@@ -3473,7 +3473,7 @@
       "blocks": {
         "name": "Product",
         "settings": {
-          "image": {
+          "product": {
             "label": "Product"
           },
           "opacity": {
