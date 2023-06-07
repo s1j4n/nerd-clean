@@ -124,14 +124,17 @@
           {% else %}
           Collection
           {% endif %}
-        </div>
-            
-              {% endif %}
+        </div> 
+            {% endif %}
+
+          
             {% if section.settings.enable_quick_add and product %}
              <div class="nerd--absolute-item-center nerd--showme">
             {% render 'quick-add', card_product: product, section_id: section_id %}
               </div>
               {% endif %}
+
+          
           </a>
     
         {% endif %}
