@@ -76,7 +76,7 @@
     <div class="nerd--title-main scroll-trigger animate--slide-in {% if section.settings.heading_center %} text-center {% endif %} ">{{ section.settings.title }}</div>
 
     <div class="nerd-content nerd-page-width">
-      <div class="main-carousel-nerd data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons" : false, "pageDots": true, "groupCells" : true  }'" >
+      <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons" : false, "pageDots": true, "groupCells" : true  }' >
         {% for block in section.blocks limit: section.settings.total_to_show %}
           <div class="carousel-cell">
             <div class="nerd-testimonial {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
