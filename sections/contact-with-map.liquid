@@ -1,8 +1,23 @@
-{{ 'contact-with-map.css' | asset_url | stylesheet_tag   }}
+{{ 'contact-with-map.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+.section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+{% endstyle %}
 
 {% schema %}
 {
-  "name": "t:sections.location.settings.name",
+  "name": "t:sections.location.name",
   "settings": [
     {
         "type": "inline_richtext",
@@ -44,13 +59,33 @@
           "label": "t:sections.location.blocks.google_map.settings.url.label",
           "id": "map_url",
           "default": "https://maps.google.com/maps?q=Toronto,ON,Canada&output=embed"
-        }
+        },
+        {
+          "type": "range",
+          "id": "padding_top",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "t:sections.all.padding.padding_top",
+          "default": 36
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "t:sections.all.padding.padding_bottom",
+          "default": 36
+        }    
       ]
     }
   ],
   "presets" : [
     {
-      "name" : "t:sections.location.settings.presets.name"
+      "name" : "t:sections.location.presets.name"
     }
   ]
 }
@@ -59,7 +94,7 @@
 {% assign locationInfo = section.blocks | where: 'type', 'location' | first %}
 {% assign googleMap = section.blocks | where: 'type', 'google_map' | first %}
 
-<div class="nerd-container color-{{ section.settings.color_scheme }}">
+<div class="nerd-container section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
   <div class="nerd-page-width">
   <div class="nerd--title-main">{{ section.settings.title | escape }}</div>
 

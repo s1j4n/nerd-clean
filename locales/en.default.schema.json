@@ -3570,7 +3570,7 @@
         "full_width": {
           "label": "Make section full width"
         },
-        "size_destop": {
+        "size_desktop": {
           "label": "Icon size in desktop"
         },
         "size_mobile": {

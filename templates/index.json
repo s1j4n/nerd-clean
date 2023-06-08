@@ -110,7 +110,7 @@
       }
     },
     "services": {
-      "type": "text-with-icon",
+      "type": "services",
       "settings": {
         "title": "Our Services",
         "full_width": false,

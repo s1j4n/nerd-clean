@@ -37,12 +37,12 @@
   
       <div class="nerd-content nerd-page-width">
 <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons" : true, "pageDots": true, "groupCells" : true, "freeScroll": true  }'>
-{% for block in section.blocks %}
+{% for block in section.blocks limit: section.settings.total_to_show %}
     <div class="image-slider-new">
         {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy' }}
     </div>
 {% else %}
-{% for i in (1..6) %}
+{% for i in (1..5) %}
   
   
   <div class="image-slider-new">

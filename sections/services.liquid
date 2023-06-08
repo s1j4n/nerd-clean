@@ -2,6 +2,20 @@
 
 
 {% style %}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+
+
   .nerd-iconwithtext svg {
     height: {{ section.settings.icon_height_desktop | append: 'px' }}
     ;
@@ -43,7 +57,7 @@
   }
 {% endstyle %}
 
-<div class="nerd-container color-{{ section.settings.color_scheme }}">
+<div class="nerd-container section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
   <div class="{% unless section.settings.full_width %}nerd-page-width {% endunless %}">
     <div class="nerd--title-main animate--slide-in">{{ section.settings.title }}</div>
     <div class="nerd-content">
@@ -52,9 +66,7 @@
           <div>
             <div class="nerd-iconwithtext">
               {% if block.settings.icon %}
-                <div class="nerd-iconwithtext--icon-wrapper">
                   {% render 'icon-accordion', icon: block.settings.icon %}
-                </div>
               {% endif %}
               <div class="nerd-iconwithtext--content">
                 <div class="nerd-title-small">{{ block.settings.title }}</div>
@@ -123,6 +135,26 @@
         "id": "color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "background-1"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
       }
 
     ],
