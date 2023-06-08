@@ -392,7 +392,7 @@
       "spacing": "Spacing",
       "colors": {
         "label": "Color scheme",
-        "has_cards_info": "To change the card color scheme, update your theme settings."
+        "has_cards_info": "Change the card color scheme from theme settings."
       },
       "heading_size": {
         "label": "Heading size",
@@ -636,6 +636,11 @@
     },
     "contact-form": {
       "name": "Contact Form",
+      "settings" : {
+        "heading": {
+          "label": "Heading"
+        }
+      },
       "blocks": {
         "contact_info": {
           "name": "Contact info",
@@ -1227,7 +1232,7 @@
       "name": "Image banner",
       "settings": {
         "image": {
-          "label": "First image"
+          "label": "Image"
         },
         "image_2": {
           "label": "Second image"
@@ -1249,7 +1254,7 @@
           "options__4": {
             "label": "Large"
           },
-          "info": "For best results, use an image with a 3:2 aspect ratio. [Learn more](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+          "info": "An image with a 3:2 aspect ratio is recommended."
         },
         "desktop_content_position": {
           "options__1": {
