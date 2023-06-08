@@ -17,7 +17,7 @@
     "cbc219a3-bf54-4d12-9b5b-e76b7ac7aaac": {
       "type": "featured-collection",
       "settings": {
-        "title": "<b>FEATURED<\/b> COLLECTION",
+        "title": "<strong>FEATURED<\/strong> COLLECTION",
         "collection": "",
         "display_style": "slider",
         "buttons_style": "arrow",
@@ -33,10 +33,31 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "ee117f9a-29b8-46c8-b3ab-a8c3d403fc1c": {
+      "type": "alternate-items",
+      "settings": {
+        "title": "Collections",
+        "button_label": "Shop Now",
+        "color_scheme": ""
+      }
+    },
+    "bf182256-4245-4e72-8924-76602f1fb570": {
+      "type": "testimonials",
+      "settings": {
+        "title": "What Our Clients Say",
+        "full_width": false,
+        "total_to_show": 4,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
-    "cbc219a3-bf54-4d12-9b5b-e76b7ac7aaac"
+    "cbc219a3-bf54-4d12-9b5b-e76b7ac7aaac",
+    "ee117f9a-29b8-46c8-b3ab-a8c3d403fc1c",
+    "bf182256-4245-4e72-8924-76602f1fb570"
   ]
 }
