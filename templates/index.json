@@ -41,8 +41,8 @@
         "color_scheme": ""
       }
     },
-    "products_slider": {
-      "type": "products-slider",
+    "featured_products": {
+      "type": "featured-products",
       "settings": {
         "title": "Featured Products",
         "description": "",
@@ -146,7 +146,7 @@
     "image_banner",
     "text_with_button",
     "alternate_items",
-    "products_slider",
+    "featured_products",
     "testimonials",
     "featured_collection",
     "image_gallery",
