@@ -636,7 +636,7 @@
     },
     "contact-form": {
       "name": "Contact Form",
-      "settings" : {
+      "settings": {
         "heading": {
           "label": "Heading"
         }
@@ -3424,7 +3424,7 @@
     },
     "image_grid": {
       "name": "Image Grid",
-      "settings" : {
+      "settings": {
         "title": {
           "label": "Title"
         }
@@ -3517,7 +3517,6 @@
       "blocks": {
         "name": "Collection",
         "settings": {
-          
           "collection": {
             "label": "Collection"
           }
@@ -3605,23 +3604,22 @@
         }
       },
       "blocks": {
-        "location_info" : {
-        "name": "Location",
-        "settings": {
-          "heading": {
-            "label": "Heading"
-          },
-          "description": {
-            "label": "Description"
+        "location_info": {
+          "name": "Location",
+          "settings": {
+            "heading": {
+              "label": "Heading"
+            },
+            "description": {
+              "label": "Description"
+            }
           }
-
-        }
         },
-        "google_map" : {
-          "name" : "Google Map",
-          "settings" : {
-            "url" : {
-              "label" : "Map URL"
+        "google_map": {
+          "name": "Google Map",
+          "settings": {
+            "url": {
+              "label": "Map URL"
             }
           }
         }
