@@ -86,6 +86,13 @@
             "name": "John Doe",
             "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
+        },
+        "935e48a0-128d-417f-8144-17c75abb85c6": {
+          "type": "testimonial",
+          "settings": {
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -94,12 +101,13 @@
         "b10ea095-2e79-4680-bf38-abcafe74d92e",
         "46921e0e-404a-4423-b296-837e3e726a8f",
         "bb9af629-433f-4ec8-97bb-65e4d2ea9833",
-        "258f2dd6-56ee-4c19-8f43-07fe6a994043"
+        "258f2dd6-56ee-4c19-8f43-07fe6a994043",
+        "935e48a0-128d-417f-8144-17c75abb85c6"
       ],
       "settings": {
         "title": "What Our Clients Say",
         "full_width": true,
-        "total_to_show": 5,
+        "total_to_show": 4,
         "color_scheme": ""
       }
     }
