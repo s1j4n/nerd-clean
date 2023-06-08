@@ -42,73 +42,74 @@
         "color_scheme": ""
       }
     },
-    "235036be-d136-4b6d-ae36-d7cedf67393e": {
-      "type": "testimonials",
+    "1fe55a88-f865-4553-b01f-a6dfeb299257": {
+      "type": "featured-products",
       "blocks": {
-        "325fec70-8b65-4075-8118-a431f14187f3": {
-          "type": "testimonial",
+        "e3a5319d-ed94-4bb1-9780-7b167b5067f1": {
+          "type": "product",
           "settings": {
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+            "product": ""
           }
         },
-        "363a4f1f-77d1-479c-ad73-8fea7a758109": {
-          "type": "testimonial",
+        "b66f50b5-4155-45dc-8a18-50479a739a79": {
+          "type": "product",
           "settings": {
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+            "product": ""
           }
         },
-        "b10ea095-2e79-4680-bf38-abcafe74d92e": {
-          "type": "testimonial",
+        "500fbaf2-b426-477c-b37d-e6e66289cb57": {
+          "type": "product",
           "settings": {
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+            "product": ""
           }
         },
-        "46921e0e-404a-4423-b296-837e3e726a8f": {
-          "type": "testimonial",
+        "aeca4fa5-7122-4ffe-bcde-e4546251f772": {
+          "type": "product",
           "settings": {
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+            "product": ""
           }
         },
-        "bb9af629-433f-4ec8-97bb-65e4d2ea9833": {
-          "type": "testimonial",
+        "d17f1839-b8a5-4bc4-a5e7-7184ae47342d": {
+          "type": "product",
           "settings": {
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
-          }
-        },
-        "258f2dd6-56ee-4c19-8f43-07fe6a994043": {
-          "type": "testimonial",
-          "settings": {
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
-          }
-        },
-        "935e48a0-128d-417f-8144-17c75abb85c6": {
-          "type": "testimonial",
-          "settings": {
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+            "product": ""
           }
         }
       },
       "block_order": [
-        "325fec70-8b65-4075-8118-a431f14187f3",
-        "363a4f1f-77d1-479c-ad73-8fea7a758109",
-        "b10ea095-2e79-4680-bf38-abcafe74d92e",
-        "46921e0e-404a-4423-b296-837e3e726a8f",
-        "bb9af629-433f-4ec8-97bb-65e4d2ea9833",
-        "258f2dd6-56ee-4c19-8f43-07fe6a994043",
-        "935e48a0-128d-417f-8144-17c75abb85c6"
+        "e3a5319d-ed94-4bb1-9780-7b167b5067f1",
+        "b66f50b5-4155-45dc-8a18-50479a739a79",
+        "500fbaf2-b426-477c-b37d-e6e66289cb57",
+        "aeca4fa5-7122-4ffe-bcde-e4546251f772",
+        "d17f1839-b8a5-4bc4-a5e7-7184ae47342d"
       ],
       "settings": {
-        "title": "What Our Clients Say",
-        "full_width": true,
-        "total_to_show": 3,
-        "color_scheme": ""
+        "title": "Featured Products",
+        "description": "",
+        "display_style": "slider",
+        "buttons_style": "catet",
+        "hide_button_bg": false,
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "color_scheme": "",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2a626e1c-b268-4cab-b3c7-e0bacf153480": {
+      "type": "image-slider-new",
+      "settings": {
+        "title": "Image Gallery",
+        "full_width": false,
+        "total_to_show": 5,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -116,6 +117,7 @@
     "image_banner",
     "cbc219a3-bf54-4d12-9b5b-e76b7ac7aaac",
     "ee117f9a-29b8-46c8-b3ab-a8c3d403fc1c",
-    "235036be-d136-4b6d-ae36-d7cedf67393e"
+    "1fe55a88-f865-4553-b01f-a6dfeb299257",
+    "2a626e1c-b268-4cab-b3c7-e0bacf153480"
   ]
 }
