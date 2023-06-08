@@ -111,6 +111,29 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "53b35adc-0f4f-48c3-bdd1-42f4a66fa5d4": {
+      "type": "products-grid",
+      "settings": {
+        "show_title": true,
+        "show_collection": true,
+        "enable_quick_add": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f77a9ad5-db63-4018-a03b-551d5894f249": {
+      "type": "services",
+      "settings": {
+        "title": "Our Services",
+        "full_width": false,
+        "icon_height_desktop": 50,
+        "icon_height_mobile": 30,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -118,6 +141,8 @@
     "cbc219a3-bf54-4d12-9b5b-e76b7ac7aaac",
     "ee117f9a-29b8-46c8-b3ab-a8c3d403fc1c",
     "1fe55a88-f865-4553-b01f-a6dfeb299257",
-    "2a626e1c-b268-4cab-b3c7-e0bacf153480"
+    "2a626e1c-b268-4cab-b3c7-e0bacf153480",
+    "53b35adc-0f4f-48c3-bdd1-42f4a66fa5d4",
+    "f77a9ad5-db63-4018-a03b-551d5894f249"
   ]
 }
