@@ -42,11 +42,11 @@
 @media screen and (max-width: 1440px){
   .nerd--image-grid-height-half{
   max-height: 295px;
-  width: auto;
+  width: 100%;
 }
 
 .nerd--image-grid-height-full{
   max-height: 600px;
-  width: auto;
+  width: 100%;
 }
 } 
