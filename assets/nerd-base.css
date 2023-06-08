@@ -143,8 +143,8 @@ box-shadow: none !important;
 }
 
 .nerd-page-width {
+  max-width: var(--page-width);
   margin: 0 auto;
-  max-width: 1300px;
 }
 
 .nerd-title {
