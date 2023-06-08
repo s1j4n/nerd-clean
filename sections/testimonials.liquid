@@ -78,7 +78,7 @@
     <div class="nerd--title-main scroll-trigger animate--slide-in {% if section.settings.heading_center %} text-center {% endif %} ">{{ section.settings.title }}</div>
 
     <div class="nerd-content nerd-page-width">
-      <div class="main-carousel-12" >
+      <div class="main-carousel-nerd" >
         {% for block in section.blocks limit: section.settings.total_to_show %}
           <div class="carousel-cell">
             <div class="nerd-testimonial {% if section.settings.card_height == "fit_large" %} height-full {% endif %}">
@@ -117,7 +117,7 @@
   </div>
 </div>
 <script>
-var elem = document.querySelector('.main-carousel-12');
+var elem = document.querySelector('.main-carousel-nerd');
 var flkty = new Flickity( elem, {
   cellAlign: 'left',
   contain: true
