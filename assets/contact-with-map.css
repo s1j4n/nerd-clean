@@ -2,29 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: #fff;
   padding: 4rem 5%;
   margin: 0 auto;
 }
 
 .location-map-section .location-info {
-  color: #fff;
   width: 30%;
 }
 
 
-.location-info h2 {
-  font-weight: bolder;
-  color: white;
-  text-transform: uppercase;
-}
-
-.location-info p {
-  font-size: 2rem;
-}
 
 .google-map {
-  height: 45rem;
+  height: 32rem;
   width: 45%;
 }
 

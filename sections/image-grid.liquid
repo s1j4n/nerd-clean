@@ -23,7 +23,9 @@
 
 <style></style>
 
-<div class="color-{{ section.settings.color_scheme }}">
+<div class="nerd-container color-{{ section.settings.color_scheme }}">
+  <div class="nerd-page-width">
+  <div class="nerd--title-main">{{ section.settings.title | escape }}</div>
   <div class="nerd--grid image-grid {{ grid_1_class }}">
     <div class="nerd--relative image-wrapper first nerd--image-grid-height-full">
       {% if count > 0 %}
@@ -52,7 +54,7 @@
               <div class="nerd-text">
                 {{ first.settings.text }}
               </div>
-        {% if first.settings.button_label %}
+        {% if first.settings.button_label !=blank %}
         <a href="{{ first.settings.button_link }}"  class="button button--primary"> {{ first.settings.button_label }} </a>
           {% endif %}
             </div>
@@ -100,6 +102,9 @@
               <div class="nerd-text ">
                 {{ block.settings.text }}
               </div>
+          {% if block.settings.button_label !=blank %}
+        <a href="{{ block.settings.button_link }}"  class="button button--primary"> {{ block.settings.button_label }} </a>
+          {% endif %}
             </div>
           </div>
         {% endif %}
@@ -116,6 +121,7 @@
 
   </div>
 
+</div>
 </div>
 
 
@@ -187,6 +193,11 @@
       }
     ],
     "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "t:sections.image_grid.settings.title"
+      },
 
       {
         "type": "color_scheme",

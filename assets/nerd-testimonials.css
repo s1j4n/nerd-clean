@@ -24,3 +24,10 @@
     object-fit: cover;
     border: 1px solid;
 }
+
+@media screen and (max-width: 490px) {
+    .nerd-testimonial--image-wrapper {
+        height: 70px;
+    width: 70px;
+    }
+}

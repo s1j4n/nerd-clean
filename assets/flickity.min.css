@@ -147,3 +147,22 @@ https://flickity.metafizzy.co
 .flickity-page-dots li:only-child{
     display: none;
     }
+
+@media screen and (max-width: 490px) {
+    .flickity-prev-next-button{
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .flickity-page-dots .dot{
+        width: 5px !important;
+        height: 5px !important;
+    }
+
+    .flickity-prev-next-button.previous{
+        left: 0;
+    }
+    .flickity-prev-next-button.next{
+        right: 0;
+    }
+}

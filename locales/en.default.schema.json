@@ -3419,6 +3419,11 @@
     },
     "image_grid": {
       "name": "Image Grid",
+      "settings" : {
+        "title": {
+          "label": "Title"
+        }
+      },
       "blocks": {
         "name": "Image",
         "settings": {
@@ -3507,12 +3512,16 @@
       "blocks": {
         "name": "Collection",
         "settings": {
+          
           "collection": {
             "label": "Collection"
           }
         }
       },
       "settings": {
+        "title": {
+          "label": "Title"
+        },
         "button": {
           "label": "Button Label"
         }
@@ -3581,6 +3590,39 @@
       },
       "presets": {
         "name": "Services"
+      }
+    },
+    "location": {
+      "name": "Location with map",
+      "settings": {
+        "title": {
+          "label": "Title"
+        }
+      },
+      "blocks": {
+        "location_info" : {
+        "name": "Location",
+        "settings": {
+          "heading": {
+            "label": "Heading"
+          },
+          "description": {
+            "label": "Description"
+          }
+
+        }
+        },
+        "google_map" : {
+          "name" : "Google Map",
+          "settings" : {
+            "url" : {
+              "label" : "Map URL"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Location with Map"
       }
     }
   }

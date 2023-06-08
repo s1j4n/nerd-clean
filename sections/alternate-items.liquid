@@ -27,7 +27,8 @@
 </style>
 
 <div class="nerd-container color-{{ section.settings.color_scheme }}">
-  <div class="nerd--title-main">Collections</div>
+  <div class="nerd-page-width">
+  <div class="nerd--title-main">{{ section.settings.title | escape }}</div>
   <ul class="nerd-page-width nerd--list-alternate">
     {% for block in section.blocks %}
       {% assign collection = block.settings.collection %}
@@ -68,6 +69,7 @@
 
   </ul>
 </div>
+</div>
 
 {% schema %}
   {
@@ -86,6 +88,13 @@
       }
     ],
     "settings": [
+      {
+        "type": "inline_richtext",
+        "id" : "title",
+        "default" : "Collections",
+        "label" : "t:sections.alternate_items.settings.title.label"
+
+      },
       {
         "type": "text",
         "id": "button_label",

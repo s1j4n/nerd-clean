@@ -65,10 +65,9 @@
           {% endif %}
         </div>
         {% if section.settings.show_title %}
-          <div class="nerd--products-grid--content-lg nerd--absolute {{ content_position }} nerd--bg-transparent nerd--flex-col nerd--image-grid-absolute nerd--text-center nerd--product-grid-title">
+          <div class="nerd--products-grid--content-md nerd--absolute {{ content_position }} nerd--bg-transparent nerd--flex-col nerd--image-grid-absolute nerd--text-center nerd--product-grid-title">
             <div class="nerd--products-grid-title-lg ">
               {{ product.title }}
-              Test
             </div>
           </div>
         {% endif %}
@@ -145,12 +144,12 @@
           {% for i in (1..4) %}
             <div class="color-{{ settings.card_color_scheme }} nerd--image-grid-height-half nerd--grid-item image-wrapper nerd--image-small nerd--relative">
               {{ 'product-1' | placeholder_svg_tag: "nerd--image-grid--image nerd--image-grid-height-half" }}
-              <div class="nerd--absolute-top-left uppercase {% if count==2 and forloop.index==2 -%} nerd--product-grid-collection {%- else -%} nerd--product-grid-collection-sm {%- endif -%}">
+              <div class="nerd--absolute-top-left uppercase {% if count == 2 and forloop.index == 2 -%} nerd--product-grid-collection {%- else -%} nerd--product-grid-collection-sm {%- endif -%}">
                 Collection
               </div>
               {% if section.settings.show_title %}
                 <div class="nerd--products-grid--content-md nerd--absolute-item-bottom nerd--flex-col nerd--bg-transparent nerd--image-grid-absolute nerd--text-center">
-                  <div class="{%- if count==2 and forloop.index==2 -%} nerd--products-grid-title-lg {%- else -%}nerd--products-grid-title-md{%- endif -%}">
+                  <div class="{%- if count == 2 and forloop.index == 2 -%} nerd--products-grid-title-lg {%- else -%}nerd--products-grid-title-md{%- endif -%}">
                     Product Name
                   </div>
                 </div>
@@ -187,7 +186,7 @@
             "max": 100,
             "step": 10,
             "unit": "%",
-            "default": 90,
+            "default": 100,
             "label": "t:sections.products_grid.blocks.settings.opacity.label"
           }, {
             "type": "select",

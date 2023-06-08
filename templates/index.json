@@ -15,7 +15,7 @@
         "show_text_below": true
       }
     },
-    "8116c8f1-b49d-4070-9e7a-d9903cd21aff": {
+    "text_with_button": {
       "type": "text-with-button",
       "settings": {
         "content_alignment": "center",
@@ -25,14 +25,14 @@
         "padding_bottom": 20
       }
     },
-    "5b04af58-fceb-4e6c-8fe2-d559fb6e9f13": {
+    "alternate_items": {
       "type": "alternate-items",
       "settings": {
         "button_label": "Shop Now",
         "color_scheme": ""
       }
     },
-    "6df56fd5-ed6d-4a74-96fa-164c6f37bff8": {
+    "products_grid": {
       "type": "products-grid",
       "settings": {
         "show_title": true,
@@ -41,7 +41,7 @@
         "color_scheme": ""
       }
     },
-    "9acd8e6e-82cd-4690-a79d-10ada8cd75cc": {
+    "products_slider": {
       "type": "products-slider",
       "settings": {
         "title": "Featured Products",
@@ -63,7 +63,7 @@
         "padding_bottom": 36
       }
     },
-    "a20d3441-d401-4506-adae-7e2a8ef51a3b": {
+    "featured_collection": {
       "type": "featured-collection",
       "settings": {
         "title": "<b>FEATURED<\/b> COLLECTION",
@@ -83,34 +83,7 @@
         "padding_bottom": 36
       }
     },
-    "24423574-5f40-408d-824b-a82b27f6a523": {
-      "type": "images-with-text",
-      "settings": {
-        "image_1_opacity": 0.2,
-        "image_2_opacity": 0.8,
-        "text_position": "left",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "desktop_content_alignment": "left",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "caca1bae-6af5-4e12-ba9b-f6fdcdd3d242": {
-      "type": "collection-list",
-      "settings": {
-        "full_width": false,
-        "title": "Collections",
-        "image_ratio": "square",
-        "columns_desktop": "4",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
+    
     "video": {
       "type": "video",
       "settings": {
@@ -125,22 +98,7 @@
         "padding_bottom": 36
       }
     },
-    "4b6c20d3-851a-407e-a6dd-12090af60b21": {
-      "type": "images-with-text",
-      "settings": {
-        "image_1_opacity": 0.2,
-        "image_2_opacity": 0.8,
-        "text_position": "left",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "desktop_content_alignment": "left",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "d200ced6-834e-4ad6-8998-7296a096232d": {
+    "testimonials": {
       "type": "testimonials",
       "settings": {
         "title": "What Our Clients Say",
@@ -151,7 +109,7 @@
         "color_scheme": ""
       }
     },
-    "a61a6fb5-b89f-44ab-b59b-f9289f0dfe7e": {
+    "services": {
       "type": "text-with-icon",
       "settings": {
         "title": "Our Services",
@@ -162,7 +120,7 @@
         "color_scheme": ""
       }
     },
-    "4cb0bcfe-421b-49cc-9040-751f133b8159": {
+    "image_gallery": {
       "type": "image-slider-new",
       "settings": {
         "title": "Image Gallery",
@@ -171,8 +129,14 @@
         "color_scheme": ""
       }
     },
-    "e909a60b-2811-4996-b218-71750dabf044": {
+    "image_grid": {
       "type": "image-grid",
+      "settings": {
+        "color_scheme": ""
+      }
+    },
+    "location_map": {
+      "type": "contact-with-map",
       "settings": {
         "color_scheme": ""
       }
@@ -180,18 +144,16 @@
   },
   "order": [
     "image_banner",
-    "8116c8f1-b49d-4070-9e7a-d9903cd21aff",
-    "5b04af58-fceb-4e6c-8fe2-d559fb6e9f13",
-    "6df56fd5-ed6d-4a74-96fa-164c6f37bff8",
-    "9acd8e6e-82cd-4690-a79d-10ada8cd75cc",
-    "a20d3441-d401-4506-adae-7e2a8ef51a3b",
-    "24423574-5f40-408d-824b-a82b27f6a523",
-    "caca1bae-6af5-4e12-ba9b-f6fdcdd3d242",
+    "text_with_button",
+    "alternate_items",
+    "products_slider",
+    "testimonials",
+    "featured_collection",
+    "image_gallery",
+    "products_grid",
     "video",
-    "4b6c20d3-851a-407e-a6dd-12090af60b21",
-    "d200ced6-834e-4ad6-8998-7296a096232d",
-    "a61a6fb5-b89f-44ab-b59b-f9289f0dfe7e",
-    "4cb0bcfe-421b-49cc-9040-751f133b8159",
-    "e909a60b-2811-4996-b218-71750dabf044"
+    "image_grid",
+    "services",
+    "location_map"
   ]
 }
