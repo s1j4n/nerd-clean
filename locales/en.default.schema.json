@@ -3527,11 +3527,11 @@
         "title": {
           "label": "Title"
         },
-        "full_width" : {
-          "label" : "Make section full width"
+        "full_width": {
+          "label": "Make section full width"
         },
-        "total" : {
-          "label" : "Total items to show"
+        "total": {
+          "label": "Total items to show"
         }
       },
       "blocks": {
@@ -3540,11 +3540,11 @@
           "image": {
             "label": "Image"
           },
-          "name" : {
-            "label" : "Name"
+          "name": {
+            "label": "Name"
           },
-          "comment" : {
-            "label" : "Comment"
+          "comment": {
+            "label": "Comment"
           }
         }
       },
@@ -3558,14 +3558,14 @@
         "title": {
           "label": "Title"
         },
-        "full_width" : {
-          "label" : "Make section full width"
+        "full_width": {
+          "label": "Make section full width"
         },
-        "size_destop" : {
-          "label" : "Icon size in desktop"
+        "size_destop": {
+          "label": "Icon size in desktop"
         },
-        "size_mobile" : {
-          "label" : "Icon size in mobile"
+        "size_mobile": {
+          "label": "Icon size in mobile"
         }
       },
       "blocks": {
@@ -3574,8 +3574,8 @@
           "title": {
             "label": "Title"
           },
-          "description" : {
-            "label" : "Description"
+          "description": {
+            "label": "Description"
           }
         }
       },
