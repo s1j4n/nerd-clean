@@ -4,7 +4,7 @@
 <div class="nerd-container color-{{ section.settings.color_scheme }}">
   <div class="nerd-page-width">
   
-  <h1 class="title nerd-title title--primary  inline-richtext{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+  <h1 class="nerd--title-main {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ section.settings.title }}
   </h1>
   {%- liquid
@@ -19,10 +19,10 @@
       assign collections = collections | reverse
     endif
 
-    assign moduloResult = 28 | modulo: section.settings.columns_desktop
-    assign paginate_by = 30
+    assign moduloResult = 10 | modulo: section.settings.columns_desktop
+    assign paginate_by = 12
     if moduloResult == 0
-      assign paginate_by = 28
+      assign paginate_by = 10
     endif
   -%}
   {%- paginate collections by paginate_by -%}
@@ -128,7 +128,7 @@
       "min": 1,
       "max": 5,
       "step": 1,
-      "default": 3,
+      "default": 4,
       "label": "t:sections.main-list-collections.settings.columns_desktop.label"
     },
     {

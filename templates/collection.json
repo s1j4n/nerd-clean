@@ -1,34 +1,10 @@
 {
   "sections": {
     "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "uppercase": true,
-        "text_center": true,
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
-      }
+      "type": "main-collection-banner"
     },
     "product-grid": {
-      "type": "main-collection-product-grid",
-      "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "show_count": false,
-        "enable_filtering": true,
-        "filter_type": "vertical",
-        "enable_sorting": true,
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "color_scheme": "scheme-ee1be600-79a7-42be-9d89-ab3fb98283b8"
-      }
+      "type": "main-collection-product-grid"
     }
   },
   "order": [

@@ -1,10 +1,159 @@
 {
   "sections": {
     "image_banner": {
-      "type": "image-banner"
+      "type": "image-banner",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "text_with_button": {
+      "type": "text-with-button",
+      "settings": {
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "alternate_items": {
+      "type": "alternate-items",
+      "settings": {
+        "button_label": "Shop Now",
+        "color_scheme": ""
+      }
+    },
+    "products_grid": {
+      "type": "products-grid",
+      "settings": {
+        "show_title": true,
+        "show_collection": true,
+        "enable_quick_add": false,
+        "color_scheme": ""
+      }
+    },
+    "featured_products": {
+      "type": "featured-products",
+      "settings": {
+        "title": "Featured Products",
+        "description": "",
+        "display_style": "slider",
+        "buttons_style": "arrow",
+        "hide_button_bg": false,
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "<b>FEATURED<\/b> COLLECTION",
+        "collection": "",
+        "display_style": "slider",
+        "buttons_style": "arrow",
+        "products_to_show": 4,
+        "columns_desktop": "4",
+        "full_width": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    
+    "video": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {
+        "title": "What Our Clients Say",
+        "full_width": true,
+        "heading_center": true,
+        "total_to_show": 4,
+        "card_height": "fit_large",
+        "color_scheme": ""
+      }
+    },
+    "services": {
+      "type": "services",
+      "settings": {
+        "title": "Our Services",
+        "full_width": false,
+        "icon_height_desktop": 50,
+        "icon_height_mobile": 30,
+        "card_height": "fit_large",
+        "color_scheme": ""
+      }
+    },
+    "image_gallery": {
+      "type": "image-slider-new",
+      "settings": {
+        "title": "Image Gallery",
+        "full_width": false,
+        "total_to_show": 5,
+        "color_scheme": ""
+      }
+    },
+    "image_grid": {
+      "type": "image-grid",
+      "settings": {
+        "color_scheme": ""
+      }
+    },
+    "location_map": {
+      "type": "contact-with-map",
+      "settings": {
+        "color_scheme": ""
+      }
     }
   },
   "order": [
-    "image_banner"
+    "image_banner",
+    "text_with_button",
+    "alternate_items",
+    "featured_products",
+    "testimonials",
+    "featured_collection",
+    "image_gallery",
+    "products_grid",
+    "video",
+    "image_grid",
+    "services",
+    "location_map"
   ]
 }
