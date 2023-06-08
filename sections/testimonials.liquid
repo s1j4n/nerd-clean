@@ -1,5 +1,5 @@
 {{ 'nerd-testimonials.css' | asset_url | stylesheet_tag }}
-
+{{ 'test.js' | asset_url | script_tag }}
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">   -->
 <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
 
@@ -116,17 +116,7 @@
     </div>
   </div>
 </div>
-{% javascript %}
-var elem = document.querySelector('.main-carousel-nerd');
-var flkty = new Flickity( elem, {
-  cellAlign: 'left',
-  contain: true
-});
 
-var flkty = new Flickity( '.main-carousel-nerd', {
-});
-
-  {% endjavascript %}
 
 {% schema %}
   {
