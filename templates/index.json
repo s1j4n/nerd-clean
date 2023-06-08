@@ -2,9 +2,6 @@
   "sections": {
     "image_banner": {
       "type": "image-banner"
-    },
-    "alternative_title": {
-      "type": "image-banner"
     }
   },
   "order": [
