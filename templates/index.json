@@ -209,8 +209,39 @@
     "45ec2cec-b035-4687-8d9b-20af6dcd7926": {
       "type": "contact-with-map",
       "settings": {
-        "title": "",
+        "title": "Visit us here",
         "color_scheme": ""
+      }
+    },
+    "3053c8e1-0295-4c6c-be42-6d2fa632a357": {
+      "type": "text-with-button",
+      "blocks": {
+        "template--19329045168405__3053c8e1-0295-4c6c-be42-6d2fa632a357-168624622270ee43b6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "template--19329045168405__3053c8e1-0295-4c6c-be42-6d2fa632a357-168624622270ee43b6-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19329045168405__3053c8e1-0295-4c6c-be42-6d2fa632a357-168624622270ee43b6-0",
+        "template--19329045168405__3053c8e1-0295-4c6c-be42-6d2fa632a357-168624622270ee43b6-1"
+      ],
+      "settings": {
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },
@@ -223,6 +254,7 @@
     "53b35adc-0f4f-48c3-bdd1-42f4a66fa5d4",
     "f77a9ad5-db63-4018-a03b-551d5894f249",
     "c14df30f-abfd-41df-9c2c-6c7d96acd78d",
-    "45ec2cec-b035-4687-8d9b-20af6dcd7926"
+    "45ec2cec-b035-4687-8d9b-20af6dcd7926",
+    "3053c8e1-0295-4c6c-be42-6d2fa632a357"
   ]
 }
