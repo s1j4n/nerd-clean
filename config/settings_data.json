@@ -146,8 +146,8 @@
           "text": "#ffffff",
           "button": "#661116",
           "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "secondary_button_label": "#ffffff",
+          "shadow": "#000000"
         }
       },
       "background-3": {
