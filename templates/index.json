@@ -44,6 +44,42 @@
     },
     "235036be-d136-4b6d-ae36-d7cedf67393e": {
       "type": "testimonials",
+      "blocks": {
+        "325fec70-8b65-4075-8118-a431f14187f3": {
+          "type": "testimonial",
+          "settings": {
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        },
+        "363a4f1f-77d1-479c-ad73-8fea7a758109": {
+          "type": "testimonial",
+          "settings": {
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        },
+        "b10ea095-2e79-4680-bf38-abcafe74d92e": {
+          "type": "testimonial",
+          "settings": {
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        },
+        "46921e0e-404a-4423-b296-837e3e726a8f": {
+          "type": "testimonial",
+          "settings": {
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "325fec70-8b65-4075-8118-a431f14187f3",
+        "363a4f1f-77d1-479c-ad73-8fea7a758109",
+        "b10ea095-2e79-4680-bf38-abcafe74d92e",
+        "46921e0e-404a-4423-b296-837e3e726a8f"
+      ],
       "settings": {
         "title": "What Our Clients Say",
         "full_width": true,
