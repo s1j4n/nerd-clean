@@ -4,7 +4,7 @@
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 | append: 'px' }}
     ;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 | append: 'px'  }}
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 | append: 'px' }}
     ;
   }
 
@@ -18,6 +18,9 @@
     ;
   }
 
+  .nerd--main-page-title{
+    margin: 0 !important;
+  }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
@@ -27,10 +30,42 @@
       ;
     }
   }
-{%- endstyle -%}
 
-<div class="nerd-main-page--head nerd-container text-center uppercase page-width--narrow section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+  .nerd--main-page-image-wrapper{
+    height: 200px;
+  }
+
+  .nerd--main-page-image-wrapper .nerd--main-page-image{
+    height: 200px;
+    width: 100%;
+    object-fit : cover;
+  }
+
+  .nerd--main-heading{
+    min-height: 80px;
+    position: relative;
+  }
+
+  @media screen and (max-width: 590px){
+    .nerd--main-heading{
+    min-height: 40px;
+  }
+    .nerd--main-page-image-wrapper{
+    height: 80px;
+  }
+  .nerd--main-page-image-wrapper .placeholder{
+    height: 80px;
+    width: 100%;
+    object-fit : cover;
+  }
+  
+  }
+
+{%- endstyle -%}
+<div class=" section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+<div class="nerd--main-heading nerd--relative ">
   {% if section.settings.background_image %}
+  <div class="nerd--main-page-image-wrapper">
     <img
       src={{ section.settings.background_image | img_url: 'large' }}
       class="nerd-main-page-image"
@@ -38,8 +73,10 @@
       height="{{ section.settings.background_image }}"
       width="{{ section.settings.background_image }}"
       loading="lazy" />
+
+    </div>
   {% endif %}
-  <h1 class="main-page-title page-title h0">
+  <h1 class="nerd--title-main nerd--main-page-title nerd--absolute nerd--absolute-item-center">
     {% if section.settings.alternative_title != blank %}
       {{ section.settings.alternative_title }}
     {% else %}
@@ -54,6 +91,8 @@
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
   </div>
+</div>
+
 </div>
 
 {% schema %}
