@@ -10,5 +10,5 @@ jobs:
       uses: shopify/lighthouse-ci-action@v1
       with:
         access_token: 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
-        store: nerd-app-testing.myshopify.com
+        store: nerd-theme-testing.myshopify.com
         password: password
