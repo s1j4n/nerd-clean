@@ -3520,6 +3520,68 @@
       "presets": {
         "name": "Collection List (Alternate)"
       }
+    },
+    "testimonials": {
+      "name": "Testimonials",
+      "settings": {
+        "title": {
+          "label": "Title"
+        },
+        "full_width" : {
+          "label" : "Make section full width"
+        },
+        "total" : {
+          "label" : "Total items to show"
+        }
+      },
+      "blocks": {
+        "name": "Testimonial",
+        "settings": {
+          "image": {
+            "label": "Image"
+          },
+          "name" : {
+            "label" : "Name"
+          },
+          "comment" : {
+            "label" : "Comment"
+          }
+        }
+      },
+      "presets": {
+        "name": "Testimonials"
+      }
+    },
+    "services": {
+      "name": "Services",
+      "settings": {
+        "title": {
+          "label": "Title"
+        },
+        "full_width" : {
+          "label" : "Make section full width"
+        },
+        "size_destop" : {
+          "label" : "Icon size in desktop"
+        },
+        "size_mobile" : {
+          "label" : "Icon size in mobile"
+        }
+      },
+      "blocks": {
+        "name": "Services",
+        "settings": {
+          "title": {
+            "label": "Title"
+          },
+          "description" : {
+            "label" : "Description"
+          }
+        }
+      },
+      "presets": {
+        "name": "Services"
+      }
     }
   }
 }

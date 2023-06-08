@@ -116,57 +116,31 @@
 
 {% schema %}
   {
-    "name": "Testimonials",
+    "name": "t:sections.testimonials.name",
     "settings": [
       {
         "type": "inline_richtext",
         "id": "title",
         "default": "What Our Clients Say",
-        "label": "Title"
-      },
-      {
+        "label": "t:sections.testimonials.settings.title.label"
+      }, {
         "type": "checkbox",
         "id": "full_width",
         "default": false,
-        "label": "Full Width"
+        "label": "t:sections.testimonials.settings.full_width.label"
 
-      },
-      {
-        "type": "checkbox",
-        "id": "heading_center",
-        "default": true,
-        "label": "Center Heading"
-
-      },
-      {
+      }, {
         "type": "range",
         "id": "total_to_show",
         "min": 1,
         "max": 5,
         "default": 4,
         "step": 1,
-        "label": "Total Items to show"
-      }, {
-        "type": "select",
-        "id": "card_height",
-        "label": "Card Height",
-        "default": "fit_large",
-        "options": [
-          {
-            "value": "fit_large",
-            "label": "Fit Largest"
-          }, {
-            "value": "fit_content",
-            "label": "Fit Content"
-          }
-
-        ]
-
+        "label": "t:sections.testimonials.settings.total.label"
       }, {
         "type": "color_scheme",
         "id": "color_scheme",
         "label": "t:sections.all.colors.label",
-        "info": "t:sections.image-banner.settings.color_scheme.info",
         "default": "background-1"
       }
 
@@ -174,21 +148,21 @@
     "blocks": [
       {
         "type": "testimonial",
-        "name": "Testimonials",
+        "name": "t:sections.testimonials.blocks.name",
         "settings": [
           {
             "type": "image_picker",
             "id": "image",
-            "label": "Image"
+            "label": "t:sections.testimonials.blocks.image.label"
           }, {
             "type": "text",
             "id": "name",
-            "label": "name",
+            "label": "t:sections.testimonials.blocks.name.label",
             "default": "John Doe"
           }, {
             "type": "richtext",
             "id": "comment",
-            "label": "comment",
+            "label": "t:sections.testimonials.blocks.comment.label",
             "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
           }
         ]
@@ -196,7 +170,7 @@
     ],
     "presets": [
       {
-        "name": "Testimonials"
+        "name": "t:sections.testimonials.presets.name"
       }
     ]
   }

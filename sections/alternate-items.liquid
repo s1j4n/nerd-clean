@@ -42,7 +42,7 @@
               {{
                  collection.featured_image
                | image_url: width: collection.featured_image.width
-               | image_tag: loading: 'lazy', class: 'nerd--alternate-image', style: styles }}
+               | image_tag: loading: 'lazy', class: 'nerd--alternate-image' }}
             {% else %}
               {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
             {% endif %}

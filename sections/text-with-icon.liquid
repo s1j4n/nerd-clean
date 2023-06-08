@@ -10,7 +10,9 @@
     ;
   }
 
-  .flickity-prev-next-button:disabled { display: none; }
+  .flickity-prev-next-button:disabled {
+    display: none;
+  }
 
   .carousel-cell {
     width: 100%;
@@ -82,20 +84,20 @@
 
 {% schema %}
   {
-    "name": "Text With icons",
+    "name": "t:sections.services.name",
     "settings": [
       {
         "type": "inline_richtext",
         "id": "title",
         "default": "Our Services",
-        "label": "Title"
+        "label": "t:sections.services.settings.title.label"
       },
 
       {
         "type": "checkbox",
         "id": "full_width",
         "default": false,
-        "label": "Full Width"
+        "label": "t:sections.services.settings.full_width.label"
 
       },
       {
@@ -105,7 +107,7 @@
         "max": 60,
         "step": 5,
         "default": 50,
-        "label": "Icon Size Desktop"
+        "label": "t:sections.services.settings.size_desktop.label"
       },
       {
         "type": "range",
@@ -114,29 +116,12 @@
         "max": 30,
         "step": 2,
         "default": 30,
-        "label": "Icon Size Mobile"
-
-      }, {
-        "type": "select",
-        "id": "card_height",
-        "label": "Card Height",
-        "default": "fit_large",
-        "options": [
-          {
-            "value": "fit_large",
-            "label": "Fit Largest"
-          }, {
-            "value": "fit_content",
-            "label": "Fit Content"
-          }
-
-        ]
+        "label": "t:sections.services.settings.size_mobile.label"
 
       }, {
         "type": "color_scheme",
         "id": "color_scheme",
         "label": "t:sections.all.colors.label",
-        "info": "t:sections.image-banner.settings.color_scheme.info",
         "default": "background-1"
       }
 
@@ -144,18 +129,18 @@
     "blocks": [
       {
         "type": "text-with-icon",
-        "name": "Text with icon",
+        "name": "t:sections.services.blocks.name",
         "settings": [
           {
             "type": "text",
             "id": "title",
             "default": "Service Title",
-            "label": "Title"
+            "label": "t:sections.services.blocks.settings.title.label"
           }, {
             "type": "text",
             "id": "text",
             "default": "Something about your service...",
-            "label": "Text"
+            "label": "t:sections.services.blocks.settings.description.label"
           }, {
             "type": "select",
             "id": "icon",
@@ -305,7 +290,7 @@
     ],
     "presets": [
       {
-        "name": "Text With Icon"
+        "name": "t:sections.services.presets.name"
       }
     ]
   }

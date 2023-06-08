@@ -21,7 +21,7 @@
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
-{%- if card_product and card_product != empty -%}
+{%- if card_product and card_product != empty and card_product.title != empty -%}
   {%- liquid
     assign ratio = 1
     if card_product.featured_media and media_aspect_ratio == 'portrait'
