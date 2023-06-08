@@ -7,4 +7,3 @@ var flkty = new Flickity( elem, {
 var flkty = new Flickity( '.main-carousel-nerd', {
 });
 
-alert("Hello")
