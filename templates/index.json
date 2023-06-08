@@ -2,8 +2,32 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
+      "blocks": {
+        "dd51721e-5480-4f10-baaa-8520618e5e5b": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand !",
+            "heading_size": "h1"
+          }
+        },
+        "e8d3bbc1-a787-490c-b974-9fda6e2dee19": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "dd51721e-5480-4f10-baaa-8520618e5e5b",
+        "e8d3bbc1-a787-490c-b974-9fda6e2dee19"
+      ],
       "settings": {
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 60,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
@@ -17,7 +41,7 @@
     "cbc219a3-bf54-4d12-9b5b-e76b7ac7aaac": {
       "type": "featured-collection",
       "settings": {
-        "title": "<strong>FEATURED<\/strong> COLLECTION",
+        "title": "On Sale",
         "collection": "",
         "display_style": "slider",
         "buttons_style": "arrow",
@@ -37,7 +61,7 @@
     "ee117f9a-29b8-46c8-b3ab-a8c3d403fc1c": {
       "type": "alternate-items",
       "settings": {
-        "title": "Collections",
+        "title": "Collection List",
         "button_label": "Shop Now",
         "color_scheme": ""
       }
@@ -108,7 +132,7 @@
         "full_width": false,
         "total_to_show": 5,
         "color_scheme": "",
-        "padding_top": 36,
+        "padding_top": 8,
         "padding_bottom": 36
       }
     },
@@ -134,6 +158,60 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "c14df30f-abfd-41df-9c2c-6c7d96acd78d": {
+      "type": "image-grid",
+      "blocks": {
+        "8c337781-e374-41f7-b7cb-006d6420fde8": {
+          "type": "image",
+          "settings": {
+            "image_opacity": 90,
+            "content_position": "center",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "682881e5-7564-4197-bf95-a880050f5284": {
+          "type": "image",
+          "settings": {
+            "image_opacity": 90,
+            "content_position": "center",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "a6186332-4499-4b43-9b4e-d5e2ae12b437": {
+          "type": "image",
+          "settings": {
+            "image_opacity": 90,
+            "content_position": "center",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "8c337781-e374-41f7-b7cb-006d6420fde8",
+        "682881e5-7564-4197-bf95-a880050f5284",
+        "a6186332-4499-4b43-9b4e-d5e2ae12b437"
+      ],
+      "settings": {
+        "title": "",
+        "color_scheme": "background-1"
+      }
+    },
+    "45ec2cec-b035-4687-8d9b-20af6dcd7926": {
+      "type": "contact-with-map",
+      "settings": {
+        "title": "",
+        "color_scheme": ""
+      }
     }
   },
   "order": [
@@ -143,6 +221,8 @@
     "1fe55a88-f865-4553-b01f-a6dfeb299257",
     "2a626e1c-b268-4cab-b3c7-e0bacf153480",
     "53b35adc-0f4f-48c3-bdd1-42f4a66fa5d4",
-    "f77a9ad5-db63-4018-a03b-551d5894f249"
+    "f77a9ad5-db63-4018-a03b-551d5894f249",
+    "c14df30f-abfd-41df-9c2c-6c7d96acd78d",
+    "45ec2cec-b035-4687-8d9b-20af6dcd7926"
   ]
 }
