@@ -29,11 +29,24 @@
         "total_to_show": 4,
         "color_scheme": ""
       }
+    },
+    "cc67b414-7efd-46cc-b363-fa568f899d78": {
+      "type": "services",
+      "settings": {
+        "title": "Our Services",
+        "full_width": false,
+        "icon_height_desktop": 50,
+        "icon_height_mobile": 30,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "form",
-    "3bb9ac4d-db43-449e-8c17-5d24ee6f6fda"
+    "3bb9ac4d-db43-449e-8c17-5d24ee6f6fda",
+    "cc67b414-7efd-46cc-b363-fa568f899d78"
   ]
 }
