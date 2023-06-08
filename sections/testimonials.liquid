@@ -97,6 +97,7 @@
             </div>
           </div>
         {%- else -%}
+          
           {%- for i in (1..3) -%}
             <div class="carousel-cell">
               <div class="nerd-testimonial ">
@@ -110,8 +111,14 @@
                 </div>
               </div>
             </div>
+        
           {%- endfor -%}
+          
+<script type="text/javascript">
+alert("Hello")
+  </script>
         {%- endfor -%}
+        
       </div>
     </div>
   </div>
@@ -179,7 +186,3 @@
     ]
   }
 {% endschema %}
-
-<script type="text/javascript">
-alert("Hello")
-  </script>
