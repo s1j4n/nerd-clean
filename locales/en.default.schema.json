@@ -469,6 +469,9 @@
         "auto_rotate": {
           "label": "Auto-rotate slides"
         },
+        "hide_buttons": {
+          "label": "Hide buttons"
+        },
         "change_slides_speed": {
           "label": "Change slides every"
         }
