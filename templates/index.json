@@ -138,10 +138,60 @@
     },
     "53b35adc-0f4f-48c3-bdd1-42f4a66fa5d4": {
       "type": "products-grid",
+      "blocks": {
+        "3069b19b-ffa5-4baa-a1dc-5a5deac4e401": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image_opacity": 100,
+            "content_position": "center"
+          }
+        },
+        "d138f7e0-8a56-4684-94da-23b2a75e876a": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image_opacity": 100,
+            "content_position": "bottom"
+          }
+        },
+        "fae93805-f206-4268-9188-1b1c7da1f71e": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image_opacity": 100,
+            "content_position": "bottom"
+          }
+        },
+        "6e107d4e-a279-47a6-929e-0af2b91a01c8": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image_opacity": 100,
+            "content_position": "bottom"
+          }
+        },
+        "924f29a5-5604-47c1-9927-724764e8400b": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "image_opacity": 100,
+            "content_position": "bottom"
+          }
+        }
+      },
+      "block_order": [
+        "3069b19b-ffa5-4baa-a1dc-5a5deac4e401",
+        "d138f7e0-8a56-4684-94da-23b2a75e876a",
+        "fae93805-f206-4268-9188-1b1c7da1f71e",
+        "6e107d4e-a279-47a6-929e-0af2b91a01c8",
+        "924f29a5-5604-47c1-9927-724764e8400b"
+      ],
       "settings": {
         "show_title": true,
         "show_collection": true,
-        "enable_quick_add": false,
+        "enable_quick_add": true,
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
