@@ -354,14 +354,6 @@
     "3f86922f-2fc3-4ce1-814b-211779434dae": {
       "type": "testimonials",
       "blocks": {
-        "149bb8bc-7a44-49d3-8078-554e19c25e4a": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/black-and-white-portrait-mens-fashion.jpg",
-            "name": "John Doe",
-            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
-          }
-        },
         "eee98820-0b9c-400f-a230-dbb5f43af578": {
           "type": "testimonial",
           "settings": {
@@ -369,19 +361,25 @@
             "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         },
-        "2cff2c78-a04f-45d2-a484-7a112e14241a": {
+        "cdef2b3f-83e6-4b62-aa11-18bbed9f41bd": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/AAUvwnj0ICORVuxs41ODOvnhvedArLiSV20df7r8XBjEUQ_s900-c-k-c0x00ffffff-no-rj_55b575b4-e130-450d-919b-fd2b4bdc73ba.jpg",
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        },
+        "05a37f07-b256-4c54-b760-27719eb20d12": {
+          "type": "testimonial",
+          "settings": {
             "name": "John Doe",
             "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
           }
         }
       },
       "block_order": [
-        "149bb8bc-7a44-49d3-8078-554e19c25e4a",
         "eee98820-0b9c-400f-a230-dbb5f43af578",
-        "2cff2c78-a04f-45d2-a484-7a112e14241a"
+        "cdef2b3f-83e6-4b62-aa11-18bbed9f41bd",
+        "05a37f07-b256-4c54-b760-27719eb20d12"
       ],
       "settings": {
         "title": "What Our Clients Say",
