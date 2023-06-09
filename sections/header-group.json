@@ -11,22 +11,14 @@
             "text": "Free Shipping On Orders Over $100",
             "link": ""
           }
-        },
-        "353e11f5-1dec-4fd1-82db-a149db4af8e0": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "353e11f5-1dec-4fd1-82db-a149db4af8e0"
+        "announcement-bar-0"
       ],
       "settings": {
         "color_scheme": "background-3",
-        "auto_rotate": true,
+        "auto_rotate": false,
         "change_slides_speed": 5,
         "hide_buttons": true
       }
