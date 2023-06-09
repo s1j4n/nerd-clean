@@ -2009,7 +2009,19 @@
       "name": "Order"
     },
     "main-page": {
-      "name": "Page"
+      "name": "Page",
+      "settings": {
+        "image": {
+          "label": "Background Image"
+        },
+        "title": {
+          "label": "Alternative title",
+          "info": "Displays default page title when left blank."
+        },
+        "opacity": {
+          "label": "Image Opacity"
+        }
+      }
     },
     "main-password-footer": {
       "name": "Password footer"
