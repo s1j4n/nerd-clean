@@ -3587,6 +3587,28 @@
         "name": "Testimonials"
       }
     },
+    "image_gallery": {
+      "name": "Image Gallery",
+      "blocks": {
+        "name": "Image",
+        "settings": {
+          "image": {
+            "label": "Image"
+          }
+        }
+      },
+      "settings": {
+        "title": {
+          "label": "Title"
+        },
+        "full_width": {
+          "label": "Make section full width"
+        }
+      },
+      "presets": {
+        "name": "Image Gallery"
+      }
+    },
     "services": {
       "name": "Services",
       "settings": {
