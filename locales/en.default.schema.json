@@ -829,7 +829,7 @@
       }
     },
     "featured-products": {
-      "name": "Featured Products",
+      "name": "Featured products",
       "settings": {
         "title": {
           "label": "Heading"
@@ -3446,18 +3446,18 @@
       }
     },
     "image_slider": {
-      "name": "Image Slider",
+      "name": "Image slider",
       "settings": {
         "title": {
           "label": "Title"
         },
         "full_width": {
-          "label": "Full Width"
+          "label": "Make section full width"
         }
       }
     },
     "image_grid": {
-      "name": "Image Grid",
+      "name": "Image grid",
       "settings": {
         "title": {
           "label": "Title"
@@ -3470,10 +3470,10 @@
             "label": "Image"
           },
           "opacity": {
-            "label": "Image Opacity"
+            "label": "Image opacity"
           },
           "content": {
-            "label": "Content Position",
+            "label": "Content position",
             "options": {
               "top": {
                 "label": "Top"
@@ -3493,28 +3493,28 @@
             "label": "Text"
           },
           "button": {
-            "label": "Button Label"
+            "label": "Button label"
           },
           "link": {
-            "label": "Button Link"
+            "label": "Button link"
           }
         }
       },
       "presets": {
-        "name": "Image Grid"
+        "name": "Image grid"
       }
     },
     "products_grid": {
-      "name": "Products Grid",
+      "name": "Products grid",
       "settings": {
         "show_title": {
-          "label": "Show Title"
+          "label": "Show title"
         },
         "quick_add": {
           "label": "Enable quick add"
         },
         "show_collection": {
-          "label": "Show Collection"
+          "label": "Show collection"
         }
       },
       "blocks": {
@@ -3524,10 +3524,10 @@
             "label": "Product"
           },
           "opacity": {
-            "label": "Image Opacity"
+            "label": "Image opacity"
           },
           "content": {
-            "label": "Content Position",
+            "label": "Content position",
             "options": {
               "top": {
                 "label": "Top"
@@ -3543,11 +3543,11 @@
         }
       },
       "presets": {
-        "name": "Products Grid"
+        "name": "Products grid"
       }
     },
     "alternate_items": {
-      "name": "Collection List (Alternate)",
+      "name": "Collection list (Alternate)",
       "blocks": {
         "name": "Collection",
         "settings": {
@@ -3565,7 +3565,7 @@
         }
       },
       "presets": {
-        "name": "Collection List (Alternate)"
+        "name": "Collection list (Alternate)"
       }
     },
     "testimonials": {
@@ -3600,7 +3600,7 @@
       }
     },
     "image_gallery": {
-      "name": "Image Gallery",
+      "name": "Image gallery",
       "blocks": {
         "name": "Image",
         "settings": {
@@ -3621,7 +3621,7 @@
         }
       },
       "presets": {
-        "name": "Image Gallery"
+        "name": "Image gallery"
       }
     },
     "services": {
@@ -3675,7 +3675,7 @@
           }
         },
         "google_map": {
-          "name": "Google Map",
+          "name": "Google map",
           "settings": {
             "url": {
               "label": "Map URL"
@@ -3684,7 +3684,7 @@
         }
       },
       "presets": {
-        "name": "Location with Map"
+        "name": "Location with map"
       }
     }
   }
