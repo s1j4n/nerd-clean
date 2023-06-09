@@ -94,11 +94,3 @@ button {
   min-height: 20rem;
 }
 }
-
-
-@media screen and (min-width: 1400px) {
-  .nerd-contact-page{
-    padding: 0 15%;
-  }
-   
-}
