@@ -19,6 +19,8 @@
   display: flex;
   padding: 1.3rem;
   color: rgb(var(--color-foreground));
+      border-radius: 5px;
+    background: rgba(var(--color-button));
 }
 
 .list-social__link:hover .icon {
