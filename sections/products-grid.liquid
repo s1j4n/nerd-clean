@@ -127,15 +127,15 @@
                     Collection
                   {% endif %}
                 </div>
-                {% endif %}
+              {% endif %}
 
-                {% if section.settings.show_title %}
-                  <div class="nerd--products-grid--content-md {{ content_position }} nerd--flex-col nerd--bg-transparent nerd--image-grid-absolute nerd--text-center">
-                    <div class="{%- if count==2 and forloop.index==2 -%} nerd--products-grid-title-lg {%- else -%}nerd--products-grid-title-md{%- endif -%}">
-                      {{ product.title }}
-                    </div>
+              {% if section.settings.show_title %}
+                <div class="nerd--products-grid--content-md {{ content_position }} nerd--flex-col nerd--bg-transparent nerd--image-grid-absolute nerd--text-center">
+                  <div class="{%- if count==2 and forloop.index==2 -%} nerd--products-grid-title-lg {%- else -%}nerd--products-grid-title-md{%- endif -%}">
+                    {{ product.title }}
                   </div>
-                {% endif %}
+                </div>
+              {% endif %}
               {% if section.settings.enable_quick_add and product.title != blank %}
                 <div class="nerd--absolute-item-center nerd--showme">
                   {% render 'quick-add', card_product: product %}
