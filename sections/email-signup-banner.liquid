@@ -53,8 +53,7 @@
           height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}"
         >
       {%- else -%}
-        {%- render 'email-signup-banner-background' -%}
-        {%- render 'email-signup-banner-background-mobile' -%}
+       {{ 'hero-apparel-1' | placeholder_svg_tag }}
       {%- endif -%}
     </div>
   {%- endif -%}
