@@ -353,6 +353,34 @@
     },
     "3f86922f-2fc3-4ce1-814b-211779434dae": {
       "type": "testimonials",
+      "blocks": {
+        "149bb8bc-7a44-49d3-8078-554e19c25e4a": {
+          "type": "testimonial",
+          "settings": {
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        },
+        "eee98820-0b9c-400f-a230-dbb5f43af578": {
+          "type": "testimonial",
+          "settings": {
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        },
+        "2cff2c78-a04f-45d2-a484-7a112e14241a": {
+          "type": "testimonial",
+          "settings": {
+            "name": "John Doe",
+            "comment": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "149bb8bc-7a44-49d3-8078-554e19c25e4a",
+        "eee98820-0b9c-400f-a230-dbb5f43af578",
+        "2cff2c78-a04f-45d2-a484-7a112e14241a"
+      ],
       "settings": {
         "title": "What Our Clients Say",
         "full_width": false,
