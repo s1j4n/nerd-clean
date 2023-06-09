@@ -390,11 +390,14 @@
         "padding_bottom": "Bottom padding"
       },
       "display_style": {
-        "grid": {
-          "label": "Grid"
-        },
-        "slideshow": {
-          "label": "Slideshow"
+        "label": "Display Style",
+        "options": {
+          "grid": {
+            "label": "Grid"
+          },
+          "slideshow": {
+            "label": "Slideshow"
+          }
         }
       },
       "spacing": "Spacing",
