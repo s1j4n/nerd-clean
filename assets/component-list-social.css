@@ -1,6 +1,5 @@
 .list-social {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
