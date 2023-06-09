@@ -68,14 +68,13 @@
         {% else %}
           {{ 'product-1' | placeholder_svg_tag: "hw-full bg-cover nerd--image-grid-bigimage" }}
         {% endif %}
-
+{%- if product and product.collections.first.title != blank -%}
         <div class="nerd--absolute-top-left nerd--product-grid-collection uppercase">
-          {%- if product -%}
+          
             {{ product.collections.first.title }}
-          {% else %}
-            Collection
-          {% endif %}
+
         </div>
+          {% endif %}
         {% if section.settings.show_title %}
           <div class="nerd--products-grid--content-md nerd--absolute {{ content_position }} nerd--bg-transparent nerd--flex-col nerd--image-grid-absolute nerd--text-center nerd--product-grid-title">
             <div class="nerd--products-grid-title-lg ">
