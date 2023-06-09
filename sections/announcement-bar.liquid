@@ -33,6 +33,7 @@
       aria-roledescription="{{ 'sections.announcements.carousel' | t }}"
       aria-label="{{ 'sections.announcements.announcement_bar' | t }}">
       <div class="announcement-bar-slider slider-buttons">
+        {% unless section.settings.hide_buttons %}
         <button
           type="button"
           class="slider-button slider-button--prev"
@@ -41,6 +42,7 @@
           aria-controls="Slider-{{ section.id }}">
           {% render 'icon-caret' %}
         </button>
+          {% endunless %}
         <div
           class="grid grid--1-col slider slider--everywhere"
           id="Slider-{{ section.id }}"
@@ -80,6 +82,7 @@
             </div>
           {%- endfor -%}
         </div>
+    {% unless section.settings.hide_buttons %}
         <button
           type="button"
           class="slider-button slider-button--next"
@@ -88,7 +91,9 @@
           aria-controls="Slider-{{ section.id }}">
           {% render 'icon-caret' %}
         </button>
+      {% endunless %}
       </div>
+      
     </slideshow-component>
   {%- endif -%}
 
@@ -117,7 +122,13 @@
         "unit": "s",
         "label": "t:sections.announcement-bar.settings.change_slides_speed.label",
         "default": 5
-      }
+      },
+  {
+    "type" : "checkbox",
+    "id" : "hide_buttons",
+    "label" : "t:sections.announcement-bar.settings.hide_buttons.label",
+    "default" : false
+  }
     ],
     "blocks": [
       {
