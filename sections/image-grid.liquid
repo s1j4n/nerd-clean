@@ -85,7 +85,7 @@
           
           
           %}
-          <div class="nerd--grid-image-wrapper {{ classes }} nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %}">
+          <div class="nerd--grid-image-wrapper {{ classes }} nerd--relative {% if count==4 and forloop.index==4 %} nerd--grid-colspan-2 {% endif %} {% if count==4 %} nerd--grid-colspan-2-mobile {% endif %}">
             {% if image %}
               {{
                  image
