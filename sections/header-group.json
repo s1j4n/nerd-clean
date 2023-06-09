@@ -26,8 +26,9 @@
       ],
       "settings": {
         "color_scheme": "background-3",
+        "auto_rotate": true,
         "change_slides_speed": 5,
-        "hide_buttons": false
+        "hide_buttons": true
       }
     },
     "header": {
