@@ -389,6 +389,14 @@
         "padding_top": "Top padding",
         "padding_bottom": "Bottom padding"
       },
+      "display_style": {
+        "grid": {
+          "label": "Grid"
+        },
+        "slideshow": {
+          "label": "Slideshow"
+        }
+      },
       "spacing": "Spacing",
       "colors": {
         "label": "Color scheme",
