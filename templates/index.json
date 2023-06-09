@@ -151,7 +151,7 @@
       ],
       "settings": {
         "title": "Image Gallery",
-        "full_width": false,
+        "full_width": true,
         "total_to_show": 7,
         "color_scheme": "",
         "padding_top": 8,
