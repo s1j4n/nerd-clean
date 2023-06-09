@@ -37,8 +37,6 @@
   grid-column: 2;
   grid-row: 1;
   padding-left: 2.5rem;
-  color: rgba(var(--color-foreground));
-    background-color: rgba(var(--color-background));
 }
 
 @media screen and (min-width: 990px) {
@@ -102,7 +100,8 @@
 }
 
 .facet-filters__sort {
-  background-color: transparent;
+  color: rgba(var(--color-foreground));
+    background-color: rgba(var(--color-background));
   border: 0;
   border-radius: 0;
   font-size: 1.4rem;
