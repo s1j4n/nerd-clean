@@ -38,6 +38,12 @@
           "settings": {
           }
         },
+        "cf4d8051-7e9d-42b5-bc2e-f346726e575a": {
+          "type": "sku",
+          "settings": {
+            "text_style": "body"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -52,6 +58,7 @@
         },
         "42e128dd-ff93-44df-991c-69b39ef18728": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Special information about the product",
             "icon": "none",
@@ -67,6 +74,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "cf4d8051-7e9d-42b5-bc2e-f346726e575a",
         "buy_buttons",
         "description",
         "42e128dd-ff93-44df-991c-69b39ef18728"
