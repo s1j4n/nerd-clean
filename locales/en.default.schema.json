@@ -403,10 +403,10 @@
       "slideshow_buttons_type": {
         "label": "Slideshow buttons type",
         "options": {
-          "carets": {
+          "caret": {
             "label": "Carets"
           },
-          "arrows": {
+          "arrow": {
             "label": "Arrow"
           }
         }
