@@ -1,7 +1,9 @@
 {
   "sections": {
     "main": {
-      "type": "nerd-order-main"
+      "type": "nerd-order-main",
+      "settings": {
+      }
     }
   },
   "order": [
