@@ -297,12 +297,24 @@
             "button_label": "",
             "button_link": ""
           }
+        },
+        "cc9c9069-b6bb-468c-9e74-e7653efbe950": {
+          "type": "image",
+          "settings": {
+            "image_opacity": 90,
+            "content_position": "center",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "8c337781-e374-41f7-b7cb-006d6420fde8",
         "682881e5-7564-4197-bf95-a880050f5284",
-        "a6186332-4499-4b43-9b4e-d5e2ae12b437"
+        "a6186332-4499-4b43-9b4e-d5e2ae12b437",
+        "cc9c9069-b6bb-468c-9e74-e7653efbe950"
       ],
       "settings": {
         "title": "",
