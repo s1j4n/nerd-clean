@@ -220,6 +220,37 @@
     },
     "f77a9ad5-db63-4018-a03b-551d5894f249": {
       "type": "services",
+      "blocks": {
+        "28c521e7-7e2b-4e15-b32d-c7890127ff58": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service...",
+            "icon": "clipboard"
+          }
+        },
+        "8e2b7cf5-8de6-441b-bb5a-2d90feae8e44": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service...",
+            "icon": "box"
+          }
+        },
+        "edf0140e-6d14-45bf-ad81-8b9f937c6df3": {
+          "type": "text-with-icon",
+          "settings": {
+            "title": "Service Title",
+            "text": "Something about your service...",
+            "icon": "lightning_bolt"
+          }
+        }
+      },
+      "block_order": [
+        "28c521e7-7e2b-4e15-b32d-c7890127ff58",
+        "8e2b7cf5-8de6-441b-bb5a-2d90feae8e44",
+        "edf0140e-6d14-45bf-ad81-8b9f937c6df3"
+      ],
       "settings": {
         "title": "Our Services",
         "full_width": false,
