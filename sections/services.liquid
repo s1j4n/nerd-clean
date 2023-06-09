@@ -63,7 +63,7 @@
     <div class="nerd-content">
       <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons" : false, "pageDots": true, "groupCells" : true  }'>
         {% for block in section.blocks %}
-          <div>
+          <div class="carousel-cell">
             <div class="nerd-iconwithtext">
               {% if block.settings.icon %}
                   {% render 'icon-accordion', icon: block.settings.icon %}
