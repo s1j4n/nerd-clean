@@ -127,6 +127,22 @@
     },
     "2a626e1c-b268-4cab-b3c7-e0bacf153480": {
       "type": "image-gallery",
+      "blocks": {
+        "3929ec5e-2692-42f6-9079-19cf7fa15adc": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "ef6d6f77-9003-4cb2-9a0a-80926402b212": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "3929ec5e-2692-42f6-9079-19cf7fa15adc",
+        "ef6d6f77-9003-4cb2-9a0a-80926402b212"
+      ],
       "settings": {
         "title": "Image Gallery",
         "full_width": false,
