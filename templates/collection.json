@@ -1,12 +1,12 @@
 {
   "sections": {
     "banner": {
-      "type": "main-collection-banner",
+      "type": "nerd-collection-banner-main",
       "settings": {
       }
     },
     "product-grid": {
-      "type": "main-collection-product-grid",
+      "type": "nerd-collection-product-grid-main",
       "settings": {
       }
     }

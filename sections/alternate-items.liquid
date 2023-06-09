@@ -29,11 +29,15 @@
 <div class="nerd-container color-{{ section.settings.color_scheme }}">
   <div class="nerd-page-width">
   <div class="nerd--title-main">{{ section.settings.title | escape }}</div>
-  <ul class="nerd-page-width nerd--list-alternate">
+  <ul class="nerd-page-width nerd--list-alternate animate--slide-in">
     {% for block in section.blocks %}
       {% assign collection = block.settings.collection %}
 
-      <li class="nerd--alternate-item ">
+      <li class="nerd--alternate-item {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" 
+         {% if settings.animations_reveal_on_scroll %}
+        data-cascade
+        style="--animation-order: {{ forloop.index }};"
+      {% endif %} >
         {% if collection %}
           <div class="alternate--wrapper nerd--image-wrapper nerd--relative alternate--wrapper">
             <a href={{ collection.url }}>
@@ -60,7 +64,12 @@
 
     {% else %}
       {% for i in (1..4) %}
-        <li class="nerd--alternate-item ">
+        <li class="nerd--alternate-item {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ i }};"
+          {% endif %}
+        >
           {{ 'product-1' | placeholder_svg_tag: "nerd--alternate-image" }}
           <div class="alternate--title nerd--text-md ">Title</div>
         </li>

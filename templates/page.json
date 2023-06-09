@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "nerd-page-main",
       "settings": {
         "header_height": 210,
         "padding_top": 24,

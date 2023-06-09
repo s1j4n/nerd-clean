@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-article",
+      "type": "nerd-article-main",
       "blocks": {
         "featured_image": {
           "type": "featured_image",

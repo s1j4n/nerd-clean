@@ -67,7 +67,7 @@
   <div class="color-{{ section.settings.color_scheme }} template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding">
     <div class="nerd-page-width ">
     <div class="template-search__header nerd-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      <h1 class="h2 center">
+      <h1 class="nerd--title-main center">
         {%- if search.performed -%}
           {{- 'templates.search.title' | t -}}
         {%- else -%}

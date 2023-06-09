@@ -126,7 +126,7 @@
       }
     },
     "2a626e1c-b268-4cab-b3c7-e0bacf153480": {
-      "type": "image-slider-new",
+      "type": "image-gallery",
       "settings": {
         "title": "Image Gallery",
         "full_width": false,

@@ -83,7 +83,7 @@
                   style="--animation-order: {{ forloop.index }};"
                   {% endif %}>
                   {%- if block.settings.heading != blank -%}
-                    <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                    <h2 class="footer-block__heading inline-richtext nerd-title-small">{{- block.settings.heading -}}</h2>
                   {%- endif -%}
 
                   {%- case block.type -%}
@@ -162,7 +162,7 @@
             {%- if section.settings.newsletter_enable -%}
               <div class="footer-block__newsletter">
                 {%- if section.settings.newsletter_heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{ section.settings.newsletter_heading }}</h2>
+                  <h2 class="footer-block__heading inline-richtext nerd-title-small">{{ section.settings.newsletter_heading }}</h2>
                 {%- endif -%}
                 {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                   <input
@@ -282,6 +282,7 @@
               {%- endform -%}
             </localization-form>
           {%- endif -%}
+          
 
           {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
             <noscript>

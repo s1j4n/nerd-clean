@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-login",
+      "type": "nerd-login-main",
       "custom_css": [
 
       ],

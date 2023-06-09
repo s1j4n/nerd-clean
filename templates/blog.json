@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-blog",
+      "type": "nerd-blog-main",
       "settings": {
         "layout": "grid",
         "show_image": true,
