@@ -1,11 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Nerd",
+    "theme_name": "Entangle",
     "theme_version": "1.0.0",
-    "theme_author": "Nerd Platoon",
-    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
-    "theme_support_url": "https:\/\/support.shopify.com\/"
+    "theme_author": "Entangle Commerce",
+    "theme_documentation_url": "https:\/\/entanglecommerce.com\/themes\/documentation",
+    "theme_support_url": "https:\/\/entanglecommerce.com\/themes\/support"
   },
   {
     "name": "t:settings_schema.logo.name",
