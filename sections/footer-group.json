@@ -5,18 +5,18 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "1e4e99e5-725e-469f-92eb-eba55fa3c334": {
-          "type": "text",
-          "settings": {
-            "heading": "Heading",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-          }
-        },
         "footer-0": {
           "type": "link_list",
           "settings": {
             "heading": "Quick links",
             "menu": "footer"
+          }
+        },
+        "1e4e99e5-725e-469f-92eb-eba55fa3c334": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
           }
         },
         "78fa2509-eb3a-4ed3-9dca-cd155ec640c5": {
@@ -36,8 +36,8 @@
         }
       },
       "block_order": [
-        "1e4e99e5-725e-469f-92eb-eba55fa3c334",
         "footer-0",
+        "1e4e99e5-725e-469f-92eb-eba55fa3c334",
         "78fa2509-eb3a-4ed3-9dca-cd155ec640c5",
         "8426547d-9901-4ba5-a2f4-c5c529a5bf61"
       ],
@@ -46,7 +46,7 @@
         "newsletter_enable": true,
         "newsletter_heading": "Join the crew!",
         "enable_follow_on_shop": true,
-        "show_social": false,
+        "show_social": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
         "payment_enable": true,
