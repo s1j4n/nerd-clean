@@ -65,7 +65,7 @@
         {% else %}
           {{ 'product-1' | placeholder_svg_tag: 'hw-full bg-cover nerd--image-grid-bigimage' }}
         {% endif %}
-        {%- if product and product.collections.first.title != blank -%}
+        {%- if product and product.collections.first.title != blank and section.settings.show_collection -%}
           <div class="nerd--absolute-top-left nerd--product-grid-collection uppercase">
             {{ product.collections.first.title }}
           </div>
