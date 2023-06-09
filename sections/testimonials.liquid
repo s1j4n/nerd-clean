@@ -1,10 +1,6 @@
 {{ 'nerd-testimonials.css' | asset_url | stylesheet_tag }}
 
 {% style %}
-  
-  .carousel-cell {
-    width: 100%;
-  }
 
 
   .nerd-iconwithtext svg {
@@ -57,17 +53,7 @@
 
 
   }
-    @media(min-width: 768px) {
-    .carousel-cell {
-      width: 50%;
-    }
-  }
-
-  @media(min-width: 992px) {
-    .carousel-cell {
-      width: 33.33%;
-    }
-  }
+ 
 {% endstyle %}
 
 <div class="nerd-container color-{{ section.settings.color_scheme }}">
