@@ -248,9 +248,30 @@
     },
     "45ec2cec-b035-4687-8d9b-20af6dcd7926": {
       "type": "contact-with-map",
+      "blocks": {
+        "0d6338cc-f1cf-45ff-954c-550185b1a96d": {
+          "type": "location",
+          "settings": {
+            "location_name": "Location",
+            "location_info": "<p>Location information.<\/p>"
+          }
+        },
+        "fa0e9250-cb55-4df3-90c1-05da826e30ad": {
+          "type": "google_map",
+          "settings": {
+            "map_url": "https:\/\/maps.google.com\/maps?q=Toronto,ON,Canada&output=embed"
+          }
+        }
+      },
+      "block_order": [
+        "0d6338cc-f1cf-45ff-954c-550185b1a96d",
+        "fa0e9250-cb55-4df3-90c1-05da826e30ad"
+      ],
       "settings": {
         "title": "Visit us here",
-        "color_scheme": ""
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
