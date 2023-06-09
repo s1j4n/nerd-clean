@@ -467,7 +467,7 @@
       "name": "Announcement bar",
       "settings": {
         "auto_rotate": {
-          "label": "Auto-rotate slides"
+          "label": "Autoplay"
         },
         "hide_buttons": {
           "label": "Hide buttons"
