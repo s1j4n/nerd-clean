@@ -11,7 +11,7 @@
   endif
 -%}
 <div class="nerd-container color-{{ section.settings.color_scheme }}">
-  <div class="{% unless section.settings.full_width %}nerd-page-width {% endunless %}">
+  <div class="nerd-page-width">
 
     <div class="nerd-content">
 
@@ -104,12 +104,6 @@
       "groups": ["header", "footer"]
     },
     "settings": [
-      {
-        "type": "checkbox",
-        "id": "full_width",
-        "default": false,
-        "label": "Full width"
-      },
       {
         "type": "inline_richtext",
         "id": "title",
