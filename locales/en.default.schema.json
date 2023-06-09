@@ -400,6 +400,17 @@
           }
         }
       },
+      "slideshow_buttons_type": {
+        "label": "Slideshow buttons type",
+        "options": {
+          "carets": {
+            "label": "Carets"
+          },
+          "arrows": {
+            "label": "Arrow"
+          }
+        }
+      },
       "spacing": "Spacing",
       "colors": {
         "label": "Color scheme",
