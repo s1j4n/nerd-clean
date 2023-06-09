@@ -1,8 +1,6 @@
 {{ 'nerd-testimonials.css' | asset_url | stylesheet_tag }}
 
 {% style %}
-
-
   .nerd-iconwithtext svg {
     height: {{ section.settings.icon_height_desktop | append: 'px' }}
     ;
@@ -40,7 +38,7 @@
 
   .slick-prev,
   .slick-next {
-    z-index: 1000;
+    z-index: 10;
   }
 
   @media screen and (max-width: 750px) {
@@ -53,7 +51,6 @@
 
 
   }
- 
 {% endstyle %}
 
 <div class="nerd-container color-{{ section.settings.color_scheme }}">
