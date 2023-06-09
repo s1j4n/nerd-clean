@@ -390,7 +390,7 @@
         "padding_bottom": "Bottom padding"
       },
       "display_style": {
-        "label": "Display Style",
+        "label": "Display style",
         "options": {
           "grid": {
             "label": "Grid"
@@ -404,7 +404,7 @@
         "label": "Slideshow buttons type",
         "options": {
           "caret": {
-            "label": "Carets"
+            "label": "Caret"
           },
           "arrow": {
             "label": "Arrow"
