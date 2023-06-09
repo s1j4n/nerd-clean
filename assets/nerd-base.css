@@ -85,6 +85,9 @@ svg {
   .nerd--grid-1-mobile {
     grid-template-columns: repeat(1, 1fr) !important;
   }
+  .nerd--grid-colspan-2-mobile {
+  grid-column: span 2;
+}
 
 }
 
