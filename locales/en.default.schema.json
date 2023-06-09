@@ -3603,6 +3603,9 @@
         },
         "full_width": {
           "label": "Make section full width"
+        },
+        "total_to_show": {
+          "label": "Total images to show"
         }
       },
       "presets": {
