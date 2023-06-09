@@ -1,6 +1,15 @@
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 {{ 'nerd-component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'announcement-bar.css' | asset_url | stylesheet_tag }}
+{% style %}
+        {% unless section.settings.hide_buttons %}
+        .nerd-announcement-bar .slider-button {
+          visibility: hidden;
+        }
+          {% endunless %}}
+  
+{% endstyle %}
+
 
 <div class="nerd-announcement-bar utility-bar color-{{ section.settings.color_scheme }} gradient utility-bar--bottom-border" {{ block.shopify_attributes }}>
   {%- if section.blocks.size == 1 -%}
@@ -33,7 +42,7 @@
       aria-roledescription="{{ 'sections.announcements.carousel' | t }}"
       aria-label="{{ 'sections.announcements.announcement_bar' | t }}">
       <div class="announcement-bar-slider slider-buttons">
-        {% unless section.settings.hide_buttons %}
+
         <button
           type="button"
           class="slider-button slider-button--prev"
@@ -42,7 +51,6 @@
           aria-controls="Slider-{{ section.id }}">
           {% render 'icon-caret' %}
         </button>
-          {% endunless %}
         <div
           class="grid grid--1-col slider slider--everywhere"
           id="Slider-{{ section.id }}"
@@ -82,7 +90,6 @@
             </div>
           {%- endfor -%}
         </div>
-    {% unless section.settings.hide_buttons %}
         <button
           type="button"
           class="slider-button slider-button--next"
@@ -91,7 +98,6 @@
           aria-controls="Slider-{{ section.id }}">
           {% render 'icon-caret' %}
         </button>
-      {% endunless %}
       </div>
       
     </slideshow-component>
