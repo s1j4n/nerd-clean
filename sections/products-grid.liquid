@@ -60,10 +60,10 @@
               | image_tag: loading: 'lazy', class: 'nerd--image-grid-bigimage', style: styles
             }}
           {% else %}
-            {{ 'detailed-apparel-1' | placeholder_svg_tag: 'hw-full bg-cover nerd--image-grid-bigimage' }}
+            {{ 'product-1' | placeholder_svg_tag: 'hw-full bg-cover nerd--image-grid-bigimage' }}
           {% endif %}
         {% else %}
-          {{ 'detailed-apparel-1' | placeholder_svg_tag: 'hw-full bg-cover nerd--image-grid-bigimage' }}
+          {{ 'product-1' | placeholder_svg_tag: 'hw-full bg-cover nerd--image-grid-bigimage' }}
         {% endif %}
         {%- if product and product.collections.first.title != blank -%}
           <div class="nerd--absolute-top-left nerd--product-grid-collection uppercase">
@@ -117,7 +117,7 @@
                 {{ image | image_url: width: image.width | image_tag: loading: 'lazy', style: styles, class: classes }}
 
               {% else %}
-                {{ 'detailed-apparel-1' | placeholder_svg_tag: classes }}
+                {{ 'product-1' | placeholder_svg_tag: classes }}
               {% endif %}
               {% if section.settings.show_collection %}
                 <div class="nerd--absolute-top-left uppercase {% if count==2 and forloop.index==2 -%} nerd--product-grid-collection {%- else -%} nerd--product-grid-collection-sm {%- endif -%}">
@@ -146,7 +146,7 @@
         {% else %}
           {% for i in (1..4) %}
             <div class="color-{{ settings.card_color_scheme }} nerd--image-grid-height-half nerd--grid-item image-wrapper nerd--image-small nerd--relative">
-              {{ 'detailed-apparel-1' | placeholder_svg_tag: 'nerd--image-grid--image nerd--image-grid-height-half' }}
+              {{ 'product-1' | placeholder_svg_tag: 'nerd--image-grid--image nerd--image-grid-height-half' }}
               <div class="nerd--absolute-top-left uppercase {% if count == 2 and forloop.index == 2 -%} nerd--product-grid-collection {%- else -%} nerd--product-grid-collection-sm {%- endif -%}">
                 Collection
               </div>
