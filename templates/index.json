@@ -166,7 +166,7 @@
           "settings": {
             "product": "",
             "image_opacity": 100,
-            "content_position": "center"
+            "content_position": "bottom"
           }
         },
         "d138f7e0-8a56-4684-94da-23b2a75e876a": {
@@ -195,7 +195,6 @@
         },
         "924f29a5-5604-47c1-9927-724764e8400b": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "",
             "image_opacity": 100,
