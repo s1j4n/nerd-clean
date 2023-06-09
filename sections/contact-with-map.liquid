@@ -123,6 +123,15 @@
 {% endif %}
   </div>
   {% endcase %}
+    {% else %}
+
+  <div class="location-info">
+    <div class="nerd-title-small"> Heading </div> 
+    <div class="nerd-text">About Your Location </div>
+  </div>
+   <div class="google-map">
+    <iframe src="https://maps.google.com/maps?q=Toronto,ON,Canada&output=embed"></iframe>
+  </div>
   {% endfor %}
 </section>
 </div>
