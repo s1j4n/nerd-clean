@@ -370,6 +370,14 @@ slider-component.slider-component-full-width {
   background: rgb(var(--color-button));
 }
 
+.slider-button--has-bg path{
+  fill: rgb(var(--color-button-text)) !important;
+}
+
+.slider-button[disabled]{
+  opacity: 0.6;
+}
+
 .slider-button:not([disabled]):hover {
   color: rgb(var(--color-foreground));
 }

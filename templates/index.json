@@ -43,8 +43,8 @@
       "settings": {
         "title": "On Sale",
         "collection": "",
-        "display_style": "slider",
-        "buttons_style": "arrow",
+        "display_style": "grid",
+        "buttons_style": "caret",
         "products_to_show": 9,
         "columns_desktop": "4",
         "full_width": false,
@@ -53,7 +53,7 @@
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "padding_top": 24,
         "padding_bottom": 36
       }
@@ -111,7 +111,7 @@
         "title": "Featured Products",
         "description": "",
         "display_style": "slider",
-        "buttons_style": "catet",
+        "buttons_style": "caret",
         "hide_button_bg": false,
         "products_to_show": 8,
         "columns_desktop": 4,
@@ -120,7 +120,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "enable_quick_add": false,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "padding_top": 36,
         "padding_bottom": 36
       }
